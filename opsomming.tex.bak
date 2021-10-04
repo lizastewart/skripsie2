@@ -1,0 +1,67 @@
+%*** Summary Heading ************************************************
+
+\begin{Summary}{Project (Civil Engineering) 458: Summary}
+
+   \noindent
+   \begin{tabular}{@{}ll@{}}
+      \textsf{Student:}    &  L.\ Stewart\\
+      \textsf{Medewerker:} &
+   \end{tabular}
+
+%*** The Summary table **********************************************
+\begin{SumTable}
+ \hline%=============================================================
+ \SumHead{Title of Project}\\
+ \hline%=============================================================
+    The Stochastic inversion of fire test data for the 
+    T-dependant thermal diffusivity of SA pine\\
+
+ \hline%=============================================================
+ \SumHead{Goal}\\
+ \hline%=============================================================
+    To determine the probability distribution of thermal diffusivity of SA-pine, using statistical inversion theory and Markov Chain Monte-Carlo.\\
+
+ \hline%=============================================================
+ \SumHead{What did I do that was unique}\\
+ \hline%=============================================================
+   
+
+ \hline%=============================================================
+ \SumHead{What are my findings?}\\
+ \hline%=============================================================
+  \
+
+ \hline%=============================================================
+ \SumHead{Usefulness of results?}\\
+ \hline%=============================================================
+    
+ \hline%=============================================================
+ \SumHead{In geval meer as een student, welke deel het jy gedoen?}\\
+ \hline%=============================================================
+    N.V.T.\\
+
+ \hline%=============================================================
+ \SumHead{What aspects of the project will be further explored after the project has ended?}\\
+ \hline%=============================================================
+    
+
+ \hline%=============================================================
+ \SumHead{What are the expected benefits of further research?}\\
+ \hline%=============================================================
+    
+
+ \hline%=============================================================
+ \SumHead{What plans are being made for further research?}\\
+ \hline%=============================================================
+   
+ \hline%=============================================================
+\end{SumTable}
+
+%*** Signatures *****************************************************
+
+\vspace{1.5cm}
+\SumSignatures
+
+\end{Summary}
+
+\endinput
