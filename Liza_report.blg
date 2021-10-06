@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Liza_report.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: usmeg-a.bst
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+A level-1 auxiliary file: nomenkl.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+A level-1 auxiliary file: Chp-1.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+A level-1 auxiliary file: Chp-2.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+A level-1 auxiliary file: Chp-3.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Database file #1: USBibsample.bib
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 4 entries,
+            3324 wiz_defined-function locations,
+            691 strings with 5793 characters,
+and the built_in function-call counts, 3314 in all, are:
+= -- 252
+> -- 82
+< -- 8
++ -- 33
+- -- 27
+* -- 311
+:= -- 420
+add.period$ -- 17
+call.type$ -- 4
+change.case$ -- 28
+chr.to.int$ -- 10
+cite$ -- 4
+duplicate$ -- 319
+empty$ -- 308
+format.name$ -- 57
+if$ -- 667
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 45
+newline$ -- 46
+num.names$ -- 16
+pop$ -- 98
+preamble$ -- 1
+purify$ -- 25
+quote$ -- 0
+skip$ -- 78
+stack$ -- 0
+substring$ -- 160
+swap$ -- 155
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 27
+warning$ -- 0
+while$ -- 29
+width$ -- 0
+write$ -- 81

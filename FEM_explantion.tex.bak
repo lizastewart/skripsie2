@@ -1,0 +1,4 @@
+Finite element methods or finite element analysis is used when the behaviour of an elment cannot be accurately depicted by a simple mathematic equation. 
+The larger element is then broken into smaller elements. 
+Assumptions made on the smaller scale have a lesser effect on the final answer than the same assumptions made on a large scale would have had.
+

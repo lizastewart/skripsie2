@@ -37,7 +37,7 @@
 %==== Graphics and Color ============================================
 \usepackage{graphicx}%........................... Graphicx loaded in usthesis
 \usepackage{color}%.............................. Color setup
-
+\usepackage{float}%.............................. To tell an image exactly where you want it placed
 %==== Additional USthesis packages ==================================
 
 \usepackage{ussummary}%.......................... Mech Eng summary page (in usthesis pack)
@@ -79,7 +79,7 @@ for the T-dependant thermal diffusivity of SA pine}
          University of Stellenbosch,\\
          Privatebag X1, Matieland 7602.}
 
-\studyleader{Dr N\ de Koker}
+\studyleader{Prof N\ de Koker}
 
 \setdate{08}{2021}
 
@@ -91,13 +91,13 @@ for the T-dependant thermal diffusivity of SA pine}
 \frontmatter%========================================================
 
 \TitlePage
-%\CopyrightPage
+\CopyrightPage
 %\include{verklaring}
 %\include{opsomming}
 %\include{uittreksel}
-%\tableofcontents
-%\listoffigures
-%\listoftables
+\tableofcontents
+\listoffigures
+\listoftables
 \include{nomenkl}
 
 \mainmatter%=========================================================
@@ -118,6 +118,6 @@ for the T-dependant thermal diffusivity of SA pine}
 
 \backmatter%=========================================================
 
-\bibliography{USbibsample}
+\bibliography{USBibsample}
 
 \end{document}
