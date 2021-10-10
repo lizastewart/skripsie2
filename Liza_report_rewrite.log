@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.11)  6 OCT 2021 19:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.11)  7 OCT 2021 15:34
 entering extended mode
-**./Liza_report.tex
-(Liza_report.tex
+**./Liza_report_rewrite.tex
+(Liza_report_rewrite.tex
 LaTeX2e <2021-06-01>
 L3 programming layer <2021-06-01>
 (C:\Program Files\MiKTeX\tex/latex/stellenbosch\usthesis.cls
@@ -415,9 +415,9 @@ File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count295
 \l__pdf_internal_box=\box63
 )
-(Liza_report.aux (nomenkl.aux) (Introduction.aux) (litstudy.aux) (FEMmodel.aux)
-(testdata.aux) (Methodology.aux) (Conclusion.aux))
-\openout1 = `Liza_report.aux'.
+(Liza_report_rewrite.aux (nomenkl.aux) (Introduction.aux) (techfoundation.aux)
+(implementation.aux) (results.aux) (discussion.aux) (Conclusion.aux))
+\openout1 = `Liza_report_rewrite.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
 LaTeX Font Info:    ... okay on input line 98.
@@ -476,11 +476,11 @@ LaTeX Info: Redefining \ref on input line 98.
 LaTeX Info: Redefining \pageref on input line 98.
 LaTeX Info: Redefining \nameref on input line 98.
 
-(Liza_report.out) (Liza_report.out)
+(Liza_report_rewrite.out) (Liza_report_rewrite.out)
 \@outlinefile=\write3
-\openout3 = `Liza_report.out'.
+\openout3 = `Liza_report_rewrite.out'.
 
-<USlogo-top.pdf, id=115, 560.0925pt x 183.68625pt>
+<USlogo-top.pdf, id=91, 560.0925pt x 183.68625pt>
 File: USlogo-top.pdf Graphic file (type pdf)
 <use USlogo-top.pdf>
 Package pdftex.def Info: USlogo-top.pdf  used on input line 102.
@@ -490,35 +490,34 @@ Package pdftex.def Info: USlogo-top.pdf  used on input line 102.
 
 
 {C:/Users/Liza Stewart/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <C:/Progr
-am Files/MiKTeX/tex/latex/stellenbosch/logos/USlogo-top.pdf>] (Liza_report.tocp
-dfTeX warning (ext4): destination with the same identifier (name{page.i}) has b
-een already used, duplicate ignored
+am Files/MiKTeX/tex/latex/stellenbosch/logos/USlogo-top.pdf>] (Liza_report_rewr
+ite.toc)
+\tf@toc=\write4
+\openout4 = `Liza_report_rewrite.toc'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 ... {6}Summary and Conclusion}{10}{chapter.6}
-                                                  % [1
+l.108 \listoffigures
+                     [1
 
-])
-\tf@toc=\write4
-\openout4 = `Liza_report.toc'.
-
- [2] (Liza_report.lof)
+] (Liza_report_rewrite.lof)
 \tf@lof=\write5
-\openout5 = `Liza_report.lof'.
+\openout5 = `Liza_report_rewrite.lof'.
 
+ [2
 
-[3
-
-] (Liza_report.lot)
+] (Liza_report_rewrite.lot)
 \tf@lot=\write6
-\openout6 = `Liza_report.lot'.
+\openout6 = `Liza_report_rewrite.lot'.
 
- [4
+ [3
 
 ]
 \openout2 = `nomenkl.aux'.
 
- (nomenkl.tex) [5
+ (nomenkl.tex) [4
 
 
 ]
@@ -532,74 +531,67 @@ Chapter 1.
 
 
 
-]) [2]
-\openout2 = `litstudy.aux'.
-
- (litstudy.tex
-Chapter 2.
-<kvalues_euro.png, id=215, 1028.34187pt x 490.08093pt>
+]
+<kvalues_euro.png, id=171, 1028.34187pt x 490.08093pt>
 File: kvalues_euro.png Graphic file (type png)
 <use kvalues_euro.png>
-Package pdftex.def Info: kvalues_euro.png  used on input line 11.
+Package pdftex.def Info: kvalues_euro.png  used on input line 34.
 (pdftex.def)             Requested size: 398.0pt x 189.68005pt.
+) [2 <./kvalues_euro.png (PNG copy)>]
+\openout2 = `techfoundation.aux'.
+
+ (techfoundation.tex
+Chapter 2.
 [3
 
 
 
 
- <./kvalues_euro.png (PNG copy)>]) [4]
-\openout2 = `FEMmodel.aux'.
+]) [4]
+\openout2 = `implementation.aux'.
 
- (FEMmodel.tex
+ (implementation.tex
 Chapter 3.
-) [5
-
-
-
-
-]
-\openout2 = `testdata.aux'.
-
- (testdata.tex
-Chapter 4.
-<firecurve.png, id=243, 1028.34187pt x 490.08093pt>
+<firecurve.png, id=207, 1028.34187pt x 490.08093pt>
 File: firecurve.png Graphic file (type png)
 <use firecurve.png>
 Package pdftex.def Info: firecurve.png  used on input line 14.
 (pdftex.def)             Requested size: 398.0pt x 189.68005pt.
-[6
+[5
 
 
 
 
 ]
-<measured_data.jpg, id=251, 1284.8pt x 910.40125pt>
+<measured_data.jpg, id=213, 1284.8pt x 910.40125pt>
 File: measured_data.jpg Graphic file (type jpg)
 <use measured_data.jpg>
-Package pdftex.def Info: measured_data.jpg  used on input line 40.
+Package pdftex.def Info: measured_data.jpg  used on input line 38.
 (pdftex.def)             Requested size: 397.48499pt x 281.65192pt.
- [7 <./firecurve.png (PNG copy)>]) [8 <./measured_data.jpg>]
-\openout2 = `Methodology.aux'.
+ [6 <./firecurve.png (PNG copy)>]) [7 <./measured_data.jpg>]
+\openout2 = `results.aux'.
+
+ (results.tex)
+\openout2 = `discussion.aux'.
 
 
-(Methodology.tex
-Chapter 5.
-) [9
-
-
-
-
-]
+(discussion.tex)
 \openout2 = `Conclusion.aux'.
 
  (Conclusion.tex
-Chapter 6.
-) [10
+Chapter 4.
+) [8
 
 
 
 
-] (Liza_report.bbl
+
+
+
+
+
+
+] (Liza_report_rewrite.bbl
 (C:\Program Files\MiKTeX\tex/latex/stellenbosch\usbib.eng)
 
 ! Package babel Error: You haven't defined the language 'eng' yet.
@@ -628,24 +620,25 @@ l.40 \newblock {\selectlanguage{eng}
 
 Your command will be ignored, type <return> to proceed
 
-) [11
+) [9
 
 
 
 
-] (Liza_report.aux (nomenkl.aux) (Introduction.aux) (litstudy.aux)
-(FEMmodel.aux) (testdata.aux) (Methodology.aux) (Conclusion.aux))
-Package rerunfilecheck Info: File `Liza_report.out' has not changed.
-(rerunfilecheck)             Checksum: ADD2EC28C4B5D95B7F6DC4A27E3D6E90;3828.
+] (Liza_report_rewrite.aux (nomenkl.aux) (Introduction.aux)
+(techfoundation.aux) (implementation.aux) (results.aux) (discussion.aux)
+(Conclusion.aux))
+Package rerunfilecheck Info: File `Liza_report_rewrite.out' has not changed.
+(rerunfilecheck)             Checksum: E9D7F0A70220B699F884A4A7BFE10363;3099.
  ) 
 Here is how much of TeX's memory you used:
- 11088 strings out of 478864
- 162962 string characters out of 2858494
- 497736 words of memory out of 3000000
- 28665 multiletter control sequences out of 15000+600000
+ 11072 strings out of 478864
+ 163487 string characters out of 2858494
+ 495754 words of memory out of 3000000
+ 28659 multiletter control sequences out of 15000+600000
  427224 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,7n,66p,290b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,7n,66p,299b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi6
 00\ecti1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
 appen/ec/dpi600\ecrm1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/
@@ -654,9 +647,9 @@ MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Liza Stewart\A
 ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\L
 iza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk
 > <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx1728.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
-ppen/ec/dpi600\ecrm0600.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/p
-k/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\Liza Stewart\AppData\Local\M
+0\ecsl1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
+ppen/ec/dpi600\ecbx1728.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/p
+k/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\Liza Stewart\AppData\Local\M
 iKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Liza Stewart\Ap
 pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Li
 za Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
@@ -669,9 +662,9 @@ nts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 >
-Output written on Liza_report.pdf (17 pages, 367201 bytes).
+Output written on Liza_report_rewrite.pdf (14 pages, 348648 bytes).
 PDF statistics:
- 808 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
- 245 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 734 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 197 words of extra memory for PDF output out of 10000 (max. 10000000)
 

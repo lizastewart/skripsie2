@@ -1,16 +1,18 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: Liza_report.aux
+The top-level auxiliary file: Liza_report_rewrite.aux
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: usmeg-a.bst
 Reallocating 'name_of_file' (item size: 1) to 12 items.
 A level-1 auxiliary file: nomenkl.aux
-Reallocating 'name_of_file' (item size: 1) to 10 items.
-A level-1 auxiliary file: Chp-1.aux
-Reallocating 'name_of_file' (item size: 1) to 10 items.
-A level-1 auxiliary file: Chp-2.aux
-Reallocating 'name_of_file' (item size: 1) to 10 items.
-A level-1 auxiliary file: Chp-3.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+A level-1 auxiliary file: Introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: litstudy.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: FEMmodel.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: testdata.aux
 Reallocating 'name_of_file' (item size: 1) to 16 items.
 A level-1 auxiliary file: Methodology.aux
 Reallocating 'name_of_file' (item size: 1) to 15 items.
@@ -21,7 +23,7 @@ Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 5 entries,
             3324 wiz_defined-function locations,
-            700 strings with 5977 characters,
+            701 strings with 6018 characters,
 and the built_in function-call counts, 3822 in all, are:
 = -- 286
 > -- 92

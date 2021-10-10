@@ -1,8 +1,8 @@
 \chapter{Finite Element Modelling}
 \section{Existing Model}
-	For this project a existing finite element model of heat diffusion by Prof. N de Koker will be modified for usage in the Bayes' theorem~\ref{bayes_eq}. 
+	For this project an existing finite element model of heat diffusion by Prof. N de Koker will be modified for usage in the Bayes' theorem~\ref{bayes_eq}. 
 	This model will be used to determine the likelihood function. 
-	The current model uses the standard euro code k-values as well as the specific heat specified in the eurocode. 
+	The current model uses the standard euro code k-values as well as the specific heat specified in the \citep{Euro:2004}. 
 	
 	The model descritizes the wooden element into 32 different elements. For finite element analysis there are always more elements used to generate the model than usually evaluated. This is done to improve the accuracy of said model.
 	The model is a one dimensional finite element model that takes time differentiation into account. 

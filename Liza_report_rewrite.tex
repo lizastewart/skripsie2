@@ -1,7 +1,7 @@
 %==== Document Setup (usthesis)======================================
 \documentclass[report,                       %... Document type
                12pt,oneside,openany,a4paper, %... Layout
-               a5block,                      %... A5 type block
+               goldenblock,                      %... A5 type block(default changed to goldenblock)
                english,english,         %... Afrikaans default language
                ]{usthesis}
 
@@ -22,7 +22,7 @@
  \usepackage[T1]{fontenc}%........................ Type 1 fonts
  \usepackage{textcomp}%........................... Additional text character
  \usepackage{bm}%................................. Bold math symbols (after fonts)
-
+ 
 %==== Ref's, Bib's and Nomencl ======================================
  \usepackage{usnomencl}%.......................... List of symbols (in usthesis pack)
  \usepackage{usbib}%.............................. Bibliography    (in usthesis pack)
@@ -37,13 +37,32 @@
 %==== Graphics and Color ============================================
 \usepackage{graphicx}%........................... Graphicx loaded in usthesis
 \usepackage{color}%.............................. Color setup
-
+\usepackage{float}%.............................. To tell an image exactly where you want it placed
 %==== Additional USthesis packages ==================================
 
 \usepackage{ussummary}%.......................... Mech Eng summary page (in usthesis pack)
 
+%==== Background image ====================================================
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{background.png}%
+\vfill
+}}}
 %==== Local Defs ====================================================
 \makeatletter
+
+\iftrue
+\usepackage{hyperref}%... Hyperlinks & backreferences
+%\usepackage{memhfixc} %........... Memoir fix (hyperref>6.75g autoloads it)
+\else
+\usepackage{nohyperref}%............ Disable hyperlinks
+\usepackage{url}
+\fi
+\hypersetup{}
 
 %
 % Please insert user defined commands here
@@ -63,13 +82,13 @@ for the T-dependant thermal diffusivity of SA pine}
 \subject{Project(Civil Engineering)458}
         {Project(Civil Engineering)458}
 
-\ReportDescript{Project Proposal}
+\ReportDescript{Final Draft}
 
 \address{Department Civil Engineering,\\
          University of Stellenbosch,\\
          Privatebag X1, Matieland 7602.}
 
-\studyleader{Dr N\ de Koker}
+\studyleader{Prof N\ de Koker}
 
 \setdate{08}{2021}
 
@@ -77,14 +96,14 @@ for the T-dependant thermal diffusivity of SA pine}
 %                 T H E   M A I N   D O C U M E N T                  %
 %====================================================================%
 \begin{document}
-
+%\AddToShipoutPicture*{\BackgroundPic}
 \frontmatter%========================================================
 
 \TitlePage
-%\CopyrightPage
-\include{verklaring}
-\include{opsomming}
-\include{uittreksel}
+\CopyrightPage
+%\include{verklaring}
+%\include{opsomming}
+%\include{uittreksel}
 \tableofcontents
 \listoffigures
 \listoftables
@@ -96,18 +115,26 @@ for the T-dependant thermal diffusivity of SA pine}
 \numberwithin{figure}{section}  %
 \numberwithin{table}{section}   %
 
- \include{Chp-1}
-%\include{Chp-2}
-%\include{Chp-3}
+ \include{Introduction}
+ \include{techfoundation}
+ \include{implementation}
+ \include{results}
+ \include{discussion}
+ \include{Conclusion}
+ % \include{litstudy}
+% \include{FEMmodel}
+% \include{testdata}
+% \include{Methodology}
 
 \appendix%===========================================================
 
- \include{App-A}
+% \include{App-A}
 %\include{App-B}
 %\include{App-C}
 
 \backmatter%=========================================================
 
-\bibliography{USbibsample}
+\bibliography{USBibsample}
+%\bibliography{mendelybib}
 
 \end{document}

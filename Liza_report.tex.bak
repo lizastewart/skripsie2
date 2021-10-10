@@ -1,7 +1,7 @@
 %==== Document Setup (usthesis)======================================
 \documentclass[report,                       %... Document type
                12pt,oneside,openany,a4paper, %... Layout
-               a5block,                      %... A5 type block
+               goldenblock,                      %... A5 type block(default changed to goldenblock)
                english,english,         %... Afrikaans default language
                ]{usthesis}
 
@@ -22,7 +22,7 @@
  \usepackage[T1]{fontenc}%........................ Type 1 fonts
  \usepackage{textcomp}%........................... Additional text character
  \usepackage{bm}%................................. Bold math symbols (after fonts)
-
+ 
 %==== Ref's, Bib's and Nomencl ======================================
  \usepackage{usnomencl}%.......................... List of symbols (in usthesis pack)
  \usepackage{usbib}%.............................. Bibliography    (in usthesis pack)
@@ -54,6 +54,15 @@
 }}}
 %==== Local Defs ====================================================
 \makeatletter
+
+\iftrue
+\usepackage{hyperref}%... Hyperlinks & backreferences
+%\usepackage{memhfixc} %........... Memoir fix (hyperref>6.75g autoloads it)
+\else
+\usepackage{nohyperref}%............ Disable hyperlinks
+\usepackage{url}
+\fi
+\hypersetup{}
 
 %
 % Please insert user defined commands here
@@ -106,9 +115,12 @@ for the T-dependant thermal diffusivity of SA pine}
 \numberwithin{figure}{section}  %
 \numberwithin{table}{section}   %
 
- \include{Chp-1}
- \include{Chp-2}
- \include{Chp-3}
+ \include{Introduction}
+ \include{litstudy}
+ \include{FEMmodel}
+ \include{testdata}
+ \include{Methodology}
+ \include{Conclusion}
 
 \appendix%===========================================================
 
@@ -119,5 +131,6 @@ for the T-dependant thermal diffusivity of SA pine}
 \backmatter%=========================================================
 
 \bibliography{USBibsample}
+%\bibliography{mendelybib}
 
 \end{document}
