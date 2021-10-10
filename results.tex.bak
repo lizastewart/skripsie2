@@ -1,0 +1,20 @@
+\chapter{Results} \label{results}
+
+\begin{figure}[H]
+	\label{measured_fig}
+	\centering
+	\includegraphics[width=5.5in,]{figures/measured_data.jpg}
+\end{figure}
+
+
+\begin{figure}[H]
+	\label{og_modeldata}
+	\centering
+	\includegraphics[width=5.5in,]{figures/originalmugraph.jpg}
+\end{figure}
+
+\begin{figure}[H]
+	\label{data_newk}
+	\centering
+	\includegraphics[width=5.5in,]{figures/rough_average_graph.jpg}
+\end{figure}

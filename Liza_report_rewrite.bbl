@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{7}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -42,6 +42,12 @@
   Hall, London.
 \newblock ISBN 0412055511.
 
+\bibitem[{\citenamefont{ISO}(1999)}]{ISO:1999}
+\bibnamefont{ISO} (1999).
+\newblock \emph{ISO 834 Fire-resistance test - Elements of building
+  construction}.
+\newblock International Organization for Standardization, Geneva.
+
 \bibitem[{\citenamefont{Kaipio} \protect\BIBand{}
   \citenamefont{Somersalo}(2005)}]{Kaipo:2005}
 \bibnamefont{Kaipio}, \bibfnamefont{J.} \protect\BIBand{}
@@ -49,6 +55,11 @@
 \newblock \emph{Statistical and Computational Inverse Problems}, \bblvol{} 160.
 \newblock Springer Science + Business Media, Verlag New York.
 \newblock ISBN 978-0-387-27132-3.
+
+\bibitem[{\citenamefont{Salvadori}(2017)}]{Salvadori:2017}
+\bibnamefont{Salvadori}, \bibfnamefont{V.} (2017 12).
+\newblock \emph{The Development of a Tall Wood Building}.
+\newblock \bblmthesis{}, Polytechnic University of Milan and TU Wien.
 
 \bibitem[{\citenamefont{van~der Westhuyzen}
   \emph{\bbletal{}}(2020)\citenamefont{van~der Westhuyzen},

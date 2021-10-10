@@ -49,7 +49,7 @@
 \parbox[b][\paperheight]{\paperwidth}{%
 \vfill
 \centering
-\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{background.png}%
+\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{figures/background.png}%
 \vfill
 }}}
 %==== Local Defs ====================================================
@@ -128,8 +128,8 @@ for the T-dependant thermal diffusivity of SA pine}
 
 \appendix%===========================================================
 
-% \include{App-A}
-%\include{App-B}
+\include{Program}
+\include{GA_outcomes}
 %\include{App-C}
 
 \backmatter%=========================================================

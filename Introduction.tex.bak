@@ -1,4 +1,7 @@
-\chapter{Introduction}
+\chapter{Introduction} \label{introduction}
+This chapter will introduce the problem addressed in this project. 
+Previous similar projects as well as the value of this research will also be addressed.
+
 \section{Background and Motivation}
 
 Traditionally the thermal diffusivity, otherwise referred to as the $\alpha$-value, of timber is based simply off the EN 1995:1-1-2004 or similar standards.
@@ -11,7 +14,11 @@ Therefore the problem lends itself to being analysed by inversion techniques.
 The aforementioned approach will allow us to obtain information about the diffusivity based on the combination of the information assumed prior to measuring, further referred to as the prior, and the measured data. 
 Using statistical inversion leads to a probability distribution that provides us with a collection of diffusivity estimates and their corresponding probabilities.
 
-
+Currently the fire rating of specific timber samples are based n fire tests done in a furnace. 
+	The furnace is kept at increasing temperatures corresponding with the Standard or ISO 834 fire curve as specified in ISO 834 \citet{ISO:1999}.
+	This process becomes a very costly if it has to be repeated every time that timber is used for construction.
+	As timber usage for multiple story construction projects have increased over the past decades. 
+	This increase is partially due to the sustainability of timber as a construction material, not only is it renewable but it also has a small carbon footprint \citep{Salvadori:2017}
 %This will be done by adjusting a finite element model created by Dr. N de Koker into a function. This function will be used in a Bayes model to solve for the temperature dependant thermal diffusivity.
 \section{Aim and objectives}
 During the course of the project the student will aim to meet the following objectives:
@@ -26,12 +33,14 @@ During the course of the project the student will aim to meet the following obje
  	\end{enumerate}
 \end{enumerate}
 
-\section{K- value}
+\section{Current knowledge}
+	
+	
 	The current K-values used for the design of timber elements are taken from the EURO code (ref TODO \citep{Euro:2004})  
 	\begin{figure}[H]
 	\label{kvalue_fig}
 	\centering
-	\includegraphics[width = \linewidth]{kvalues_euro.png}
+	\includegraphics[width = \linewidth]{figures/kvalues_euro.png}
 	\end{figure}
 	
 

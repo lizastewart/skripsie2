@@ -1184,3 +1184,19 @@ publisher = {BSI},
 address = {London},
 title = {BS EN 1995-1-2:2004. Eurocode 5: Design of timber structures - General - Structural fire design.}
 }
+
+@book{ISO:1999,
+title ={ISO 834 Fire-resistance test - Elements of building construction},
+year = {1999},
+author = {ISO},
+publisher = {International Organization for Standardization},
+address = {Geneva}
+}
+
+@mastersthesis{Salvadori:2017,
+title = {The Development of a Tall Wood Building},
+year= {2017},
+author = {Vittorio Salvadori},
+school = {Polytechnic University of Milan and TU Wien},
+month = {12}
+}
