@@ -11,6 +11,7 @@
 	\label{og_modeldata}
 	\centering
 	\includegraphics[width=5.5in,]{figures/originalmugraph.jpg}
+	\caption{Output of finite element model using $\kappa$-values as indicated in EN 1995:1-2-2004}
 \end{figure}
 
 \begin{figure}[H]

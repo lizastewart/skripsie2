@@ -1,0 +1,13 @@
+\chapter{Relevant code segments} \label{codeapp}
+Below are the relevant code segments taken from the Matlab code that was used to generate the final samples used for analysis.
+
+\section*{Prior function}
+\begin{verbatim}
+function q_val = prior_pdf(x_values,sigmaMU)
+
+ global mu_values
+ q_val = -0.5*((x_values - mu_values)*(x_values - mu_values)')/(sigmaMU^2);
+
+end
+
+\end{verbatim}

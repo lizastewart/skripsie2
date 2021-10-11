@@ -2,7 +2,7 @@
 \documentclass[report,                       %... Document type
                12pt,oneside,openany,a4paper, %... Layout
                goldenblock,                      %... A5 type block(default changed to goldenblock)
-               english,english,         %... Afrikaans default language
+               afrikaans,english,         %... Afrikaans default language
                ]{usthesis}
 
 %
@@ -126,15 +126,17 @@ for the T-dependant thermal diffusivity of SA pine}
 % \include{testdata}
 % \include{Methodology}
 
-\appendix%===========================================================
-
-\include{Program}
-\include{GA_outcomes}
-%\include{App-C}
-
 \backmatter%=========================================================
 
 \bibliography{USBibsample}
 %\bibliography{mendelybib}
+
+\appendix%===========================================================
+
+\include{Program}
+\include{GA_outcomes}
+\include{mcmcCode}
+%\include{App-C}
+
 
 \end{document}

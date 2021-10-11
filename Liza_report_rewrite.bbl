@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{8}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -30,6 +30,13 @@
 \newblock {\selectlanguage{eng}\emph{A first course in finite elements}}.
 \newblock John Wiley, Chichester.
 \newblock ISBN 9780470035801.
+
+\bibitem[{\citenamefont{Frayssinhes} \protect\BIBand{}
+  \citenamefont{Collet}(2020)}]{bioresource:2020}
+\bibnamefont{Frayssinhes}, \bibfnamefont{R., G.S.M.B.D.L.} \protect\BIBand{}
+  \bibnamefont{Collet}, \bibfnamefont{R.} (2020).
+\newblock A simple method to determine the diffusivity of green wood.
+\newblock \emph{BioRes}, \bblvol{}~3, \bblno{}~15, \bblpp{} 6539--6549.
 
 \bibitem[{\citenamefont{Gilks} \emph{\bbletal{}}(1996)\citenamefont{Gilks},
   \citenamefont{Richarson} \protect\BIBand{}

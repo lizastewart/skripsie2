@@ -24,45 +24,118 @@ A level-1 auxiliary file: GA_outcomes.aux
 Reallocating 'name_of_file' (item size: 1) to 12 items.
 Database file #1: USBibsample.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Name 1 in "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." has a comma at the end for entry bioresource:2020
+while executing---line 1566 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1566 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1566 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1566 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1566 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1566 of file usmeg-a.bst
+Name 1 in "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." has a comma at the end for entry bioresource:2020
+while executing---line 1566 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1566 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1566 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1566 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1566 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1566 of file usmeg-a.bst
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 7 entries,
+Name 1 in "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." has a comma at the end for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Name 1 in "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." has a comma at the end for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Name 1 in "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." has a comma at the end for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Name 1 in "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." has a comma at the end for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+Too many commas in name 1 of "Frayssinhes, R., Girardon, S., Marcon, B., Denaud, L., and Collet, R." for entry bioresource:2020
+while executing---line 1662 of file usmeg-a.bst
+You've used 8 entries,
             3324 wiz_defined-function locations,
-            717 strings with 6327 characters,
-and the built_in function-call counts, 4869 in all, are:
-= -- 364
-> -- 112
-< -- 11
-+ -- 47
-- -- 36
-* -- 420
-:= -- 648
-add.period$ -- 26
-call.type$ -- 7
-change.case$ -- 43
-chr.to.int$ -- 13
-cite$ -- 7
-duplicate$ -- 467
-empty$ -- 471
-format.name$ -- 75
-if$ -- 981
+            723 strings with 6487 characters,
+and the built_in function-call counts, 5978 in all, are:
+= -- 469
+> -- 130
+< -- 15
++ -- 56
+- -- 42
+* -- 513
+:= -- 770
+add.period$ -- 29
+call.type$ -- 8
+change.case$ -- 50
+chr.to.int$ -- 14
+cite$ -- 8
+duplicate$ -- 583
+empty$ -- 569
+format.name$ -- 90
+if$ -- 1222
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 69
-newline$ -- 61
-num.names$ -- 28
-pop$ -- 155
+missing$ -- 80
+newline$ -- 66
+num.names$ -- 32
+pop$ -- 183
 preamble$ -- 1
-purify$ -- 40
+purify$ -- 46
 quote$ -- 0
-skip$ -- 133
+skip$ -- 167
 stack$ -- 0
-substring$ -- 229
-swap$ -- 209
-text.length$ -- 4
+substring$ -- 324
+swap$ -- 262
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
+type$ -- 57
 warning$ -- 0
-while$ -- 44
+while$ -- 52
 width$ -- 0
-write$ -- 118
+write$ -- 131
+(There were 36 error messages)

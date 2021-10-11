@@ -15,9 +15,12 @@ The aforementioned approach will allow us to obtain information about the diffus
 Using statistical inversion leads to a probability distribution that provides us with a collection of diffusivity estimates and their corresponding probabilities.
 
 Currently the fire rating of specific timber samples are based on fire tests conducted in a furnace. 
-	The furnace is kept at increasing temperatures corresponding with the Standard or ISO 834 fire curve as specified in ISO 834 \citet{ISO:1999}.
-	This process becomes very costly if it has to be repeated every time that timber is used for construction, as timber usage for multiple story construction projects have increased over the past decades. 
-	This increase is partially due to the sustainability of timber as a construction material: not only is it renewable but it also has a small carbon footprint \citep{Salvadori:2017}
+The furnace is kept at increasing temperatures corresponding with the Standard or ISO 834 fire curve as specified in ISO 834 \citet{ISO:1999}.
+This process becomes very costly if it has to be repeated every time that timber is used for construction, as timber usage for multiple story construction projects have increased over the past decades. 
+This increase is partially due to the sustainability of timber as a construction material: not only is it renewable but it also has a small carbon footprint \citep{Salvadori:2017}.
+
+
+
 %This will be done by adjusting a finite element model created by Dr. N de Koker into a function. This function will be used in a Bayes model to solve for the temperature dependant thermal diffusivity.
 \section{Aim and objectives}
 During the course of the project, the student will aim to meet the following objectives:
@@ -32,8 +35,21 @@ During the course of the project, the student will aim to meet the following obj
  	\end{enumerate}
 \end{enumerate}
 
-\section{Current knowledge}
+\section{Literature study}
 	
+	\citeauthor{bioresource:2020} in their article, \textit{Simple Method to Determine the Diffusivity of Green Wood}, they determine the global diffusivity of a Douglas fir green log using inverse identification methods. 
+	%In their experiment the also used thermocouples but only 3 at each end.  
+	Their experiment was set up by immersing the log with K-type thermocouples into a boiler filled with water at 60$^{^{\circ}}$C. 
+	These K-type thermocouples were very specifically placed to improve the accuracy of the diffusivity ratio calculation.
+	The finite element model constructed for their calculations used linear interpolation was a four node quadrangle elements.
+	An analytical model was also constructed using the heat propagation equation(TODO?heat diffusion?).
+	The intention of this research was to assist the peeling industry in making the pretreatment process more cost effective.
+	The method proved to be effective at determining the thermal diffusivity of green Douglas fir logs as the $\kappa$-values obtained were comparable to those form literature.
+	The methods used by \citet{bioresource:2020} are similar to the methods described later in the report.
+	Yet a crucial difference remains as the temperatures at which these experiments were conducted as well as the final usage of the data differ greatly.
+
+	
+
 	
 	The current $\kappa$-values used for the design of timber elements are taken from the EURO code (ref TODO \citep{Euro:2004}) and are show in figure \ref{kvalue_fig}.  
 	\begin{figure}[H]
@@ -43,6 +59,3 @@ During the course of the project, the student will aim to meet the following obj
 	\caption{Standard temperature-thermal conductivity relationship for timber from \citep{Euro:2004}}
 	\end{figure}
 	
-
-	
-\section{Program}
