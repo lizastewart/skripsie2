@@ -1,9 +1,17 @@
 \chapter{Technical Foundation} \label{tech}
 \section{Finite Element Model}
-	\include{FEM_explantion}
-	 
-	 In it's simplest form the one dimensional heat diffusion equation is a partial differential equation \ref{heat_eq} dependant on the temperature and thickness of the element. 
-	The heat diffusion equation is based on Fourier's Law
+Finite element methods (or finite element analysis) is used when the behaviour of an element cannot be accurately depicted by a simple mathematical equation. 
+	\subsection{History/Origin}
+	
+	
+\subsection{method of FEM}
+A larger element is broken into smaller elements. 
+Assumptions made on the smaller scale have a lesser effect on the final answer than the same assumptions made on a large scale would have had.
+
+
+\subsection{heat eq}	 
+	 In its simplest form, the one-dimensional heat diffusion equation is a partial differential equation \ref{heat_eq} dependant on the temperature and thickness of the element. 
+	The heat diffusion equation is based on Fourier's Law...(TODO)
 	
 	
 	\begin{equation}
@@ -15,13 +23,13 @@
 %	Statistical and Computational Inverse problems by Kaipio and Somersalo Chapter 3
 % 	The Bayesian approach to Inverse Problems Dashti and Stuart
 	The method of statistical inversion is dependant on a fundamental understanding of the Bayes' theorem of inverse problems. 
-	The student obtained this understanding through studying Chapter 3 of Statistical and Computational Inverse problems by \citet{Kaipo:2005}, further referred to merely as Kaipio. 
+	The student obtained this understanding through studying Chapter 3 of statistical and Computational Inverse problems by \citet{Kaipo:2005}, further referred to merely as Kaipio. 
 	There are four principles of Statistical inversion that is essential to the thorough understanding of these models. 
-	Firstly it is the principle that any variable in the model needs to be modelled as a random variable. 
+	Firstly, it is the principle that any variable in the model needs to be modelled as a random variable. 
 	This randomness is based on the extent of information that is available. 
-	To ensure that the extent of knowledge is accurately portrayed in the model the extent of knowledge will be coded into the probability distributions assigned to the different variables. 
-	Finally it needs to be understood that the solution of a statistical inversion is a posterior probability distribution.
-	A generalized equation of Bayes' theorem can be seen in \ref{bayes_eq} taken from Kaipo. 
+	To ensure that the extent of knowledge is accurately portrayed in the model, the extent of knowledge will be coded into the probability distributions assigned to the different variables. 
+	Finally, it needs to be understood that the solution of a statistical inversion is a posterior probability distribution.
+	A generalized equation of Bayes' theorem can be seen in \ref{bayes_eq} taken from Kaipio. 
 	
 	\begin{equation}
 	\label{bayes_eq}
@@ -29,9 +37,9 @@
 	\end{equation}
 
 \section{Markov Chain Monte Carlo}
-Markov Chain Monte Carlo(MCMC) is a method of integration. This will be used to determine the mean of the k-values at specific temperatures. 
+Markov Chain Monte Carlo (MCMC) is a method of integration. This will be used to determine the mean of the $\kappa$-values at specific temperatures. 
 	Markov Chain Monte Carlo is a method that was created by combining the concept of Monte Carlo sampling  and a Markov Chain. 
-	To fully understand MCMC the methods that it was created from need to be further investigated.
+	To fully understand MCMC, the methods that it was created from need to be further investigated.
 	\subsection{Markov Chains}
 		
 		
@@ -39,5 +47,5 @@ Markov Chain Monte Carlo(MCMC) is a method of integration. This will be used to 
 	\subsection{Monte Carlo Integration}
 	Monte Carlo integration is used to evaluate a probability distributuion. 
 	The evaluation is done by drawing a collection of random numbers from the distribution.
-	These numbers are then used a the sample and a sample mean is taken.
+	These numbers are then used as the sample and a sample mean is taken.
 	The arithmetic sample mean can be used to approximate the population mean in accordance with the law of large numbers \citep{Gilks:1996} 

@@ -18,12 +18,16 @@ A level-1 auxiliary file: discussion.aux
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 A level-1 auxiliary file: Conclusion.aux
 Reallocating 'name_of_file' (item size: 1) to 12 items.
+A level-1 auxiliary file: Program.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+A level-1 auxiliary file: GA_outcomes.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
 Database file #1: USBibsample.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 7 entries,
             3324 wiz_defined-function locations,
-            715 strings with 6301 characters,
+            717 strings with 6327 characters,
 and the built_in function-call counts, 4869 in all, are:
 = -- 364
 > -- 112

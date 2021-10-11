@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.11)  10 OCT 2021 18:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.11)  11 OCT 2021 10:17
 entering extended mode
 **./Liza_report_rewrite.tex
 (Liza_report_rewrite.tex
@@ -481,7 +481,7 @@ LaTeX Info: Redefining \nameref on input line 98.
 \@outlinefile=\write3
 \openout3 = `Liza_report_rewrite.out'.
 
-<USlogo-top.pdf, id=115, 560.0925pt x 183.68625pt>
+<USlogo-top.pdf, id=135, 560.0925pt x 183.68625pt>
 File: USlogo-top.pdf Graphic file (type pdf)
 <use USlogo-top.pdf>
 Package pdftex.def Info: USlogo-top.pdf  used on input line 102.
@@ -496,7 +496,7 @@ ite.tocpdfTeX warning (ext4): destination with the same identifier (name{page.i
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 ...r}{\numberline {A}Program}{13}{appendix.A}
+l.29 ...ter}{\numberline {4}Results}{9}{chapter.4}
                                                   % [1
 
 ])
@@ -535,76 +535,77 @@ Chapter 1.
 
 
 ]
-<figures/kvalues_euro.png, id=218, 1028.34187pt x 490.08093pt>
+<figures/kvalues_euro.png, id=250, 1028.34187pt x 490.08093pt>
 File: figures/kvalues_euro.png Graphic file (type png)
 <use figures/kvalues_euro.png>
-Package pdftex.def Info: figures/kvalues_euro.png  used on input line 43.
+Package pdftex.def Info: figures/kvalues_euro.png  used on input line 42.
 (pdftex.def)             Requested size: 398.0pt x 189.68005pt.
-) [2 <./figures/kvalues_euro.png (PNG copy)>]
+) [2 <./figures/kvalues_euro.png (PNG copy)>] [3]
 \openout2 = `techfoundation.aux'.
 
  (techfoundation.tex
 Chapter 2.
-[3
+[4
 
 
 
 
-]) [4]
+]) [5]
 \openout2 = `implementation.aux'.
 
  (implementation.tex
 Chapter 3.
-<figures/TC_layout.png, id=256, 524.71031pt x 264.99pt>
+<figures/TC_layout.png, id=295, 524.71031pt x 264.99pt>
 File: figures/TC_layout.png Graphic file (type png)
 <use figures/TC_layout.png>
-Package pdftex.def Info: figures/TC_layout.png  used on input line 13.
+Package pdftex.def Info: figures/TC_layout.png  used on input line 15.
 (pdftex.def)             Requested size: 298.5pt x 150.75473pt.
-[5
+[6
 
 
 
 
 ]
-<figures/firecurve.png, id=263, 1028.34187pt x 490.08093pt>
+<figures/firecurve.png, id=302, 1028.34187pt x 490.08093pt>
 File: figures/firecurve.png Graphic file (type png)
 <use figures/firecurve.png>
-Package pdftex.def Info: figures/firecurve.png  used on input line 20.
+Package pdftex.def Info: figures/firecurve.png  used on input line 22.
 (pdftex.def)             Requested size: 398.0pt x 189.68005pt.
- [6 <./figures/TC_layout.png (PNG copy)> <./figures/firecurve.png (PNG copy)>])
- [7]
+ [7 <./figures/TC_layout.png (PNG copy)> <./figures/firecurve.png (PNG copy)>])
+ [8]
 \openout2 = `results.aux'.
 
  (results.tex
 Chapter 4.
-<figures/measured_data.jpg, id=277, 1284.8pt x 910.40125pt>
+<figures/measured_data.jpg, id=316, 1284.8pt x 910.40125pt>
 File: figures/measured_data.jpg Graphic file (type jpg)
 <use figures/measured_data.jpg>
 Package pdftex.def Info: figures/measured_data.jpg  used on input line 6.
 (pdftex.def)             Requested size: 397.48499pt x 281.65192pt.
-<figures/originalmugraph.jpg, id=278, 562.1pt x 421.575pt>
+<figures/originalmugraph.jpg, id=317, 562.1pt x 421.575pt>
 File: figures/originalmugraph.jpg Graphic file (type jpg)
 <use figures/originalmugraph.jpg>
 Package pdftex.def Info: figures/originalmugraph.jpg  used on input line 13.
 (pdftex.def)             Requested size: 397.48499pt x 298.11098pt.
-[8
+[9
 
 
 
 
  <./figures/measured_data.jpg>]
-<figures/rough_average_graph.jpg, id=283, 562.1pt x 421.575pt>
+<figures/rough_average_graph.jpg, id=322, 562.1pt x 421.575pt>
 File: figures/rough_average_graph.jpg Graphic file (type jpg)
 <use figures/rough_average_graph.jpg>
 Package pdftex.def Info: figures/rough_average_graph.jpg  used on input line 19
 .
 (pdftex.def)             Requested size: 397.48499pt x 298.11098pt.
-) [9 <./figures/originalmugraph.jpg>] [10 <./figures/rough_average_graph.jpg>]
+) [10 <./figures/originalmugraph.jpg>]
+[11 <./figures/rough_average_graph.jpg>]
 \openout2 = `discussion.aux'.
 
  (discussion.tex
 Chapter 5.
-) [11
+) [12
 
 
 
@@ -614,7 +615,7 @@ Chapter 5.
 
  (Conclusion.tex
 Chapter 6.
-) [12
+) [13
 
 
 
@@ -624,7 +625,7 @@ Chapter 6.
 
  (Program.tex
 Appendix A.
-) [13
+) [14
 
 
 
@@ -634,7 +635,7 @@ Appendix A.
 
  (GA_outcomes.tex
 Appendix B.
-) [14
+) [15
 
 
 
@@ -668,7 +669,7 @@ l.40 \newblock {\selectlanguage{eng}
 
 Your command will be ignored, type <return> to proceed
 
-) [15
+) [16
 
 
 
@@ -677,22 +678,22 @@ Your command will be ignored, type <return> to proceed
 (techfoundation.aux) (implementation.aux) (results.aux) (discussion.aux)
 (Conclusion.aux) (Program.aux) (GA_outcomes.aux))
 Package rerunfilecheck Info: File `Liza_report_rewrite.out' has not changed.
-(rerunfilecheck)             Checksum: AD6518DE29A910C5E784FDD1A24EB420;3798.
+(rerunfilecheck)             Checksum: D3458718268D5B9759F8E0F720189D07;4417.
  ) 
 Here is how much of TeX's memory you used:
- 11155 strings out of 478864
- 166012 string characters out of 2858494
- 498045 words of memory out of 3000000
- 28708 multiletter control sequences out of 15000+600000
+ 11167 strings out of 478864
+ 166195 string characters out of 2858494
+ 499077 words of memory out of 3000000
+ 28714 multiletter control sequences out of 15000+600000
  427224 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,7n,66p,309b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi6
 00\ecti1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
-appen/ec/dpi600\ecrm1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/
-pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Liza Stewart\AppData\Local\
-MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Liza Stewart\A
-ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\L
+appen/ec/dpi600\ecrm0800.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/
+pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Liza Stewart\AppData\Local\
+MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Liza Stewart\A
+ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\L
 iza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk
 > <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ecrm0600.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
@@ -710,9 +711,9 @@ nts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 >
-Output written on Liza_report_rewrite.pdf (21 pages, 780646 bytes).
+Output written on Liza_report_rewrite.pdf (22 pages, 791440 bytes).
 PDF statistics:
- 842 PDF objects out of 1000 (max. 8388607)
- 71 named destinations out of 1000 (max. 500000)
- 260 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 894 PDF objects out of 1000 (max. 8388607)
+ 77 named destinations out of 1000 (max. 500000)
+ 300 words of extra memory for PDF output out of 10000 (max. 10000000)
 
