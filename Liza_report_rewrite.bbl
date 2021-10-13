@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{16}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -19,11 +19,23 @@
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem[{\citenamefont{Brownlee}(2019)}]{MLM:2019}
+\bibnamefont{Brownlee}, \bibfnamefont{J.} (2019 Nov [Online]).
+\newblock A gentle introduction to markov chain monte carlo for probability.
+\newblock Machine Learning Mastery, Blog.
+\newline\bblurlpre\url{https://machinelearningmastery.com/markov-chain-monte-carlo-for-probability/}
+
 \bibitem[{\citenamefont{CEN}(2004)}]{Euro:2004}
 \bibnamefont{CEN} (2004).
 \newblock \emph{BS EN 1995-1-2:2004. Eurocode 5: Design of timber structures -
   General - Structural fire design.}
 \newblock BSI, London.
+
+\bibitem[{\citenamefont{Cook}(2016)}]{John:2016}
+\bibnamefont{Cook}, \bibfnamefont{J.D.} (2016 Jan [Online]).
+\newblock {MCMC} burn-in.
+\newblock John D. Cook Consulting.
+\newline\bblurlpre\url{https://www.johndcook.com/blog/2016/01/25/mcmc-burn-in/comment-page-1/?unapproved=1094214&moderation-hash=912d585bd365341b032df1d4f1bddf3b#comment-1094214}
 
 \bibitem[{\citenamefont{Courant}(1943)}]{Courant:1943}
 \bibnamefont{Courant}, \bibfnamefont{R.} (1943).
@@ -66,9 +78,7 @@
   \bibfnamefont{S.} \protect\BIBand{} \bibnamefont{Spiegelhalter},
   \bibfnamefont{D.J.} (1996).
 \newblock {\selectlanguage{eng}\emph{Markov chain Monte Carlo in practice}}.
-\newblock Interdisciplinary statistics, \bblfirsto{} \bbledn{}. Chapman and
-  Hall, London.
-\newblock ISBN 0412055511.
+\newblock London, \bblfirsto{} \bbledn{}.
 
 \bibitem[{\citenamefont{Gupta} \protect\BIBand{}
   \citenamefont{Meek}(1996)}]{Gupta:1996}
@@ -88,9 +98,23 @@
   \citenamefont{Somersalo}(2005)}]{Kaipo:2005}
 \bibnamefont{Kaipio}, \bibfnamefont{J.} \protect\BIBand{}
   \bibnamefont{Somersalo}, \bibfnamefont{E.} (2005).
-\newblock \emph{Statistical and Computational Inverse Problems}, \bblvol{} 160.
-\newblock Springer Science + Business Media, Verlag New York.
-\newblock ISBN 978-0-387-27132-3.
+\newblock \emph{Statistical and Computational Inverse Problems}.
+\newblock Verlag New York.
+
+\bibitem[{\citenamefont{Meyn} \protect\BIBand{}
+  \citenamefont{Tweedie}(1993)}]{Meyn:1993}
+\bibnamefont{Meyn}, \bibfnamefont{S.} \protect\BIBand{} \bibnamefont{Tweedie},
+  \bibfnamefont{R.} (1993 Jan).
+\newblock \emph{Markov Chains and Stochastic Stability}, \bblvol{}~92.
+\newblock Springer Verlag.
+
+\bibitem[{\citenamefont{Robert} \protect\BIBand{}
+  \citenamefont{Casella}(2004)}]{Robert:2004}
+\bibnamefont{Robert}, \bibfnamefont{C.P.} \protect\BIBand{}
+  \bibnamefont{Casella}, \bibfnamefont{G.} (2004).
+\newblock \emph{{Monte Carlo Statistical Methods}}, \bblvol{}~42.
+\newblock \bblsecondo{} \bbledn{}. Springer New York.
+\newblock ISBN 9781441919397.
 
 \bibitem[{\citenamefont{Salvadori}(2017)}]{Salvadori:2017}
 \bibnamefont{Salvadori}, \bibfnamefont{V.} (2017 12).
@@ -109,5 +133,11 @@
 \newblock \emph{Journal of the South African Institution of Civil Engineering},
   \bblvol{}~62, \bblno{}~1, \bblpp{} 33--41.
 \newblock ISSN 23098775.
+
+\bibitem[{\citenamefont{Wiecki}(2015)}]{dummies:2015}
+\bibnamefont{Wiecki}, \bibfnamefont{T.} (2015 Nov [Online]).
+\newblock {MCMC} sampling for dummies.
+\newblock While My MCMC Gently Samples, Blog.
+\newline\bblurlpre\url{https://twiecki.io/blog/2015/11/10/mcmc-sampling/}
 
 \end{thebibliography}

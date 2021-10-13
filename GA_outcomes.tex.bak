@@ -1,6 +1,19 @@
 \chapter{GA outcomes}
-\section*{GA1:Problem Solving}
-The problem is described in Chapter \ref{introduction} t
-\section*{GA2:Application of scientific and engineering knowledge}
-\section*{GA4:Investigations,experiments and data analysis}
+\section*{GA1: Problem Solving}
+In Chapter \ref{introduction} the problem as well as the relevant aims and objectives are explained. The problem is approached systematically and a solution is proposed in Chapter \ref{implementation}.
+\section*{GA2: Application of scientific and engineering knowledge}
+The problem tackled in this project was mathematically and statistically complex. 
+The report was laid out in a way that would make sense to the reader even if they had minimal understanding of the MCMC algorithm. 
+The limitations of this project were presented in Chapter \ref{discussion}.(TODO)
+\section*{GA4: Investigations,experiments and data analysis}
+An overview of the available knowledge and previous studies on the matter is presented in Section \ref{litstudy}. 
+Multiple versions of the final algorithm were considered, corrected and fine-tuned. The results are analysed and discussed in Chapter \ref{results} and \ref{discussion}. A final conclusion was draw and presented in Chapter \ref{conclusion}.
 \section*{GA5: Engineering methods , skill and tools, including IT}
+The following subjects were directly relevant and needed for the completion of this project:\
+\begin{itemize}
+\item Informatics 244, 314;
+\item Applied Mathematics 252;
+\item Engineering Statistics 314;
+\item Engineering Mathematics 115, 145, 214;
+\end{itemize}
+

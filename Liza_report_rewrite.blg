@@ -27,44 +27,44 @@ A level-1 auxiliary file: GA_outcomes.aux
 Database file #1: USBibsample.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 11 entries,
+You've used 16 entries,
             3324 wiz_defined-function locations,
-            749 strings with 7139 characters,
-and the built_in function-call counts, 8399 in all, are:
-= -- 644
-> -- 200
-< -- 20
-+ -- 85
-- -- 66
-* -- 745
-:= -- 1080
-add.period$ -- 40
-call.type$ -- 11
-change.case$ -- 73
-chr.to.int$ -- 17
-cite$ -- 11
-duplicate$ -- 805
-empty$ -- 787
-format.name$ -- 139
-if$ -- 1711
+            789 strings with 8029 characters,
+and the built_in function-call counts, 11670 in all, are:
+= -- 922
+> -- 267
+< -- 27
++ -- 113
+- -- 87
+* -- 1031
+:= -- 1529
+add.period$ -- 54
+call.type$ -- 16
+change.case$ -- 105
+chr.to.int$ -- 25
+cite$ -- 16
+duplicate$ -- 1125
+empty$ -- 1095
+format.name$ -- 187
+if$ -- 2367
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 112
-newline$ -- 84
-num.names$ -- 44
-pop$ -- 248
+missing$ -- 142
+newline$ -- 111
+num.names$ -- 64
+pop$ -- 329
 preamble$ -- 1
-purify$ -- 66
+purify$ -- 93
 quote$ -- 0
-skip$ -- 242
+skip$ -- 320
 stack$ -- 0
-substring$ -- 436
-swap$ -- 386
-text.length$ -- 10
+substring$ -- 661
+swap$ -- 501
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 84
+type$ -- 129
 warning$ -- 0
-while$ -- 76
+while$ -- 104
 width$ -- 0
-write$ -- 174
+write$ -- 236

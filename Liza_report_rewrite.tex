@@ -16,7 +16,8 @@
 
 %==== Math setup ====================================================
  \usepackage{amsmath}%............................ Advanced math (before fonts)
- %\usepackage{amssymb}%............................ AMS Symbol fonts
+ \renewcommand{\vec}[1]{\boldsymbol{\mathbf{#1}}}
+ \usepackage{amssymb}%............................ AMS Symbol fonts
 
 %==== Font setup (default is Computer Modern) =======================
  \usepackage[T1]{fontenc}%........................ Type 1 fonts
@@ -88,6 +89,17 @@
   breakatwhitespace=true,
   tabsize=3
 }
+
+%%For subcaptions
+
+%\usepackage[labelsep=quad,indention=10pt]{caption}
+%\usepackage[labelfont=bf,list=true]{subcaption}
+%\captionsetup[table]{textfont=it,position=top}
+%\captionsetup[subtable]{textfont=sf}
+%ONEDAY 
+
+%\inputencoding{utf8}
+
 % Please insert user defined commands here
 % and NOT in the document itself!
 %
@@ -134,9 +146,9 @@ for the T-dependant thermal diffusivity of SA pine}
 
 \mainmatter%=========================================================
 
-\numberwithin{equation}{section}%(from amsmath)
-\numberwithin{figure}{section}  %
-\numberwithin{table}{section}   %
+\numberwithin{equation}{chapter}%(from amsmath)
+\numberwithin{figure}{chapter}  %
+\numberwithin{table}{chapter}   %
 
  \include{Introduction}
  \include{techfoundation}
@@ -161,6 +173,5 @@ for the T-dependant thermal diffusivity of SA pine}
 \include{GA_outcomes}
 
 %\include{App-C}
-
 
 \end{document}

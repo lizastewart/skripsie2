@@ -4,12 +4,12 @@ This chapter will elaborate on the test data used as well as the process that wa
 The data used was acquired by \cite{Westhuyzen:2020} for an article assessing the charring rate of both SA-Pine and Eucalyptus.
 	For the purpose of this project, only the data obtained from the SA-Pine test was considered and analysed. 
 	\subsection{Summary of test}
-	The test was conducted on a sample of 100mm by 0.9m x 0.9m panel of cross-laminated SA-pine.
-	This sample was then divided into nine cubes of 100 mm x 100 mm x 100 mm.
+	The test was conducted on a sample panel of $100$ mm by $0.9$ m $\times 0.9$ m cross-laminated SA-pine.
+	This sample was then divided into nine cubes of $100$ mm $\times 100$ mm $\times 100$ mm.
 	%The sample was a 100 mm by 0.9m x 0.9m panel of cross-laminated SA-pine, this sample was then divided into nine cubes of 100 mm x 100 mm x 100 mm.
-	Each cube was fitted with seven Type K-thermocouples placed at consecutive 16.5 mm drilled holes, as can be seen in Figure \ref{TC_layout}. 
+	Each cube was fitted with seven Type K-thermocouples placed at consecutive $16.5$ mm drilled holes, as can be seen in Figure \ref{TC_layout}. 
 	The test panel was tested in a furnace and was exposed to the standard ISO 834 Fire curve \ref{firecurve_fig} on one side and room temperature on the other. 
-	The panel was exposed to the fire curve for 50 minutes, at which stage near complete de-lamination was observed and the test ended.
+	The panel was exposed to the fire curve for $50$ minutes, at which stage near complete de-lamination was observed and the test ended.
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\linewidth]{figures/TC_layout.png}
@@ -23,13 +23,18 @@ The data used was acquired by \cite{Westhuyzen:2020} for an article assessing th
 	\caption{Standard ISO fire curve TODO}
 	\label{firecurve_fig}
 	\end{figure}
-	
+	In Figure \ref{measured_fig} 
+	\begin{figure}[H]
+	\label{measured_fig}
+	\centering
+	\includegraphics[width=5.5in,]{figures/measured_data.jpg}
+\end{figure}
+
 	\subsection{Potential inaccuracies}
 	As with most tests, everything is not always perfect. 
-	The potential inaccuracies are discussed below. 
-	
-	In the data, it was observed that two of the thermocouples broke during testing, this resulted in temperature with a magnitude of $10^{13}$. 
-	That temperature is not possible as the highest ever recorded temperature reached was $4\text{x}10^{12}$ and that only occurred in a atomic explosion. %(https://www.insidescience.org/news/hottest-temperature-universe-measured)% 
+	The potential inaccuracies are discussed below. 	
+	In the data, it was observed that two of the thermocouples broke during testing; this resulted in temperature with a magnitude of $10^{13}$. 
+	Such a temperature is impossible, as the highest ever recorded temperature reached was $4\times 10^{12}$ and that only occurred in a atomic explosion. %(https://www.insidescience.org/news/hottest-temperature-universe-measured)% 
 	This malfunction required that two of the depth measurements were no longer the average between nine samples but instead the average between eight.
 	Another inaccuracy that could potentially influence the accuracy of the final result is the accuracy of the depth of the holes in which the thermocouples were placed. 
 	%As this was done by hand in the laboratory.
@@ -38,7 +43,7 @@ The data used was acquired by \cite{Westhuyzen:2020} for an article assessing th
 	For the purposes of this project, it will be assumed that the timber burning does not contribute to the temperature inside the furnace.
 	
 \section{Finite Element Modelling}\label{femexpl}
-A one-dimensional finite element model that simulates what we expect to obtain from the fire tests based on the simplified $kappa$-values provided in EN 1995:1-2-2004 is modified into a function.
+A one-dimensional finite element model that simulates what we expect to obtain from the fire tests based on the simplified $\kappa$-values provided in EN 1995:1-2-2004 is modified into a function.
 This function should provide the temperature of the modelled element based on a specified location and thermal conductivity.
 The derivation and adaptation of the model are expanded on below.
 	\subsection{Derivation}%"CREATION?"
@@ -49,6 +54,7 @@ The derivation and adaptation of the model are expanded on below.
 \item{The air on the side of fire follows the temperature of the fire curve.}
 \item{The air on the cold side remains at 20$^{^\circ}$C.}
 	\end{enumerate}
+	\subsubsection{Stationary heat conduction}
 	\begin{figure}[H]
 	\label{femfig}
 	\centering
@@ -58,12 +64,12 @@ The derivation and adaptation of the model are expanded on below.
 	The derivation started as a one-dimensional stationary heat conduction problem with the below equations as a starting point.
 	\begin{equation}
 	\label{heateq1}
-	q_{,x}-f = 0  \text{  ...(1)} ; q = -\kappa u_{,x} \text{  ...(2)} 
+	q_{,x}-f = 0  \text{  ...(1)} \quad\quad\quad\quad q = -\kappa u_{,x} \text{  ...(2)} 
 	\end{equation}
 	Integrating Equation \ref{heateq1} (1) over the length of the element(shown in Figure \ref{femfig}) and introducing a weighting function $w(x)$ we obtain \ref{heateq2}. 
 	Since the derivative of $w(0)$ is known and $q_{,x}$ is unknown. 
 	The first term in \ref{heateq2} is integrated by parts. 
-	After the integration by parts and substituting $q$ with \ref{heateq1} (2) Equation \ref{heateq3} is created.
+	After the integration by parts and substituting $q$ with \ref{heateq1} (2), Equation \ref{heateq3} is created.
 	\begin{equation}
 	\label{heateq2}
 	\int_{x=0}^L wq_{,x}dx - \int_{x=0}^L wfdx = 0
@@ -72,6 +78,140 @@ The derivation and adaptation of the model are expanded on below.
 	\label{heateq3}
 	\int_{x=0}^L wku_{,x}dx + \int_{x=0}^L wfdx - \left.wq\right|_0^L = 0
 	\end{equation}
+	In Equation \ref{heateq3} the $u$ and $w$ need to be defined.
+	Assuming $u \approx u^h$ and $w \approx w^h$ and using the basis function ($N^A$), Equation \ref{basisfunc_eq} is obtained.
+	\begin{equation}
+	\label{basisfunc_eq}
+	\begin{aligned}
+	u_e^h = \sum_{B} N^B d^B  \quad &;\quad w_e^h = \sum_{A} N^A c^A\\
+	u_{e,x}^h = \sum_{B} N_{,x}^B d^B \quad &;\quad w_{e,x}^h=\sum_A N_{,x}^A c^A\\
+	\end{aligned}
+	\end{equation}		
+	Substituting the $u$ and $w$ functions back, we obtain the Galerkin weak form shown in Equation \ref{heateq4}
+	\begin{equation}
+	\label{heateq4}
+	\begin{aligned}
+	\sum_e \int_{\Omega_e} w_{e,x}^h k  u_{e,x}^h dx &+ \sum_e \int_{\Omega_e} w_e^h f dx - w(L)q_L + w(0)q_0 &= 0\\
+	\int_{\Omega_e} \sum_A \sum_B N_{,x}^A c^A k N_{,x}^B d^B dx  &+ \int_{\Omega_e} \sum_{A} N^A c^A f dx - \sum_{A\in A_N} c^A q^A &= 0\\
+	\end{aligned}
+	\end{equation}
+	
+	
+	\subsubsection{Boundaries}
+	One of the additional difficulties in modelling is that the known boundary temperatures are measured in the air of the furnace and assumed for the air outside the furnace.
+	An element of air was added at both ends. 
+	In these elements, both heat convection and heat radiation need to be taken into account.
+	\begin{figure}
+	\centering
+	\includegraphics[width = 0.75\linewidth]{figures/fem_fire_sketch.png}
+	\end{figure}
+	\begin{equation} \label{heatconeq}       
+	       \begin{aligned}
+	       q_{\text{adv}}= \nu &\rho c_p \delta T\\	      
+	       \nu =& \text{velocity m/s}\\
+	       \rho =& \text{density of air}\\
+	       c_{p} =& \text{heat capacity of air}\\
+          \end{aligned}
+	\end{equation}
+	       
+	\begin{equation} \label{radeq}
+	       \begin{aligned}
+	       q_{\text{rad}} = \varepsilon&\sigma \phi \left(T_f^4 - T_S^4\right)\\
+	       \varepsilon =& \text{emissivity}\\
+	       \sigma =& \text{Stefan-Boltzmann} \\&5.670 e^-8 [W/(m^2K^4)]\\
+	       \phi =& \text{view factor};1 \quad \text{here}\\
+	       \end{aligned}
+	\end{equation}
+	\subsubsection{One-dimensional diffusion}
+	\begin{equation}
+	q_{,x} - f = \frac{\partial Q}{\partial t} = c_p ? \frac{\partial u}{\partial t} ; q = -\kappa \frac{\partial u}{\partial x}
+\end{equation}
+
+
+\begin{equation}
+\therefore -\kappa \frac{\partial^2 u}{\partial x^2} - f = c_p \frac{\partial u}{\partial t} \rightarrow f=0: \frac{\partial^2 u}{\partial x^2} = - \frac{c_p}{\kappa} \frac{\partial u}{\partial t} \quad \text{ or } \frac{\partial u}{\partial t} = -\alpha \frac{\partial^2 u}{\partial x^2}
+\end{equation}
+
+
+Let $c_p = \lambda$ 
+
+\begin{equation}
+\therefore -\kappa u_{,xx} - \lambda u_{,t} = f
+\end{equation}
+
+
+Then:
+
+\begin{equation}
+\int_0^L w q_{,x} \text{d}x - \int_0^L w \lambda u_{,t} \text{d}x - \int_0^L w f \text{d}x = 0
+\end{equation}
+
+
+Then special approximation:
+
+\begin{equation}
+u \approx u^h \rightarrow u_e^h = \sum_{A?}N^A d^A ; w_e^h = \sum_{A?}N^A L^A
+\end{equation}
+
+
+\begin{equation}
+\rightarrow \sum_e \int_{\Omega^e} w_{e,x}^h \kappa u_{e,x}^h \text{d}x_e + \sum_e \int_{\Omega^e} w_e^h \lambda u_{e,t}^h \text{d}x_e + \sum_e \int_{\Omega^e} w_e^h f \text{d}x_e - \sum_{e \in \epsilon_A} w q_N = 0
+\end{equation}
+
+
+\begin{equation}
+*_1: \int_{\Omega^e} \sum_A \sum_B N_{,x}^A c^A \kappa N_{,x}^B d^B \text{d}x = \sum\sum \left[ \int N_{,x} N_{,x} \kappa \text{d}x d^B\right] = \vec{c}_e^T \vec{\kappa}_e \vec{d}_e
+\end{equation}
+
+
+\begin{equation}
+*_2: \int_{\Omega_e} \sum_A \sum_B N^A c^A \lambda N^B \dot{d}^B \text{d}x = \sum\sum c^A \left[ \int N^A N^B \lambda \text{d}x \right] d^B = \vec{c}_e^T \vec{M}_e \vec{\dot{d}}_e
+\end{equation}
+
+
+\begin{equation}
+*_3: \int_{\Omega^e} \sum_A N^A c^A f \text{d}x = \sum c \int_B^A N f \text{d}x = \vec{c}_e^T \vec{F}_e^B
+\end{equation}
+
+
+\begin{equation}
+*_4: \sum_{A \in \mathcal{A}} \kappa^A ?_N^A = \vec{c}_e^T \vec{F}_e^?
+\end{equation}
+
+
+Then assemble:
+
+\begin{equation}
+\vec{c}^T \vec{\kappa} \vec{d} + \vec{c}^T \vec{M} \vec{\dot{d}} = \vec{c}^T \vec{F}
+\end{equation}
+
+
+Solving:
+
+\begin{equation}
+(1) \text{ Set } \vec{d}_0 = |---|---|---| \\
+\&\ \vec{v}_0 = \vec{0} \\
+\text{Also set } \alpha \text{ (mixing constant?)} ; \Delta t
+\end{equation}
+
+
+\begin{equation}
+(2) \text{ Time integration -- waddefok gaan hier aan?} \\
+\vec{d}_{n+1} = \vec{d}_n + (1-\alpha) \Delta \vec{v}_n + \alpha \Delta t \vec{v}_{n+1}
+\end{equation}
+
+
+\begin{equation}
+(\vec{M} + \alpha\Delta t \vec{\kappa})\vec{v}_{n+1} = \vec{F}_{n+1} - \vec{\kappa} \tilde{\vec{d}}_{n+1}
+\end{equation}
+
+
+if $\vec{M}$ and $\vec{\kappa}$ independent of time and temperature, sufficient to say:
+
+\begin{equation}
+\vec{v}_{n+1} = (\vec{M}+\alpha\Delta t \vec{\kappa})^{-1} (\vec{F}_{n+1} - \vec{\kappa} \vec{\tilde{d}}_{n+1})
+\end{equation}
+	
 	\subsection{Existing Model}
 	For this project an existing finite element model of heat diffusion by Prof. N de Koker was modified for usage in the Bayes' theorem~\ref{bayes_eq}. 
 	This model is used to determine the likelihood function. 
@@ -129,11 +269,10 @@ The process of obtaining the $x$ vector after the first iteration is discussed l
 
 
 Initially the program was written to generate completely random new values for the first iteration of $x$. 
-This later proved to not only be unnecessary, but also made the process less accurate as there was a larger burn-in period* before the values were anywhere near the actual solution.
+This later proved to not only be unnecessary, but also made the process less accurate as there was a larger burn-in period before the values were anywhere near the actual solution.
 To increase the accuracy and reduce the number of times the program needed to run to produce a sufficient number of accurate samples, the program was changed to the current method.
 The prior function in this case was relatively easy to generate and incorporate into the program as a well defined list of prior values exists.
 
-* explain and validate burn-in for machine learning (TODO)
 	\subsection{Likelihood probability function}
 		\begin{equation}
 		\label{likelihoodfunc}
@@ -148,28 +287,32 @@ The prior function in this case was relatively easy to generate and incorporate 
 		For the likelihood function, the $\sigma_{\text{temp}}$ value was assumed to be 15$^{^\circ}$C.
 		 
 
-	\subsection{MCMC itegration}\label{mcmcexp}
+	\subsection{MCMC integration}\label{mcmcexp}
 	The two main parts of the MCMC integration (as mentioned in section \ref{tech}) are: how a value is deemed acceptable (Monte Carlo), and how the next random sample is selected after a previous sample is accepted (Markov Chain).
 	
-	To assist in choosing the next random sample, a step size that indicates how wide the range should be in which the next step will be found was chosen. 
-	For this project a step size of $0.05$ W/m$\cdot$K was chosen.
-	This concept can be visualized as follows: our accepted point(x1) is in the center of a cube. The next possible random point is randomly generate but still within the cube. 	
-	After this next number is selected, the cube moves such that the new point(x2) is now the centre ,and so it continues.
-	See Figure \ref{cubeexplfig} for clarification.
-	The above example simplifies the concept, but this understanding can now be expanded.
-	If every coordinate direction in the simple example is seen as a single entry into the $x$ vector, then the example has only three $\kappa$-values.
-	There are however 10 values, so the imaginary cube in this situation is now ten-dimensional (don't worry, no attempt at drawing that will be made).
-	Another level of complication can be added if it is taken into account that every point in the cube is no longer equally likely.
-	A distribution within the cube can be chosen; in this case a log-normal distribution was chosen.
-	The shape of the cube then warps into a stranger shape with points closer to the center being more likely choices and the edges being less likely.
-	\begin{figure}
+	To assist in choosing the next random sample, a step size that indicates how wide the range should be in which the next step will be found was.   TODO: huh?
+	For this project, a step size of $0.05$ W/m$\cdot$K was chosen.
+%There are however 10 values, so the imaginary cube in this situation is now ten-dimensional (don't worry, no attempt at drawing that will be made).
+	Compared to the example shown in Figure \ref{cubeexplfig}, the actual problem is quite more complex. 
+	For this project, a log-normal distribution was chosen instead of a uniform distribution.
+	The problem also technically becomes ten-dimensional, as there are ten separate independent values that must be chained.
+	An important part of the \texttt{takesteps.m} (Appendix \ref{codeapp}) was to ensure the steps are only taken in a logical direction and that they would not move into an illogical or improbable range.
+	Negatives were specifically forbidden, as a negative thermal diffusivity would mean that heat flows in a direction opposite to the thermal gradient.
+	//ALSO Write fancy code at bottom part
+	Provision had to be made in the //TODO
+
+%	The above example simplifies the concept, but this understanding can now be expanded.
+%	If every coordinate direction in the simple example is seen as a single entry into the $x$ vector, then the example has only three $\kappa$-values.
 	
-	\includegraphics[width=\linewidth]{figures/MC_cubes.png}
-	\caption{Three-dimensional example of Markov Chain application(Generated on \url{https://www.geogebra.org/3d})}
-	\label{cubeexplfig}
-	\end{figure}
+%	Another level of complication can be added if it is taken into account that every point in the cube is no longer equally likely.
+%	A distribution within the cube can be chosen; in this case a log-normal distribution was chosen.
+%	The shape of the cube then warps into a stranger shape with points closer to the center being more likely choices and the edges being less likely.
+
+%	
 	
-	
-	The acceptance criteria of the new $x$-vector is based on the proximity of the value to 
+	The acceptance criteria of the new $x$-vector is based on the proximity of the posteriori function to the reference posterior function with //TODO
+	A potential problem encountered with the standard acceptance probability method (shown in Section \ref{MCint_sec}) is that the magnitudes of the values were not considered. 
+	This problem lead to many `false positives', as incorrect values were accepted even though they were not actually acceptable.
+	 
 	
 	
