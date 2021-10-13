@@ -7,7 +7,8 @@ Previous similar projects as well as the value of this research will also be add
 Traditionally the thermal conductivity, otherwise referred to as the $\kappa$-value, of timber is based simply off the EN 1995:1-1-2004 or similar standards.
 This research project will aim to obtain the thermal diffusivity of cross laminated SA-Pine timber by further analysing data obtained by S. van der Westhuyzen for his study of the samples' charring rate.
 
-The thermal diffusivity of timber is a unobservable quantity that cannot be measured directly. Instead, it is related to measurements of temperature and time through differential models. 
+The thermal conductivity of timber is a unobservable quantity that cannot be measured directly. 
+Instead, it is related to measurements of temperature and time through differential models. 
 When heat diffusion is calculated using Finite Element methods(TODO:choose which FEM), the process is usually simplified to a linear problem \citep{Fish:2007}. 
 Due to the changes in thermal diffusivity of timber with temperature, as can be seen in EN 1995:1-1-2004(pg number TODO), the diffusivity cannot be linearly modelled. 
 Therefore, the problem lends itself to being analysed by inversion techniques. 
@@ -37,21 +38,21 @@ During the course of the project, the student will aim to meet the following obj
 
 \section{Literature study}
 	
-	\citeauthor{bioresource:2020} in their article, \textit{Simple Method to Determine the Diffusivity of Green Wood}, they determine the global diffusivity of a Douglas fir green log using inverse identification methods. 
+	In their article \textit{Simple Method to Determine the Diffusivity of Green Wood}, \citeauthor{bioresource:2020}  determine the global diffusivity of a Douglas fir green log using inverse identification methods. 
 	%In their experiment the also used thermocouples but only 3 at each end.  
 	Their experiment was set up by immersing the log with K-type thermocouples into a boiler filled with water at 60$^{^{\circ}}$C. 
 	These K-type thermocouples were very specifically placed to improve the accuracy of the diffusivity ratio calculation.
-	The finite element model constructed for their calculations used linear interpolation was a four node quadrangle elements.
+	The finite element model constructed for their calculations used linear interpolation with four node quadrangle elements.
 	An analytical model was also constructed using the heat propagation equation(TODO?heat diffusion?).
-	The intention of this research was to assist the peeling industry in making the pretreatment process more cost effective.
-	The method proved to be effective at determining the thermal diffusivity of green Douglas fir logs as the $\kappa$-values obtained were comparable to those form literature.
+	The intent of this research was to assist the peeling industry in making the pretreatment process more cost effective.
+	The method proved to be effective at determining the thermal diffusivity of green Douglas fir logs, as the $\kappa$-values obtained were comparable to those form literature.
 	The methods used by \citet{bioresource:2020} are similar to the methods described later in the report.
-	Yet a crucial difference remains as the temperatures at which these experiments were conducted as well as the final usage of the data differ greatly.
+	A crucial difference remains as the temperatures at which these experiments were conducted as well as the final usage of the data differ greatly.
+
+	A similar method of analysis was used by \cite{DeKoker:2021} in their article \textit{Assessment of ice impact load threshold exceedance in the propulsion shaft of an ice-faring vessel via Bayesian inversion}. Bayesian inversion is used to determine the impact of ice on the propellers from the measurements taken at a specified distance from the propeller. (TODO)
 
 	
-
-	
-	The current $\kappa$-values used for the design of timber elements are taken from the EURO code (ref TODO \citep{Euro:2004}) and are show in figure \ref{kvalue_fig}.  
+	The current $\kappa$-values used for the design of timber elements are taken from the EURO code (ref TODO \citep{Euro:2004}) and are shown in figure \ref{kvalue_fig}.  
 	\begin{figure}[H]
 	\label{kvalue_fig}
 	\centering

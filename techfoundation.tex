@@ -2,14 +2,20 @@
 \section{Finite Element Model}
 Finite element methods (or finite element analysis) is used when the behaviour of an element cannot be accurately depicted by a simple mathematical equation. 
 	\subsection{History/Origin}
+	The finite element method (FEM) used today is the sum of decades of research. 
+	In an article by \citeauthor{Gupta:1996} they discuss the five main contributors to the finite element method. 
+	According to \citet{Gupta:1996} the idea behind the finite element method was initially explored in the \citeyear{Courant:1943} article by \citeauthor{Courant:1943}. 
+	Courant acknowledges the complex nature of mathematical problems in his first paragraph by stating: "Mathematics is an indivisible organism uniting theoretical contemplation and active application."
+	He goes on to discuss the variational method
 	
 	
-\subsection{method of FEM}
-A larger element is broken into smaller elements. 
-Assumptions made on the smaller scale have a lesser effect on the final answer than the same assumptions made on a large scale would have had.
+	
+	\subsection{method of FEM}
+	A larger element is broken into smaller elements. 
+	Assumptions made on the smaller scale have a lesser effect on the final answer than the same assumptions made on a large scale would have had.
 
 
-\subsection{heat eq}	 
+	\subsection{heat eq}	 
 	 In its simplest form, the one-dimensional heat diffusion equation is a partial differential equation \ref{heat_eq} dependant on the temperature and thickness of the element. 
 	The heat diffusion equation is based on Fourier's Law...(TODO)
 	
@@ -41,11 +47,22 @@ Markov Chain Monte Carlo (MCMC) is a method of integration. This will be used to
 	Markov Chain Monte Carlo is a method that was created by combining the concept of Monte Carlo sampling  and a Markov Chain. 
 	To fully understand MCMC, the methods that it was created from need to be further investigated.
 	\subsection{Markov Chains}
-		
+	%Relevant literature to cite:	
 		
 		
 	\subsection{Monte Carlo Integration}
 	Monte Carlo integration is used to evaluate a probability distributuion. 
 	The evaluation is done by drawing a collection of random numbers from the distribution.
 	These numbers are then used as the sample and a sample mean is taken.
-	The arithmetic sample mean can be used to approximate the population mean in accordance with the law of large numbers \citep{Gilks:1996} 
+	The arithmetic sample mean can be used to approximate the population mean in accordance with the law of large numbers \citep{Gilks:1996}.
+	All of the random samples are not generally accepted.
+	Here the acceptance criteria comes into play.
+	There are multiple options for how a posterior is deemed acceptable, these are elaborated on in the book  \textit{Monte Carlo Statistical Methods} by  \author{Robert:2004}. 
+	
+%	\begin{equation}
+%	\label{acceptcrit}
+%	
+%	\end{equation}
+\subsection{Metropolis-Hastings Algorithm}
+
+The Metropolis-Hastings algorithm is a simulation method based on the MCMC principles.

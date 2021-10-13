@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{11}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -25,15 +25,36 @@
   General - Structural fire design.}
 \newblock BSI, London.
 
+\bibitem[{\citenamefont{Courant}(1943)}]{Courant:1943}
+\bibnamefont{Courant}, \bibfnamefont{R.} (1943).
+\newblock Variational methods for the solution of problems of equilibrium and
+  vibrations.
+\newblock \emph{Bulletin of the American Mathematical Society}, \bblpp{} 1--23.
+\newblock ISSN 1088-9485.
+\newline\bblurlpre\url{https://doi.org/10.1090/S0002-9904-1943-07818-4}
+
+\bibitem[{\citenamefont{{De Koker}} \protect\BIBand{}
+  \citenamefont{Bekker}(2021)}]{DeKoker:2021}
+\bibnamefont{{De Koker}}, \bibfnamefont{N.} \protect\BIBand{}
+  \bibnamefont{Bekker}, \bibfnamefont{A.} (2021).
+\newblock {Assessment of ice impact load threshold exceedance in the propulsion
+  shaft of an ice-faring vessel via Bayesian inversion}.
+\newblock \emph{Structural Health Monitoring}.
+\newblock ISSN 17413168.
+
 \bibitem[{\citenamefont{Fish}(2007)}]{Fish:2007}
 \bibnamefont{Fish}, \bibfnamefont{J.J.} (2007).
 \newblock {\selectlanguage{eng}\emph{A first course in finite elements}}.
 \newblock John Wiley, Chichester.
 \newblock ISBN 9780470035801.
 
-\bibitem[{\citenamefont{Frayssinhes} \protect\BIBand{}
-  \citenamefont{Collet}(2020)}]{bioresource:2020}
-\bibnamefont{Frayssinhes}, \bibfnamefont{R., G.S.M.B.D.L.} \protect\BIBand{}
+\bibitem[{\citenamefont{Frayssinhes}
+  \emph{\bbletal{}}(2020)\citenamefont{Frayssinhes}, \citenamefont{Girardon},
+  \citenamefont{Marcon}, \citenamefont{Denaud} \protect\BIBand{}
+  \citenamefont{Collet}}]{bioresource:2020}
+\bibnamefont{Frayssinhes}, \bibfnamefont{R.}, \bibnamefont{Girardon},
+  \bibfnamefont{S.}, \bibnamefont{Marcon}, \bibfnamefont{B.},
+  \bibnamefont{Denaud}, \bibfnamefont{L.} \protect\BIBand{}
   \bibnamefont{Collet}, \bibfnamefont{R.} (2020).
 \newblock A simple method to determine the diffusivity of green wood.
 \newblock \emph{BioRes}, \bblvol{}~3, \bblno{}~15, \bblpp{} 6539--6549.
@@ -48,6 +69,14 @@
 \newblock Interdisciplinary statistics, \bblfirsto{} \bbledn{}. Chapman and
   Hall, London.
 \newblock ISBN 0412055511.
+
+\bibitem[{\citenamefont{Gupta} \protect\BIBand{}
+  \citenamefont{Meek}(1996)}]{Gupta:1996}
+\bibnamefont{Gupta}, \bibfnamefont{K.} \protect\BIBand{} \bibnamefont{Meek},
+  \bibfnamefont{J.} (1996).
+\newblock A brief history of the beginning of the finite element method.
+\newblock \emph{International Journal for Numerical Methods in Engineering},
+  \bblvol{}~39, \bblpp{} 3761--3774.
 
 \bibitem[{\citenamefont{ISO}(1999)}]{ISO:1999}
 \bibnamefont{ISO} (1999).
