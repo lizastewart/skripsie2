@@ -45,15 +45,6 @@
 \newblock ISSN 1088-9485.
 \newline\bblurlpre\url{https://doi.org/10.1090/S0002-9904-1943-07818-4}
 
-\bibitem[{\citenamefont{{De Koker}} \protect\BIBand{}
-  \citenamefont{Bekker}(2021)}]{DeKoker:2021}
-\bibnamefont{{De Koker}}, \bibfnamefont{N.} \protect\BIBand{}
-  \bibnamefont{Bekker}, \bibfnamefont{A.} (2021).
-\newblock {Assessment of ice impact load threshold exceedance in the propulsion
-  shaft of an ice-faring vessel via Bayesian inversion}.
-\newblock \emph{Structural Health Monitoring}.
-\newblock ISSN 17413168.
-
 \bibitem[{\citenamefont{Fish}(2007)}]{Fish:2007}
 \bibnamefont{Fish}, \bibfnamefont{J.J.} (2007).
 \newblock {\selectlanguage{eng}\emph{A first course in finite elements}}.
@@ -120,6 +111,16 @@
 \bibnamefont{Salvadori}, \bibfnamefont{V.} (2017 12).
 \newblock \emph{The Development of a Tall Wood Building}.
 \newblock \bblmthesis{}, Polytechnic University of Milan and TU Wien.
+
+\bibitem[{\citenamefont{Shi} \protect\BIBand{}
+  \citenamefont{Chew}(2021)}]{Shi:2021}
+\bibnamefont{Shi}, \bibfnamefont{L.} \protect\BIBand{} \bibnamefont{Chew},
+  \bibfnamefont{M.Y.L.} (2021 Aug).
+\newblock A review of thermal properties of timber and char at elevated
+  temperatures.
+\newblock \emph{Indoor and Built Environment}, \bblpp{} 1--16.
+\newblock \eprint{https://doi.org/10.1177/1420326X211035557}.
+\newline\bblurlpre\url{https://doi.org/10.1177/1420326X211035557}
 
 \bibitem[{\citenamefont{van~der Westhuyzen}
   \emph{\bbletal{}}(2020)\citenamefont{van~der Westhuyzen},

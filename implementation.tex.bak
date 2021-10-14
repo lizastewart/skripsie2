@@ -87,7 +87,13 @@ The derivation and adaptation of the model are expanded on below.
 	u_{e,x}^h = \sum_{B} N_{,x}^B d^B \quad &;\quad w_{e,x}^h=\sum_A N_{,x}^A c^A\\
 	\end{aligned}
 	\end{equation}		
-	Substituting the $u$ and $w$ functions back, we obtain the Galerkin weak form shown in Equation \ref{heateq4}
+	Substituting the $u$ and $w$ functions back, we obtain the Galerkin weak form shown in Equation \ref{heateq4}.
+	In Equation\ref{heateq4} the $A_N$ referes to the nodes that have Newmann boundaries(TODO explained in \ref{femsec}). 
+	The variables $c^A$ and $d^B$ are independant of x and can therefore be taken out of the integral. 
+	The sum over A and B are also taken out of the integral.
+	When the summing is applied a matrix of all the possible combinations between A and B can be used to replace the sum. The resulting matrices are shown in Equation \ref{heateq5}. 
+	When written in matrix form the summing is implied, if matrix form is it written then the expression referrers to the terms that will still be summed.
+
 	\begin{equation}
 	\label{heateq4}
 	\begin{aligned}
@@ -95,19 +101,36 @@ The derivation and adaptation of the model are expanded on below.
 	\int_{\Omega_e} \sum_A \sum_B N_{,x}^A c^A k N_{,x}^B d^B dx  &+ \int_{\Omega_e} \sum_{A} N^A c^A f dx - \sum_{A\in A_N} c^A q^A &= 0\\
 	\end{aligned}
 	\end{equation}
-	
+	\begin{equation}
+	\label{heateq5}
+	\vec{c}_e^T \vec{K}_e^{AB} \vec{d}_e + \vec{c}_e^T \vec{F}_e^f -\vec{c}_e^T \vec{F}_e^q
+	\end{equation}
+	where
+	\begin{equation*}
+	\begin{aligned}
+	K_e^{AB} &= \int_{\Omega_e}N_{,x}^AN_{,x}^B k dx\\
+	F_e^{Af} &= \int_{\Omega_e}N_{,x}^A f dx\\
+	F_e^{Aq} &= q(x_N) \text{ for } x \in \Gamma_N\\
+	&= 0 \text{ for other }
+	\end{aligned}
+	\end{equation*}
 	
 	\subsubsection{Boundaries}
-	One of the additional difficulties in modelling is that the known boundary temperatures are measured in the air of the furnace and assumed for the air outside the furnace.
-	An element of air was added at both ends. 
-	In these elements, both heat convection and heat radiation need to be taken into account.
-	\begin{figure}
+	\begin{figure}[H]\label{airelmfig}
 	\centering
 	\includegraphics[width = 0.75\linewidth]{figures/fem_fire_sketch.png}
+	\caption{Visualisation of one-dimensional element with air elements and external conditions added}
 	\end{figure}
+	
+	One of the additional difficulties in modelling is that the known boundary temperatures are measured in the air of the furnace and assumed for the air outside the furnace.
+	Initially a long element of air was modelled.
+	This element is then overlaid with the timber element to effectively add an air element it each end of the timber element as depicted in \ref{airelmfig}
+	In the air elements, both heat convection and heat radiation need to be taken into account.
+	The equations for heat convection and radiation can be seen in Equation \ref{heatconeq} and \ref{radeq}.
+	
 	\begin{equation} \label{heatconeq}       
 	       \begin{aligned}
-	       q_{\text{adv}}= \nu &\rho c_p \delta T\\	      
+	       q_{\text{adv}}= \nu &\rho c_p \Delta T \quad = \quad h \Delta T\\	      
 	       \nu =& \text{velocity m/s}\\
 	       \rho =& \text{density of air}\\
 	       c_{p} =& \text{heat capacity of air}\\
@@ -122,14 +145,30 @@ The derivation and adaptation of the model are expanded on below.
 	       \phi =& \text{view factor};1 \quad \text{here}\\
 	       \end{aligned}
 	\end{equation}
+	Given that $T_S$ and $T_F$ are known a new equivalent heat flux value can be calculated as in Equation \ref{femboundeq1}.
+	\begin{equation} \label{femboundeq1}
+	q_{\text{con}}^{\text{equiv}} = \kappa^{\text{equiv}} \frac{\Delta T}{\Delta L} = q_{\text{rad}} + q_{\text{adv}}\\
+	\end{equation}
+	Due to the clear relationship between heat flux and thermal diffusivity the equivalent diffusivity($\kappa^{\text{equiv}}$) can be calculated as shown below in Equation \ref{femboundeq2}. 
+	\begin{equation}\label{femboundeq2}
+	\begin{aligned}
+	\kappa^{\text{equiv}} &= \frac{\left[q_{\text{rad}} + q_{\text{adv}} \right]}{\Delta T}\\
+	&\quad\\
+	&= \frac{\epsilon \sigma \phi \Delta \left(T^4\right)}{\Delta T / \Delta L } + h \Delta L\\
+	&\quad\\
+	&= \frac{\epsilon \sigma \Delta \left(T^4\right)}{\Delta T   } + h\\
+	\end{aligned}
+	\end{equation}
 	\subsubsection{One-dimensional diffusion}
+The concept of diffusion is thoroughly explained in \ref{femsec}(TODO) below the mathematical application is explained and steps that were taken to obtain the final model is shown.
 	\begin{equation}
-	q_{,x} - f = \frac{\partial Q}{\partial t} = c_p ? \frac{\partial u}{\partial t} ; q = -\kappa \frac{\partial u}{\partial x}
+	q_{,x} - f = \frac{\partial Q}{\partial t} = c\rho\frac{\partial u}{\partial t}\quad\text{  ...(1)} \quad\quad\quad q = -\kappa \frac{\partial u}{\partial x}\quad\text{  ...(2)}
 \end{equation}
 
 
+
 \begin{equation}
-\therefore -\kappa \frac{\partial^2 u}{\partial x^2} - f = c_p \frac{\partial u}{\partial t} \rightarrow f=0: \frac{\partial^2 u}{\partial x^2} = - \frac{c_p}{\kappa} \frac{\partial u}{\partial t} \quad \text{ or } \frac{\partial u}{\partial t} = -\alpha \frac{\partial^2 u}{\partial x^2}
+\therefore -\kappa \frac{\partial^2 u}{\partial x^2} - f = c\rho \frac{\partial u}{\partial t} \rightarrow f=0: \frac{\partial^2 u}{\partial x^2} = - \frac{c_p}{\kappa} \frac{\partial u}{\partial t} \quad \text{ or } \frac{\partial u}{\partial t} = -\alpha \frac{\partial^2 u}{\partial x^2}
 \end{equation}
 
 
@@ -196,7 +235,7 @@ Solving:
 
 
 \begin{equation}
-(2) \text{ Time integration -- waddefok gaan hier aan?} \\
+(2) \text{ Time integration [v-form;Hughes Ch8]} \\
 \vec{d}_{n+1} = \vec{d}_n + (1-\alpha) \Delta \vec{v}_n + \alpha \Delta t \vec{v}_{n+1}
 \end{equation}
 
@@ -211,7 +250,53 @@ if $\vec{M}$ and $\vec{\kappa}$ independent of time and temperature, sufficient 
 \begin{equation}
 \vec{v}_{n+1} = (\vec{M}+\alpha\Delta t \vec{\kappa})^{-1} (\vec{F}_{n+1} - \vec{\kappa} \vec{\tilde{d}}_{n+1})
 \end{equation}
+
+%Page 5 
+If $\kappa$ and $\lambda$ is independent of position:
+\begin{equation}
+\begin{aligned}
+	\kappa_e^{AB} &= \int_0^\ell N_{,x}^A N_{,x}^B \kappa \text{d}x \\
+&= \kappa \int_0^\ell N_{,x}^A N_{,x}^B \text{d}x \\
+&= \kappa \int_{-1}^{+1} N_{,\xi}^A N_{,\xi}^B \\
+&=\kappa \frac{2}{\ell} \int_{-1}^{+1} N_{,\xi}^A N_{,\xi}^B \text{d}\xi &= \pm \frac{\kappa}{\ell} = \begin{cases}
++\frac{1}{2} & \text{if } A = B \\
+-\frac{1}{2} & \text{if } A \ne B
+\end{cases}
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\therefore \vec{\kappa}_e = \frac{\kappa}{\ell} \begin{bmatrix} +1 & -1 \\ -1 & +1 \end{bmatrix}
+\end{equation}	
+
+\begin{equation}
+M_e^{AB} = \int_0^\ell N^A N^B \lambda \text{d}x = \lambda \int_0^\ell N^A N^B \text{d}x = \frac{\lambda \ell}{2} \int_{-1}^{+1} N^A N^B \text{d}x
+\end{equation}
+\begin{equation}
+N^1 N^1 = \frac{1}{4}(1-\xi)^2 ; N^2 N^2 = \frac{1}{4}(1+\xi)^2 ; N^1 N^2 = \frac{1}{4}(1-\xi^2)
+\end{equation}
+
+\begin{equation}
+N^1 = \frac{1-\xi}{2} ; N^2 = \frac{1+\xi}{2}
+\end{equation}
+
+Then
+	\begin{equation}
+	\begin{aligned}
+	\int N^1 N^1 &= \frac{1}{4} \left[ \xi + \frac{1}{3}\xi^3 \right]_{-1}^{+1} = \frac{2}{3} \\
+	\int N^2 N^2 &= \frac{1}{4} \left[ \xi + \frac{1}{3}\xi^3 \right]_{-1}^{+1} = \frac{2}{3} \\
+	\int N^1 N^2 &= \frac{1}{4} \left[ \xi - \frac{1}{3}\xi^3 \right]_{-1}^{+1} = \frac{1}{3} \\
+	\end{aligned}
+	\end{equation}	
 	
+	\begin{equation}
+	\therefore \vec{M}_e = \frac{\lambda \ell}{6} \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix}
+	\end{equation}
+	
+	\begin{equation}
+	\vec{F}_e^{fA} = \int_0^\ell N f \text{d}x = f \frac{\ell}{2} \int_{-1}^{+1} N \text{d}x = f\frac{\ell}{2} \\
+\therefore \vec{F}_e^f = \frac{f\ell}{2} \begin{Bmatrix} 1\\1 \end{Bmatrix}
+	\end{equation}
 	\subsection{Existing Model}
 	For this project an existing finite element model of heat diffusion by Prof. N de Koker was modified for usage in the Bayes' theorem~\ref{bayes_eq}. 
 	This model is used to determine the likelihood function. 
@@ -264,7 +349,7 @@ TODO: further interpret
 	
 The $x$ (in Equation \ref{prior}) refers to a vector of randomised $\kappa$-values that correspond with the same temperatures as the values in the $\mu$ vector.
 The first iteration of randomised $\kappa$-values are generated by creating a random perturbation of the $\mu$ vector.
-By multiplying the $\mu$ vector with $(0.5+\vec{\text{rand}})\cdot1.5)$ the first values of $x$ are guaranteed to be within an acceptable range of the prior values.
+By multiplying the $\mu$ vector with $((0.5+\vec{\text{rand}})\cdot1.5)$ the first values of $x$ are guaranteed to be within an acceptable range of the prior values.
 The process of obtaining the $x$ vector after the first iteration is discussed later in section \ref{mcmcexp}.
 
 
@@ -312,7 +397,13 @@ The prior function in this case was relatively easy to generate and incorporate 
 	
 	The acceptance criteria of the new $x$-vector is based on the proximity of the posteriori function to the reference posterior function with //TODO
 	A potential problem encountered with the standard acceptance probability method (shown in Section \ref{MCint_sec}) is that the magnitudes of the values were not considered. 
-	This problem lead to many `false positives', as incorrect values were accepted even though they were not actually acceptable.
+	This problem lead to many `false positives', as incorrect values were accepted even though they were not actually acceptable. TODO: add acceptance criteria
+	
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.5\linewidth]{figures/e_expl_curve.png}
+	\caption{Graph explaining the difference in acceptance rates (Generated at https://www.geogebra.org/graphing/g7kyzwce)}
+	\end{figure}
 	 
 	
 	

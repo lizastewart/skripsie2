@@ -1257,5 +1257,19 @@ year = {2016},
 title = {{MCMC} burn-in},
 url = {https://www.johndcook.com/blog/2016/01/25/mcmc-burn-in/comment-page-1/?unapproved=1094214&moderation-hash=912d585bd365341b032df1d4f1bddf3b#comment-1094214},
 month = {Jan [Online]},
-howpublished = {John D. Cook Consulting},
+howpublished = {John D. Cook Consulting}
+}
+
+@article{Shi:2021,
+author = {Long Shi and Michael Y. L. Chew},
+title ={A review of thermal properties of timber and char at elevated temperatures},
+journal = {Indoor and Built Environment},
+edition = {Special Issue: Fire Safe Indoor and Built Environment},
+pages = {1-16},
+year = {2021},
+month = {Aug},
+doi = {10.1177/1420326X211035557},
+URL = { https://doi.org/10.1177/1420326X211035557},
+eprint = {https://doi.org/10.1177/1420326X211035557},
+abstract = { Timber is one of the most frequently adopted combustible materials in the built environment. The thermal properties are the determining factors for assessing the fire risk in a building. The main thermal properties of timber and their char are reviewed, especially those temperature-dependent and moisture-dependent properties, including kinetic properties, ignition properties, thermal conductivity, specific heat capacity, effective heat of combustion and thermal diffusivity. The study has collected and summarized various thermal properties data and empirical models of hardwood and softwood with different mass percentages in cellulose, hemicellulose and lignin, as temperature increases. The average ignition temperature and effective heat of combustion of softwood are about 12.9\% and 9.5\% higher than those of hardwood, respectively. From most of the previous models, the thermal conductivity of timber char increases as temperature rises. Cellulose with a high density shows a higher thermal conductivity, but its impacts on the specific heat capacity are limited. Models to predict the main thermal properties of the hardwood, softwood and char are recommended. The collected data, together with those empirical models, can provide useful data resources and tools for the related fire risk assessments. }
 }

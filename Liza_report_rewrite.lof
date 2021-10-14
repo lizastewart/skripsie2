@@ -1,16 +1,18 @@
 \babel@toc {english}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Standard temperature-thermal conductivity relationship for timber from \citep {Euro:2004}}}{3}{figure.1.1}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Standard temperature-thermal conductivity relationship for timber from \citep {Euro:2004}}}{2}{figure.1.1}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Three-dimensional example of Markov Chain application (Created on \url {https://www.geogebra.org/3d})}}{6}{figure.2.1}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Thermocouple layout in test conducted by \cite {Westhuyzen:2020} cross-section (left) and overall layout (right)}}{9}{figure.3.1}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Standard ISO fire curve TODO}}{9}{figure.3.2}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Visualisation of element that is modelled in one-dimension}}{11}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Visualisation of one-dimensional element with air elements and external conditions added}}{12}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Graph explaining the difference in acceptance rates (Generated at https://www.geogebra.org/graphing/g7kyzwce)}}{18}{figure.3.5}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Resulting $\kappa $ values (left) compared to Euro-code standard values(right)}}{18}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Output of finite element model using $\kappa $-values as indicated in EN 1995:1-2-2004}}{19}{figure.4.2}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Resulting $\kappa $ values (left) compared to Euro-code standard values(right)}}{20}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Output of finite element model using $\kappa $-values as indicated in EN 1995:1-2-2004}}{21}{figure.4.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \babel@toc {english}{}
