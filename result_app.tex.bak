@@ -1,0 +1,7 @@
+\chapter{Detailed results graph}
+
+\begin{figure}[H]
+	\label{data_newk}
+	\centering
+	\includegraphics[width=0.5\linewidth,]{figures/final_graph_ver.png}
+\end{figure}

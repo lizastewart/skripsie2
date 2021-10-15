@@ -49,13 +49,16 @@ Markov Chain Monte Carlo (MCMC) is a method of integration which will be used to
 	Markov Chain Monte Carlo is a method that was created by combining the concept of Monte Carlo sampling  and a Markov Chain. 
 	To fully understand MCMC, its underlying methods must be investigated further.
 	For a better understanding of this concept, \textit{Introducing Markov chain Monte Carlo} by \citeauthor{Gilks:1996}, Kaipio, and various websites \cite{MLM:2019}, \cite{dummies:2015} were consulted.(RIJK: is sin lomp?)
-	\subsection{Markov Chains}	
+	\subsection{Markov Chains}	\label{markovexpl}
 	The core principle of a Markov chain is that the next value ($x_{n+1}$) in a sequence is dependent on the current value($x_n$). 
-	This concept can be visualised as follows: our accepted point ($x_1$) is in the center of a cube. The next possible random point is randomly generate but still within the cube. 	
+	A step size that indicates the range from the initial point that the next falls in is chosen. 
+	Values are then randomly generated but restricted to be within this range.
+	This concept can be visualised as follows: our accepted point ($x_1$) is in the center of a cube. The next possible random point is randomly generate but still within the cube(our search range). 	
 	After this next number is selected, the cube moves such that the new point($x_2$) is now the centre, and so it continues.
 	See Figure \ref{cubeexplfig} for clarification.
 	The above example simplifies the concept, but this understanding can now be expanded.
-	If every coordinate direction in the aforementioned simple example is seen as a single entry in the $x$ vector, then the example has only three $\kappa$-values.
+	If every coordinate direction in the aforementioned simple example is seen as a single entry in the $x$ vector, then the example has three independant values.
+	More or less values can be used depending on the problem.
 	Another level of complication can be added if it is taken into account that every point in the cube is no longer equally likely.
 	A distribution within the cube can be chosen, for example simply a normal distribution
 	The shape of the cube then warps into a stranger shape with points closer to the center being more likely choices and the edges being less likely.

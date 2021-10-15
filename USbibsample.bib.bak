@@ -1273,3 +1273,30 @@ URL = { https://doi.org/10.1177/1420326X211035557},
 eprint = {https://doi.org/10.1177/1420326X211035557},
 abstract = { Timber is one of the most frequently adopted combustible materials in the built environment. The thermal properties are the determining factors for assessing the fire risk in a building. The main thermal properties of timber and their char are reviewed, especially those temperature-dependent and moisture-dependent properties, including kinetic properties, ignition properties, thermal conductivity, specific heat capacity, effective heat of combustion and thermal diffusivity. The study has collected and summarized various thermal properties data and empirical models of hardwood and softwood with different mass percentages in cellulose, hemicellulose and lignin, as temperature increases. The average ignition temperature and effective heat of combustion of softwood are about 12.9\% and 9.5\% higher than those of hardwood, respectively. From most of the previous models, the thermal conductivity of timber char increases as temperature rises. Cellulose with a high density shows a higher thermal conductivity, but its impacts on the specific heat capacity are limited. Models to predict the main thermal properties of the hardwood, softwood and char are recommended. The collected data, together with those empirical models, can provide useful data resources and tools for the related fire risk assessments. }
 }
+
+@article{Wagner:2021,
+title = {Bayesian model inversion using stochastic spectral embedding},
+journal = {Journal of Computational Physics},
+volume = {436},
+pages = {110141},
+year = {2021},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2021.110141},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999121000334},
+author = {Paul-Remo Wagner and Stefano Marelli and Bruno Sudret},
+keywords = {Bayesian model inversion, Inverse problems, Polynomial chaos expansions, Spectral likelihood expansions, Stochastic spectral likelihood embedding, Sampling-free inversion},
+abstract = {In this paper we propose a new sampling-free approach to solve Bayesian model inversion problems that is an extension of the previously proposed spectral likelihood expansions (SLE) method. Our approach, called stochastic spectral likelihood embedding (SSLE), uses the recently presented stochastic spectral embedding (SSE) method for local spectral expansion refinement to approximate the likelihood function at the core of Bayesian inversion problems. We show that, similar to SLE, this approach results in analytical expressions for key statistics of the Bayesian posterior distribution, such as evidence, posterior moments and posterior marginals, by direct post-processing of the expansion coefficients. Because SSLE and SSE rely on the direct approximation of the likelihood function, they are in a way independent of the computational/mathematical complexity of the forward model. We further enhance the efficiency of SSLE by introducing a likelihood specific adaptive sample enrichment scheme. To showcase the performance of the proposed SSLE, we solve three problems that exhibit different kinds of complexity in the likelihood function: multimodality, high posterior concentration and high nominal dimensionality. We demonstrate how SSLE significantly improves on SLE, and present it as a promising alternative to existing inversion frameworks.}
+}
+
+% John D'Errico (2021). fminsearchbnd, fminsearchcon (https://www.mathworks.com/matlabcentral/fileexchange/8277-fminsearchbnd-fminsearchcon), MATLAB Central File Exchange. Retrieved October 14, 2021. 
+
+@article{Cheng:2005,
+author = {Cheng, Alexander and Cheng, Daisy},
+year = {2005},
+month = {03},
+pages = {268-302},
+title = {Heritage and early history of the boundary element method},
+volume = {29},
+journal = {Engineering Analysis with Boundary Elements},
+doi = {10.1016/j.enganabound.2004.12.001}
+}

@@ -1,0 +1,192 @@
+\chapter{Derivation}
+ More generally matrix $K_e$ and $M_e$ are: 
+\begin{equation}
+\begin{aligned}
+K_e^{AB} &= \int_0^\ell N_{,x}^A N_{,x}^B \kappa \text{d}x \text{ with } \kappa = N^1 \kappa^1 + N^2 \kappa^2 \\
+&= \left(\frac{\ell}{2}\right)\left(\frac{\pm 1}{4}\right)\left(\frac{4}{\ell^e}\right) \int_{-1}^{+1} \left[ \frac{1 -\xi}{2} \kappa^{(1)} + \frac{1 + \xi}{2} \kappa^{(2)} \right] \text{d}\xi\\
+\end{aligned}
+\end{equation}
+
+and
+\begin{equation}
+M_e^{AB} = \int_0^\ell N^A N^B \lambda \text{d}x \quad\text{ with }\quad \lambda = N^1 \kappa^{(1)} + N^2 \kappa^{(2)}
+\end{equation}
+
+If $A=1$ and $B=1$ then $M_e$ is calculated as shown below in Equation \ref{MeExampleeq1}.
+\begin{equation} \label{MeExampleeq1}
+\begin{aligned}
+M_e^{11} &= \left(\frac{\ell}{2}\right) \int_{-1}^{+1} \frac{1}{4} (1-\xi)^2\left[ \frac{1-\xi}{2} \cdot \lambda^{(1)} + \frac{1+\xi}{2} \cdot \lambda^{(2)} \right] \text{d} \xi \\
+&= \frac{\ell}{16} \int_{-1}^{+1} \left[
+	(1-\xi)^2(1-\xi) \lambda^{(1)}
+	+ (1-\xi)^2(1+\xi) \lambda^{(2)}
+\right] \text{d}\xi \\
+&= \frac{\ell}{16} \left[
+	\lambda^{(1)} \int_{-1}^{+1} (1-\xi)^2(1-\xi) \text{d}\xi
+	+ \lambda^{(2)} \int_{-1}^{+1} (1-\xi)^2(1+\xi) \text{d}\xi
+\right] \\
+&= \frac{\ell}{16} \left[
+	\lambda^{(1)} \cdot 4
+	+ \lambda^{(2)} \cdot \frac{4}{3}
+\right] \\
+&= \frac{\ell}{4} \left[
+	\lambda^{(1)} + \frac{\lambda^{(2)}}{3}
+\right]
+\end{aligned}
+\end{equation}
+ 
+ When $A=2$ and $B=2$:
+
+\begin{equation}\label{MeExampleeq2}
+\begin{aligned}
+M_e^{22} &= \frac{\ell}{16} \int_{-1}^{+1} \left[
+	(1+\xi)^2(1-\xi)\lambda^{(1)} + (1+\xi)^2(1+\xi)\lambda^{(2)}
+\right] \text{d}\xi \\
+&= \frac{\ell}{4} \left[
+	\frac{\lambda^{(1)}}{3}
+	+ \lambda^{(2)}
+\right]
+\end{aligned}
+\end{equation}
+ When $A=1$ and $B=2$ \textbf{or} $A=2$ and $B=1$:
+\begin{equation}\label{MeExampleeq3}
+\begin{aligned}
+M_e^{12} &= \frac{\ell}{16} \int_{-1}^{+1} \left[
+	(1-\xi^2)(1-\xi) \lambda^{(1)}
+	+ (1-\xi^2)(1+\xi)\lambda^{(2)}
+\right] \text{d} \xi \\
+&= \frac{\ell}{4}\left[
+	\frac{\lambda^{(1)}}{3}
+	+ \frac{\lambda^{(2)}}{3}
+\right] \\
+&= \frac{\ell}{12}\left[
+	\lambda^{(1)}
+	+ \lambda^{(2)}
+\right] \\
+\end{aligned}
+\end{equation}
+
+ The matrix can then be assembled from the above Equations \ref{MeExampleeq1},\ref{MeExampleeq2} and \ref{MeExampleeq3}:
+\begin{equation}\label{Meassembled}
+\begin{aligned}
+\vec{M}_e &= \frac{\ell}{4} \left(
+	\lambda^{(1)} \begin{bmatrix} 1 & \frac{1}{3} \\ \frac{1}{3} & \frac{1}{3} \end{bmatrix}
+	+ \lambda^{(2)} \begin{bmatrix} \frac{1}{3} & \frac{1}{3} \\ \frac{1}{3} & 1 \end{bmatrix}
+\right) \\
+&= \frac{\ell}{12} \left(
+	\lambda^{(1)} \begin{bmatrix} 3 & 1 \\ 1 & 1 \end{bmatrix}
+	+ \lambda^{(2)} \begin{bmatrix} 1 & 1 \\ 1 & 3 \end{bmatrix}
+\right) \\
+\end{aligned}
+\end{equation}
+
+The same can be done to assemble the $K$ matrix as shown below.
+\begin{equation}\label{Keass1}
+\begin{aligned}
+K_e^{AB} &= \left(\frac{\pm 1}{2\ell}\right) \int_{-1}^{+1} \left[
+	\frac{1-\xi}{2} \kappa^{(1)}
+	+ \frac{1+\xi}{2} \kappa^{(2)}
+\right] \text{d}\xi \\
+&= \left(\frac{\pm 1}{2\ell}\right) \left[ \kappa^{(1)} + \kappa^{(2)} \right]
+\end{aligned}
+\end{equation}
+
+
+\begin{equation}\label{Keass2}
+\vec{K}_e = \frac{1}{2\ell} \left(
+	\kappa^{(1)} \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix}
+	+ \kappa^{(2)} \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix}
+\right)
+\end{equation}
+
+There after the $\vec{F}_e$ matrix
+\begin{equation}\label{Keass3}
+\begin{aligned}
+F_e^A &= \int_0^\ell N^A f \text{d}x \\
+&= \frac{\ell}{2} \int_{-1}^{+1} N^A f \text{d} \xi
+\end{aligned}
+\end{equation}
+
+
+\begin{equation}\label{Feass4}
+\begin{aligned}
+F_e^1 &= \frac{\ell}{2} \int_{-1}^{+1} \left(\frac{1-\xi}{2}\right) \cdot \left[
+	\frac{1-\xi}{2}\cdot f^{(1)}
+	+ \frac{1+\xi}{2}\cdot f^{(2)}
+\right] \\
+&= \frac{\ell}{8} \int_{-1}^{+1} \left[
+	\left(1-\xi\right)^2\cdot f^{(1)}
+	+ \left(1-\xi^2\right)\cdot f^{(2)}
+\right] \text{d} \xi
+\end{aligned}
+\end{equation}
+
+\begin{equation}\label{Feass5}
+\begin{aligned}
+F_e^2 &= \frac{\ell}{8} \int_{-1}^{+1} \left[
+	(1-\xi^2)\cdot f^{(1)} + (1+\xi)^2\cdot f^{(2)}
+\right] \text{d}\xi
+\end{aligned}
+\end{equation}
+
+
+\begin{equation}\label{Feass6}
+\begin{aligned}
+\therefore \vec{F}_e &= \frac{\ell}{8} \left(
+	f^{(1)} \begin{Bmatrix} \frac{8}{3} \\ \frac{4}{3} \end{Bmatrix}
+	+ f^{(2)} \begin{Bmatrix} \frac{4}{3} \\ \frac{8}{3} \end{Bmatrix}
+\right)
++ \sum_{A \in \mathcal{A}_N} q^{(A)} \begin{Bmatrix} -\delta^{A1} \\ +\delta^{A2} \end{Bmatrix} \\
+&= \frac{\ell}{6} \left(
+	f^{(1)} \begin{Bmatrix} 2 \\ 1 \end{Bmatrix}
+	+ f^{(2)} \begin{Bmatrix} 1 \\ 2 \end{Bmatrix}
+\right)
++ \sum_{A \in \mathcal{A}_N} q^{(A)} \begin{Bmatrix} -\delta^{A1} \\ +\delta^{A2} \end{Bmatrix} \\\\
+& \text{TODO:  uppercase or lowercase A1 and A2 with deltas?}
+\end{aligned}
+\end{equation}
+
+
+After assembly but before Dirichlet boundaries are applied 
+\begin{equation}\label{FEM_nodirieq}
+\vec{\bar{c}}^T \vec{\bar{K}} \vec{\bar{d}} + \vec{\bar{c}}^T \vec{\bar{M}} \vec{\dot{\bar{d}}} = \vec{\bar{c}}^T \vec{\bar{F}}
+\end{equation}
+When the Dirichlet boundaries below (Equation \ref{diribound}) are applied to the matrices shown in Equation \ref{FEM_nodirieq} , they can be simplified to Equation \ref{solveeq1}.
+\begin{equation}\label{diribound}
+\begin{aligned}
+c_1 = 0 \quad &\text{and} \quad c^{np}=0\\
+d_1 = u_{\text{fire(t)}}\quad &\text{and} \quad d^{np} = u_{\text{air}}\\
+\end{aligned}
+\end{equation}
+
+Then:
+
+\begin{equation}\label{solveeq1}
+\begin{aligned}
+\vec{c}^T\cdot\vec{K}\cdot\vec{d} + \vec{c}^T\cdot\vec{M}\cdot\vec{\dot{d}} = \vec{c}^T\cdot\vec{F}' - \vec{c}^T\left(
+	\{K'\}d'
+	+ \{K^{np?}\}d^{np?}
+\right)
+- \vec{c}^T \left(
+	\{M'\}\dot{d}' + \{M^{np?}\}\dot{d}^{np}
+\right)
+\end{aligned}
+\end{equation}
+
+
+And so:
+
+\begin{equation}\label{solveeq2}
+\vec{K}\cdot\vec{d} + \vec{M}\cdot\vec{\dot{d}} = \vec{F}' - \vec{F}^{Ke?} - \vec{F}^{Me?} = \vec{F}
+\end{equation}
+
+Solve as
+
+\begin{equation}\label{solveeq3}
+\begin{aligned}
+\vec{\tilde{d}}_{n+1} &= \vec{d}_n + (1-\alpha)\Delta t \vec{v}_n \\
+(\vec{M} + \alpha\Delta t\vec{K})\vec{v}_{n+1} &= \vec{F}_{n+1} - \vec{K} \vec{\tilde{d}}_{n+1} \\
+\rightarrow \vec{v}_{n+1} &= (\vec{M} + \alpha\Delta t \vec{K})^{-1} (\vec{F}_{n+1} - \vec{K} \vec{\tilde{d}}_{n+1}) \\
+\rightarrow \vec{d}_{n+1} &= \vec{\tilde{d}}_{n+1} + \alpha\Delta t \vec{v}_{n+1} \\
+\vec{v} &= \vec{\dot{d}}
+\end{aligned}
+\end{equation}

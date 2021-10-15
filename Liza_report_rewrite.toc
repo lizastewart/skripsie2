@@ -29,19 +29,21 @@
 \contentsline {subsubsection}{Boundaries}{12}{section*.9}%
 \contentsline {subsubsection}{One-dimensional diffusion}{13}{section*.10}%
 \contentsline {subsection}{\numberline {3.2.2}Existing Model}{16}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Adapted Model}{16}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Inversion method}{16}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Prior probability}{16}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Likelihood probability function}{17}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}MCMC integration}{18}{subsection.3.3.3}%
-\contentsline {chapter}{\numberline {4}Results}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Resulting k-values}{19}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Model output}{21}{section.4.2}%
+\contentsline {subsection}{\numberline {3.2.3}Adapted Model}{17}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Inversion method}{17}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Prior probability}{17}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Likelihood probability function}{18}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}MCMC integration}{19}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Results}{20}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Resulting k-values}{20}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Model output}{22}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Discussion}{23}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Summary and Conclusion}{24}{chapter.6}%
-\contentsline {chapter}{List of References}{25}{section*.12}%
+\contentsline {chapter}{\numberline {A}Relevant code segments}{25}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Detailed results graph}{27}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Derivation}{28}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Program}{31}{appendix.D}%
+\contentsline {chapter}{\numberline {E}GA outcomes}{32}{appendix.E}%
+\contentsline {chapter}{List of References}{34}{section*.19}%
 \babel@toc {english}{}
 \babel@toc {english}{}
-\contentsline {chapter}{Relevant code segments}{27}{appendix*.13}%
-\contentsline {chapter}{Program}{29}{appendix*.17}%
-\contentsline {chapter}{GA outcomes}{30}{appendix*.18}%

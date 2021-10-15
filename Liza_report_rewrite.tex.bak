@@ -161,17 +161,19 @@ for the T-dependant thermal diffusivity of SA pine}
 % \include{testdata}
 % \include{Methodology}
 
-\backmatter%=========================================================
-
-\bibliography{USBibsample}
-%\bibliography{mendelybib}
 
 \appendix%===========================================================
 
 \include{mcmcCode}
+\include{result_app}
+\include{derive_app}
 \include{Program}
 \include{GA_outcomes}
 
 %\include{App-C}
+\backmatter%=========================================================
+
+\bibliography{USBibsample}
+%\bibliography{mendelybib}
 
 \end{document}
