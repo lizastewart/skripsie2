@@ -59,3 +59,26 @@ function xvalue2 = takexsteps(xvalue1)
 
 end
 \end{lstlisting}
+
+\section*{MAP determination}
+\begin{lstlisting}
+global temps stepsize mu_values
+temps = [0,60,100,140, 200,350,500,800,1200];
+mu_values = [0.12, 0.12, 0.12, 0.12, 0.15, 0.07, 0.09, 0.35, 1.5];
+x_values = mu_values;
+stepsize = 0.05;
+sigmaT1 = 15;
+sigmaMU1 = 0.13;
+instantiate_all();
+
+fminopts = optimset('fminsearch');
+fminopts.TolX = 0.0009;
+fminopts.MaxFunEvals = 1000;
+fminopts.MaxIter = 1000;
+lowBound= [0.000, 0.000, 0.000, 0.000, 0.000, 0.0000, 0.0000, 0.00, 0.1];
+upBound = [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 20];
+%fminopts.AlwaysHonorConstraints =;
+% fminopts.PlotFcns = 'optimfplotval';
+fun = @(x_values) -1*posteriori_func(x_values,sigmaT1,sigmaMU1);
+[mu_map,fval] = fminsearchbnd(fun, x_values,lowBound,upBound,fminopts);
+\end{lstlisting}

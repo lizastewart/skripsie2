@@ -19,7 +19,7 @@ The results of running the algorithm until 20 000 acceptable values are found is
 \section{Resulting k-values}
 The thermal diffusivity ($\kappa$-values) at key temperatures was the main goal of this project. 
 As can be seen in Figure \ref{kresult_euro_fig} there was quite a drastic difference in the thermal diffusivity at 1200 $^{^\circ}$C and between 0$^{^\circ}$C and 200$^{^\circ}$C.
-thee large difference at 1200$^{^\circ}$C is due to hoe our model is created.(TODO?)
+thee large difference at 1200$^{^\circ}$C is due to how our model is created.(TODO?)
 Most of the energy at that temperature is radiated?(TODO)
 \begin{figure}[H]
 	\label{kresult_euro_fig}
@@ -29,7 +29,7 @@ Most of the energy at that temperature is radiated?(TODO)
 
 
 \section{Model output}
-
+In Figure \ref{data_newk} the difference in output from running the model with the new $\kappa$ values, Euro code $\kappa$ and the measured data can be seen. 
 
 \begin{figure}[H]
 	\label{data_newk}

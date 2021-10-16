@@ -402,19 +402,19 @@ As explained in Section \ref{markovexpl} a step size is a crucial part of determ
 %	To prevent that the steps are taken in a completely random direction the following criteria(?) is applied before the value is returned.
 	Provision was made in the function to prevent the algorithm to run away from what we know to be the general area. 
 	TODO
-	\begin{equation}
-	locsigma = stepsize*mu_values;
-	locxvalue = xvalue1 ;;
-
-	lnMu = log(xvalue1.^2 ./ sqrt(stepsize*mu_values.^2+locxvalue.^2));
-	lnSigma = sqrt(log(stepsize*mu_values.^2./xvalue1.^2 + 1));
-
-	xvalue2 = max(0, lognrnd(lnMu, lnSigma));
-	xvalue2(1) = xvalue1(1);
-
-	xvalue2(xvalue2<locsigma/20) = (mu_values(xvalue2<locsigma/20)+xvalue2(xvalue2<locsigma/20))/2;
-
-	\end{equation}
+%	\begin{equation}
+%	locsigma = stepsize*mu_values;
+%	locxvalue = xvalue1 ;
+%
+%	lnMu = log(xvalue1.^2 ./ sqrt(stepsize*mu_values.^2+locxvalue.^2));
+%	lnSigma = sqrt(log(stepsize*mu_values.^2./xvalue1.^2 + 1));
+%
+%	xvalue2 = max(0, lognrnd(lnMu, lnSigma));
+%	xvalue2(1) = xvalue1(1);
+%
+%	xvalue2(xvalue2<locsigma/20) = (mu_values(xvalue2<locsigma/20)+xvalue2(xvalue2<locsigma/20))/2;
+%
+%	\end{equation}
 
 %	The above example simplifies the concept, but this understanding can now be expanded.
 %	If every coordinate direction in the simple example is seen as a single entry into the $x$ vector, then the example has only three $\kappa$-values.
@@ -428,7 +428,11 @@ As explained in Section \ref{markovexpl} a step size is a crucial part of determ
 	The acceptance criteria of the new $x$-vector is based on the proximity of the new posterior value to the reference posterior value and the previous posterior. //TODO
 	A potential problem encountered with the standard acceptance probability method (shown in Section \ref{MCint_sec}) is that the magnitudes of the values were not considered. 
 	This problem lead to many `false positives', as incorrect values were accepted even though they were not actually acceptable. 
-	The acceptance criteria was based on the difference between (posterioir
+	The acceptance criteria was based on Equation \ref{acceptcriteq1}
+	\begin{equation}\label{acceptcriteq1}
+	\exp\left(\frac {\pi^*(x_{n+1})-\pi^*(x_n)}{\frac{\pi^*(x_{\text{ref}})}{i}}\right)\\
+	\text{with} \quad i = 50\\
+	\end{equation}
 	
 	\begin{figure}[H]
 	\centering
@@ -445,8 +449,11 @@ All the values and constants except for the $\kappa$-values were kept the same a
 	The optimisation to determine the maximum value of the posteriori function was initially done utilising the built in Matlab optimisation algorithm \texttt{femsearchmin.m}. 
 	Since the built-in optimisation intends to minimise the function the probability was multiplied with -1 such that the minimum found is actually the maximum.
 	After initial analysis the maximum was found at negative $\kappa$-values, as previously stated that is illogical and impractical.
-	Further research on various adaptations of the built-in function lead to finding the \texttt{femsearchminbdr.m} adaptation by \citet{derrico:2021}. 
+	Further research on various adaptations of the built-in function lead to finding the \texttt{femsearchminbnd.m} adaptation by \citet{derrico:2021}. 
 	This was used to limit the search area to only positive $\kappa$-values.
-	Further the algorithm was set to only itterate a thousand times. 
+	Further the algorithm was set to only iterate a thousand times and stop if the points of the simplex are within 0.009.
+	The start point for the algorithm was chosen to be the $\kappa$-values from the EURO code.
+	
+	
 	
 	

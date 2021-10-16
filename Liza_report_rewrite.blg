@@ -15,48 +15,50 @@ Reallocating 'name_of_file' (item size: 1) to 15 items.
 A level-1 auxiliary file: discussion.aux
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 A level-1 auxiliary file: Conclusion.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: mcmcCode.aux
 Reallocating 'name_of_file' (item size: 1) to 12 items.
 Database file #1: USBibsample.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 17 entries,
+You've used 19 entries,
             3324 wiz_defined-function locations,
-            795 strings with 8158 characters,
-and the built_in function-call counts, 12811 in all, are:
-= -- 1022
-> -- 285
-< -- 31
-+ -- 122
-- -- 93
-* -- 1133
-:= -- 1655
-add.period$ -- 57
-call.type$ -- 17
-change.case$ -- 112
-chr.to.int$ -- 26
-cite$ -- 17
-duplicate$ -- 1236
-empty$ -- 1199
-format.name$ -- 202
-if$ -- 2616
+            809 strings with 8551 characters,
+and the built_in function-call counts, 14418 in all, are:
+= -- 1149
+> -- 329
+< -- 34
++ -- 139
+- -- 108
+* -- 1285
+:= -- 1861
+add.period$ -- 63
+call.type$ -- 19
+change.case$ -- 127
+chr.to.int$ -- 28
+cite$ -- 19
+duplicate$ -- 1389
+empty$ -- 1343
+format.name$ -- 231
+if$ -- 2943
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 154
-newline$ -- 117
-num.names$ -- 68
-pop$ -- 354
+missing$ -- 172
+newline$ -- 128
+num.names$ -- 76
+pop$ -- 392
 preamble$ -- 1
-purify$ -- 99
+purify$ -- 112
 quote$ -- 0
-skip$ -- 356
+skip$ -- 401
 stack$ -- 0
-substring$ -- 759
-swap$ -- 561
-text.length$ -- 14
+substring$ -- 853
+swap$ -- 636
+text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 138
+type$ -- 156
 warning$ -- 0
-while$ -- 114
+while$ -- 129
 width$ -- 0
-write$ -- 251
+write$ -- 277

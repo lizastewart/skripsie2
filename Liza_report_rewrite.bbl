@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{19}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -53,6 +53,12 @@
 \newblock ISSN 1088-9485.
 \newline\bblurlpre\url{https://doi.org/10.1090/S0002-9904-1943-07818-4}
 
+\bibitem[{\citenamefont{D'Errico}(2021)}]{derrico:2021}
+\bibnamefont{D'Errico}, \bibfnamefont{J.} (2021).
+\newblock fminsearchbnd, fminsearchcon.
+\newblock MATLAB Central File Exchange.
+\newline\bblurlpre\url{https://www.mathworks.com/matlabcentral/fileexchange/8277-fminsearchbnd-fminsearchcon}
+
 \bibitem[{\citenamefont{Fish}(2007)}]{Fish:2007}
 \bibnamefont{Fish}, \bibfnamefont{J.J.} (2007).
 \newblock {\selectlanguage{eng}\emph{A first course in finite elements}}.
@@ -99,6 +105,17 @@
   \bibnamefont{Somersalo}, \bibfnamefont{E.} (2005).
 \newblock \emph{Statistical and Computational Inverse Problems}.
 \newblock Verlag New York.
+
+\bibitem[{\citenamefont{Lagarias}
+  \emph{\bbletal{}}(1998)\citenamefont{Lagarias}, \citenamefont{Reeds},
+  \citenamefont{Wright} \protect\BIBand{}
+  \citenamefont{Wright}}]{Lagarias:1998}
+\bibnamefont{Lagarias}, \bibfnamefont{J.}, \bibnamefont{Reeds},
+  \bibfnamefont{J.}, \bibnamefont{Wright}, \bibfnamefont{M.} \protect\BIBand{}
+  \bibnamefont{Wright}, \bibfnamefont{P.} (1998 Dec).
+\newblock Convergence properties of the nelder--mead simplex method in low
+  dimensions.
+\newblock \emph{SIAM Journal on Optimization}, \bblvol{}~9, \bblpp{} 112--147.
 
 \bibitem[{\citenamefont{Meyn} \protect\BIBand{}
   \citenamefont{Tweedie}(1993)}]{Meyn:1993}

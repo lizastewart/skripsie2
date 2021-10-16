@@ -1,7 +1,17 @@
 %*** THE ABSTRACT PAGE ************************************
 
 \begin{abstract}
-  
+%  What the objectives of the study were (the central question);
+  In this report stochiastic inversion methods such as Markov Chain Monte-Carlo and optimisation methods were used to determine the thermal diffusivity of SA-Pine.
+%Brief statement of what was done (Methods);
+A finite elment 
+%Brief statement of what was found (Results);
+New $\kappa$-values were found from MCMC and MAP analysis.
+The MCMC and MAP $|kappa$-values were not equal which supports the hypothesis that the distribution is  not normal.
+The FEM model using the new $\kappa$-values was closer to the measured temperatures.
+
+%Brief statement of what was concluded (Discussion);
+
 \end{abstract}
 
 \endinput

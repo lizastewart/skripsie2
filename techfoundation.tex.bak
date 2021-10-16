@@ -1,9 +1,15 @@
 \chapter{Technical Foundation} \label{tech}
+In this chapter, the detailed explanations of algorithms and concepts applied throughout the project are presented. 
+the purpose of this chapter is to enable the reader to better understand the implementation and reasoning for the usage of specific methods.
+\section{Thermal properties of timber}
+Discuss thermal properties - cp, k and alpha TODO
+
+
 \section{Finite Element Method}\label{femsec}
 Finite element methods (or finite element analysis) is used when the behaviour of an element cannot be accurately depicted by a simple mathematical equation. 
 	\subsection{Origin}
 	The finite element method (FEM) used today is the sum of decades of research. 
-	In an article by \citeauthor{Gupta:1996} they discuss the five main contributors to the finite element method. 
+	In an article by \citeauthor{Gupta:1996}, they discuss the five main contributors to the finite element method. 
 	According to \citet{Gupta:1996} the idea behind the finite element method was initially explored in the \citeyear{Courant:1943} article by \citeauthor{Courant:1943}. 
 	Courant acknowledges the complex nature of mathematical problems in his first paragraph by stating: "Mathematics is an indivisible organism uniting theoretical contemplation and active application."
 	He goes on to discuss the variational method created by (Ryes?)
@@ -12,14 +18,16 @@ Finite element methods (or finite element analysis) is used when the behaviour o
 	
 	\subsection{Concept}
 	A larger element is broken into smaller elements. 
-	Assumptions made on the smaller scale have a lesser effect on the final answer than the same assumptions made on a large scale would have had.
+	Assumptions made on a smaller scale have a lesser effect on the final answer than the same assumptions made on a large scale would have had.
 	Therefore choosing more elements leads to a more accurate model.
 	
 	\subsection{Boundaries}
-	A important part of how finite element models are how the known information is embedded into the model.
+	An important part of how finite element models are how the known information is embedded into the model.
 	The main way this is done is by defining boundary conditions at known points. The two types of boundary conditions used in this project are Dirichlet boundaries and Newmann boundaries.
 	
-	Named after Johann P.G.L Dirichlet \citep{Cheng:2005} , Dirichlet boundaries force the solution function to be equal to the prescribed value at the boundary. Newmann boundaries prescribe that the derivative of the solution function be equal to the predetermined value. In the context of this problem the Dirichlet boundaries prescribe the temperatures at the boundaries and the Newmann boundaries prescribe the heat flux at the boundaries. (TODO: do we use heat flux)
+	Named after Johann P.G.L Dirichlet \citep{Cheng:2005} , Dirichlet boundaries force the solution function to be equal to the prescribed value at the boundary. 
+	Newmann boundaries prescribe that the derivative of the solution function be equal to the predetermined value. 
+	In the context of this problem, the Dirichlet boundaries prescribe the temperatures at the boundaries and the Newmann boundaries prescribe the heat flux at the boundaries.
 	
 
 
@@ -33,8 +41,9 @@ Finite element methods (or finite element analysis) is used when the behaviour o
 		q = -k \frac{dT}{dx} = -k u_{,x}
 	\end{equation}
 	\subsection{Heat conduction}
-	TODO: - Explain Galerkin Weak form, Newmann boundaries and Dirichlet Boundaries
-
+	TODO: - Explain Galerkin Weak form
+	
+	
 \section{Bayes' theorem of inverse problems}
 %	Statistical and Computational Inverse problems by Kaipio and Somersalo Chapter 3
 % 	The Bayesian approach to Inverse Problems Dashti and Stuart
@@ -55,20 +64,20 @@ Finite element methods (or finite element analysis) is used when the behaviour o
 	
 
 \section{Markov Chain Monte Carlo} \label{MCMCdet}
-Markov Chain Monte Carlo (MCMC) is a method of integration which will be used to determine the mean of the $\kappa$-values at specific temperatures. 
+Markov Chain Monte Carlo (MCMC) is a method of integration that will be used to determine the mean of the $\kappa$-values at specific temperatures. 
 	Markov Chain Monte Carlo is a method that was created by combining the concept of Monte Carlo sampling  and a Markov Chain. 
 	To fully understand MCMC, its underlying methods must be investigated further.
-	For a better understanding of this concept, \textit{Introducing Markov chain Monte Carlo} by \citeauthor{Gilks:1996}, Kaipio, and various websites \cite{MLM:2019}, \cite{dummies:2015} were consulted.(RIJK: is sin lomp?)
+	For a better understanding of this concept, \textit{Introducing Markov chain Monte Carlo} by \citeauthor{Gilks:1996}, Kaipio, and various websites \citep{MLM:2019}, \citep{dummies:2015} were consulted.(RIJK: is sin lomp?)
 	\subsection{Markov Chains}	\label{markovexpl}
 	The core principle of a Markov chain is that the next value ($x_{n+1}$) in a sequence is dependent on the current value($x_n$). 
-	A step size that indicates the range from the initial point that the next falls in is chosen. 
+	A step size that indicates the range within the next point falls in.
 	Values are then randomly generated but restricted to be within this range.
-	This concept can be visualised as follows: our accepted point ($x_1$) is in the center of a cube. The next possible random point is randomly generate but still within the cube(our search range). 	
+	This concept can be visualised as follows: the accepted point ($x_1$) is in the centre of a cube. The next possible random point is randomly generated but still within the cube(our search range). 	
 	After this next number is selected, the cube moves such that the new point($x_2$) is now the centre, and so it continues.
 	See Figure \ref{cubeexplfig} for clarification.
 	The above example simplifies the concept, but this understanding can now be expanded.
 	If every coordinate direction in the aforementioned simple example is seen as a single entry in the $x$ vector, then the example has three independent values.
-	More or less values can be used depending on the problem.
+	More or fewer values can be used depending on the problem.
 	Another level of complication can be added if it is taken into account that every point in the cube is no longer equally likely.
 	A distribution within the cube can be chosen, for example simply a normal distribution
 	The shape of the cube then warps into a stranger shape with points closer to the center being more likely choices and the edges being less likely.
@@ -81,32 +90,29 @@ Markov Chain Monte Carlo (MCMC) is a method of integration which will be used to
 	
 	%%BURN_IN TODO
 	The purpose of a Markov Chain is for the chain to converge to a distribution and be independent on the very initial estimation. 
-	In principle it should then reach a near stationary distribution.
+	In principle, it should then reach a near stationary distribution.
 	Since Markov Chains are not used if we know the answer, a way to determine when values are no longer affected by the initial estimate is needed \cite{Gilks:1996}. 
 	The simple proposed solution is the concept of burn-in. 
 	The concept of conventional burn-in for usage in Markov Chains are disputed as the Markov Chain itself is created in such a way that values are only directly dependent on the value immediately before them \cite{Meyn:1993}.
 	Burn-in in the Markov Chain sense can simply be referred to as the removal of the initial samples of low probability to increase the accuracy of the average taken after all the iterations \cite{John:2016}.
-	
-	
-	
 		
 	\subsection{Monte Carlo Integration}\label{MCint_sec}
 	Monte Carlo integration is used to evaluate a probability distribution that cannot be solved simply. 
 	The evaluation is done by drawing a collection of random values from the distribution.
 	These values are then used as the sample, and a sample mean is taken.
-	The arithmetic sample mean can be used to approximate the population mean in accordance with the law of large numbers \citep{Gilks:1996}.
+	The arithmetic sample mean can be used to approximate the population mean per the law of large numbers \citep{Gilks:1996}.
 	
 	
 
 \subsection{Metropolis-Hastings Algorithm}
 
 The Metropolis-Hastings algorithm is one of the available simulation methods based on the MCMC principles. 
-For the purposes of this project the Metropolis-Hastings algorithm was chosen above the Gibbs-sampler TODO
+For this project, the Metropolis-Hastings algorithm was chosen above the Gibbs-sampler TODO
 
 All of the random samples generated by the Monte Carlo integration can not be immediately accepted.
-	Here, the acceptance criteria comes into play.
+	Here, the acceptance criterion comes into play.
 	There are multiple options for how a posterior is deemed acceptable; these are elaborated on in the book  \textit{Monte Carlo Statistical Methods} by \citeauthor{Robert:2004}. 
-	The most general acceptance criteria is set out in Equation \ref{acceptcriteq} and comes from Kaipio.
+	The most general acceptance criterion is set out in Equation \ref{acceptcriteq} and comes from Kaipio.
 	
 		\begin{equation} \label{acceptcriteq}
 		\begin{aligned}
@@ -116,4 +122,41 @@ All of the random samples generated by the Monte Carlo integration can not be im
 		\end{aligned}
 		\end{equation}
 
-\section{Thermal properties of timber}
+\section{Maximum a Posteriori}
+To ensure a thorough investigation of the thermal diffusivity of timber the posteriori function will also be optimised to obtain the value with the highest probability, maximum a posteriori, in addition to the mean.
+As the implementation will be done using built-in optimisation functions in Matlab the technical aspects will briefly explain how that function works.
+The function used is \texttt{fminsearch.m}.
+In the name of the function, it can be seen that the function will be minimised.
+This seems counter-intuitive since the intention is to find the maximum of the function. 
+Luckily the minimum is simply a negative maximum. 
+
+According to the \texttt{fminsearch} Matlab documentation (\url{https://ch.mathworks.com/help/matlab/ref/fminsearch.html}) , the algorithm is based on the Nelder-Mead algorithm \citep{Lagarias:1998}.
+The Nelder-Mead algorithm is a unconstrained heuristic direct search method.
+The heuristic aspect of the algorithm means that it searches the function space in a guided random manner.
+
+Nelder-Mead uses a simplex, a triangle in the dimension needed, to find the minimum.
+In two-dimensions, the simplex is simply a triangle, where each point has a $x$ and $y$ coordinate and is notated as. 
+A starting value needs to be provided to the algorithm, this will then be one of the points in the first simplex.
+All the points on the simplex are ordered from best to worst, where the smallest value ($f(x)$) is best if minimising.
+In the two-dimensional example, the centroid of the two best points ($x_l,x_s$) are calculated, from there using the value of the function at the simplexes and the centroid transformations can be performed to find even smaller values.
+The transformations are applied to change the worst point ($x_h$) until it is no longer the worst.
+
+The transformations are performed in a specific order.
+The first transformation is reflection.
+Point $x_h$ is mirrored around the line that passes through the centroid and $x_l$ and $x_s$ to create $x_r$.
+The idea behind this is that the values are lower in that direction so the algorithm attempts to take the biggest stride possible to a lower value.
+If $x_r$ is better than $x_r$  the triangle is expanded and $x_e$ is even further in the assumed minimising direction.
+If $x_r$ is not better than $x_h$, the reflected point is rejected and the original $x_3$ is contracted closer to $x_1$ and $x_2$.
+This contracted point ($x_c$) should ideally have a smaller value than $x_h$, if not a shrink contraction needs to be performed.
+In a shrink contraction, $x_h$ and $x_s$ are redefined and pulled closer to $x_l$ with hopes of finding the minimum near the best point.
+
+The result is a simplex that moves over a surface in search of the lowest point and as it reaches that point it shrinks until all the points are practically at the same place. When this happens or the points are close enough to each other as defined when initializing the code the algorithm stops. Below in Figure \ref{neldermeadfig}, the different transformations can be seen.
+
+\begin{figure}\label{neldermeadfig}
+\centering
+\includegraphics[width=\linewidth]{figures/MAP_expl.png}
+\caption{Visual representation of Nedler-Mead transformations a) Reflection, b) Expansion, c) Contraction, d) Shrink contraction (Source:\url{https://codesachin.wordpress.com/2016/01/16/nelder-mead-optimization/})}
+\end{figure}
+
+
+

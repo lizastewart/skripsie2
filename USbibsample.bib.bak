@@ -1307,3 +1307,14 @@ volume = {29},
 journal = {Engineering Analysis with Boundary Elements},
 doi = {10.1016/j.enganabound.2004.12.001}
 }
+
+@article{Lagarias:1998,
+author = {Lagarias, Jeffrey and Reeds, James and Wright, Margaret and Wright, Paul},
+year = {1998},
+month = {Dec},
+pages = {112-147},
+title = {Convergence Properties of the Nelder--Mead Simplex Method in Low Dimensions},
+volume = {9},
+journal = {SIAM Journal on Optimization},
+doi = {10.1137/S1052623496303470}
+}
