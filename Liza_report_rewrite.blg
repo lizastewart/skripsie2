@@ -3,8 +3,6 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Liza_report_rewrite.aux
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: usmeg-a.bst
-Reallocating 'name_of_file' (item size: 1) to 12 items.
-A level-1 auxiliary file: nomenkl.aux
 Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: Introduction.aux
 Reallocating 'name_of_file' (item size: 1) to 19 items.
@@ -18,53 +16,47 @@ A level-1 auxiliary file: discussion.aux
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 A level-1 auxiliary file: Conclusion.aux
 Reallocating 'name_of_file' (item size: 1) to 12 items.
-Reallocating 'name_of_file' (item size: 1) to 13 items.
-A level-1 auxiliary file: mcmcCode.aux
-Reallocating 'name_of_file' (item size: 1) to 12 items.
-A level-1 auxiliary file: Program.aux
-Reallocating 'name_of_file' (item size: 1) to 16 items.
-A level-1 auxiliary file: GA_outcomes.aux
 Database file #1: USBibsample.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 16 entries,
+You've used 17 entries,
             3324 wiz_defined-function locations,
-            791 strings with 8043 characters,
-and the built_in function-call counts, 11904 in all, are:
-= -- 947
-> -- 267
-< -- 28
-+ -- 115
-- -- 87
-* -- 1051
-:= -- 1548
-add.period$ -- 54
-call.type$ -- 16
-change.case$ -- 105
-chr.to.int$ -- 25
-cite$ -- 16
-duplicate$ -- 1149
-empty$ -- 1117
-format.name$ -- 187
-if$ -- 2424
+            795 strings with 8158 characters,
+and the built_in function-call counts, 12811 in all, are:
+= -- 1022
+> -- 285
+< -- 31
++ -- 122
+- -- 93
+* -- 1133
+:= -- 1655
+add.period$ -- 57
+call.type$ -- 17
+change.case$ -- 112
+chr.to.int$ -- 26
+cite$ -- 17
+duplicate$ -- 1236
+empty$ -- 1199
+format.name$ -- 202
+if$ -- 2616
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 143
-newline$ -- 112
-num.names$ -- 64
-pop$ -- 332
+missing$ -- 154
+newline$ -- 117
+num.names$ -- 68
+pop$ -- 354
 preamble$ -- 1
-purify$ -- 93
+purify$ -- 99
 quote$ -- 0
-skip$ -- 326
+skip$ -- 356
 stack$ -- 0
-substring$ -- 698
-swap$ -- 512
-text.length$ -- 12
+substring$ -- 759
+swap$ -- 561
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 129
+type$ -- 138
 warning$ -- 0
-while$ -- 106
+while$ -- 114
 width$ -- 0
-write$ -- 238
+write$ -- 251

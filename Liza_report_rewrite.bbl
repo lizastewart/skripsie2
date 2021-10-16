@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{17}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -30,6 +30,14 @@
 \newblock \emph{BS EN 1995-1-2:2004. Eurocode 5: Design of timber structures -
   General - Structural fire design.}
 \newblock BSI, London.
+
+\bibitem[{\citenamefont{Cheng} \protect\BIBand{}
+  \citenamefont{Cheng}(2005)}]{Cheng:2005}
+\bibnamefont{Cheng}, \bibfnamefont{A.} \protect\BIBand{} \bibnamefont{Cheng},
+  \bibfnamefont{D.} (2005 03).
+\newblock Heritage and early history of the boundary element method.
+\newblock \emph{Engineering Analysis with Boundary Elements}, \bblvol{}~29,
+  \bblpp{} 268--302.
 
 \bibitem[{\citenamefont{Cook}(2016)}]{John:2016}
 \bibnamefont{Cook}, \bibfnamefont{J.D.} (2016 Jan [Online]).

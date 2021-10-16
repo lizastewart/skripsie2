@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.11)  15 OCT 2021 21:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.11)  16 OCT 2021 11:09
 entering extended mode
 **./Liza_report_rewrite.tex
 (Liza_report_rewrite.tex
@@ -460,13 +460,8 @@ File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count303
 \l__pdf_internal_box=\box65
 )
-(Liza_report_rewrite.aux (nomenkl.aux) (Introduction.aux) (techfoundation.aux)
-(implementation.aux) (results.aux) (discussion.aux) (Conclusion.aux)
-(mcmcCode.aux) (result_app.aux
-
-LaTeX Warning: Label `data_newk' multiply defined.
-
-) (derive_app.aux) (Program.aux) (GA_outcomes.aux))
+(Liza_report_rewrite.aux (Introduction.aux) (techfoundation.aux)
+(implementation.aux) (results.aux) (discussion.aux) (Conclusion.aux))
 \openout1 = `Liza_report_rewrite.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
@@ -531,7 +526,7 @@ LaTeX Info: Redefining \nameref on input line 133.
 \openout3 = `Liza_report_rewrite.out'.
 
 \c@lstlisting=\count311
-<USlogo-top.pdf, id=175, 560.0925pt x 183.68625pt>
+<USlogo-top.pdf, id=143, 560.0925pt x 183.68625pt>
 File: USlogo-top.pdf Graphic file (type pdf)
 <use USlogo-top.pdf>
 Package pdftex.def Info: USlogo-top.pdf  used on input line 137.
@@ -552,44 +547,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {C:/Users/Liza Stewart/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <C:/Progr
-am Files/MiKTeX/tex/latex/stellenbosch/logos/USlogo-top.pdf>] (Liza_report_rewr
-ite.tocpdfTeX warning (ext4): destination with the same identifier (name{page.i
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.34 ...1}Prior probability}{17}{subsection.3.3.1}
-                                                  % [1
-
-])
-\tf@toc=\write4
-\openout4 = `Liza_report_rewrite.toc'.
-
- [2]
-(Liza_report_rewrite.lof
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
-.
- (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-))
-\tf@lof=\write5
-\openout5 = `Liza_report_rewrite.lof'.
-
-
-[3
-
-] (Liza_report_rewrite.lot)
-\tf@lot=\write6
-\openout6 = `Liza_report_rewrite.lot'.
-
- [4
-
-]
-\openout2 = `nomenkl.aux'.
-
- (nomenkl.tex) [5
-
-
-]
+am Files/MiKTeX/tex/latex/stellenbosch/logos/USlogo-top.pdf>]
 \openout2 = `Introduction.aux'.
 
  (Introduction.tex
@@ -598,10 +556,8 @@ Chapter 1.
 
 
 
-
-
 ]
-<figures/kvalues_euro.png, id=319, 275.52937pt x 453.94594pt>
+<figures/kvalues_euro.png, id=180, 275.52937pt x 453.94594pt>
 File: figures/kvalues_euro.png Graphic file (type png)
 <use figures/kvalues_euro.png>
 Package pdftex.def Info: figures/kvalues_euro.png  used on input line 28.
@@ -616,91 +572,98 @@ Chapter 2.
 
 
 
-]
-<figures/MC_cubes.png, id=370, 530.73282pt x 526.21594pt>
+] [5]
+<figures/MC_cubes.png, id=248, 530.73282pt x 526.21594pt>
 File: figures/MC_cubes.png Graphic file (type png)
 <use figures/MC_cubes.png>
-Package pdftex.def Info: figures/MC_cubes.png  used on input line 67.
+Package pdftex.def Info: figures/MC_cubes.png  used on input line 75.
 (pdftex.def)             Requested size: 218.90121pt x 217.04266pt.
- [5] [6 <./figures/MC_cubes.png>]) [7]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
+6.
+ (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [6]) [7 <./figures/MC_cubes.png>] [8]
 \openout2 = `implementation.aux'.
 
  (implementation.tex
 Chapter 3.
-<figures/TC_layout.png, id=414, 524.71031pt x 264.99pt>
+<figures/TC_layout.png, id=291, 524.71031pt x 264.99pt>
 File: figures/TC_layout.png Graphic file (type png)
 <use figures/TC_layout.png>
 Package pdftex.def Info: figures/TC_layout.png  used on input line 15.
 (pdftex.def)             Requested size: 298.5pt x 150.75473pt.
-[8
+[9
 
 
 
 
 ]
-<figures/firecurve.png, id=421, 1028.34187pt x 490.08093pt>
+<figures/firecurve.png, id=301, 1028.34187pt x 490.08093pt>
 File: figures/firecurve.png Graphic file (type png)
 <use figures/firecurve.png>
 Package pdftex.def Info: figures/firecurve.png  used on input line 22.
 (pdftex.def)             Requested size: 398.0pt x 189.68005pt.
-<figures/measured_data.jpg, id=423, 1284.8pt x 910.40125pt>
+<figures/measured_data.jpg, id=303, 1284.8pt x 910.40125pt>
 File: figures/measured_data.jpg Graphic file (type jpg)
 <use figures/measured_data.jpg>
 Package pdftex.def Info: figures/measured_data.jpg  used on input line 30.
 (pdftex.def)             Requested size: 397.48499pt x 281.65192pt.
- [9 <./figures/TC_layout.png (PNG copy)> <./figures/firecurve.png (PNG copy)>] 
-[10 <./figures/measured_data.jpg>]
-<figures/fem_sketch.png, id=433, 484.81125pt x 143.03438pt>
+ [10 <./figures/TC_layout.png (PNG copy)> <./figures/firecurve.png (PNG copy)>]
+ [11 <./figures/measured_data.jpg>]
+<figures/fem_sketch.png, id=313, 484.81125pt x 143.03438pt>
 File: figures/fem_sketch.png Graphic file (type png)
 <use figures/fem_sketch.png>
 Package pdftex.def Info: figures/fem_sketch.png  used on input line 61.
 (pdftex.def)             Requested size: 298.5pt x 88.07146pt.
- [11 <./figures/fem_sketch.png (PNG copy)>]
-<figures/fem_fire_sketch.png, id=457, 860.46469pt x 191.21437pt>
+ [12 <./figures/fem_sketch.png (PNG copy)>]
+<figures/fem_fire_sketch.png, id=339, 860.46469pt x 191.21437pt>
 File: figures/fem_fire_sketch.png Graphic file (type png)
 <use figures/fem_fire_sketch.png>
 Package pdftex.def Info: figures/fem_fire_sketch.png  used on input line 121.
 (pdftex.def)             Requested size: 298.5pt x 66.33372pt.
- [12 <./figures/fem_fire_sketch.png>] [13] [14] [15]
-<figures/originalmugraph.jpg, id=520, 1654.18pt x 945.5325pt>
+ [13 <./figures/fem_fire_sketch.png>] [14] [15] [16]
+<figures/originalmugraph.jpg, id=402, 1654.18pt x 945.5325pt>
 File: figures/originalmugraph.jpg Graphic file (type jpg)
 <use figures/originalmugraph.jpg>
 Package pdftex.def Info: figures/originalmugraph.jpg  used on input line 318.
 (pdftex.def)             Requested size: 398.0pt x 227.49512pt.
- [16] [17 <./figures/originalmugraph.jpg>] [18]
-<figures/e_expl_curve.png, id=552, 83.45662pt x 57.816pt>
+ [17] [18 <./figures/originalmugraph.jpg>] [19]
+
+LaTeX Warning: Reference `codeapp' on page 20 undefined on input line 400.
+
+<figures/e_expl_curve.png, id=435, 83.45662pt x 57.816pt>
 File: figures/e_expl_curve.png Graphic file (type png)
 <use figures/e_expl_curve.png>
 Package pdftex.def Info: figures/e_expl_curve.png  used on input line 421.
 (pdftex.def)             Requested size: 199.0pt x 137.86575pt.
-) [19 <./figures/e_expl_curve.png>]
+) [20 <./figures/e_expl_curve.png>]
 \openout2 = `results.aux'.
 
  (results.tex
 Chapter 4.
-<figures/euro_and_results.png, id=560, 554.07pt x 484.05844pt>
+<figures/euro_and_results.png, id=444, 554.07pt x 484.05844pt>
 File: figures/euro_and_results.png Graphic file (type png)
 <use figures/euro_and_results.png>
 Package pdftex.def Info: figures/euro_and_results.png  used on input line 26.
 (pdftex.def)             Requested size: 398.0pt x 347.70934pt.
-[20
+[21
 
 
 
 
 ]
-<figures/final_graph.png, id=565, 981.6675pt x 520.19344pt>
+<figures/final_graph.png, id=449, 981.6675pt x 520.19344pt>
 File: figures/final_graph.png Graphic file (type png)
 <use figures/final_graph.png>
 Package pdftex.def Info: figures/final_graph.png  used on input line 37.
 (pdftex.def)             Requested size: 398.0pt x 210.89943pt.
-) [21 <./figures/euro_and_results.png (PNG copy)>] [22 <./figures/final_graph.p
+) [22 <./figures/euro_and_results.png (PNG copy)>] [23 <./figures/final_graph.p
 ng (PNG copy)>]
 \openout2 = `discussion.aux'.
 
  (discussion.tex
 Chapter 5.
-) [23
+) [24
 
 
 
@@ -710,77 +673,12 @@ Chapter 5.
 
  (Conclusion.tex
 Chapter 6.
-) [24
+) [25
 
 
 
 
-]
-\openout2 = `mcmcCode.aux'.
-
- (mcmcCode.tex
-Appendix A.
-[25
-
-
-
-
-]) [26]
-\openout2 = `result_app.aux'.
-
- (result_app.tex
-Appendix B.
-<figures/final_graph_ver.png, id=639, 520.19344pt x 981.6675pt>
-File: figures/final_graph_ver.png Graphic file (type png)
-<use figures/final_graph_ver.png>
-Package pdftex.def Info: figures/final_graph_ver.png  used on input line 6.
-(pdftex.def)             Requested size: 199.0pt x 375.53902pt.
-) [27
-
-
-
-
- <./figures/final_graph_ver.png>]
-\openout2 = `derive_app.aux'.
-
- (derive_app.tex
-Appendix C.
-[28
-
-
-
-
-] [29]
-Overfull \hbox (58.42317pt too wide) detected at line 173
-[][][]
- []
-
-) [30]
-\openout2 = `Program.aux'.
-
- (Program.tex
-Appendix D.
-)
-Overfull \hbox (40.43484pt too wide) in paragraph at lines 3--170
-[] 
- []
-
-[31
-
-
-
-
-]
-\openout2 = `GA_outcomes.aux'.
-
- (GA_outcomes.tex
-Appendix E.
-[32
-
-
-
-
-]) [33] (Liza_report_rewrite.bbl
+] (Liza_report_rewrite.bbl
 (C:\Program Files\MiKTeX\tex/latex/stellenbosch\usbib.eng)
 Underfull \hbox (badness 10000) in paragraph at lines 23--27
 \T1/cmr/m/n/10.95 Available at: []$\T1/cmtt/m/n/10.95 https : / / machinelearni
@@ -788,13 +686,13 @@ ngmastery . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--39
+Underfull \hbox (badness 10000) in paragraph at lines 43--47
 \T1/cmr/m/n/10.95 Available at: []$\T1/cmtt/m/n/10.95 https : / / www . johndco
 ok . com / blog / 2016 / 01 / 25 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--39
+Underfull \hbox (badness 10000) in paragraph at lines 43--47
 \T1/cmtt/m/n/10.95 mcmc-[]burn-[]in / comment-[]page-[]1 / ?unapproved = 109421
 4 & moderation-[]hash =
  []
@@ -808,7 +706,7 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.50 \newblock {\selectlanguage{eng}
+l.58 \newblock {\selectlanguage{eng}
                                     \emph{A first course in finite elements}}.
 Your command will be ignored, type <return> to proceed
 
@@ -821,71 +719,66 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.71 \newblock {\selectlanguage{eng}
+l.79 \newblock {\selectlanguage{eng}
                                     \emph{Markov chain Monte Carlo in practi...
 
 Your command will be ignored, type <return> to proceed
 
-[34
+[26
 
 
 
 
-]) [35] (Liza_report_rewrite.aux (nomenkl.aux) (Introduction.aux)
-(techfoundation.aux) (implementation.aux) (results.aux) (discussion.aux)
-(Conclusion.aux) (mcmcCode.aux) (result_app.aux) (derive_app.aux) (Program.aux)
-(GA_outcomes.aux))
+]) [27] (Liza_report_rewrite.aux (Introduction.aux) (techfoundation.aux)
+(implementation.aux) (results.aux) (discussion.aux) (Conclusion.aux))
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Liza_report_rewrite.out' has not changed.
-(rerunfilecheck)             Checksum: CB5FC1B871CA42225F375512143A3BA5;5999.
+(rerunfilecheck)             Checksum: 88AD66D10724DBD39C2597028AA0ACE3;5116.
  ) 
 Here is how much of TeX's memory you used:
- 14302 strings out of 478864
- 207875 string characters out of 2858494
- 742869 words of memory out of 3000000
- 31627 multiletter control sequences out of 15000+600000
- 432708 words of font info for 99 fonts, out of 8000000 for 9000
+ 13230 strings out of 478864
+ 192847 string characters out of 2858494
+ 707869 words of memory out of 3000000
+ 30699 multiletter control sequences out of 15000+600000
+ 432371 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,16n,66p,342b,1872s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,16n,66p,541b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi6
-00\tcrm1200.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
+00\ectt1200.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
 appen/ec/dpi600\ecti1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/
 pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Liza Stewart\AppData\Local\
 MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Liza Stewart\A
 ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\L
-iza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk
+iza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk
 > <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
-ppen/ec/dpi600\ecbx1728.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/p
-k/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\Liza Stewart\AppData\Local\M
-iKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Liza Stewart\Ap
-pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Li
-za Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1095.pk>
+0\ecrm1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
+ppen/ec/dpi600\ecbx1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/p
+k/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\Liza Stewart\AppData\Local\M
+iKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Liza Stewart\Ap
+pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Li
+za Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk>
  <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
-\ecbx1200.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbx2488.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk
-/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Liza Stewart\AppData\Local\Mi
-KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1440.pk> <C:\Users\Liza Stewart\App
-Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Liz
-a Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> 
-<C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
-ecrm2074.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program 
-Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib1
-0.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pro
-gram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbol
-s/msam10.pfb>
-Output written on Liza_report_rewrite.pdf (41 pages, 1397014 bytes).
+\ecrm1200.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecsl1440.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk
+/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Liza Stewart\AppData\Local\Mi
+KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Liza Stewart\App
+Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Program Fi
+les/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.
+pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
+am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Pr
+ogram Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on Liza_report_rewrite.pdf (28 pages, 1233283 bytes).
 PDF statistics:
- 1497 PDF objects out of 1728 (max. 8388607)
- 229 named destinations out of 1000 (max. 500000)
- 410 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1161 PDF objects out of 1200 (max. 8388607)
+ 138 named destinations out of 1000 (max. 500000)
+ 341 words of extra memory for PDF output out of 10000 (max. 10000000)
 

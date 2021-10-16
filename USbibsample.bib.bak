@@ -1289,7 +1289,14 @@ abstract = {In this paper we propose a new sampling-free approach to solve Bayes
 }
 
 % John D'Errico (2021). fminsearchbnd, fminsearchcon (https://www.mathworks.com/matlabcentral/fileexchange/8277-fminsearchbnd-fminsearchcon), MATLAB Central File Exchange. Retrieved October 14, 2021. 
-
+@misc{derrico:2021,
+author = {John D'Errico},
+year = {2021},
+title = {fminsearchbnd, fminsearchcon},
+howpublished = {MATLAB Central File Exchange},
+retrieved = {October, 2021},
+url = {https://www.mathworks.com/matlabcentral/fileexchange/8277-fminsearchbnd-fminsearchcon}
+}
 @article{Cheng:2005,
 author = {Cheng, Alexander and Cheng, Daisy},
 year = {2005},

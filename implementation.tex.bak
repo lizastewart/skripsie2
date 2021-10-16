@@ -399,9 +399,22 @@ As explained in Section \ref{markovexpl} a step size is a crucial part of determ
 	The problem also technically becomes ten-dimensional, as there are ten separate independent $\kappa$-values that must be chained.
 	An important part of the \texttt{takesteps.m} (Appendix \ref{codeapp}) was to ensure the steps are only taken in a logical direction and that they would not move into an illogical or improbable range.
 	Negatives were specifically forbidden, as a negative thermal diffusivity would mean that heat flows in a direction opposite to the thermal gradient.
-	
-	//ALSO Write fancy code at bottom part
-	Provision had to be made in the //TODO
+%	To prevent that the steps are taken in a completely random direction the following criteria(?) is applied before the value is returned.
+	Provision was made in the function to prevent the algorithm to run away from what we know to be the general area. 
+	TODO
+	\begin{equation}
+	locsigma = stepsize*mu_values;
+	locxvalue = xvalue1 ;;
+
+	lnMu = log(xvalue1.^2 ./ sqrt(stepsize*mu_values.^2+locxvalue.^2));
+	lnSigma = sqrt(log(stepsize*mu_values.^2./xvalue1.^2 + 1));
+
+	xvalue2 = max(0, lognrnd(lnMu, lnSigma));
+	xvalue2(1) = xvalue1(1);
+
+	xvalue2(xvalue2<locsigma/20) = (mu_values(xvalue2<locsigma/20)+xvalue2(xvalue2<locsigma/20))/2;
+
+	\end{equation}
 
 %	The above example simplifies the concept, but this understanding can now be expanded.
 %	If every coordinate direction in the simple example is seen as a single entry into the $x$ vector, then the example has only three $\kappa$-values.
@@ -412,9 +425,10 @@ As explained in Section \ref{markovexpl} a step size is a crucial part of determ
 
 %	
 	
-	The acceptance criteria of the new $x$-vector is based on the proximity of the posteriori function to the reference posterior function with //TODO
+	The acceptance criteria of the new $x$-vector is based on the proximity of the new posterior value to the reference posterior value and the previous posterior. //TODO
 	A potential problem encountered with the standard acceptance probability method (shown in Section \ref{MCint_sec}) is that the magnitudes of the values were not considered. 
-	This problem lead to many `false positives', as incorrect values were accepted even though they were not actually acceptable. TODO: add acceptance criteria
+	This problem lead to many `false positives', as incorrect values were accepted even though they were not actually acceptable. 
+	The acceptance criteria was based on the difference between (posterioir
 	
 	\begin{figure}[H]
 	\centering
@@ -422,5 +436,15 @@ As explained in Section \ref{markovexpl} a step size is a crucial part of determ
 	\caption{Graph explaining the difference in acceptance rates (Generated at https://www.geogebra.org/graphing/g7kyzwce)}
 	\end{figure}
 	 
+	%exp((posterior2-posterior1)/(abs(posteriorref)/50));
+	
+	
+	\section{Optimisation to determine MAP}
+	The optimisation to determine the maximum value of the posterioir function was initially done utilising the built in Matlab optimisation algorithm \texttt{femsearchmin.m}. 
+	Since the built-in optimisation intends to minimise the function the probability was multiplied with -1 such that the minimum found is actually the maximum.
+	After initial analysis the maximum was found at negative $\kappa$-values, as previously stated that is illogical and impractical.
+	Further research on various adaptations of the built-in function lead to finding the \texttt{femsearchminbdr.m} adaptation by \citet{derrico:2021}. 
+	This was used to limit the search area to only positive $\kappa$-values.
+	Further the algorithm was set to only itterate a thousand times. 
 	
 	
