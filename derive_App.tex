@@ -1,6 +1,6 @@
 \chapter{Derivation}
 \begin{equation}
-	\label{heateq1}
+	%%\label{heateq1}
 	q_{,x}-f = 0  \text{  ...(1)} \quad\quad\quad\quad q = -\kappa u_{,x} \text{  ...(2)} 
 	\end{equation}
 	Integrating Equation \ref{heateq1} (1) over the length of the element(shown in Figure \ref{femfig}) and introducing a weighting function $w(x)$ we obtain \ref{heateq2}. 
@@ -8,17 +8,17 @@
 	The first term in \ref{heateq2} is integrated by parts. 
 	After the integration by parts and substituting $q$ with \ref{heateq1} (2), Equation \ref{heateq3} is created.
 	\begin{equation}
-	\label{heateq2}
+	%%\label{heateq2}
 	\int_{x=0}^L wq_{,x}dx - \int_{x=0}^L wfdx = 0
 	\end{equation}
 	\begin{equation}
-	\label{heateq3}
+	%%\label{heateq3}
 	\int_{x=0}^L wku_{,x}dx + \int_{x=0}^L wfdx - \left.wq\right|_0^L = 0
 	\end{equation}
 	In Equation \ref{heateq3} the $u$ and $w$ need to be defined.
 	Assuming $u \approx u^h$ and $w \approx w^h$ and using the basis function ($N^A$), Equation \ref{basisfunc_eq} is obtained.
 	\begin{equation}
-	\label{basisfunc_eq}
+	%%\label{basisfunc_eq}
 	\begin{aligned}
 	u_e^h = \sum_{B} N^B d^B  \quad &;\quad w_e^h = \sum_{A} N^A c^A\\
 	u_{e,x}^h = \sum_{B} N_{,x}^B d^B \quad &;\quad w_{e,x}^h=\sum_A N_{,x}^A c^A\\
@@ -27,14 +27,14 @@
 	Substituting the $u$ and $w$ functions back, we obtain the Galerkin weak form shown in Equation \ref{heateq4}.
 
 	\begin{equation}
-	\label{heateq4}
+	%%\label{heateq4}
 	\begin{aligned}
 	\sum_e \int_{\Omega_e} w_{e,x}^h k  u_{e,x}^h dx &+ \sum_e \int_{\Omega_e} w_e^h f dx - w(L)q_L + w(0)q_0 &= 0\\
 	\int_{\Omega_e} \sum_A \sum_B N_{,x}^A c^A k N_{,x}^B d^B dx  &+ \int_{\Omega_e} \sum_{A} N^A c^A f dx - \sum_{A\in A_N} c^A q^A &= 0\\
 	\end{aligned}
 	\end{equation}
 	\begin{equation}
-	\label{heateq5}
+	%%\label{heateq5}
 	\vec{c}_e^T \vec{K}_e^{AB} \vec{d}_e + \vec{c}_e^T \vec{F}_e^f -\vec{c}_e^T \vec{F}_e^q
 	\end{equation}
 	where
@@ -48,7 +48,7 @@
 	\end{equation*}
 	
 	
-	\begin{equation} \label{heatconeq}       
+	\begin{equation} %%\label{heatconeq}       
 	       \begin{aligned}
 	       q_{\text{adv}}= \nu &\rho c_p \Delta T \quad = \quad h \Delta T\\	      
 	       \nu =& \text{velocity m/s}\\
@@ -57,7 +57,7 @@
           \end{aligned}
 	\end{equation}
 	       
-	\begin{equation} \label{radeq}
+	\begin{equation} %%\label{radeq}
 	       \begin{aligned}
 	       q_{\text{rad}} = \varepsilon&\sigma \phi \left(T_f^4 - T_S^4\right)\\
 	       \varepsilon =& \text{emissivity}\\
@@ -66,11 +66,11 @@
 	       \end{aligned}
 	\end{equation}
 	Given that $T_S$ and $T_F$ are known a new equivalent heat flux value can be calculated as in Equation \ref{femboundeq1}.
-	\begin{equation} \label{femboundeq1}
+	\begin{equation} %%\label{femboundeq1}
 	q_{\text{con}}^{\text{equiv}} = \kappa^{\text{equiv}} \frac{\Delta T}{\Delta L} = q_{\text{rad}} + q_{\text{adv}}\\
 	\end{equation}
 	Due to the clear relationship between heat flux and thermal diffusivity the equivalent diffusivity($\kappa^{\text{equiv}}$) can be calculated as shown below in Equation \ref{femboundeq2}. 
-	\begin{equation}\label{femboundeq2}
+	\begin{equation}%%\label{femboundeq2}
 	\begin{aligned}
 	\kappa^{\text{equiv}} &= \frac{\left[q_{\text{rad}} + q_{\text{adv}} \right]}{\Delta T}\\
 	&\quad\\
@@ -81,14 +81,14 @@
 	\end{equation}
 	
 Diffusion Equation: 
-	\begin{equation}\label{femdiffeq1}
+	\begin{equation}%%\label{femdiffeq1}
 	q_{,x} - f = \frac{\partial Q}{\partial t} = c_{\rho}\frac{\partial u}{\partial t}\quad\text{  ...(1)} \quad\quad\quad q = -\kappa \frac{\partial u}{\partial x}\quad\text{  ...(2)}
 \end{equation}
 Substituting Equation \ref{femdiffeq1}(2) into \ref{femdiffeq1} and taking the derivative as indicated ($q_{,x}$) gives Equation \ref{femdiffeq2}. 
 As previously disccussed heat conduction ($\alpha$) is heat diffusion ($\kappa$)  divided by specific heat ($c_p$).
 
 
-\begin{equation}\label{femdiffeq2}
+\begin{equation}%%\label{femdiffeq2}
 \begin{aligned}
 \therefore -\kappa \frac{\partial^2 u}{\partial x^2} - f &= c_{\rho}\frac{\partial u}{\partial t} \rightarrow f=0:\\
 \frac{\partial^2 u}{\partial x^2} &= - \frac{c_{\rho}}{\kappa} \frac{\partial u}{\partial t} \quad \\
@@ -100,26 +100,26 @@ As previously disccussed heat conduction ($\alpha$) is heat diffusion ($\kappa$)
 
 Let $c_p = \lambda$ 
 
-\begin{equation}\label{femdiffeq3}
+\begin{equation}%%\label{femdiffeq3}
 \therefore -\kappa u_{,xx} - \lambda u_{,t} = f
 \end{equation}
 
 
 Then:
 
-\begin{equation}\label{femdiffeq4}
+\begin{equation}%%\label{femdiffeq4}
 \int_0^L w q_{,x} \text{d}x - \int_0^L w \lambda u_{,t} \text{d}x - \int_0^L w f \text{d}x = 0
 \end{equation}
 
 
 Similar to what was done in \ref{basisfunc_eq} a special approximation is made to obtain Equation \ref{femdiffeq5}.
 
-\begin{equation}\label{femdiffeq5}
+\begin{equation}%%\label{femdiffeq5}
 u \approx u^h \rightarrow u_e^h = \sum_{A}N^A d^A \quad;\quad w_e^h = \sum_{A}N^A L^A
 \end{equation}
 
 
-\begin{equation}\label{femdiffeq6}
+\begin{equation}%%\label{femdiffeq6}
 \rightarrow \sum_e \int_{\Omega^e} w_{e,x}^h \kappa u_{e,x}^h \text{d}x_e + \sum_e \int_{\Omega^e} w_e^h \lambda u_{e,t}^h \text{d}x_e + \sum_e \int_{\Omega^e} w_e^h f \text{d}x_e - \sum_{e \in \epsilon_A} w q_N = 0
 \end{equation}
 
@@ -145,7 +145,7 @@ u \approx u^h \rightarrow u_e^h = \sum_{A}N^A d^A \quad;\quad w_e^h = \sum_{A}N^
 
 From all the above equations the below matrix formulation could be assembled:
 %considere renamin to somehing with assembled or matrix in the name
-\begin{equation}\label{femdiffeq7}
+\begin{equation}%%\label{femdiffeq7}
 \vec{c}^T \vec{\kappa} \vec{d} + \vec{c}^T \vec{M} \vec{\dot{d}} = \vec{c}^T \vec{F}
 \end{equation}
 
@@ -237,7 +237,7 @@ M_e^{AB} = \int_0^\ell N^A N^B \lambda \text{d}x \quad\text{ with }\quad \lambda
 \end{equation}
 
 If $A=1$ and $B=1$ then $M_e$ is calculated as shown below in Equation \ref{MeExampleeq1}.
-\begin{equation} \label{MeExampleeq1}
+\begin{equation} %%\label{MeExampleeq1}
 \begin{aligned}
 M_e^{11} &= \left(\frac{\ell}{2}\right) \int_{-1}^{+1} \frac{1}{4} (1-\xi)^2\left[ \frac{1-\xi}{2} \cdot \lambda^{(1)} + \frac{1+\xi}{2} \cdot \lambda^{(2)} \right] \text{d} \xi \\
 &= \frac{\ell}{16} \int_{-1}^{+1} \left[
@@ -260,7 +260,7 @@ M_e^{11} &= \left(\frac{\ell}{2}\right) \int_{-1}^{+1} \frac{1}{4} (1-\xi)^2\lef
  
  When $A=2$ and $B=2$:
 
-\begin{equation}\label{MeExampleeq2}
+\begin{equation}%%\label{MeExampleeq2}
 \begin{aligned}
 M_e^{22} &= \frac{\ell}{16} \int_{-1}^{+1} \left[
 	(1+\xi)^2(1-\xi)\lambda^{(1)} + (1+\xi)^2(1+\xi)\lambda^{(2)}
@@ -272,7 +272,7 @@ M_e^{22} &= \frac{\ell}{16} \int_{-1}^{+1} \left[
 \end{aligned}
 \end{equation}
  When $A=1$ and $B=2$ \textbf{or} $A=2$ and $B=1$:
-\begin{equation}\label{MeExampleeq3}
+\begin{equation}%%\label{MeExampleeq3}
 \begin{aligned}
 M_e^{12} &= \frac{\ell}{16} \int_{-1}^{+1} \left[
 	(1-\xi^2)(1-\xi) \lambda^{(1)}
@@ -290,7 +290,7 @@ M_e^{12} &= \frac{\ell}{16} \int_{-1}^{+1} \left[
 \end{equation}
 
  The matrix can then be assembled from the above Equations \ref{MeExampleeq1},\ref{MeExampleeq2} and \ref{MeExampleeq3}:
-\begin{equation}\label{Meassembled}
+\begin{equation}%%\label{Meassembled}
 \begin{aligned}
 \vec{M}_e &= \frac{\ell}{4} \left(
 	\lambda^{(1)} \begin{bmatrix} 1 & \frac{1}{3} \\ \frac{1}{3} & \frac{1}{3} \end{bmatrix}
@@ -304,7 +304,7 @@ M_e^{12} &= \frac{\ell}{16} \int_{-1}^{+1} \left[
 \end{equation}
 
 The same can be done to assemble the $K$ matrix as shown below.
-\begin{equation}\label{Keass1}
+\begin{equation}%%\label{Keass1}
 \begin{aligned}
 K_e^{AB} &= \left(\frac{\pm 1}{2\ell}\right) \int_{-1}^{+1} \left[
 	\frac{1-\xi}{2} \kappa^{(1)}
@@ -315,7 +315,7 @@ K_e^{AB} &= \left(\frac{\pm 1}{2\ell}\right) \int_{-1}^{+1} \left[
 \end{equation}
 
 
-\begin{equation}\label{Keass2}
+\begin{equation}%%\label{Keass2}
 \vec{K}_e = \frac{1}{2\ell} \left(
 	\kappa^{(1)} \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix}
 	+ \kappa^{(2)} \begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix}
@@ -323,7 +323,7 @@ K_e^{AB} &= \left(\frac{\pm 1}{2\ell}\right) \int_{-1}^{+1} \left[
 \end{equation}
 
 There after the $\vec{F}_e$ matrix
-\begin{equation}\label{Keass3}
+\begin{equation}%%\label{Keass3}
 \begin{aligned}
 F_e^A &= \int_0^\ell N^A f \text{d}x \\
 &= \frac{\ell}{2} \int_{-1}^{+1} N^A f \text{d} \xi
@@ -331,7 +331,7 @@ F_e^A &= \int_0^\ell N^A f \text{d}x \\
 \end{equation}
 
 
-\begin{equation}\label{Feass4}
+\begin{equation}%%\label{Feass4}
 \begin{aligned}
 F_e^1 &= \frac{\ell}{2} \int_{-1}^{+1} \left(\frac{1-\xi}{2}\right) \cdot \left[
 	\frac{1-\xi}{2}\cdot f^{(1)}
@@ -344,7 +344,7 @@ F_e^1 &= \frac{\ell}{2} \int_{-1}^{+1} \left(\frac{1-\xi}{2}\right) \cdot \left[
 \end{aligned}
 \end{equation}
 
-\begin{equation}\label{Feass5}
+\begin{equation}%%\label{Feass5}
 \begin{aligned}
 F_e^2 &= \frac{\ell}{8} \int_{-1}^{+1} \left[
 	(1-\xi^2)\cdot f^{(1)} + (1+\xi)^2\cdot f^{(2)}
@@ -353,7 +353,7 @@ F_e^2 &= \frac{\ell}{8} \int_{-1}^{+1} \left[
 \end{equation}
 
 
-\begin{equation}\label{Feass6}
+\begin{equation}%%\label{Feass6}
 \begin{aligned}
 \therefore \vec{F}_e &= \frac{\ell}{8} \left(
 	f^{(1)} \begin{Bmatrix} \frac{8}{3} \\ \frac{4}{3} \end{Bmatrix}
@@ -371,11 +371,11 @@ F_e^2 &= \frac{\ell}{8} \int_{-1}^{+1} \left[
 
 
 After assembly but before Dirichlet boundaries are applied 
-\begin{equation}\label{FEM_nodirieq}
+\begin{equation}%%\label{FEM_nodirieq}
 \vec{\bar{c}}^T \vec{\bar{K}} \vec{\bar{d}} + \vec{\bar{c}}^T \vec{\bar{M}} \vec{\dot{\bar{d}}} = \vec{\bar{c}}^T \vec{\bar{F}}
 \end{equation}
 When the Dirichlet boundaries below (Equation \ref{diribound}) are applied to the matrices shown in Equation \ref{FEM_nodirieq} , they can be simplified to Equation \ref{solveeq1}.
-\begin{equation}\label{diribound}
+\begin{equation}%%\label{diribound}
 \begin{aligned}
 c_1 = 0 \quad &\text{and} \quad c^{np}=0\\
 d_1 = u_{\text{fire(t)}}\quad &\text{and} \quad d^{np} = u_{\text{air}}\\
@@ -384,7 +384,7 @@ d_1 = u_{\text{fire(t)}}\quad &\text{and} \quad d^{np} = u_{\text{air}}\\
 
 Then:
 
-\begin{equation}\label{solveeq1}
+\begin{equation}%%\label{solveeq1}
 \begin{aligned}
 \vec{c}^T\cdot\vec{K}\cdot\vec{d} + \vec{c}^T\cdot\vec{M}\cdot\vec{\dot{d}} = \vec{c}^T\cdot\vec{F}' - \vec{c}^T\left(
 	\{K'\}d'
@@ -399,13 +399,13 @@ Then:
 
 And so:
 
-\begin{equation}\label{solveeq2}
+\begin{equation}%%\label{solveeq2}
 \vec{K}\cdot\vec{d} + \vec{M}\cdot\vec{\dot{d}} = \vec{F}' - \vec{F}^{Ke?} - \vec{F}^{Me?} = \vec{F}
 \end{equation}
 
 Solve as
 
-\begin{equation}\label{solveeq3}
+\begin{equation}%\label{solveeq3}
 \begin{aligned}
 \vec{\tilde{d}}_{n+1} &= \vec{d}_n + (1-\alpha)\Delta t \vec{v}_n \\
 (\vec{M} + \alpha\Delta t\vec{K})\vec{v}_{n+1} &= \vec{F}_{n+1} - \vec{K} \vec{\tilde{d}}_{n+1} \\

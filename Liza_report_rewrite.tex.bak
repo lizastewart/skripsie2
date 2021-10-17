@@ -91,7 +91,7 @@
 }
 
 
-
+\usepackage{textcomp}
 %\inputencoding{utf8}
 
 %To add caption to matrix
@@ -133,14 +133,14 @@ for the T-dependant thermal diffusivity of SA pine}
 \frontmatter%========================================================
 
 \TitlePage
-%\CopyrightPage
-%\include{verklaring}
-%\include{opsomming}
-%\include{abstract}
-%\tableofcontents
-%\listoffigures
+\CopyrightPage
+\include{verklaring}
+\include{opsomming}
+\include{abstract}
+\tableofcontents
+\listoffigures
 %\listoftables
-%\include{nomenkl}
+\include{nomenkl}
 
 \mainmatter%=========================================================
 
@@ -158,11 +158,11 @@ for the T-dependant thermal diffusivity of SA pine}
 
 \appendix%===========================================================
 
-%\include{mcmcCode}
-%\include{result_app}
-%\include{derive_app}
-%\include{Program}
-%\include{GA_outcomes}
+\include{mcmcCode}
+\include{result_app}
+\include{derive_app}
+\include{Program}
+\include{GA_outcomes}
 
 \backmatter%=========================================================
 

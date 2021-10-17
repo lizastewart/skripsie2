@@ -6,15 +6,16 @@ Specific thermal properties of timber need to be thoroughly understood to allow 
 After 100 $^{^\circ}$C, the temperature exposure causes the breakdown of the timber structure in such a way that the structure will not return to the same state after cooling.
 This breakdown is generally referred to as thermal degradation.
 The degradation can be broken into four categories \citep{White:2001} \citep{Shi:2021}.
-These four categories are based on the different reactions that take place and briefly summarised below.
+These four categories are based on the different reactions that take place and are briefly summarised below.
 Above 100 $^{^\circ}$C and below 200 $^{^\circ}$C, the moisture in the timber is evaporated and other non-combustible gasses are released.
 Between 200 $^{^\circ}$C and 300$^{^\circ}$C, carbon-monoxide is released in significant quantities and some of the timber components undergo a change in chemical composition due to the high temperatures.
-Temperatures after 300 $^{^\circ}$C and before 450 $^{^\circ}$C are significant due to the amount of flamable volatiles released and the break of carbon linkages at 370 $^{^\circ}$C.
+Temperatures after 300 $^{^\circ}$C and before 450 $^{^\circ}$C are significant due to the amount of flammable volatiles released and the break of carbon linkages at 370 $^{^\circ}$C.
 At temperatures higher than 450 $^{^\circ}$C the remaining timber is char and any further degradation is due to oxidation from carbon-monoxide, - dioxide and water.
 These phases should be clear in the results and data. (TODO add lines for phases)
 
 All the thermal properties of various timber species at high temperatures were discussed in a research article by \citet{Shi:2021}.
- In their article they provide a general expression for the thermal conductivity of softwoods (Equation \ref{softconeq}) and char (Equation \ref{charconeq}).  
+ In their article, they provide a general expression for the thermal conductivity of softwoods (Equation \ref{softconeq}) and char (Equation \ref{charconeq}).  
+
 
  \begin{equation}\label{softconeq}
  \alpha = 0.124 +0.8432 \times 10^{-4} (\text{T}-293) 
@@ -23,7 +24,7 @@ All the thermal properties of various timber species at high temperatures were d
  \alpha = 0.091 + 8.2 \times 10^{-4} \text{T}
  \end{equation}
  
- For this project the temperature of char will be used as 300 $^{^\circ}$C in accordance with the research of \citeauthor{Westhuyzen:2020}. 
+ For this project, the temperature of char will be used as 300 $^{^\circ}$C following the research of \citeauthor{Westhuyzen:2020}. 
 % The specific heat ($C_p$) will be assumed to be constant at 1500 kJ/$\text{m}^3$/K. the density of pine was also assumed constant at 
  Using the equations in by \citeauthor{Shi:2021} the following $\kappa$-values (Equation \ref{shiK}) are obtained. 
 \begin{equation}\label{shiK}
@@ -46,7 +47,9 @@ All the thermal properties of various timber species at high temperatures were d
   \end{blockarray}
 \end{equation}
  
-From the big difference between these values and the Euro code values it is clear that these simple equations are not sufficient for determining the thermal conductivity of pine.
+From the big difference between these values and the Euro code values, it is clear that these simple equations are not sufficient for determining the thermal conductivity of pine.
+
+
 
 \section{Finite Element Method}\label{femsec}
 Finite element methods (or finite element analysis) is used when the behaviour of an element cannot be accurately depicted by a simple mathematical equation. 
@@ -68,7 +71,7 @@ Finite element methods (or finite element analysis) is used when the behaviour o
 	An important part of how finite element models are how the known information is embedded into the model.
 	The main way this is done is by defining boundary conditions at known points. The two types of boundary conditions used in this project are Dirichlet boundaries and Newmann boundaries.
 	
-	Named after Johann P.G.L Dirichlet \citep{Cheng:2005} , Dirichlet boundaries force the solution function to be equal to the prescribed value at the boundary. 
+	Named after Johann P.G.L Dirichlet \citep{Cheng:2005}, Dirichlet boundaries force the solution function to be equal to the prescribed value at the boundary. 
 	Newmann boundaries prescribe that the derivative of the solution function be equal to the predetermined value. 
 	In the context of this problem, the Dirichlet boundaries prescribe the temperatures at the boundaries and the Newmann boundaries prescribe the heat flux at the boundaries.
 	
@@ -174,11 +177,11 @@ This seems counter-intuitive since the intention is to find the maximum of the f
 Luckily the minimum is simply a negative maximum. 
 
 According to the \texttt{fminsearch} Matlab documentation (\url{https://ch.mathworks.com/help/matlab/ref/fminsearch.html}) , the algorithm is based on the Nelder-Mead algorithm \citep{Lagarias:1998}.
-The Nelder-Mead algorithm is a unconstrained heuristic direct search method.
+The Nelder-Mead algorithm is an unconstrained heuristic direct search method.
 The heuristic aspect of the algorithm means that it searches the function space in a guided random manner.
 
 Nelder-Mead uses a simplex, a triangle in the dimension needed, to find the minimum.
-In two-dimensions, the simplex is simply a triangle, where each point has a $x$ and $y$ coordinate and is notated as. 
+In two-dimension, the simplex is simply a triangle, where each point has a $x$ and $y$ coordinate and is notated as. 
 A starting value needs to be provided to the algorithm, this will then be one of the points in the first simplex.
 All the points on the simplex are ordered from best to worst, where the smallest value ($f(x)$) is best if minimising.
 In the two-dimensional example, the centroid of the two best points ($x_l,x_s$) are calculated, from there using the value of the function at the simplexes and the centroid transformations can be performed to find even smaller values.
@@ -201,5 +204,5 @@ The result is a simplex that moves over a surface in search of the lowest point 
 \caption{Visual representation of Nedler-Mead transformations a) Reflection, b) Expansion, c) Contraction, d) Shrink contraction (Source:\url{https://codesachin.wordpress.com/2016/01/16/nelder-mead-optimization/})}
 \end{figure}
 
-
+%gramarly done 17/10
 

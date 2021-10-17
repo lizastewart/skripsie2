@@ -19,8 +19,8 @@ The results of running the algorithm until 20 000 acceptable values are found is
 \section{Resulting k-values}
 
 The thermal conductivity ($\kappa$-values) at key temperatures was the main goal of this project. 
-As can be seen in Figure \ref{kresult_euro_fig} there was quite a drastic difference in the thermal diffusivity at 1200 $^{^\circ}$C and between 0$^{^\circ}$C and 200$^{^\circ}$C.
-thee large difference at 1200$^{^\circ}$C is due to how our model is created.(TODO?)
+As can be seen in Figure \ref{kresult_euro_fig} there was quite a drastic difference in the thermal diffusivity at 1200 \textdegree C and between 0\textdegree C and 200\textdegree C.
+thee large difference at 1200\textdegree C is due to how our model is created.(TODO?)
 Most of the energy at that temperature is radiated?(TODO)
 \begin{figure}[H]
 	\label{kresult_euro_fig}
@@ -28,15 +28,42 @@ Most of the energy at that temperature is radiated?(TODO)
 	\caption{Resulting $\kappa$ values compared to Euro-code standard values}
 \end{figure}
  
-\begin{figure}
-	\includegraphics[width = 0.5\linewidth]{figures/histograph/histo1.png}
-\end{figure}
-
-\section{Model output}
-In Figure \ref{data_newk} the difference in output from running the model with the new $\kappa$ values, Euro code $\kappa$ and the measured data can be seen. 
-
-\begin{figure}[H]
-	\label{data_newk}
+\begin{figure}[b]
+\label{histofig}
+\centering
+	\begin{subfigure}{}
 	\centering
-	\includegraphics[width=\linewidth,]{figures/final_graph.png}
+	\includegraphics[width = 0.45\linewidth]{figures/histograph/histo1.png}
+	\end{subfigure}
+	\begin{subfigure}{}
+	\centering
+	\includegraphics[width = 0.45\linewidth]{figures/histograph/histo2.png}
+	\end{subfigure}
+	\begin{subfigure}{}
+	\centering
+	\includegraphics[width = 0.45\linewidth]{figures/histograph/histo3.png}
+	\end{subfigure}
+	\begin{subfigure}{}
+	\centering
+	\includegraphics[width = 0.45\linewidth]{figures/histograph/histo4.png}
+	\end{subfigure}
+	\begin{subfigure}{}
+	\centering
+	\includegraphics[width = 0.45\linewidth]{figures/histograph/histo5.png}
+	\end{subfigure}
+	\begin{subfigure}{}
+	\centering
+	\includegraphics[width = 0.45\linewidth]{figures/histograph/histo6.png}
+	\end{subfigure}
+	\begin{subfigure}{}
+	\centering
+	\includegraphics[width = 0.45\linewidth]{figures/histograph/histo7.png}
+	\end{subfigure}
+	\begin{subfigure}{}
+	\centering
+	\includegraphics[width = 0.45\linewidth]{figures/histograph/histo8.png}
+	\end{subfigure}
+	\caption[short]{Histographs showing distribution at different temperatures}
 \end{figure}
+
+

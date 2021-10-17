@@ -52,7 +52,7 @@ The derivation and adaptation of the model are expanded on below.
 	Assumptions were made to simplify the model, they were as follows
 	\begin{enumerate}
 \item{The air on the side of fire follows the temperature of the fire curve.}
-\item{The air on the cold side remains at 20$^{^\circ}$C.}
+\item{The air on the cold side remains at 20\textdegree C.}
 	\end{enumerate}
 	\subsubsection{Stationary heat conduction}
 	\begin{figure}[H]
@@ -88,11 +88,11 @@ The derivation and adaptation of the model are expanded on below.
 	\end{aligned}
 	\end{equation}		
 	Substituting the $u$ and $w$ functions back, we obtain the Galerkin weak form shown in Equation \ref{heateq4}.
-	In Equation\ref{heateq4} the $A_N$ referes to the nodes that have Newmann boundaries(TODO explained in \ref{femsec}). 
-	The variables $c^A$ and $d^B$ are independant of x and can therefore be taken out of the integral. 
+	In Equation\ref{heateq4} the $A_N$ refers to the nodes that have Newmann boundaries(TODO explained in \ref{femsec}). 
+	The variables $c^A$ and $d^B$ are independent of x and can therefore be taken out of the integral. 
 	The sum over A and B are also taken out of the integral.
-	When the summing is applied a matrix of all the possible combinations between A and B can be used to replace the sum. The resulting matrices are shown in Equation \ref{heateq5}. 
-	When written in matrix form the summing is implied, if matrix form is it written then the expression referrers to the terms that will still be summed.
+	After the summing is applied a matrix of all the possible combinations between A and B can be used to replace the sum. The resulting matrices are shown in Equation \ref{heateq5}. 
+	When written in matrix form the summing is implied, if matrix form is not written then the expression referrers to the terms that will still be summed.
 
 	\begin{equation}
 	\label{heateq4}
@@ -123,7 +123,7 @@ The derivation and adaptation of the model are expanded on below.
 	\end{figure}
 	
 	One of the additional difficulties in modelling is that the known boundary temperatures are measured in the air of the furnace and assumed for the air outside the furnace.
-	Initially a long element of air was modelled.
+	Initially, a long element of air was modelled.
 	This element is then overlaid with the timber element to effectively add an air element it each end of the timber element as depicted in \ref{airelmfig}
 	In the air elements, both heat convection and heat radiation need to be taken into account.
 	The equations for heat convection and radiation can be seen in Equation \ref{heatconeq} and \ref{radeq}.
@@ -233,94 +233,95 @@ From all the above equations the below matrix formulation could be assembled:
 
 Solving:(TODO: date 15/10 last)
 
-\begin{equation}
-(1) \text{ Set } \vec{d}_0 = |---|---|---| \\
-\&\ \vec{v}_0 = \vec{0} \\
-\text{Also set } \alpha \text{ (mixing constant?)} ; \Delta t
-\end{equation}
-
-
-\begin{equation}
-(2) \text{ Time integration [v-form;Hughes Ch8]} \\
-\vec{d}_{n+1} = \vec{d}_n + (1-\alpha) \Delta \vec{v}_n + \alpha \Delta t \vec{v}_{n+1}
-\end{equation}
-
-
-\begin{equation}
-(\vec{M} + \alpha\Delta t \vec{\kappa})\vec{v}_{n+1} = \vec{F}_{n+1} - \vec{\kappa} \tilde{\vec{d}}_{n+1}
-\end{equation}
-
-
-if $\vec{M}$ and $\vec{\kappa}$ independent of time and temperature, sufficient to say:
-
-\begin{equation}
-\vec{v}_{n+1} = (\vec{M}+\alpha\Delta t \vec{\kappa})^{-1} (\vec{F}_{n+1} - \vec{\kappa} \vec{\tilde{d}}_{n+1})
-\end{equation}
-
-%Page 5 
-If $\kappa$ and $\lambda$ is independent of position:
-\begin{equation}
-\begin{aligned}
-	\kappa_e^{AB} &= \int_0^\ell N_{,x}^A N_{,x}^B \kappa \text{d}x \\
-&= \kappa \int_0^\ell N_{,x}^A N_{,x}^B \text{d}x \\
-&= \kappa \int_{-1}^{+1} N_{,\xi}^A N_{,\xi}^B \xi_{,x}^2 \left|J\right|  d\xi \\
-&=\kappa \frac{2}{\ell} \int_{-1}^{+1} N_{,\xi}^A N_{,\xi}^B \text{d}\xi\\
-&= \pm \frac{\kappa}{\ell} = \begin{cases}
-+\frac{1}{2} & \text{if } A = B \\
--\frac{1}{2} & \text{if } A \ne B
-\end{cases}
-\end{aligned}
-\end{equation}
-
-\begin{equation}
-\therefore \vec{\kappa}_e = \frac{\kappa}{\ell} \begin{bmatrix} +1 & -1 \\ -1 & +1 \end{bmatrix}
-\end{equation}	
-
-\begin{equation}
-M_e^{AB} = \int_0^\ell N^A N^B \lambda \text{d}x = \lambda \int_0^\ell N^A N^B \text{d}x = \frac{\lambda \ell}{2} \int_{-1}^{+1} N^A N^B \text{d}x
-\end{equation}
-\begin{equation}
-N^1 N^1 = \frac{1}{4}(1-\xi)^2 ; N^2 N^2 = \frac{1}{4}(1+\xi)^2 ; N^1 N^2 = \frac{1}{4}(1-\xi^2)
-\end{equation}
-
-\begin{equation}
-N^1 = \frac{1-\xi}{2} ; N^2 = \frac{1+\xi}{2}
-\end{equation}
-
-Then
-	\begin{equation}
-	\begin{aligned}
-	\int N^1 N^1 &= \frac{1}{4} \left[ \xi + \frac{1}{3}\xi^3 \right]_{-1}^{+1} = \frac{2}{3} \\
-	\int N^2 N^2 &= \frac{1}{4} \left[ \xi + \frac{1}{3}\xi^3 \right]_{-1}^{+1} = \frac{2}{3} \\
-	\int N^1 N^2 &= \frac{1}{4} \left[ \xi - \frac{1}{3}\xi^3 \right]_{-1}^{+1} = \frac{1}{3} \\
-	\end{aligned}
-	\end{equation}	
-	
-	\begin{equation}
-	\therefore \vec{M}_e = \frac{\lambda \ell}{6} \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix}
-	\end{equation}
-	
-	\begin{equation}
-	\vec{F}_e^{fA} = \int_0^\ell N f \text{d}x = f \frac{\ell}{2} \int_{-1}^{+1} N \text{d}x = f\frac{\ell}{2} \\
-\therefore \vec{F}_e^f = \frac{f\ell}{2} \begin{Bmatrix} 1\\1 \end{Bmatrix}
-	\end{equation}
+%\begin{equation}
+%(1) \text{ Set } \vec{d}_0 = |---|---|---| \\
+%\&\ \vec{v}_0 = \vec{0} \\
+%\text{Also set } \alpha \text{ (mixing constant?)} ; \Delta t
+%\end{equation}
+%
+%
+%\begin{equation}
+%(2) \text{ Time integration [v-form;Hughes Ch8]} \\
+%\vec{d}_{n+1} = \vec{d}_n + (1-\alpha) \Delta \vec{v}_n + \alpha \Delta t \vec{v}_{n+1}
+%\end{equation}
+%
+%
+%\begin{equation}
+%(\vec{M} + \alpha\Delta t \vec{\kappa})\vec{v}_{n+1} = \vec{F}_{n+1} - \vec{\kappa} \tilde{\vec{d}}_{n+1}
+%\end{equation}
+%
+%
+%if $\vec{M}$ and $\vec{\kappa}$ independent of time and temperature, sufficient to say:
+%
+%\begin{equation}
+%\vec{v}_{n+1} = (\vec{M}+\alpha\Delta t \vec{\kappa})^{-1} (\vec{F}_{n+1} - \vec{\kappa} \vec{\tilde{d}}_{n+1})
+%\end{equation}
+%
+%%Page 5 
+%If $\kappa$ and $\lambda$ is independent of position:
+%\begin{equation}
+%\begin{aligned}
+%	\kappa_e^{AB} &= \int_0^\ell N_{,x}^A N_{,x}^B \kappa \text{d}x \\
+%&= \kappa \int_0^\ell N_{,x}^A N_{,x}^B \text{d}x \\
+%&= \kappa \int_{-1}^{+1} N_{,\xi}^A N_{,\xi}^B \xi_{,x}^2 \left|J\right|  d\xi \\
+%&=\kappa \frac{2}{\ell} \int_{-1}^{+1} N_{,\xi}^A N_{,\xi}^B \text{d}\xi\\
+%&= \pm \frac{\kappa}{\ell} = \begin{cases}
+%+\frac{1}{2} & \text{if } A = B \\
+%-\frac{1}{2} & \text{if } A \ne B
+%\end{cases}
+%\end{aligned}
+%\end{equation}
+%
+%\begin{equation}
+%\therefore \vec{\kappa}_e = \frac{\kappa}{\ell} \begin{bmatrix} +1 & -1 \\ -1 & +1 \end{bmatrix}
+%\end{equation}	
+%
+%\begin{equation}
+%M_e^{AB} = \int_0^\ell N^A N^B \lambda \text{d}x = \lambda \int_0^\ell N^A N^B \text{d}x = \frac{\lambda \ell}{2} \int_{-1}^{+1} N^A N^B \text{d}x
+%\end{equation}
+%\begin{equation}
+%N^1 N^1 = \frac{1}{4}(1-\xi)^2 ; N^2 N^2 = \frac{1}{4}(1+\xi)^2 ; N^1 N^2 = \frac{1}{4}(1-\xi^2)
+%\end{equation}
+%
+%\begin{equation}
+%N^1 = \frac{1-\xi}{2} ; N^2 = \frac{1+\xi}{2}
+%\end{equation}
+%
+%Then
+%	\begin{equation}
+%	\begin{aligned}
+%	\int N^1 N^1 &= \frac{1}{4} \left[ \xi + \frac{1}{3}\xi^3 \right]_{-1}^{+1} = \frac{2}{3} \\
+%	\int N^2 N^2 &= \frac{1}{4} \left[ \xi + \frac{1}{3}\xi^3 \right]_{-1}^{+1} = \frac{2}{3} \\
+%	\int N^1 N^2 &= \frac{1}{4} \left[ \xi - \frac{1}{3}\xi^3 \right]_{-1}^{+1} = \frac{1}{3} \\
+%	\end{aligned}
+%	\end{equation}	
+%	
+%	\begin{equation}
+%	\therefore \vec{M}_e = \frac{\lambda \ell}{6} \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix}
+%	\end{equation}
+%	
+%	\begin{equation}
+%	\vec{F}_e^{fA} = \int_0^\ell N f \text{d}x = f \frac{\ell}{2} \int_{-1}^{+1} N \text{d}x = f\frac{\ell}{2} \\
+%\therefore \vec{F}_e^f = \frac{f\ell}{2} \begin{Bmatrix} 1\\1 \end{Bmatrix}
+%	\end{equation}
 	\subsection{Existing Model}
-	For this project an existing finite element model of heat diffusion by Prof. N de Koker was modified for usage in the Bayes' theorem~\ref{bayes_eq}. 
+	For this project, an existing finite element model of heat diffusion by Prof. N de Koker was modified for usage in the Bayes' theorem~\ref{bayes_eq}. 
 	This model is used to determine the likelihood function. 
 	The current model uses the standard Euro code $\kappa$-values as well as the specific heat specified in the \citep{Euro:2004} shown in Equation \ref{cpusedeq}.
-%\begin{equation} \label{cpusedeq}
-%  \texttt{cpine}=
-%  \begin{blockarray}{*{14}{c} l}
-%    \begin{block}{[*{14}{c}]>{$\footnotesize}l<{$}}
-%      0 & 20 & 99&100& 120 & 121 & 200 & 250 & 300 & 350 & 400 & 600& 800 & 1200 \bigstrut[t]& $^{^\circ}\text{C}$ \\
-%      479 & 479& 479 & 479 &  479 & 408 & 408 & 398 & 326&  220 &163 &  120 & 110 & 100 & $\text{kg/m}^3$ \\
-%     1530 &1530 &1770 &13600& 13500& 2120& 2000& 1620 & 710 & 850 &1000& 1400 &1650& 1650 & J/kg/K \\
-%    \end{block}
-%  \end{blockarray}
-%\end{equation}
+\begin{equation} \label{cpusedeq}
+\centering
+  \texttt{cpine}=
+  \begin{blockarray}{*{14}{c} l}
+    \begin{block}{[*{14}{c}]>{$\footnotesize}l<{$}}
+      0 & 20 & 99&100& 120 & 121 & 200 & 250 & 300 & 350 & 400 & 600& 800 & 1200 \bigstrut[t]& $^{^\circ}\text{C}$ \\
+      479 & 479& 479 & 479 &  479 & 408 & 408 & 398 & 326&  220 &163 &  120 & 110 & 100 & $\text{kg/m}^3$ \\
+     1530 &1530 &1770 &13600& 13500& 2120& 2000& 1620 & 710 & 850 &1000& 1400 &1650& 1650 & J/kg/K \\
+    \end{block}
+  \end{blockarray}
+\end{equation}
 	
-	The model discretises the wooden element into 32 different elements. For finite element analysis, there are always more elements used to generate the model than usually evaluated. This is done to improve the accuracy of said model.
-	The model is a one dimensional finite element model that takes time differentiation into account.
+	The model discretises the wooden element into 32 different elements. For finite element analysis, there are always more elements used to generate the model than needed for evaluation. This is done to improve the accuracy of said model.
+	The model is a one-dimensional finite element model that takes time differentiation into account.
 	
 \begin{figure}[H]
 	\label{og_modeldata}
@@ -337,7 +338,7 @@ Then
 \section{Inversion method}
 %here we will discuss everything that we did
 The basis of the stochastic analysis is the adapted Bayesian equation \ref{modbayes} below. 
-TODO: further interpret
+Each aspect of this equation below will be further explored in the sections below.
 
 \begin{equation}
 \label{modbayes}
@@ -381,10 +382,10 @@ By multiplying the $\mu$ vector with $((0.5+\vec{\text{rand}})\cdot1.5)$ the fir
 The process of obtaining the $x$ vector after the first iteration is discussed later in section \ref{mcmcexp}.
 
 
-Initially the program was written to generate completely random new values for the first iteration of $x$. 
-This later proved to not only be unnecessary, but also made the process less accurate as there was a larger burn-in period before the values were anywhere near the actual solution.
+Initially, the program was written to generate completely random new values for the first iteration of $x$. 
+This later proved to not only be unnecessary but also made the process less accurate as there was a larger burn-in period before the values were anywhere near the actual solution.
 To increase the accuracy and reduce the number of times the program needed to run to produce a sufficient number of accurate samples, the program was changed to the current method.
-The prior function in this case was relatively easy to generate and incorporate into the program as a well defined list of prior values exists.
+The prior function in this case was relatively easy to generate and incorporate into the program as a well-defined list of prior values exists.
 
 	\subsection{Likelihood probability function}
 		\begin{equation}
@@ -397,13 +398,13 @@ The prior function in this case was relatively easy to generate and incorporate 
 		As can be seen in Equation \ref{likelihoodfunc}, the $M(x)$ vector is written as a function.
 		The function indicated here takes the new randomised $x$ vector and then runs the model to provide a new temperature distribution over time at various nodes.
 		The output of the finite element model was reduced such that only the nodes at the same depths as the thermocouples are provided to the likelihood function.
-		For the likelihood function, the $\sigma_{\text{temp}}$ value was assumed to be 15$^{^\circ}$C.
+		For the likelihood function, the $\sigma_{\text{temp}}$ value was assumed to be 15\textdegree C.
 		 
 
 	\subsection{Markov Chain Monte-Carlo integration}\label{mcmcexp}
 	The two main parts of the MCMC integration (as mentioned in section \ref{tech}) are: how a value is deemed acceptable (Monte Carlo), and how the next random sample is selected after a previous sample is accepted (Markov Chain).
 	
-%	To assist in choosing the next random sample, a step size that indicates how wide the range should be in which the next step will be found, was choosen.  TODO: huh?
+%	To assist in choosing the next random sample, a step size that indicates how wide the range should be in which the next step will be found, was chosen.  TODO: huh?
 As explained in Section \ref{markovexpl} a step size is a crucial part of determining the next random sample.
 	For this project, a step size of $0.05$ W/m$\cdot$K was chosen.
 %There are however 10 values, so the imaginary cube in this situation is now ten-dimensional (don't worry, no attempt at drawing that will be made).
@@ -439,10 +440,10 @@ As explained in Section \ref{markovexpl} a step size is a crucial part of determ
 
 %	
 	
-	The acceptance criteria of the new $x$-vector is based on the proximity of the new posterior value to the reference posterior value and the previous posterior. //TODO
+	The acceptance criterion of the new $x$-vector is based on the proximity of the new posterior value to the reference posterior value and the previous posterior. //TODO
 	A potential problem encountered with the standard acceptance probability method (shown in Section \ref{MCint_sec}) is that the magnitudes of the values were not considered. 
-	This problem lead to many `false positives', as incorrect values were accepted even though they were not actually acceptable. 
-	The acceptance criteria was based on Equation \ref{acceptcriteq1}
+	This problem lead to many false positives, as incorrect values were accepted even though they were not acceptable. 
+	The acceptance criterion was based on Equation \ref{acceptcriteq1}
 	\begin{equation}\label{acceptcriteq1}
 	\exp\left(\frac {\pi^*(x_{n+1})-\pi^*(x_n)}{\frac{\pi^*(x_{\text{ref}})}{i}}\right)\\
 	\text{with} \quad i = 50\\
@@ -460,14 +461,15 @@ As explained in Section \ref{markovexpl} a step size is a crucial part of determ
 	\section{Optimisation to determine MAP}
 The maximum a posteriori of the posteriori function was also determined to allow for further comparison of results.
 All the values and constants except for the $\kappa$-values were kept the same as in the MCMC integration to allow the results to be compared on the same basis.  
-	The optimisation to determine the maximum value of the posteriori function was initially done utilising the built in Matlab optimisation algorithm \texttt{femsearchmin.m}. 
-	Since the built-in optimisation intends to minimise the function the probability was multiplied with -1 such that the minimum found is actually the maximum.
-	After initial analysis the maximum was found at negative $\kappa$-values, as previously stated that is illogical and impractical.
+	The optimisation to determine the maximum value of the posteriori function was initially done utilising the built-in Matlab optimisation algorithm \texttt{femsearchmin.m}. 
+	Since the built-in optimisation intends to minimise the function the probability was multiplied with -1 such that the minimum found is truly the maximum.
+	After initial analysis, the maximum was found at negative $\kappa$-values, as previously stated that is illogical and impractical.
 	Further research on various adaptations of the built-in function lead to finding the \texttt{femsearchminbnd.m} adaptation by \citet{derrico:2021}. 
 	This was used to limit the search area to only positive $\kappa$-values.
-	Further the algorithm was set to only iterate a thousand times and stop if the points of the simplex are within 0.009.
+	Further, the algorithm was set to only iterate a thousand times and stop if the points of the simplex are within 0.009 of each other.
 	The start point for the algorithm was chosen to be the $\kappa$-values from the EURO code.
 	
-	
+	A problem that arose was that the function could get stuck at a local maximum.
+	This can be seen in Figure \ref{histofig} on the histogram for 140\textdegree C
 	
 	
