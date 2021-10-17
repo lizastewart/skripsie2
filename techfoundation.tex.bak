@@ -1,16 +1,19 @@
 \chapter{Technical Foundation} \label{tech}
-In this chapter, the detailed explanations of algorithms and concepts applied throughout the project are presented. 
-the purpose of this chapter is to enable the reader to better understand the implementation and reasoning for the usage of specific methods.
+(RIJK: net 'n comment om te se ek is baie lief vir jou en baie trots op jou <3)
+In this chapter, detailed explanations of the algorithms and concepts applied throughout the project are presented. 
+This chapter aims to enable the reader to better understand the implementation and reasoning for the use of specific methods.
 \section{Thermal properties of timber}
-Specific thermal properties of timber need to be thoroughly understood to allow for accurate modelling interpretation of the results.
-After 100 $^{^\circ}$C, the temperature exposure causes the breakdown of the timber structure in such a way that the structure will not return to the same state after cooling.
-This breakdown is generally referred to as thermal degradation.
+Specific thermal properties of timber need to be thoroughly understood to allow for accurate modelling (RIJK: kort hier dalk 'n "and"?  Anders...) interpretation of the (RIJK: ...moet "modelling" hier kom liewer as waar hy nou is.) results.
+After $100 ^{^\circ}$C, the temperature exposure causes the timber structure to break down in such a way that it will not return to the same (RIJK: "its original" klink beter as "the same", kyk of dit korrek is vir jou?) state after cooling.
+This breakdown is generally referred to as thermal degradation. (RIJK: join die twee sinne aan weerskante met 'n "which"?)
 The degradation can be broken into four categories \citep{White:2001} \citep{Shi:2021}.
-These four categories are based on the different reactions that take place and are briefly summarised below.
-Above 100 $^{^\circ}$C and below 200 $^{^\circ}$C, the moisture in the timber is evaporated and other non-combustible gasses are released.
-Between 200 $^{^\circ}$C and 300$^{^\circ}$C, carbon-monoxide is released in significant quantities and some of the timber components undergo a change in chemical composition due to the high temperatures.
-Temperatures after 300 $^{^\circ}$C and before 450 $^{^\circ}$C are significant due to the amount of flammable volatiles released and the break of carbon linkages at 370 $^{^\circ}$C.
-At temperatures higher than 450 $^{^\circ}$C the remaining timber is char and any further degradation is due to oxidation from carbon-monoxide, - dioxide and water.
+These four categories are based on the different reactions that occur, and are briefly summarised below.
+(RIJK:  miskien 'n bullet list vir die vier items?)
+(RIJK:  Die "above X and below Y" lees moeiliker as "between X and Y".  Consider changing it that way.)
+Above 100$^{^\circ}$C and below 200$^{^\circ}$C, the moisture in the timber is evaporated and other non-combustible gasses are released.
+Between 200$^{^\circ}$C and 300$^{^\circ}$C, carbon monoxide is released in significant quantities and some of the timber components undergo a change in chemical composition due to the high temperatures.
+Temperatures after (RIJK: "after" implies time.  "Above" is korrek-ter.) 300 $^{^\circ}$C and before 450$^{^\circ}$C are significant due to the amount of flammable volatiles released and the break of carbon linkages at 370$^{^\circ}$C.
+At temperatures higher than 450$^{^\circ}$C, the remaining timber is char (RIJK: charred?) and any further degradation is due to oxidation from carbon monoxide, carbon dioxide, and water.
 These phases should be clear in the results and data. (TODO add lines for phases)
 
 All the thermal properties of various timber species at high temperatures were discussed in a research article by \citet{Shi:2021}.

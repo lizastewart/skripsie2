@@ -2,13 +2,13 @@
 
 \begin{abstract}
 %  What the objectives of the study were (the central question);
-  In this report stochastic inversion methods such as Markov Chain Monte-Carlo and optimisation methods were used to determine the thermal diffusivity of SA-Pine.
+  In this report, stochastic inversion methods such as Markov Chain Monte-Carlo and optimisation methods were used to determine the thermal diffusivity of SA-Pine.
 %Brief statement of what was done (Methods);
-A finite element model was constructed to model a 100mm element exposed to the ISO 846 Fire curve.
-This model was used within the likelihood function of 
+A finite element model was constructed to model a $100$mm element exposed to the ISO 846 Fire curve.
+This model was used within the likelihood function of TODO
 %Brief statement of what was found (Results);
 New $\kappa$-values were found from MCMC and MAP analysis.
-The MCMC and MAP $|kappa$-values were not equal which supports the hypothesis that the distribution is  not normal.
+The MCMC and MAP $\kappa$-values were not equal, supporting the hypothesis that the distribution is not normal.
 The FEM model using the new $\kappa$-values was closer to the measured temperatures.
 
 %Brief statement of what was concluded (Discussion);

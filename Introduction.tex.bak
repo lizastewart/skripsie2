@@ -1,29 +1,28 @@
 \chapter{Introduction} \label{introduction}
-This chapter will introduce the problem addressed in this project. 
-Previous similar projects as well as the value of this research will also be addressed.
+This chapter will introduce the problem that is addressed in this project. 
+Previous similar projects will be investigated, and the value of this research will be presented.
 
 \section{Background and Motivation}
 
 Traditionally the thermal conductivity, otherwise referred to as the $\kappa$-value, of timber is based simply on the EN 1995:1-1-2004 or similar standards.
-This research project will aim to obtain the thermal diffusivity of cross-laminated SA-Pine timber by further analysing data obtained by S. van der Westhuyzen for his study of the samples' charring rate.
+This research project will aim to obtain the thermal diffusivity (RIJK: diffusivity or conductivity?  First sentence says conductivity.) of cross-laminated SA-Pine timber by further analysing data originally obtained by S. van der Westhuyzen (RIJK: cite? Andersins is hierdie verduideliking van S vd W onnodig) for his study of the samples' charring rate.
 
-The thermal diffusivity of timber is an unobservable quantity that cannot be measured directly. 
+The thermal diffusivity of timber is an unobservable quantity (RIJK: quality - quantity sounds like a number of items) that cannot be measured directly. 
 Instead, it is related to measurements of temperature and time through differential models. 
-When heat diffusion is calculated using Finite Element methods(TODO: choose which FEM), the process is usually simplified to a linear problem \citep{Fish:2007}. 
-Due to the changes in thermal diffusivity of timber with temperature, as can be seen in EN 1995:1-1-2004(pg number T) and Figure \ref{euroK}, the diffusivity cannot be linearly modelled. 
-Therefore, the problem lends itself to being analysed by inversion techniques. 
-The aforementioned approach will allow us to obtain information about the diffusivity based on the combination of the information assumed prior to measuring, further referred to as the prior, and the measured data. 
-Using statistical inversion leads to a probability distribution that provides us with a collection of diffusivity estimates and their corresponding probabilities.
-The approach taken in this report is unique due to the nature of data used. 
-As the main purpose of this data was not to obtain thermal conductivity but to determine char rates.
-The difference in purpose means that more assumptions had to be made in contrast to a experiment that intended to determine the thermal conductivity and would have controlled those variables. 
+When heat diffusion is calculated using Finite Element methods (TODO: choose which FEM), the process is usually simplified to a linear problem \citep{Fish:2007}. 
+Due to the changes in thermal diffusivity of timber with temperature, as can be seen in EN 1995:1-1-2004(pg number T) (RIJK: pg number T? what means this?) and Figure \ref{euroK}, the diffusivity cannot be linearly modelled. 
+The problem therefore lends itself to being analysed by inversion techniques. 
+The aforementioned (RIJK: bedoel jy inversion techniques?  Gebruik dan "this".) approach will allow us to obtain information about the diffusivity based on the combined information assumed prior to measuring, further referred to as the prior, and the measured data. 
+Statistical inversion delivers a probability distribution, thereby providing a collection of diffusivity estimates and their corresponding probabilities.
+The approach taken in this report is unique due to the nature of data used, as the main purpose of this data's collection was to determine char rates and not thermal conductivity (RIJK: diffusivity or conductivity?).
+This difference in research goals means that more assumptions had to be made, in contrast to a experiment that intended to determine the thermal conductivity (RIJK: diffusivity or conductivity?) and would have controlled those variables. 
 
 Currently, the fire rating of specific timber samples is based on fire tests conducted in a furnace. 
 The furnace is kept at increasing temperatures corresponding with the Standard or ISO 834 fire curve as specified in ISO 834 \citet{ISO:1999}.
-This process becomes very costly if it has to be repeated every time that timber is used for construction, as timber usage for multiple story construction projects has increased over the past decades. 
+This process becomes very costly if it must be repeated every time timber is used for construction, as timber has seen increased usage for multiple story construction projects over the past decades. 
 This increase is partially due to the sustainability of timber as a construction material: not only is it renewable but it also has a small carbon footprint \citep{Salvadori:2017}.
-Obtaining and standardising different thermal diffusivity values for different species of timber will assist in more accurate modelling.
-If modelling accuracy can be increased, the option to use modelling as either confirmation of fire tests or instead of small scale fire tests will become more feasible.
+Obtaining and standardising thermal diffusivity values for different species of timber will assist in more accurate modelling.
+If modelling accuracy can be increased, the use of modelling to confirm fire tests or to replace small-scale fire tests will become more feasible.
 
 
 	\begin{figure}
@@ -37,7 +36,7 @@ If modelling accuracy can be increased, the option to use modelling as either co
 During the course of the project, the student will aim to meet the following objectives:
 \begin{enumerate}
  \item Modify a Finite Element Model into an accurate and effective function;
- \item Compare the model data to the actual acquired data;
+ \item Compare the model data to the true acquired data;
  \item Solve for the thermal diffusivity using Bayes' theorem of inverse problems; and
  \item Evaluate and explore the posterior probability distribution using the following methods:
  	\begin{enumerate}
@@ -50,21 +49,21 @@ During the course of the project, the student will aim to meet the following obj
 	
 	In their article \textit{Simple Method to Determine the Diffusivity of Green Wood}, \citeauthor{bioresource:2020}  determine the global diffusivity of a Douglas fir green log using inverse identification methods. 
 	%In their experiment they also used thermocouples but only 3 at each end.  
-	Their experiment was set up by immersing the log with K-type thermocouples into a boiler filled with water at 60$^{^{\circ}}$C. 
-	These K-type thermocouples were very specifically placed to improve the accuracy of the diffusivity ratio calculation.
+	Their experiment was set up by immersing (RIJK: submerge?) the log with (RIJK: embedded with? die "with" alleen maak nie vir my sin nie.) K-type thermocouples in a boiler filled with water at 60$^{^{\circ}}$C. 
+	The thermocouples were very specifically placed to improve the accuracy of the diffusivity ratio calculation.
 	The finite element model constructed for their calculations used linear interpolation with four-node quadrangle elements.
 	An analytical model was also constructed using the heat propagation equation(TODO?heat diffusion?).
 	%The intent of this research was
 	This research intended to assist the peeling industry in making the pretreatment process more cost-effective.
 	The method proved to be effective at determining the thermal diffusivity of green Douglas fir logs, as the $\kappa$-values obtained were comparable to those from literature.
-	The methods used by \citet{bioresource:2020} are similar to the methods described later in the report.
+	The methods used by \citet{bioresource:2020} are similar to the methods described later in the report (RIJK: unclear:  beteken dit hulle het MCMC gebruik? of het hulle die temperatuurdata op dieselfde manier as S vd Westhuyzen gekry?).
 	A crucial difference remains as the temperatures at which these experiments were conducted as well as the final usage of the data differ greatly.
 
 %	A similar method of analysis was used by \cite{DeKoker:2021} in their article \textit{Assessment of ice impact load threshold exceedance in the propulsion shaft of an ice-faring vessel via Bayesian inversion}. 
 %	Bayesian inversion is used to determine the impact of ice on the propellers from the measurements taken at a specified distance from the propeller. (TODO)
 
 \citeauthor{Wagner:2021} wrote an article in March 2021 where Bayesian model inversion was used with stochastic spectral embedding.
-Spectral embedding or spectral likelihood expansion is used to solve for the likelihood function in such a way that sampling is not necessary.
-The relevance of the research done by \citeauthor{Wagner:2021} to this report is in the creation of the bayesian model to solve a heat diffusion problem.
+Spectral embedding, or spectral likelihood expansion, is used to solve for the likelihood function in such a way that sampling is not necessary.
+Similarly to this report, the research of \citeauthor{Wagner:2021} involved the creation and use of a Bayesian model to solve a heat diffusion problem.
 
 %Grammarly checked 
