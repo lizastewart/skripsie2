@@ -1318,3 +1318,31 @@ volume = {9},
 journal = {SIAM Journal on Optimization},
 doi = {10.1137/S1052623496303470}
 }
+
+@incollection{Thermalprop:2001,
+title = {Wood: Thermal Properties},
+editor = {K.H. Jürgen Buschow and Robert W. Cahn and Merton C. Flemings and Bernhard Ilschner and Edward J. Kramer and Subhash Mahajan and Patrick Veyssière},
+booktitle = {Encyclopedia of Materials: Science and Technology},
+publisher = {Elsevier},
+address = {Oxford},
+pages = {9748-9750},
+year = {2001},
+isbn = {978-0-08-043152-9},
+doi = {https://doi.org/10.1016/B0-08-043152-6/01770-8},
+url = {https://www.sciencedirect.com/science/article/pii/B0080431526017708},
+author = {P.E. Humphrey}
+}
+
+@incollection{White:2001,
+title = {Wood Products: Thermal Degradation and Fire},
+editor = {K.H. Jürgen Buschow and Robert W. Cahn and Merton C. Flemings and Bernhard Ilschner and Edward J. Kramer and Subhash Mahajan and Patrick Veyssière},
+booktitle = {Encyclopedia of Materials: Science and Technology},
+publisher = {Elsevier},
+address = {Oxford},
+pages = {9712-9716},
+year = {2001},
+isbn = {978-0-08-043152-9},
+doi = {https://doi.org/10.1016/B0-08-043152-6/01763-0},
+url = {https://www.sciencedirect.com/science/article/pii/B0080431526017630},
+author = {R.H. White and M.A. Dietenberger}
+}

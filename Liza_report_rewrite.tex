@@ -90,16 +90,14 @@
   tabsize=3
 }
 
-%%For subcaptions
 
-%\usepackage[labelsep=quad,indention=10pt]{caption}
-%\usepackage[labelfont=bf,list=true]{subcaption}
-%\captionsetup[table]{textfont=it,position=top}
-%\captionsetup[subtable]{textfont=sf}
-%ONEDAY 
 
 %\inputencoding{utf8}
 
+%To add caption to matrix
+\usepackage{mathtools}
+\usepackage{blkarray, bigstrut}
+\usepackage{subfigure}
 % Please insert user defined commands here
 % and NOT in the document itself!
 %
@@ -135,14 +133,14 @@ for the T-dependant thermal diffusivity of SA pine}
 \frontmatter%========================================================
 
 \TitlePage
-\CopyrightPage
-\include{verklaring}
-\include{opsomming}
-\include{abstract}
-\tableofcontents
-\listoffigures
-\listoftables
-\include{nomenkl}
+%\CopyrightPage
+%\include{verklaring}
+%\include{opsomming}
+%\include{abstract}
+%\tableofcontents
+%\listoffigures
+%\listoftables
+%\include{nomenkl}
 
 \mainmatter%=========================================================
 

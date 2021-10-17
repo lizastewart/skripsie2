@@ -2,8 +2,51 @@
 In this chapter, the detailed explanations of algorithms and concepts applied throughout the project are presented. 
 the purpose of this chapter is to enable the reader to better understand the implementation and reasoning for the usage of specific methods.
 \section{Thermal properties of timber}
-Discuss thermal properties - cp, k and alpha TODO
+Specific thermal properties of timber need to be thoroughly understood to allow for accurate modelling interpretation of the results.
+After 100 $^{^\circ}$C, the temperature exposure causes the breakdown of the timber structure in such a way that the structure will not return to the same state after cooling.
+This breakdown is generally referred to as thermal degradation.
+The degradation can be broken into four categories \citep{White:2001} \citep{Shi:2021}.
+These four categories are based on the different reactions that take place and briefly summarised below.
+Above 100 $^{^\circ}$C and below 200 $^{^\circ}$C, the moisture in the timber is evaporated and other non-combustible gasses are released.
+Between 200 $^{^\circ}$C and 300$^{^\circ}$C, carbon-monoxide is released in significant quantities and some of the timber components undergo a change in chemical composition due to the high temperatures.
+Temperatures after 300 $^{^\circ}$C and before 450 $^{^\circ}$C are significant due to the amount of flamable volatiles released and the break of carbon linkages at 370 $^{^\circ}$C.
+At temperatures higher than 450 $^{^\circ}$C the remaining timber is char and any further degradation is due to oxidation from carbon-monoxide, - dioxide and water.
+These phases should be clear in the results and data. (TODO add lines for phases)
 
+All the thermal properties of various timber species at high temperatures were discussed in a research article by \citet{Shi:2021}.
+ In their article they provide a general expression for the thermal conductivity of softwoods (Equation \ref{softconeq}) and char (Equation \ref{charconeq}).  
+
+ \begin{equation}\label{softconeq}
+ \alpha = 0.124 +0.8432 \times 10^{-4} (\text{T}-293) 
+ \end{equation}
+ \begin{equation}\label{charconeq}
+ \alpha = 0.091 + 8.2 \times 10^{-4} \text{T}
+ \end{equation}
+ 
+ For this project the temperature of char will be used as 300 $^{^\circ}$C in accordance with the research of \citeauthor{Westhuyzen:2020}. 
+% The specific heat ($C_p$) will be assumed to be constant at 1500 kJ/$\text{m}^3$/K. the density of pine was also assumed constant at 
+ Using the equations in by \citeauthor{Shi:2021} the following $\kappa$-values (Equation \ref{shiK}) are obtained. 
+\begin{equation}\label{shiK}
+  \mu=
+  \begin{blockarray}{*{1}{c} l}
+%    \begin{block}{*{1}{>{$\footnotesize}c<{$}} 1}
+%      $\text{W/m}\cdot\text{K}$ &\\
+%    \end{block}
+    \begin{block}{[*{1}{c}]>{$\footnotesize}l<{$}}
+     	0.0993\bigstrut[t] & 0 $^{^\circ}\text{C}$\\
+		0.1044& 60 $^{^\circ}\text{C}$\\ 
+		0.1077& 100 $^{^\circ}\text{C}$\\ 
+		0.1111& 140 $^{^\circ}\text{C}$\\ 
+		0.1162& 200 $^{^\circ}\text{C}$\\ 
+		0.3780& 350 $^{^\circ}\text{C}$\\
+		0.5010& 500 $^{^\circ}\text{C}$\\ 
+		0.7470& 800 $^{^\circ}\text{C}$\\ 
+		1.0750& 1200 $^{^\circ}\text{C}$\\
+    \end{block}
+  \end{blockarray}
+\end{equation}
+ 
+From the big difference between these values and the Euro code values it is clear that these simple equations are not sufficient for determining the thermal conductivity of pine.
 
 \section{Finite Element Method}\label{femsec}
 Finite element methods (or finite element analysis) is used when the behaviour of an element cannot be accurately depicted by a simple mathematical equation. 

@@ -58,5 +58,7 @@ During the course of the project, the student will aim to meet the following obj
 %	A similar method of analysis was used by \cite{DeKoker:2021} in their article \textit{Assessment of ice impact load threshold exceedance in the propulsion shaft of an ice-faring vessel via Bayesian inversion}. 
 %	Bayesian inversion is used to determine the impact of ice on the propellers from the measurements taken at a specified distance from the propeller. (TODO)
 
-All the thermal properties of various timber species at high temperatures were discussed in an article by \citet{Shi:2021}.
+\citeauthor{Wagner:2021} wrote a article in March 2021 where Bayesian model inversion was used with stochastic spectral embedding.
+Spectral embedding or spectral likelihood expansion is used to solve for the likelihood function in such a way tht sampling is not necessary.
+The relevance of the research done by \citeauthor{Wagner:2021} to this report is in the creation of the bayesian model to solve a heat diffusion problem.
 

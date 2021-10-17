@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{21}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -159,6 +159,32 @@
 \newblock \emph{Journal of the South African Institution of Civil Engineering},
   \bblvol{}~62, \bblno{}~1, \bblpp{} 33--41.
 \newblock ISSN 23098775.
+
+\bibitem[{\citenamefont{Wagner} \emph{\bbletal{}}(2021)\citenamefont{Wagner},
+  \citenamefont{Marelli} \protect\BIBand{} \citenamefont{Sudret}}]{Wagner:2021}
+\bibnamefont{Wagner}, \bibfnamefont{P.-R.}, \bibnamefont{Marelli},
+  \bibfnamefont{S.} \protect\BIBand{} \bibnamefont{Sudret}, \bibfnamefont{B.}
+  (2021).
+\newblock Bayesian model inversion using stochastic spectral embedding.
+\newblock \emph{Journal of Computational Physics}, \bblvol{} 436, \bblp{}
+  110141.
+\newblock ISSN 0021-9991.
+\newline\bblurlpre\url{https://www.sciencedirect.com/science/article/pii/S0021999121000334}
+
+\bibitem[{\citenamefont{White} \protect\BIBand{}
+  \citenamefont{Dietenberger}(2001)}]{White:2001}
+\bibnamefont{White}, \bibfnamefont{R.} \protect\BIBand{}
+  \bibnamefont{Dietenberger}, \bibfnamefont{M.} (2001).
+\newblock Wood products: Thermal degradation and fire.
+\newblock \capitalize\bblin{}: \bibnamefont{Buschow}, \bibfnamefont{K.J.},
+  \bibnamefont{Cahn}, \bibfnamefont{R.W.}, \bibnamefont{Flemings},
+  \bibfnamefont{M.C.}, \bibnamefont{Ilschner}, \bibfnamefont{B.},
+  \bibnamefont{Kramer}, \bibfnamefont{E.J.}, \bibnamefont{Mahajan},
+  \bibfnamefont{S.} \protect\BIBand{} \bibnamefont{Veyssière},
+  \bibfnamefont{P.} (\bbleds{}), \emph{Encyclopedia of Materials: Science and
+  Technology}, \bblpp{} 9712--9716. Elsevier, Oxford.
+\newblock ISBN 978-0-08-043152-9.
+\newline\bblurlpre\url{https://www.sciencedirect.com/science/article/pii/B0080431526017630}
 
 \bibitem[{\citenamefont{Wiecki}(2015)}]{dummies:2015}
 \bibnamefont{Wiecki}, \bibfnamefont{T.} (2015 Nov [Online]).

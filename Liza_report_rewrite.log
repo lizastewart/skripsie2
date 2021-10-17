@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.11)  16 OCT 2021 17:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.11)  17 OCT 2021 13:02
 entering extended mode
 **./Liza_report_rewrite.tex
 (Liza_report_rewrite.tex
@@ -455,48 +455,110 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
+(C:\Program Files\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2021/04/12 v1.27 mathematical typesetting tools
+
+(C:\Program Files\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count303
+\l_MT_multwidth_dim=\dimen166
+\origjot=\skip76
+\l_MT_shortvdotswithinadjustabove_dim=\dimen167
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen168
+\l_MT_above_intertext_sep=\dimen169
+\l_MT_below_intertext_sep=\dimen170
+\l_MT_above_shortintertext_sep=\dimen171
+\l_MT_below_shortintertext_sep=\dimen172
+\xmathstrut@box=\box65
+\xmathstrut@dim=\dimen173
+)
+(C:\Program Files\MiKTeX\tex/latex/blkarray\blkarray.sty
+Package: blkarray 2015/02/27 v0.07 Block array (dpc)
+\c@BAenumi=\count304
+\BA@col=\count305
+\BA@block@cnt=\count306
+\BA@final@box=\box66
+\BA@first@box=\box67
+\BA@colsep=\dimen174
+\BA@ftn=\toks30
+\BAextrarowheight=\dimen175
+\BAextraheightafterhline=\dimen176
+\BAarrayrulewidth=\dimen177
+\BAdoublerulesep=\dimen178
+\BAfootskip=\dimen179
+\BA@dashbox=\box68
+\BA@ddashbox=\box69
+)
+(C:\Program Files\MiKTeX\tex/latex/multirow\bigstrut.sty
+Package: bigstrut 2021/03/15 v2.8 Provide larger struts in tabulars
+\bigstrutjot=\dimen180
+)
+(C:\Program Files\MiKTeX\tex/latex/subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip77
+\subfigcapskip=\skip78
+\subfigcaptopadj=\dimen181
+\subfigbottomskip=\skip79
+\subfigcapmargin=\dimen182
+\subfiglabelskip=\skip80
+\c@subfigure=\count307
+\c@lofdepth=\count308
+\c@subtable=\count309
+\c@lotdepth=\count310
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(C:\Program Files\MiKTeX\tex/latex/subfigure\subfigure.cfg)
+\subfig@top=\skip81
+\subfig@bottom=\skip82
+)
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count303
-\l__pdf_internal_box=\box65
+\l__color_backend_stack_int=\count311
+\l__pdf_internal_box=\box70
 )
-(Liza_report_rewrite.aux (verklaring.aux) (opsomming.aux) (abstract.aux)
-(nomenkl.aux) (Introduction.aux) (techfoundation.aux) (implementation.aux)
-(results.aux) (discussion.aux) (Conclusion.aux))
+(Liza_report_rewrite.aux (Introduction.aux) (techfoundation.aux)
+(implementation.aux) (results.aux) (discussion.aux) (Conclusion.aux))
 \openout1 = `Liza_report_rewrite.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 131.
+LaTeX Font Info:    ... okay on input line 131.
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count304
-\scratchdimen=\dimen166
-\scratchbox=\box66
-\nofMPsegments=\count305
-\nofMParguments=\count306
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count307
-\MPscratchDim=\dimen167
-\MPnumerator=\count308
-\makeMPintoPDFobject=\count309
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count312
+\scratchdimen=\dimen183
+\scratchbox=\box71
+\nofMPsegments=\count313
+\nofMParguments=\count314
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count315
+\MPscratchDim=\dimen184
+\MPnumerator=\count316
+\makeMPintoPDFobject=\count317
+\everyMPtoPDFconversion=\toks32
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -505,7 +567,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 133.
+Package hyperref Info: Link coloring OFF on input line 131.
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -516,29 +578,29 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count310
+\c@section@level=\count318
 )
-LaTeX Info: Redefining \ref on input line 133.
-LaTeX Info: Redefining \pageref on input line 133.
-LaTeX Info: Redefining \nameref on input line 133.
+LaTeX Info: Redefining \ref on input line 131.
+LaTeX Info: Redefining \pageref on input line 131.
+LaTeX Info: Redefining \nameref on input line 131.
 
 (Liza_report_rewrite.out) (Liza_report_rewrite.out)
 \@outlinefile=\write3
 \openout3 = `Liza_report_rewrite.out'.
 
-\c@lstlisting=\count311
-<USlogo-top.pdf, id=179, 560.0925pt x 183.68625pt>
+\c@lstlisting=\count319
+<USlogo-top.pdf, id=151, 560.0925pt x 183.68625pt>
 File: USlogo-top.pdf Graphic file (type pdf)
 <use USlogo-top.pdf>
-Package pdftex.def Info: USlogo-top.pdf  used on input line 137.
+Package pdftex.def Info: USlogo-top.pdf  used on input line 135.
 (pdftex.def)             Requested size: 284.52756pt x 93.31717pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 137
+LaTeX Font Info:    Trying to load font information for U+msa on input line 135
 .
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 137
+LaTeX Font Info:    Trying to load font information for U+msb on input line 135
 .
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -549,88 +611,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/Liza Stewart/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <C:/Progr
 am Files/MiKTeX/tex/latex/stellenbosch/logos/USlogo-top.pdf>]
-\openout2 = `verklaring.aux'.
-
- (verklaring.tex)pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.i}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.139 \include{verklaring}
-                           [1
-
-
-]
-\openout2 = `opsomming.aux'.
-
- (opsomming.tex
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 3
-.
-
-(C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
-File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Overfull \hbox (29.67503pt too wide) in alignment at lines 12--58
- [] 
- []
-
-) [2
-
-
-
-
-]
-\openout2 = `abstract.aux'.
-
- (abstract.tex) [3
-
-
-
-
-] (Liza_report_rewrite.toc [4
-
-
-
-])
-\tf@toc=\write4
-\openout4 = `Liza_report_rewrite.toc'.
-
- [5]
-(Liza_report_rewrite.lof
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
-.
- (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Overfull \hbox (35.47183pt too wide) in paragraph at lines 8--8
- \T1/cmr/m/n/12 tion, b) Ex-pan-sion, c) Con-trac-tion, d) Shrink con-trac-tion
- (Source:[]$\T1/cmtt/m/n/12 https : 
- []
-
-
-Overfull \hbox (49.94783pt too wide) in paragraph at lines 8--8
- \T1/cmtt/m/n/12 / / codesachin . wordpress . com / 2016 / 01 / 16 / nelder-[]m
-ead-[]optimization/$[]\T1/cmr/m/n/12 )[] [][]  
- []
-
-)
-\tf@lof=\write5
-\openout5 = `Liza_report_rewrite.lof'.
-
- [6
-
-] (Liza_report_rewrite.lot)
-\tf@lot=\write6
-\openout6 = `Liza_report_rewrite.lot'.
-
- [7
-
-]
-\openout2 = `nomenkl.aux'.
-
- (nomenkl.tex) [8
-
-
-]
 \openout2 = `Introduction.aux'.
 
  (Introduction.tex
@@ -639,10 +619,8 @@ Chapter 1.
 
 
 
-
-
 ]
-<figures/kvalues_euro.png, id=348, 275.52937pt x 453.94594pt>
+<figures/kvalues_euro.png, id=188, 275.52937pt x 453.94594pt>
 File: figures/kvalues_euro.png Graphic file (type png)
 <use figures/kvalues_euro.png>
 Package pdftex.def Info: figures/kvalues_euro.png  used on input line 28.
@@ -657,120 +635,143 @@ Chapter 2.
 
 
 
-] [5]
-<figures/MC_cubes.png, id=407, 530.73282pt x 526.21594pt>
+] [5] [6]
+<figures/MC_cubes.png, id=284, 530.73282pt x 526.21594pt>
 File: figures/MC_cubes.png Graphic file (type png)
 <use figures/MC_cubes.png>
-Package pdftex.def Info: figures/MC_cubes.png  used on input line 86.
+Package pdftex.def Info: figures/MC_cubes.png  used on input line 129.
 (pdftex.def)             Requested size: 218.90121pt x 217.04266pt.
- [6] [7 <./figures/MC_cubes.png>]
-Overfull \hbox (22.76944pt too wide) in paragraph at lines 133--136
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+30.
+ (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [7] [8 <./figures/MC_cubes.png>]
+Overfull \hbox (22.76944pt too wide) in paragraph at lines 176--179
 []\T1/cmr/m/n/12 According to the \T1/cmtt/m/n/12 fminsearch \T1/cmr/m/n/12 Mat
 -lab doc-u-men-ta-tion ([]$\T1/cmtt/m/n/12 https : / / ch . mathworks .
  []
 
-[8]
-<figures/MAP_expl.png, id=450, 597.432pt x 421.0932pt>
+[9]
+<figures/MAP_expl.png, id=332, 597.432pt x 421.0932pt>
 File: figures/MAP_expl.png Graphic file (type png)
 <use figures/MAP_expl.png>
-Package pdftex.def Info: figures/MAP_expl.png  used on input line 157.
+Package pdftex.def Info: figures/MAP_expl.png  used on input line 200.
 (pdftex.def)             Requested size: 398.0pt x 280.53105pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
 [][]\T1/cmr/bx/n/10.95 Figure 2.2: []\T1/cmr/m/n/10.95 Visual rep-re-sen-ta-tio
 n of Nedler-Mead trans-for-ma-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
 \T1/cmr/m/n/10.95 a) Re-flec-tion, b) Ex-pan-sion, c) Con-trac-tion, d) Shrink 
 con-trac-tion
  []
 
 
-Overfull \hbox (36.3784pt too wide) in paragraph at lines 158--158
+Overfull \hbox (36.3784pt too wide) in paragraph at lines 201--201
 \T1/cmr/m/n/10.95 (Source:[]$\T1/cmtt/m/n/10.95 https : / / codesachin . wordpr
 ess . com / 2016 / 01 / 16 / nelder-[]mead-[]optimization/$[]\T1/cmr/m/n/10.95 
 )[] 
  []
 
-) [9 <./figures/MAP_expl.png>]
+) [10 <./figures/MAP_expl.png>]
 \openout2 = `implementation.aux'.
 
  (implementation.tex
 Chapter 3.
-<figures/TC_layout.png, id=462, 524.71031pt x 264.99pt>
+<figures/TC_layout.png, id=345, 524.71031pt x 264.99pt>
 File: figures/TC_layout.png Graphic file (type png)
 <use figures/TC_layout.png>
 Package pdftex.def Info: figures/TC_layout.png  used on input line 15.
 (pdftex.def)             Requested size: 298.5pt x 150.75473pt.
-[10
+[11
 
 
 
 
 ]
-<figures/firecurve.png, id=470, 1028.34187pt x 490.08093pt>
+<figures/firecurve.png, id=354, 1028.34187pt x 490.08093pt>
 File: figures/firecurve.png Graphic file (type png)
 <use figures/firecurve.png>
 Package pdftex.def Info: figures/firecurve.png  used on input line 22.
 (pdftex.def)             Requested size: 398.0pt x 189.68005pt.
-<figures/measured_data.jpg, id=472, 1284.8pt x 910.40125pt>
+<figures/measured_data.jpg, id=356, 1284.8pt x 910.40125pt>
 File: figures/measured_data.jpg Graphic file (type jpg)
 <use figures/measured_data.jpg>
 Package pdftex.def Info: figures/measured_data.jpg  used on input line 30.
 (pdftex.def)             Requested size: 397.48499pt x 281.65192pt.
- [11 <./figures/TC_layout.png (PNG copy)> <./figures/firecurve.png (PNG copy)>]
- [12 <./figures/measured_data.jpg>]
-<figures/fem_sketch.png, id=482, 484.81125pt x 143.03438pt>
+ [12 <./figures/TC_layout.png (PNG copy)> <./figures/firecurve.png (PNG copy)>]
+ [13 <./figures/measured_data.jpg>]
+<figures/fem_sketch.png, id=367, 484.81125pt x 143.03438pt>
 File: figures/fem_sketch.png Graphic file (type png)
 <use figures/fem_sketch.png>
 Package pdftex.def Info: figures/fem_sketch.png  used on input line 61.
 (pdftex.def)             Requested size: 298.5pt x 88.07146pt.
- [13 <./figures/fem_sketch.png (PNG copy)>]
-<figures/fem_fire_sketch.png, id=506, 860.46469pt x 191.21437pt>
+ [14 <./figures/fem_sketch.png (PNG copy)>]
+<figures/fem_fire_sketch.png, id=391, 860.46469pt x 191.21437pt>
 File: figures/fem_fire_sketch.png Graphic file (type png)
 <use figures/fem_fire_sketch.png>
 Package pdftex.def Info: figures/fem_fire_sketch.png  used on input line 121.
 (pdftex.def)             Requested size: 298.5pt x 66.33372pt.
- [14 <./figures/fem_fire_sketch.png>] [15] [16] [17]
-<figures/originalmugraph.jpg, id=569, 1654.18pt x 945.5325pt>
+ [15 <./figures/fem_fire_sketch.png>] [16] [17] [18]
+
+LaTeX Warning: Reference `cpusedeq' on page 19 undefined on input line 310.
+
+<figures/originalmugraph.jpg, id=454, 1654.18pt x 945.5325pt>
 File: figures/originalmugraph.jpg Graphic file (type jpg)
 <use figures/originalmugraph.jpg>
-Package pdftex.def Info: figures/originalmugraph.jpg  used on input line 318.
+Package pdftex.def Info: figures/originalmugraph.jpg  used on input line 328.
 (pdftex.def)             Requested size: 398.0pt x 227.49512pt.
- [18] [19 <./figures/originalmugraph.jpg>] [20]
+[19] [20 <./figures/originalmugraph.jpg>] [21]
 
-LaTeX Warning: Reference `codeapp' on page 21 undefined on input line 400.
+LaTeX Warning: Reference `codeapp' on page 22 undefined on input line 414.
 
-<figures/e_expl_curve.png, id=601, 83.45662pt x 57.816pt>
+<figures/e_expl_curve.png, id=487, 83.45662pt x 57.816pt>
 File: figures/e_expl_curve.png Graphic file (type png)
 <use figures/e_expl_curve.png>
-Package pdftex.def Info: figures/e_expl_curve.png  used on input line 439.
+Package pdftex.def Info: figures/e_expl_curve.png  used on input line 453.
 (pdftex.def)             Requested size: 199.0pt x 137.86575pt.
-[21 <./figures/e_expl_curve.png>]) [22]
+[22]) [23 <./figures/e_expl_curve.png>]
 \openout2 = `results.aux'.
 
  (results.tex
 Chapter 4.
-<figures/euro_and_results.png, id=617, 554.07pt x 484.05844pt>
-File: figures/euro_and_results.png Graphic file (type png)
-<use figures/euro_and_results.png>
-Package pdftex.def Info: figures/euro_and_results.png  used on input line 26.
-(pdftex.def)             Requested size: 398.0pt x 347.70934pt.
-[23
+<figures/kvalues_all_shi.png, id=504, 981.6675pt x 520.19344pt>
+File: figures/kvalues_all_shi.png Graphic file (type png)
+<use figures/kvalues_all_shi.png>
+Package pdftex.def Info: figures/kvalues_all_shi.png  used on input line 27.
+(pdftex.def)             Requested size: 398.0pt x 210.89943pt.
+
+LaTeX Warning: File `figures/histograph/histo1.png' not found on input line 32.
 
 
 
+! Package pdftex.def Error: File `figures/histograph/histo1.png' not found: usi
+ng draft setting.
 
-]
-<figures/final_graph.png, id=623, 981.6675pt x 520.19344pt>
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 ...\linewidth]{figures/histograph/histo1.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<figures/final_graph.png, id=506, 981.6675pt x 520.19344pt>
 File: figures/final_graph.png Graphic file (type png)
 <use figures/final_graph.png>
-Package pdftex.def Info: figures/final_graph.png  used on input line 37.
+Package pdftex.def Info: figures/final_graph.png  used on input line 41.
 (pdftex.def)             Requested size: 398.0pt x 210.89943pt.
-) [24 <./figures/euro_and_results.png (PNG copy)>] [25 <./figures/final_graph.p
-ng (PNG copy)>]
+[24
+
+
+
+
+ <./figures/kvalues_all_shi.png (PNG copy)>]) [25 <./figures/final_graph.png (P
+NG copy)>]
 \openout2 = `discussion.aux'.
 
  (discussion.tex
@@ -847,62 +848,72 @@ Your command will be ignored, type <return> to proceed
 
 
 
-]) [29] (Liza_report_rewrite.aux (verklaring.aux) (opsomming.aux)
-(abstract.aux) (nomenkl.aux) (Introduction.aux) (techfoundation.aux)
+]
+Underfull \hbox (badness 10000) in paragraph at lines 165--173
+\T1/cmr/m/n/10.95 Available at: []$\T1/cmtt/m/n/10.95 https : / / www . science
+direct . com / science / article / pii /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--188
+\T1/cmr/m/n/10.95 Available at: []$\T1/cmtt/m/n/10.95 https : / / www . science
+direct . com / science / article / pii /
+ []
+
+) [29] (Liza_report_rewrite.aux (Introduction.aux) (techfoundation.aux)
 (implementation.aux) (results.aux) (discussion.aux) (Conclusion.aux))
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Liza_report_rewrite.out' has not changed.
-(rerunfilecheck)             Checksum: AD82142914A330A406A05C3E3BB12EC7;6374.
+(rerunfilecheck)             Checksum: E0366C227AD75D32CE525561E109735B;5592.
  ) 
 Here is how much of TeX's memory you used:
- 13381 strings out of 478864
- 197711 string characters out of 2858494
- 708869 words of memory out of 3000000
- 30778 multiletter control sequences out of 15000+600000
- 436230 words of font info for 103 fonts, out of 8000000 for 9000
+ 14246 strings out of 478864
+ 209434 string characters out of 2858494
+ 707869 words of memory out of 3000000
+ 31656 multiletter control sequences out of 15000+600000
+ 437032 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,16n,66p,450b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,16n,66p,450b,739s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi6
-00\ecti1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
-appen/ec/dpi600\ectt1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/
-pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Liza Stewart\AppData\Local\
-MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Liza Stewart\A
-ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\L
-iza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk
+00\ecrm0600.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
+appen/ec/dpi600\ecti1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/
+pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Liza Stewart\AppData\Local\
+MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Liza Stewart\A
+ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\L
+iza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk
 > <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecrm0600.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
+0\ecrm1000.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
 ppen/ec/dpi600\ecti1200.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/p
-k/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Liza Stewart\AppData\Local\M
-iKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\Liza Stewart\Ap
-pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Li
-za Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1095.pk>
+k/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Liza Stewart\AppData\Local\M
+iKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Liza Stewart\Ap
+pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\Li
+za Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk>
  <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
-\ecss1200.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecsx1440.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk
-/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Liza Stewart\AppData\Local\Mi
-KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Liza Stewart\App
-Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Liz
-a Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1440.pk> 
+\ecbx1728.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx2488.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk
+/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Liza Stewart\AppData\Local\Mi
+KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1440.pk> <C:\Users\Liza Stewart\App
+Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Liz
+a Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> 
 <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
-ecrm1728.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
-en/ec/dpi600\ecrm1440.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Program Files/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Progra
-m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8
-.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pro
-gram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/ty
-pe1/public/amsfonts/symbols/msam10.pfb>
-Output written on Liza_report_rewrite.pdf (38 pages, 2243189 bytes).
+ecrm2074.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib1
+0.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pro
+gram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+
+Output written on Liza_report_rewrite.pdf (30 pages, 2206403 bytes).
 PDF statistics:
- 1481 PDF objects out of 1728 (max. 8388607)
- 165 named destinations out of 1000 (max. 500000)
- 418 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1277 PDF objects out of 1440 (max. 8388607)
+ 151 named destinations out of 1000 (max. 500000)
+ 362 words of extra memory for PDF output out of 10000 (max. 10000000)
 
