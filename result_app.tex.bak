@@ -1,5 +1,5 @@
 \chapter{Detailed results graph}
-\begin{figure}[H]
+\begin{figure}
 	\label{data_newk}
 	\centering
 	\includegraphics[width=0.8\linewidth,]{figures/final_graph_ver.png}

@@ -46,6 +46,33 @@ The data used was acquired by \cite{Westhuyzen:2020} for an article assessing th
 A one-dimensional finite element model that simulates what we expect to obtain from the fire tests based on the simplified $\kappa$-values provided in EN 1995:1-2-2004 is modified into a function.
 This function should provide the temperature of the modelled element based on a specified location and thermal conductivity.
 The derivation and adaptation of the model are expanded on below.
+
+\subsection{Existing Model}
+	For this project, an existing finite element model of heat diffusion by Prof. N de Koker was modified for usage in the Bayes' theorem~\ref{bayes_eq}. 
+	This model is used to determine the likelihood function. 
+	The current model uses the standard Euro code $\kappa$-values as well as the specific heat specified in the \citep{Euro:2004} shown in Equation \ref{cpusedeq}.
+\begin{equation} \label{cpusedeq}
+\centering
+  \texttt{cpine}=
+  \begin{blockarray}{*{14}{c} l}
+    \begin{block}{[*{14}{c}]>{$\footnotesize}l<{$}}
+      0 & 20 & 99&100& 120 & 121 & 200 & 250 & 300 & 350 & 400 & 600& 800 & 1200 \bigstrut[t]& $^{^\circ}\text{C}$ \\
+      479 & 479& 479 & 479 &  479 & 408 & 408 & 398 & 326&  220 &163 &  120 & 110 & 100 & $\text{kg/m}^3$ \\
+     1530 &1530 &1770 &13600& 13500& 2120& 2000& 1620 & 710 & 850 &1000& 1400 &1650& 1650 & J/kg/K \\
+    \end{block}
+  \end{blockarray}
+\end{equation}
+	
+	The model discretises the wooden element into 32 different elements. For finite element analysis, there are always more elements used to generate the model than needed for evaluation. This is done to improve the accuracy of said model.
+	The model is a one-dimensional finite element model that takes time differentiation into account.
+	
+\begin{figure}[H]
+	\label{og_modeldata}
+	\centering
+	\includegraphics[width=\linewidth,]{figures/originalmugraph.jpg}
+	\caption{Output of finite element model using $\kappa$-values as indicated in EN 1995:1-2-2004}
+\end{figure}	
+
 	\subsection{Derivation}%"CREATION?"
 	%The assumption that the panel is constantly at room temperature on the outside is also inaccurate as there is heat radiating from the panel that increases the temperature surrounding the panel.
 	
@@ -115,7 +142,7 @@ The derivation and adaptation of the model are expanded on below.
 	\end{aligned}
 	\end{equation*}
 	
-	\subsubsection{Boundaries}
+	\subsubsection{Boundaries} \label{airsec}
 	\begin{figure}[H]\label{airelmfig}
 	\centering
 	\includegraphics[width = 0.75\linewidth]{figures/fem_fire_sketch.png}
@@ -161,9 +188,9 @@ The derivation and adaptation of the model are expanded on below.
 	\end{equation}
 	
 	\subsubsection{One-dimensional diffusion}
-The concept of diffusion is thoroughly explained in \ref{femsec}(TODO) below the mathematical application is explained and steps that were taken to obtain the final model is shown.
+The concept of heat diffusion is thoroughly explained in Section \ref{heatconsec} below the mathematical application is explained and steps that were taken to obtain the final model is shown.
 	\begin{equation}\label{femdiffeq1}
-	q_{,x} - f = \frac{\partial Q}{\partial t} = c_{p}\frac{\partial u}{\partial t}\quad\text{  ...(1)} \quad\quad\quad q = -\kappa \frac{\partial u}{\partial x}\quad\text{  ...(2)}
+	q_{,x} - f = \frac{\partial Q}{\partial t} = c_p \rho \frac{\partial u}{\partial t}\quad\text{  ...(1)} \quad\quad\quad q = -\kappa \frac{\partial u}{\partial x}\quad\text{  ...(2)}
 \end{equation}
 Substituting Equation \ref{femdiffeq1}(2) into \ref{femdiffeq1} and taking the derivative as indicated ($q_{,x}$) gives Equation \ref{femdiffeq2}. 
 As previously disccussed heat conduction ($\alpha$) is heat diffusion ($\kappa$)  divided by specific heat ($c_p$).
@@ -171,15 +198,15 @@ As previously disccussed heat conduction ($\alpha$) is heat diffusion ($\kappa$)
 
 \begin{equation}\label{femdiffeq2}
 \begin{aligned}
-\therefore -\kappa \frac{\partial^2 u}{\partial x^2} - f &= c_{p}\frac{\partial u}{\partial t} \rightarrow f=0:\\
-\frac{\partial^2 u}{\partial x^2} &= - \frac{c_{\rho}}{\kappa} \frac{\partial u}{\partial t} \quad \\
+\therefore -\kappa \frac{\partial^2 u}{\partial x^2} - f &= c_p\rho \frac{\partial u}{\partial t} \rightarrow f=0:\\
+\frac{\partial^2 u}{\partial x^2} &= - \frac{c_p\rho}{\kappa} \frac{\partial u}{\partial t} \quad \\
 &\text{ or } \\
 \frac{\partial u}{\partial t} &= -\alpha \frac{\partial^2 u}{\partial x^2}
 \end{aligned}
 \end{equation}
 
 
-Let $c_p = \lambda$ 
+Let $c_p \rho = \lambda$ 
 
 \begin{equation}\label{femdiffeq3}
 \therefore -\kappa u_{,xx} - \lambda u_{,t} = f
@@ -304,39 +331,32 @@ Solving:(TODO: date 15/10 last)
 %	\vec{F}_e^{fA} = \int_0^\ell N f \text{d}x = f \frac{\ell}{2} \int_{-1}^{+1} N \text{d}x = f\frac{\ell}{2} \\
 %\therefore \vec{F}_e^f = \frac{f\ell}{2} \begin{Bmatrix} 1\\1 \end{Bmatrix}
 %	\end{equation}
-	\subsection{Existing Model}
-	For this project, an existing finite element model of heat diffusion by Prof. N de Koker was modified for usage in the Bayes' theorem~\ref{bayes_eq}. 
-	This model is used to determine the likelihood function. 
-	The current model uses the standard Euro code $\kappa$-values as well as the specific heat specified in the \citep{Euro:2004} shown in Equation \ref{cpusedeq}.
-\begin{equation} \label{cpusedeq}
-\centering
-  \texttt{cpine}=
-  \begin{blockarray}{*{14}{c} l}
-    \begin{block}{[*{14}{c}]>{$\footnotesize}l<{$}}
-      0 & 20 & 99&100& 120 & 121 & 200 & 250 & 300 & 350 & 400 & 600& 800 & 1200 \bigstrut[t]& $^{^\circ}\text{C}$ \\
-      479 & 479& 479 & 479 &  479 & 408 & 408 & 398 & 326&  220 &163 &  120 & 110 & 100 & $\text{kg/m}^3$ \\
-     1530 &1530 &1770 &13600& 13500& 2120& 2000& 1620 & 710 & 850 &1000& 1400 &1650& 1650 & J/kg/K \\
-    \end{block}
-  \end{blockarray}
-\end{equation}
 	
-	The model discretises the wooden element into 32 different elements. For finite element analysis, there are always more elements used to generate the model than needed for evaluation. This is done to improve the accuracy of said model.
-	The model is a one-dimensional finite element model that takes time differentiation into account.
+	\subsection{Adapted Model} \label{adapmodsec}
+		The model was changed into a function that takes $\kappa$-values and provides a new temperature distribution over the elements for the different $\kappa$-values. 
+The code for the adapted model function,\texttt{model\_kinput.m} can be seen in Appendix \ref{codeapp}.
 	
-\begin{figure}[H]
-	\label{og_modeldata}
-	\centering
-	\includegraphics[width=\linewidth,]{figures/originalmugraph.jpg}
-	\caption{Output of finite element model using $\kappa$-values as indicated in EN 1995:1-2-2004}
-\end{figure}	
-
-	\subsection{Adapted Model}	
-	The model was changed into a function that takes $\kappa$-values and provides a new temperature distribution over the elements for the different $\kappa$-values. 
-	This function is used in the posterior calculation to determine the likelihood function.
+	The focus of the adaptation was the \texttt{main.m} script in the original program. 
+	Within the \texttt{main.m} function all of the global variables used were initially defined.
+	The defining of variables was moved into a new function \texttt{instantiate\_all.m}, this function defined all the global variables used within the original \texttt{main.m} as well as the measured temperature data. 
+	Here the thickness of the timber element was defined as 99 mm and was divided into 30 elements with 2 nodes per element. 
+	Two additional elements were also added to incorporate the air elements as explained in Section \ref{airsec}.
+	The global variable \texttt{kpine} was left uninstantiated, instead it will be fed to the new adapted model (\texttt{model\_kinput.m}).
+	Importantly the \texttt{instantiate\_all.m} function was called only once and outside of \texttt{model\_kinput.m}.
+	This was done to ensure that the model remains the same size throughout.
+	Inside \texttt{model\_kinput.m} the global \texttt{kpine} variable was set equal to the \texttt{kinput} variable fed into the model.
+	This adaptation allowed the model to be called within the posterior distribution calculation with different $\kappa$-values each time.
 	
-
 \section{Inversion method}
 %here we will discuss everything that we did
+
+%The inversion problem is stated in its simplest form in Equation \ref{datamod_eq} below. 
+%Where $T$ is measured data $M(\kappa)$ is the model.
+%The main objective is to determine the $\kappa$ value that makes the statement below true.
+%
+%\begin{equation} \label{datadmod_eq}
+%T = M(\kappa)
+%\end{equation} 
 The basis of the stochastic analysis is the adapted Bayesian equation \ref{modbayes} below. 
 Each aspect of this equation below will be further explored in the sections below.
 
@@ -354,7 +374,7 @@ Each aspect of this equation below will be further explored in the sections belo
 
 	The prior probability function (Equation \ref{prior} ) is based on the $\kappa$-values assumed prior to any simulation or analysis. 
 	The $\sigma_{\mu}$ in this equation was assumed to be equal to $0.13$ W/m$\cdot$K,
-	In this case, the prior values are indicated as $\mu$ and refer to the vector of $\kappa$-values(\ref{euroK}) at specific temperatures as indicated.
+	In this case, the prior values are indicated as $\mu$ and refer to the vector of $\kappa$-values(\ref{euroK}) at specific temperatures as indicated. The temperatures are not exactly similar to the temperatures used in Euro code, this is due to an attempt at modelling the effect of evaporation at 100 \textdegree C.
 
 \begin{equation}\label{euroK}
   \mu=
@@ -431,31 +451,30 @@ As explained in Section \ref{markovexpl} a step size is a crucial part of determ
 %
 %	\end{equation}
 
-%	The above example simplifies the concept, but this understanding can now be expanded.
-%	If every coordinate direction in the simple example is seen as a single entry into the $x$ vector, then the example has only three $\kappa$-values.
-	
-%	Another level of complication can be added if it is taken into account that every point in the cube is no longer equally likely.
-%	A distribution within the cube can be chosen; in this case a log-normal distribution was chosen.
-%	The shape of the cube then warps into a stranger shape with points closer to the center being more likely choices and the edges being less likely.
 
 %	
 	
 	The acceptance criterion of the new $x$-vector is based on the proximity of the new posterior value to the reference posterior value and the previous posterior. //TODO
 	A potential problem encountered with the standard acceptance probability method (shown in Section \ref{MCint_sec}) is that the magnitudes of the values were not considered. 
 	This problem lead to many false positives, as incorrect values were accepted even though they were not acceptable. 
-	The acceptance criterion was based on Equation \ref{acceptcriteq1}
+	The acceptance criterion was based on Equation \ref{acceptcriteq1}.
+	The $i$ value was chosen to be 50 arbitrarily, initially $i=1$ but as can be seen in Figure \ref{expcurvefig} this acceptance was still to lenient.
 	\begin{equation}\label{acceptcriteq1}
 	\exp\left(\frac {\pi^*(x_{n+1})-\pi^*(x_n)}{\frac{\pi^*(x_{\text{ref}})}{i}}\right)\\
 	\text{with} \quad i = 50\\
 	\end{equation}
 	
-	\begin{figure}[H]
+	\begin{figure}[H]\label{expcurvefig}
 	\centering
 	\includegraphics[width = 0.5\linewidth]{figures/e_expl_curve.png}
 	\caption{Graph explaining the difference in acceptance rates (Generated at https://www.geogebra.org/graphing/g7kyzwce)}
 	\end{figure}
-	 
-	%exp((posterior2-posterior1)/(abs(posteriorref)/50));
+	
+	To allow for sufficient number of samples the program was run until 20 000 samples were generated.
+	The program was run four times with 5000 iterations each time. 
+	Due to computational limitations more iterations could not be run.
+	Due to burn-in, as explained in Section \ref{markovexpl}, the first 100 samples of each run was removed from analysis. 
+	This resulted in 19 600 acceptable and useful samples that were analysed.
 	
 	
 	\section{Optimisation to determine MAP}

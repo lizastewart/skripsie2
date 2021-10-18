@@ -15,18 +15,22 @@
 %    \end{minipage}
 %\end{figure}\
 
-The results of running the algorithm until 20 000 acceptable values are found is shown below.)TODO add more.
+The results of the MCMC analysis as well as the MAP optimization is visualised in the section below.
 \section{Resulting k-values}
 
 The thermal conductivity ($\kappa$-values) at key temperatures was the main goal of this project. 
 As can be seen in Figure \ref{kresult_euro_fig} there was quite a drastic difference in the thermal diffusivity at 1200 \textdegree C and between 0\textdegree C and 200\textdegree C.
-thee large difference at 1200\textdegree C is due to how our model is created.(TODO?)
-Most of the energy at that temperature is radiated?(TODO)
+The large difference at 1200\textdegree C is due to how the model is created, at that temperature the majority of the heat is transferred through thermal radiation.
+The model did not model thermal radiation separately but instead incorporated the radiation into a equivalent conduction.
+Between 0\textdegree C and 200\textdegree C the modelling of the evaporation was moderately succesful as a spike can be seen at 100 \textdegree C.  
 \begin{figure}[H]
+\centering
 	\label{kresult_euro_fig}
-	\includegraphics[width=\linewidth]{figures/kvalues_all_shi.png}
+	\includegraphics[width=\textwidth]{figures/kvalues_all_shi.png}
 	\caption{Resulting $\kappa$ values compared to Euro-code standard values}
 \end{figure}
+ 
+ 
  
 \begin{figure}[b]
 \label{histofig}

@@ -4,18 +4,21 @@ Previous similar projects will be investigated, and the value of this research w
 
 \section{Background and Motivation}
 
-Traditionally the thermal conductivity, otherwise referred to as the $\kappa$-value, of timber is based simply on the EN 1995:1-1-2004 or similar standards.
-This research project will aim to obtain the thermal diffusivity (RIJK: diffusivity or conductivity?  First sentence says conductivity.) of cross-laminated SA-Pine timber by further analysing data originally obtained by S. van der Westhuyzen (RIJK: cite? Andersins is hierdie verduideliking van S vd W onnodig) for his study of the samples' charring rate.
+Traditionally the thermal diffusivity, otherwise referred to as the $\alpha$-value, of timber is based simply on the EN 1995:1-2-2004 or similar standards.
+This research project will aim to obtain the thermal diffusivity of cross-laminated SA-Pine timber by further analysing data originally obtained by \citeauthor{Westhuyzen:2020} for their study of the samples' charring rate.
 
-The thermal diffusivity of timber is an unobservable quantity (RIJK: quality - quantity sounds like a number of items) that cannot be measured directly. 
-Instead, it is related to measurements of temperature and time through differential models. 
-When heat diffusion is calculated using Finite Element methods (TODO: choose which FEM), the process is usually simplified to a linear problem \citep{Fish:2007}. 
-Due to the changes in thermal diffusivity of timber with temperature, as can be seen in EN 1995:1-1-2004(pg number T) (RIJK: pg number T? what means this?) and Figure \ref{euroK}, the diffusivity cannot be linearly modelled. 
+
+The thermal diffusivity of timber is an unobservable quality that cannot be measured directly.
+Although it is directly related to thermal conductivity ($\kappa$) and can be calculated when thermal conductivity is known. 
+The majority of this report will therefore discuss the methods used to obtain the thermal conductivity or $\kappa$-values and the diffusivity will be calculated when interpreting the results. 
+Conductivity can be related to measurements of temperature and time through differential models. 
+When heat conduction is calculated using finite element methods, the process is usually simplified to a linear problem \citep{Fish:2007}. 
+Due to the changes in thermal conductivity of timber with temperature, as can be seen in EN 1995:1-2-2004(page 49) and Figure \ref{euroK}, the conductivity cannot be linearly modelled. 
 The problem therefore lends itself to being analysed by inversion techniques. 
-The aforementioned (RIJK: bedoel jy inversion techniques?  Gebruik dan "this".) approach will allow us to obtain information about the diffusivity based on the combined information assumed prior to measuring, further referred to as the prior, and the measured data. 
-Statistical inversion delivers a probability distribution, thereby providing a collection of diffusivity estimates and their corresponding probabilities.
-The approach taken in this report is unique due to the nature of data used, as the main purpose of this data's collection was to determine char rates and not thermal conductivity (RIJK: diffusivity or conductivity?).
-This difference in research goals means that more assumptions had to be made, in contrast to a experiment that intended to determine the thermal conductivity (RIJK: diffusivity or conductivity?) and would have controlled those variables. 
+This approach will allow us to obtain information about the conductivity based on the combined information assumed prior to measuring, further referred to as the prior, and the measured data. 
+Statistical inversion delivers a probability distribution, thereby providing a collection of conductivity estimates and their corresponding probabilities.
+The approach taken in this report is unique due to the nature of data used, as the main purpose of this data's collection was to determine char rates and not thermal conductivity or diffusivity.
+This difference in research goals means that more assumptions had to be made, in contrast to a experiment that intended to determine the thermal conductivity and would have controlled those variables. 
 
 Currently, the fire rating of specific timber samples is based on fire tests conducted in a furnace. 
 The furnace is kept at increasing temperatures corresponding with the Standard or ISO 834 fire curve as specified in ISO 834 \citet{ISO:1999}.
@@ -24,13 +27,14 @@ This increase is partially due to the sustainability of timber as a construction
 Obtaining and standardising thermal diffusivity values for different species of timber will assist in more accurate modelling.
 If modelling accuracy can be increased, the use of modelling to confirm fire tests or to replace small-scale fire tests will become more feasible.
 
-
 	\begin{figure}
 	\label{kvalue_fig}
 	\centering
-	\includegraphics[width = 0.5\linewidth]{figures/kvalues_euro.png}
+	\includegraphics[width = 0.5\linewidth]{figures/Eurok.png}
 	\caption{Standard temperature-thermal conductivity relationship for timber from \citep{Euro:2004}}
 	\end{figure}/
+	
+	
 
 \section{Aim and objectives}
 During the course of the project, the student will aim to meet the following objectives:
@@ -44,6 +48,7 @@ During the course of the project, the student will aim to meet the following obj
  		\item Markov-Chain Monte Carlo 	
  	\end{enumerate}
 \end{enumerate}
+
 
 \section{Literature study}\label{litstudy}
 	

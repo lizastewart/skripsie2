@@ -38,7 +38,82 @@ likelihood_pi = tempmat(:)'*tempmat(:)/(-2*sigmaT^2);
 end
 
 \end{lstlisting}
+\section*{Adapted model function}
+Model adapted to a function as explained in Section \ref{adapmodsec}.
+\begin{lstlisting}
+function udepths = model_kinput(kinput)
 
+global_time;
+global_mesh;
+global_const;
+global_prop;
+
+kpine = kinput;
+
+% Print current number of elements and current sample k-values 
+kpine(2,:)
+fprintf("%d \n",nels);
+
+% Calculate boundary conditions
+[isofc, isofcdot] = isofirecurve(tvec);
+%isofc(tvec>1000) = 20;   % check cooling effect
+%isofcdot(tvec>1000) = 0;
+atmtemp = tvec*0 + 20;  % Celsius
+atmtdot = tvec*0;
+
+% Set up initial conditions
+unode(:,1) = xnp*0 + atmtemp(1);
+unode(1,1) = isofc(1);
+vnode(:,1) = xnp*0 + atmtdot(1);
+vnode(1,1) = isofcdot(1);%time derivatives
+
+% Iterate: calculate temperature profile
+for i = 2:length(tvec)
+    % Set up Dirichlet
+    ddir = zeros(nnp,1);
+    vdir = zeros(nnp,1);
+    ddir(1) = isofc(i);
+    vdir(1) = isofcdot(i);
+    ddir(nnp) = atmtemp(i);
+    vdir(nnp) = atmtdot(i);
+    
+    % Assemble global matrices
+    Kmat0 = glomatK(unode(:,i-1), ddir);
+    Mmat0 = glomatM(unode(:,i-1), ddir);
+    Fvec0 = glovecF(unode(:,i-1), ddir);
+    
+    % Account for Dirichlet
+    Fdir = Kmat0*ddir + Mmat0*vdir;
+    Fvec0 = Fvec0 - Fdir;
+    Kmat = Kmat0(2:end-1, 2:end-1);
+    Mmat = Mmat0(2:end-1, 2:end-1);
+    Fvec = Fvec0(2:end-1);
+    
+    % Solve for d and ddot in this step
+    [unode(2:end-1,i), vnode(2:end-1,i)] = dvnext( unode(2:end-1,i-1), vnode(2:end-1,i-1), Kmat, Mmat, Fvec );
+    unode(:,i) = unode(:,i) + ddir;
+    vnode(:,i) = vnode(:,i) + vdir;
+    
+    clear Kmat0 Kmat Fvec0 Fvec Mmat0 Mmat;
+    
+end
+% Isolate nodes at depth of thermocouples
+count = [2 7 12 17 22 27 32];
+
+udepth1 = unode(count(1),2:end);
+udepth2 = unode(count(2),2:end);
+udepth3 = unode(count(3),2:end);
+udepth4 = unode(count(4),2:end);
+udepth5 = unode(count(5),2:end);
+udepth6 = unode(count(6),2:end);
+udepth7 = unode(count(7),2:end);
+
+udepths = [udepth1;udepth2;udepth3;udepth4;udepth5;udepth6;udepth7];
+
+end
+
+
+\end{lstlisting}
 %\newpage
 \section*{Function to take next step}
 This function takes the current $x$-vector and generates a new probable $x$-vector.
@@ -47,7 +122,7 @@ function xvalue2 = takexsteps(xvalue1)
 	global temps mu_values stepsize sigmastepMU sigmastepT
 
 	locsigma = stepsize*mu_values;
-	locxvalue = xvalue1 ;;
+	locxvalue = xvalue1;
 
 	lnMu = log(locxvalue.^2 ./ sqrt(locsigma.^2+locxvalue.^2));
 	lnSigma = sqrt(log(locsigma.^2./xvalue1.^2 + 1));
@@ -77,8 +152,7 @@ fminopts.MaxFunEvals = 1000;
 fminopts.MaxIter = 1000;
 lowBound= [0.000, 0.000, 0.000, 0.000, 0.000, 0.0000, 0.0000, 0.00, 0.1];
 upBound = [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 20];
-%fminopts.AlwaysHonorConstraints =;
-% fminopts.PlotFcns = 'optimfplotval';
+
 fun = @(x_values) -1*posteriori_func(x_values,sigmaT1,sigmaMU1);
 [mu_map,fval] = fminsearchbnd(fun, x_values,lowBound,upBound,fminopts);
 \end{lstlisting}

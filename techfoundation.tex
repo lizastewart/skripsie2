@@ -3,17 +3,17 @@
 In this chapter, detailed explanations of the algorithms and concepts applied throughout the project are presented. 
 This chapter aims to enable the reader to better understand the implementation and reasoning for the use of specific methods.
 \section{Thermal properties of timber}
-Specific thermal properties of timber need to be thoroughly understood to allow for accurate modelling (RIJK: kort hier dalk 'n "and"?  Anders...) interpretation of the (RIJK: ...moet "modelling" hier kom liewer as waar hy nou is.) results.
-After $100 ^{^\circ}$C, the temperature exposure causes the timber structure to break down in such a way that it will not return to the same (RIJK: "its original" klink beter as "the same", kyk of dit korrek is vir jou?) state after cooling.
-This breakdown is generally referred to as thermal degradation. (RIJK: join die twee sinne aan weerskante met 'n "which"?)
-The degradation can be broken into four categories \citep{White:2001} \citep{Shi:2021}.
-These four categories are based on the different reactions that occur, and are briefly summarised below.
-(RIJK:  miskien 'n bullet list vir die vier items?)
-(RIJK:  Die "above X and below Y" lees moeiliker as "between X and Y".  Consider changing it that way.)
-Above 100 $^{^\circ}$C and below 200 $^{^\circ}$C, the moisture in the timber is evaporated and other non-combustible gasses are released.
-Between 200 $^{^\circ}$C and 300 $^{^\circ}$C, carbon monoxide is released in significant quantities, and some of the timber components undergo a change in chemical composition due to the high temperatures.
-Temperatures after (RIJK: "after" implies time.  "Above" is korrek-ter.) 300 $^{^\circ}$C and before 45 0$^{^\circ}$C are significant due to the amount of flammable volatiles released and the break of carbon linkages at 370 $^{^\circ}$C.
-At temperatures higher than 450 $^{^\circ}$C, the remaining timber is char (RIJK: charred? of miskien "become char") and any further degradation is due to oxidation from carbon monoxide, carbon dioxide, and water.
+Specific thermal properties of timber need to be thoroughly understood to allow for accurate modelling and interpretation of the results.
+After $100 ^{^\circ}$C, the temperature exposure causes the timber structure to break down in such a way that it will not return to the original state after cooling.
+This breakdown is generally referred to as thermal degradation which can be broken into four categories \citep{White:2001} \citep{Shi:2021}.
+These four categories are based on the different reactions that occur, and are briefly summarised below:
+
+\begin{itemize}
+\item Above 100 \textdegree C and below 200 \textdegree C, the moisture in the timber is evaporated and other non-combustible gasses are released.
+\item Between 200 \textdegree C and 300 \textdegree C, carbon monoxide is released in significant quantities, and some of the timber components undergo a change in chemical composition due to the high temperatures.
+\item Temperatures above  300 \textdegree C and before 450\textdegree C are significant due to the amount of flammable volatiles released and the break of carbon linkages at 370 \textdegree C.
+\item At temperatures higher than 450 \textdegree C, the remaining timber is charred and any further degradation is due to oxidation from carbon monoxide, carbon dioxide, and water.
+\end{itemize}
 These phases should be clear in the results and data. (TODO add lines for phases)
 
 All the thermal properties of various timber species at high temperatures were discussed in a research article by \citet{Shi:2021}.
@@ -21,56 +21,94 @@ All the thermal properties of various timber species at high temperatures were d
 
 
  \begin{equation}\label{softconeq}
- \alpha = 0.124 +0.8432 \times 10^{-4} (\text{T}-293) 
+ \kappa = 0.124 +0.8432 \times 10^{-4} (\text{T}-293) 
  \end{equation}
  \begin{equation}\label{charconeq}
- \alpha = 0.091 + 8.2 \times 10^{-4} \text{T}
+ \kappa = 0.091 + 8.2 \times 10^{-4} \text{T}
  \end{equation}
  
- For this project, the temperature of char will be used as 300 $^{^\circ}$C following the research of \citeauthor{Westhuyzen:2020}. 
+ For this project, the temperature of char will be used as 300 \textdegree C following the research of \citeauthor{Westhuyzen:2020}. 
 % The specific heat ($C_p$) will be assumed to be constant at 1500 kJ/$\text{m}^3$/K. the density of pine was also assumed constant at 
- Using the equations in by (RIJK: nie "in" of "by" nie maar dalk liewer "of"?) \citeauthor{Shi:2021}, the following $\kappa$-values (Equation \ref{shiK}) are obtained.  (RIJK:  you call this "kappa-values" but put it in a mu vector. Is correct?)
+ Using the equations of \citeauthor{Shi:2021}, the following $\kappa$-values (Equation \ref{shiK}) are obtained. 
 \begin{equation}\label{shiK}
-  \mu=
+  \kappa=
   \begin{blockarray}{*{1}{c} l}
 %    \begin{block}{*{1}{>{$\footnotesize}c<{$}} 1}
 %      $\text{W/m}\cdot\text{K}$ &\\
 %    \end{block}
     \begin{block}{[*{1}{c}]>{$\footnotesize}l<{$}}
-     	0.0993\bigstrut[t] & 0 $^{^\circ}\text{C}$\\
-		0.1044& 60 $^{^\circ}\text{C}$\\ 
-		0.1077& 100 $^{^\circ}\text{C}$\\ 
-		0.1111& 140 $^{^\circ}\text{C}$\\ 
-		0.1162& 200 $^{^\circ}\text{C}$\\ 
-		0.3780& 350 $^{^\circ}\text{C}$\\
-		0.5010& 500 $^{^\circ}\text{C}$\\ 
-		0.7470& 800 $^{^\circ}\text{C}$\\ 
-		1.0750& 1200 $^{^\circ}\text{C}$\\
+     	0.0993\bigstrut[t] & 0 $^{^\circ} \text{C}$\\
+		0.1044& 60  $^{^\circ} \text{C}$\\ 
+		0.1077& 100 $^{^\circ} \text{C}$\\ 
+		0.1111& 140 $^{^\circ} \text{C}$\\ 
+		0.1162& 200 $^{^\circ} \text{C}$\\ 
+		0.3780& 350 $^{^\circ} \text{C}$\\
+		0.5010& 500 $^{^\circ} \text{C}$\\ 
+		0.7470& 800 $^{^\circ} \text{C}$\\ 
+		1.0750& 1200 $^{^\circ} \text{C}$\\
     \end{block}
   \end{blockarray}
 \end{equation}
  
-From the big difference between these values and the Euro code values, it is clear that these simple equations are not sufficient for determining the thermal conductivity (RIJK: diffusivity?) of pine.
+From the big difference between these values and the Euro code values, it is clear that these simple equations are not sufficient for determining the thermal conductivity of pine.
 
+\subsection{Heat conduction and diffusion}\label{heatconsec}	 
+	Heat is transferred within an element if is a temperature gradient present. 
+	For this project heat transferred via conduction will be focused on but heat can also be transferred in the form of thermal radiation or convection \cite{Fish:2007}.
+	The heat conduction equation or Fourier's Law of heat conduction \citep{Fourier:1878} can be simply expressed in  equation \ref{fourier_eq}. 
+	Where heat flux is expressed as \ a partial differential equation dependant on the temperature and thickness of the element. 
+	More information can be added if the temperature only varies in one direction. 
+	The thermal conductivity can also be expressed as a negative since heat always flows from warm to cold.
+	Fourier's Law can then be written as in Equation \ref{heat_eq}
+	
+	
+	\begin{equation}
+	\label{fourier_eq}
+		q = k \frac{\Delta T}{L}
+	\end{equation}
+	
+	\begin{equation}
+	\label{heat_eq}
+		q = -k \frac{\partial{u}}{\partial{x}}
+	\end{equation}
+
+Derivation of the heat conduction equation over time leads to the heat diffusivity equation (Equation \ref{heatdifeq}
+
+\begin{equation}\label{heatdifeq}
+\frac{\partial u}{\partial t} = -\alpha \frac{\partial^2 u}{\partial x^2}
+\end{equation}
+where 
+\begin{equation}
+\alpha = \frac{\kappa}{c_p \rho}
+\end{equation}
 
 
 \section{Finite Element Method}\label{femsec}
-Finite element methods (or finite element analysis) is (RIJK:  unsure if should be "is" and not "are" since we point at "methods", plural) used when the behaviour of an element cannot be accurately depicted by a simple mathematical equation. 
+The finite element method (or finite element analysis) is  used when the behaviour of a large element cannot be accurately depicted by a simple mathematical equation. 
+Calculating and comprehending (RIJK: Liewer modelling as die ander twee woorde) the behaviour of large and complex systems is a near impossible task without breaking the problem into smaller understandable parts.
+The finite element method enables engineers and scientists to break a large problem or element into comprehend-able and definable parts \citep{Zienkiewicz:2000}. 
+This allows approximations and assumptions to be made at a small scale without affecting the large scale significantly, such as assuming linear behaviour between nodes. 
+%To understand simply why it works you could simply look at your computer screen. 
+%The screen consists of pixels that are simplified to one colour but the collection of pixels that is seen from the user perspective can show complex forms and pattens.
+%Each pixel was simplified and approximated but the end result is sufficiently accurate due to the sheer number of pixels.
+%Assumptions made on a smaller scale have a lesser effect on the final answer than the same assumptions made on a large scale would have had.
+%If the whole screen was one pixel and only the majority colour was assumed true the whole screen would be white and that is clearly incorrect. 
+from that follows that the accuracy of a finite element model is very dependant on the number of elements used and only improves with more elements.
+Sadly the computational time needed to analyse a model with a thousand elements is significantly more than needed for a model with less elements.
+The fine balance between sufficient accuracy and short enough computational time should always be kept in mind.
+
+
 	\subsection{Origin}
 	The finite element method (FEM) used today is the sum of decades of research. 
-	In an article by \citeauthor{Gupta:1996}, they discuss the five main contributors to the finite element method. 
-	According to \citet{Gupta:1996}, the idea behind the finite element method was initially explored in the \citeyear{Courant:1943} article by \citeauthor{Courant:1943}. 
+	In an article by \citet{Gupta:1996}, the authors discuss the five main contributors to the finite element method. 
+	They claim the idea behind the finite element method was initially explored in the \citeyear{Courant:1943} article by \citeauthor{Courant:1943}. 
 	Courant acknowledges the complex nature of mathematical problems in his first paragraph by stating: "Mathematics is an indivisible organism uniting theoretical contemplation and active application."
-	He goes on to discuss the variational method created by (Ryes?) (RIJK: is die sin klaar?)
-	
-	
-	
-	\subsection{Concept}
-	A larger element is broken into smaller elements. 
-	Assumptions made on a smaller scale have a lesser effect on the final answer than the same assumptions made on a large scale would have had.
-	Therefore, choosing more elements leads to a more accurate model.
-	
-	(RIJK: tot hier gelees, sal more (18 Oct) verder)
+	He goes on to discuss the variational method created by Lord Rayleigh and Walther Ritz and the shortcomings of their methods.
+	He concludes that using few elements does not provide accurate local estimations but instead the interpolation will provide approximations of the actual quantities that are sufficient for engineering problems.
+	As his paper did not go into depth into the calculations Courant cannot be accredited with the full development but rather with the starting point.
+	In 1954 J. Argyris published an article  where the details of his calculations are clear and matrix formulation can be seen.
+	The finite element method as known to day were directly defined and clarified in a text book by Zienkiewicz in 1957.
+	This textbook is now in its fifth edition of print and has been continuously updated and was used for this project.
 	
 	\subsection{Boundaries}
 	An important part of how finite element models are how the known information is embedded into the model.
@@ -81,21 +119,13 @@ Finite element methods (or finite element analysis) is (RIJK:  unsure if should 
 	In the context of this problem, the Dirichlet boundaries prescribe the temperatures at the boundaries and the Newmann boundaries prescribe the heat flux at the boundaries.
 	
 
+	\subsection{Weak form and Strong form}
+		From \cite{Fish:2007} 
+	
 
-	\subsection{Heat diffusion}	 
-	 In its simplest form, the one-dimensional heat diffusion equation is a partial differential equation \ref{heat_eq} dependant on the temperature and thickness of the element. 
-	The heat diffusion equation is based on Fourier's Law 
-	
-	
-	\begin{equation}
-	\label{heat_eq}
-		q = -k \frac{dT}{dx} = -k u_{,x}
-	\end{equation}
-	\subsection{Heat conduction}
-	TODO: - Explain Galerkin Weak form
-	
 	
 \section{Bayes' theorem of inverse problems}
+
 %	Statistical and Computational Inverse problems by Kaipio and Somersalo Chapter 3
 % 	The Bayesian approach to Inverse Problems Dashti and Stuart
 	The method of statistical inversion is dependant on a fundamental understanding of the Bayes' theorem of inverse problems. 
@@ -111,6 +141,7 @@ Finite element methods (or finite element analysis) is (RIJK:  unsure if should 
 	\label{bayes_eq}
 	\pi_{\text{post}}(x) = \pi(x|y_{\text{observed}}) = \frac{\pi_{\text{pr}}(x) \pi(y_{\text{observed}}|x)}{\pi (y_{\text{observed}})}	
 	\end{equation}
+	
 	
 	
 

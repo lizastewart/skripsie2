@@ -4,18 +4,18 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Standard temperature-thermal conductivity relationship for timber from \citep {Euro:2004}}}{2}{figure.1.1}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Three-dimensional example of Markov Chain application (Created on \url {https://www.geogebra.org/3d})}}{8}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Visual representation of Nedler-Mead transformations a) Reflection, b) Expansion, c) Contraction, d) Shrink contraction (Source:\url {https://codesachin.wordpress.com/2016/01/16/nelder-mead-optimization/})}}{10}{figure.2.2}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Three-dimensional example of Markov Chain application (Created on \url {https://www.geogebra.org/3d})}}{9}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Visual representation of Nedler-Mead transformations a) Reflection, b) Expansion, c) Contraction, d) Shrink contraction (Source:\url {https://codesachin.wordpress.com/2016/01/16/nelder-mead-optimization/})}}{11}{figure.2.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Thermocouple layout in test conducted by \cite {Westhuyzen:2020} cross-section (left) and overall layout (right)}}{12}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Standard ISO fire curve TODO}}{12}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Visualisation of element that is modelled in one-dimension}}{14}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Visualisation of one-dimensional element with air elements and external conditions added}}{15}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Output of finite element model using $\kappa $-values as indicated in EN 1995:1-2-2004}}{18}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Graph explaining the difference in acceptance rates (Generated at https://www.geogebra.org/graphing/g7kyzwce)}}{21}{figure.3.6}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Thermocouple layout in test conducted by \cite {Westhuyzen:2020} cross-section (left) and overall layout (right)}}{13}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Standard ISO fire curve TODO}}{13}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Output of finite element model using $\kappa $-values as indicated in EN 1995:1-2-2004}}{15}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Visualisation of element that is modelled in one-dimension}}{16}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Visualisation of one-dimensional element with air elements and external conditions added}}{17}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Graph explaining the difference in acceptance rates (Generated at https://www.geogebra.org/graphing/g7kyzwce)}}{23}{figure.3.6}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Resulting $\kappa $ values compared to Euro-code standard values}}{23}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces short}}{24}{figure.4.2}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Resulting $\kappa $ values compared to Euro-code standard values}}{25}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces short}}{26}{figure.4.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

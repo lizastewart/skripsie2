@@ -3,6 +3,14 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Liza_report_rewrite.aux
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: usmeg-a.bst
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+A level-1 auxiliary file: verklaring.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+A level-1 auxiliary file: opsomming.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+A level-1 auxiliary file: nomenkl.aux
 Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: Introduction.aux
 Reallocating 'name_of_file' (item size: 1) to 19 items.
@@ -15,48 +23,58 @@ Reallocating 'name_of_file' (item size: 1) to 15 items.
 A level-1 auxiliary file: discussion.aux
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 A level-1 auxiliary file: Conclusion.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: mcmcCode.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+A level-1 auxiliary file: result_app.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+A level-1 auxiliary file: derive_app.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+A level-1 auxiliary file: Program.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+A level-1 auxiliary file: GA_outcomes.aux
 Reallocating 'name_of_file' (item size: 1) to 12 items.
 Database file #1: USBibsample.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 21 entries,
+You've used 23 entries,
             3324 wiz_defined-function locations,
-            829 strings with 9194 characters,
-and the built_in function-call counts, 17114 in all, are:
-= -- 1374
-> -- 395
-< -- 38
-+ -- 163
-- -- 130
-* -- 1559
-:= -- 2158
-add.period$ -- 72
-call.type$ -- 21
-change.case$ -- 142
-chr.to.int$ -- 30
-cite$ -- 21
-duplicate$ -- 1669
-empty$ -- 1591
-format.name$ -- 286
-if$ -- 3516
+            853 strings with 9556 characters,
+and the built_in function-call counts, 18468 in all, are:
+= -- 1480
+> -- 425
+< -- 43
++ -- 178
+- -- 139
+* -- 1668
+:= -- 2337
+add.period$ -- 80
+call.type$ -- 23
+change.case$ -- 155
+chr.to.int$ -- 38
+cite$ -- 23
+duplicate$ -- 1796
+empty$ -- 1723
+format.name$ -- 307
+if$ -- 3798
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 202
-newline$ -- 142
-num.names$ -- 86
-pop$ -- 453
+missing$ -- 222
+newline$ -- 153
+num.names$ -- 94
+pop$ -- 502
 preamble$ -- 1
-purify$ -- 125
+purify$ -- 136
 quote$ -- 0
-skip$ -- 466
+skip$ -- 507
 stack$ -- 0
-substring$ -- 1035
-swap$ -- 780
-text.length$ -- 19
+substring$ -- 1093
+swap$ -- 835
+text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 174
+type$ -- 186
 warning$ -- 0
-while$ -- 154
+while$ -- 166
 width$ -- 0
-write$ -- 310
+write$ -- 338

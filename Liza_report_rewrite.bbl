@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{23}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -64,6 +64,11 @@
 \newblock {\selectlanguage{eng}\emph{A first course in finite elements}}.
 \newblock John Wiley, Chichester.
 \newblock ISBN 9780470035801.
+
+\bibitem[{\citenamefont{Fourier}(1878)}]{Fourier:1878}
+\bibnamefont{Fourier}, \bibfnamefont{J.} (1878).
+\newblock \emph{The analytical theory of heat}.
+\newblock Cambridge University Press.
 
 \bibitem[{\citenamefont{Frayssinhes}
   \emph{\bbletal{}}(2020)\citenamefont{Frayssinhes}, \citenamefont{Girardon},
@@ -191,5 +196,13 @@
 \newblock {MCMC} sampling for dummies.
 \newblock While My MCMC Gently Samples, Blog.
 \newline\bblurlpre\url{https://twiecki.io/blog/2015/11/10/mcmc-sampling/}
+
+\bibitem[{\citenamefont{Zienkiewicz} \protect\BIBand{}
+  \citenamefont{Taylor}(2000)}]{Zienkiewicz:2000}
+\bibnamefont{Zienkiewicz}, \bibfnamefont{O.} \protect\BIBand{}
+  \bibnamefont{Taylor}, \bibfnamefont{R.} (2000).
+\newblock \emph{The Finite Element Method}, \bblvol{} Volume 1: The Basis.
+\newblock \bblfiftho{} \bbledn{}. Butterworth-Heinemann.
+\newblock ISBN 0 7506 5049 4.
 
 \end{thebibliography}
