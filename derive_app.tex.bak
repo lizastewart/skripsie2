@@ -88,7 +88,7 @@ Substituting Equation \ref{femdiffeq1}(2) into \ref{femdiffeq1} and taking the d
 As previously disccussed heat conduction ($\alpha$) is heat diffusion ($\kappa$)  divided by specific heat ($c_p$).
 
 
-\begin{equation}%%\label{femdiffeq2}
+\begin{equation}\label{appfemdiffeq2}
 \begin{aligned}
 \therefore -\kappa \frac{\partial^2 u}{\partial x^2} - f &= c_{\rho}\frac{\partial u}{\partial t} \rightarrow f=0:\\
 \frac{\partial^2 u}{\partial x^2} &= - \frac{c_{\rho}}{\kappa} \frac{\partial u}{\partial t} \quad \\
@@ -100,26 +100,26 @@ As previously disccussed heat conduction ($\alpha$) is heat diffusion ($\kappa$)
 
 Let $c_p = \lambda$ 
 
-\begin{equation}%%\label{femdiffeq3}
+\begin{equation}\label{appfemdiffeq3}
 \therefore -\kappa u_{,xx} - \lambda u_{,t} = f
 \end{equation}
 
 
 Then:
 
-\begin{equation}%%\label{femdiffeq4}
+\begin{equation}\label{appfemdiffeq4}
 \int_0^L w q_{,x} \text{d}x - \int_0^L w \lambda u_{,t} \text{d}x - \int_0^L w f \text{d}x = 0
 \end{equation}
 
 
-Similar to what was done in \ref{basisfunc_eq} a special approximation is made to obtain Equation \ref{femdiffeq5}.
+Similar to what was done in \ref{appbasisfunc_eq} a special approximation is made to obtain Equation \ref{appfemdiffeq5}.
 
-\begin{equation}%%\label{femdiffeq5}
+\begin{equation}\label{appfemdiffeq5}
 u \approx u^h \rightarrow u_e^h = \sum_{A}N^A d^A \quad;\quad w_e^h = \sum_{A}N^A L^A
 \end{equation}
 
 
-\begin{equation}%%\label{femdiffeq6}
+\begin{equation}\label{appfemdiffeq6}
 \rightarrow \sum_e \int_{\Omega^e} w_{e,x}^h \kappa u_{e,x}^h \text{d}x_e + \sum_e \int_{\Omega^e} w_e^h \lambda u_{e,t}^h \text{d}x_e + \sum_e \int_{\Omega^e} w_e^h f \text{d}x_e - \sum_{e \in \epsilon_A} w q_N = 0
 \end{equation}
 
@@ -145,22 +145,24 @@ u \approx u^h \rightarrow u_e^h = \sum_{A}N^A d^A \quad;\quad w_e^h = \sum_{A}N^
 
 From all the above equations the below matrix formulation could be assembled:
 %considere renamin to somehing with assembled or matrix in the name
-\begin{equation}%%\label{femdiffeq7}
+\begin{equation}\label{appfemdiffeq7}
 \vec{c}^T \vec{\kappa} \vec{d} + \vec{c}^T \vec{M} \vec{\dot{d}} = \vec{c}^T \vec{F}
 \end{equation}
 
 
-Solving:(TODO: date 15/10 last)
+
 
 \begin{equation}
-(1) \text{ Set } \vec{d}_0 = |---|---|---| \\
-\&\ \vec{v}_0 = \vec{0} \\
-\text{Also set } \alpha \text{ (mixing constant?)} ; \Delta t
+\beign{aligned}
+(1) \text{ Set }& \vec{d}_0 \text{equal to the known conditions at time 0}\\
+&  \vec{v}_0 = \vec{0} \\
+\text{Also set } \alpha \text{as a parameter between 0 and 1} \\
+ &\Delta t \text{is the timestep}
+\end{aligned}
 \end{equation}
 
-
-\begin{equation}
-(2) \text{ Time integration [v-form;Hughes Ch8]} \\
+Following the v-form Time integration in Hughes Chapter 8 , page 460, define $\vec{d}_{n+1$ as in Equation \ref{appeqdn1}.
+\begin{equation}\label{appeqdn1}
 \vec{d}_{n+1} = \vec{d}_n + (1-\alpha) \Delta \vec{v}_n + \alpha \Delta t \vec{v}_{n+1}
 \end{equation}
 
