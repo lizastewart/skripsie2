@@ -2,29 +2,30 @@
 %(RIJK: net 'n comment om te se ek is baie lief vir jou en baie trots op jou <3)
 In this chapter, detailed explanations of the algorithms and concepts applied throughout the project are presented. 
 This chapter aims to enable the reader to better understand the implementation and reasoning for the use of specific methods.
+
 \section{Thermal properties of timber}
-Specific thermal properties of timber need to be thoroughly understood to allow for accurate modelling and interpretation of the results.
+
+Specific thermal properties of timber must be thoroughly understood to allow for accurate modelling and interpretation of the results.
 After $100 ^{^\circ}$C, the temperature exposure causes the timber structure to break down in such a way that it will not return to the original state after cooling.
-This breakdown is generally referred to as thermal degradation which can be broken into four categories \citep{White:2001} \citep{Shi:2021}.
-These four categories are based on the different reactions that occur, and are briefly summarised below:
+This breakdown is generally referred to as thermal degradation, which can be broken into four categories \citep{White:2001} \citep{Shi:2021}.
+These categories are based on the different reactions that occur, and are briefly summarised below:
 
 \begin{itemize}
 \item Above 100 \textdegree C and below 200 \textdegree C, the moisture in the timber is evaporated and other non-combustible gasses are released.
 \item Between 200 \textdegree C and 300 \textdegree C, carbon monoxide is released in significant quantities, and some of the timber components undergo a change in chemical composition due to the high temperatures.
-\item Temperatures above  300 \textdegree C and before 450\textdegree C are significant due to the amount of flammable volatiles released and the break of carbon linkages at 370 \textdegree C.
+\item Temperatures above  300 \textdegree C and before 450 \textdegree C are significant due to the amount of flammable volatiles released and the break of carbon linkages at 370 \textdegree C.
 \item At temperatures higher than 450 \textdegree C, the remaining timber is charred and any further degradation is due to oxidation from carbon monoxide, carbon dioxide, and water.
 \end{itemize}
 %TODO
 %These phases should be clear in the results and data. (TODO add lines for phases)
-As the timber clearly undergoes physical and chemical changes as temperature changes it makes sense that the thermal properties also change with temperature.
-Then logically the specific heat capacity($c_p$) and density($\rho$) of timber also varies with temperature.
+Timber undergoes physical and chemical changes as temperature changes; it therefore makes sense that its thermal properties such as its specific heat capacity ($c_p$) and its density ($\rho$) of timber also varies with temperature.
 As the thermal conductivity and thermal diffusivity will only be assessed at specific temperatures, the specific heat and density  at only those temperatures will be summarised below.
 \begin{table}[H]\label{cptab}
 \centering
 	\begin{tabular}{ r r r r }
 	\toprule
 	\multicolumn{1}{c}{Temp}& \multicolumn{1}{c}{$c_p$}& \multicolumn{1}{c}{$\rho$} & \multicolumn{1}{c}{$c_p\rho$}\\
-	\multicolumn{1}{c}{\textdegree C} & \multicolumn{1}{c}{$(J/kg/K)$} &  \multicolumn{1}{c}{$(kg/m^3)$} & \multicolumn{1}{c}{$(kJ/kg/K)$}\\
+	\multicolumn{1}{c}{(\textdegree C)} & \multicolumn{1}{c}{$(J/kg/K)$} &  \multicolumn{1}{c}{$(kg/m^3)$} & \multicolumn{1}{c}{$(kJ/kg/K)$}\\
 	\midrule
 	0   & 1530 & 479&732.8\\
 	60  &1652	& 479&791.3\\
@@ -75,25 +76,25 @@ All the thermal properties of various timber species at high temperatures were d
 From the big difference between these values and the Euro code values, it is clear that these simple equations are not sufficient for determining the thermal conductivity of pine.
 \subsection{Heat conduction and diffusion}\label{heatconsec}	 
 	Heat is transferred within an element if a temperature gradient present, the rate that heat transfers is directly influenced by the thermal conductivity of the material. 
-	For this project heat transferred via conduction will be focused on but heat can also be transferred in the form of thermal radiation or convection \cite{Fish:2007}.
-	The heat conduction equation or Fourier's Law of heat conduction \citep{Fourier:1878} can be simply expressed in  equation \ref{fourier_eq}. 
+	This project focuses on heat transferred via conduction, but heat can also be transferred in the form of thermal radiation or convection \cite{Fish:2007}.
+	The heat conduction equation or Fourier's Law of heat conduction \citep{Fourier:1878} can be simply expressed in  Equation \ref{fourier_eq}.
 	Where heat flux is expressed as a partial differential equation dependant on the temperature and thickness of the element. 
-	More information can be added if the temperature only varies in one direction. 
-	The thermal conductivity can also be expressed as a negative since heat always flows from warm to cold.
-	Fourier's Law can then be written as in Equation \ref{heat_eq}
-	
-	
+
 	\begin{equation}
 	\label{fourier_eq}
 		q = k \frac{\Delta T}{L}
 	\end{equation}
+
+	More information can be added if the temperature only varies in one direction. 
+	The thermal conductivity can also be expressed as a negative since heat always flows from warm to cold.
+	Fourier's Law can then be written as in Equation \ref{heat_eq}:
 	
 	\begin{equation}
 	\label{heat_eq}
 		q = -k \frac{\partial{u}}{\partial{x}}
 	\end{equation}
 
-Derivation of the heat conduction equation over time leads to the heat diffusivity equation (Equation \ref{heatdifeq})
+Derivation of the heat conduction equation over time leads to the heat diffusivity equation, Equation \ref{heatdifeq}:
 
 \begin{equation}\label{heatdifeq}
 \frac{\partial u}{\partial t} = -\alpha \frac{\partial^2 u}{\partial x^2}
@@ -102,7 +103,8 @@ where
 \begin{equation}\label{alphaeq}
 \alpha = \frac{\kappa}{c_p\rho}
 \end{equation}
-From Equation \ref{alphaeq} the importance of knowing the specific heat cpacity and dentsity of the timber at different temperatures is clear.
+
+As is evident in Equation \ref{alphaeq}, knowing the specific heat capacity and density of the timber at different temperatures is crucial.
 The values in Table \ref{cptab} will be used in conjunction with the $\kappa$-values determined through simulation to calculate new thermal diffusivity values.
 
 \section{Finite Element Method}\label{femsec}
@@ -110,31 +112,31 @@ The finite element method (or finite element analysis) is  used when the behavio
 Modelling the behaviour of large and complex systems is a near impossible task without breaking the problem into smaller understandable parts.
 The finite element method enables engineers and scientists to break a large problem or element into comprehend-able and definable parts \citep{Zienkiewicz:2000}. 
 This allows approximations and assumptions to be made at a small scale without affecting the large scale significantly, such as assuming linear behaviour between nodes. 
-To understand simply why it works you could simply look at your computer screen. 
-The screen consists of pixels that are simplified to one colour but the collection of pixels that is seen from the user perspective can show complex forms and pattens.
-Each pixel was simplified and approximated but the end result is sufficiently accurate due to the sheer number of pixels.
+To understand simply why it works, you could simply look at your computer screen.
+The screen consists of pixels that are simplified to one colour, but the collection of pixels that is seen from the user perspective can show complex forms and pattens.
+Each pixel was simplified and approximated, but the end result is sufficiently accurate due to the sheer number of pixels.
 Assumptions made on a smaller scale have a lesser effect on the final answer than the same assumptions made on a large scale would have had.
-If the whole screen was one pixel and only the majority colour was assumed true the whole screen would be white and that is clearly incorrect. 
-From that follows that the accuracy of a finite element model is very dependant on the number of elements used and only improves with more elements.
-Sadly the computational time needed to analyse a model with a thousand elements is significantly more than needed for a model with less elements.
+If the whole screen was one pixel and only the majority colour was assumed true, the whole screen would be white and that is clearly incorrect.
+It follows that the accuracy of a finite element model is highly dependant on the number of elements used and only improves with more elements.
+Unfortunately, the computational time needed to analyse a model with a thousand elements is significantly more than needed for a model with fewer elements.
 The fine balance between sufficient accuracy and short enough computational time should always be kept in mind.
 
 
 	\subsection{Origin}
 	The finite element method (FEM) used today is the sum of decades of research. 
 	In an article by \citet{Gupta:1996}, the authors discuss the five main contributors to the finite element method. 
-	They claim the idea behind the finite element method was initially explored in the \citeyear{Courant:1943} article by \citeauthor{Courant:1943}. 
-	Courant acknowledges the complex nature of mathematical problems in his first paragraph by stating: "Mathematics is an indivisible organism uniting theoretical contemplation and active application."
+	They report that the idea behind the finite element method was initially explored in the \citeyear{Courant:1943} article by \citeauthor{Courant:1943}.
+	Courant acknowledges the complex nature of mathematical problems in his first paragraph by stating: ``Mathematics is an indivisible organism uniting theoretical contemplation and active application.''
 	He goes on to discuss the variational method created by Lord Rayleigh and Walther Ritz and the shortcomings of their methods.
-	He concludes that using few elements does not provide accurate local estimations but instead the interpolation will provide approximations of the actual quantities that are sufficient for engineering problems.
-	As his paper did not go into depth into the calculations Courant cannot be accredited with the full development but rather with the starting point.
-	In 1954 J. Argyris published an article  where the details of his calculations are clear and matrix formulation can be seen.
-	The finite element method as known to day were directly defined and clarified in a text book by Zienkiewicz in 1957.
+	He concludes that using few elements does not provide accurate local estimations, but instead the interpolation will provide approximations of the actual quantities that are sufficient for engineering problems.
+	As his paper did not go into depth into the calculations, Courant cannot be accredited with the full development but rather with the starting point.
+	\citet{Gupta:1996} further points out that in 1954, J. Argyris published an article  where the details of his calculations are clear and matrix formulation can be seen.
+	The finite element method as known to day were directly defined and clarified in a textbook by Zienkiewicz in 1957.
 	This textbook is now in its fifth edition of print and has been continuously updated and was used for this project.
 	
 	\subsection{Boundaries}
-	An important part of how finite element models are how the known information is embedded into the model.
-	The main way this is done is by defining boundary conditions at known points. The two types of boundary conditions used in this project are Dirichlet boundaries and Newmann boundaries.
+	An important part of finite element models is the method in which the known information is embedded into the model.
+	The main method is by defining boundary conditions at known points. The two types of boundary conditions used in this project are Dirichlet boundaries and Newmann boundaries.
 	
 	Named after Johann P.G.L Dirichlet \citep{Cheng:2005}, Dirichlet boundaries force the solution function to be equal to the prescribed value at the boundary. 
 	Newmann boundaries prescribe that the derivative of the solution function be equal to the predetermined value. 
@@ -151,13 +153,14 @@ The fine balance between sufficient accuracy and short enough computational time
 %	Statistical and Computational Inverse problems by Kaipio and Somersalo Chapter 3
 % 	The Bayesian approach to Inverse Problems Dashti and Stuart
 	The method of statistical inversion is dependant on a fundamental understanding of the Bayes' theorem of inverse problems. 
-	The student obtained this understanding through studying Chapter 3 of statistical and Computational Inverse problems by \citet{Kaipo:2005}, further referred to merely as Kaipio. 
-	There are four principles of Statistical inversion that is essential to the thorough understanding of these models. 
-	Firstly, it is the principle that any variable in the model needs to be modelled as a random variable. 
+	This understanding was obtained through studying Chapter 3 of statistical and Computational Inverse problems by \citet{Kaipo:2005}, further referred to as Kaipio.
+	There are four principles of statistical inversion that are essential to the thorough understanding of these models.
+
+	Firstly is the principle that any variable in the model needs to be modelled as a random variable.
 	This randomness is based on the extent of information that is available. 
 	To ensure that the extent of knowledge is accurately portrayed in the model, the extent of knowledge will be coded into the probability distributions assigned to the different variables. 
 	Finally, it needs to be understood that the solution of a statistical inversion is a posterior probability distribution.
-	A generalized equation of Bayes' theorem can be seen in \ref{bayes_eq} taken from Kaipio. 
+	A generalised equation of Bayes' theorem can be seen in \ref{bayes_eq} taken from Kaipio.
 	
 	\begin{equation}
 	\label{bayes_eq}
@@ -169,7 +172,7 @@ Further application of Bayes' theorem of inverse problems to the project at hand
 Markov Chain Monte Carlo (MCMC) is a method of integration that will be used to determine the mean of the $\kappa$-values at specific temperatures. 
 	Markov Chain Monte Carlo is a method that was created by combining the concept of Monte Carlo sampling  and a Markov Chain. 
 	To fully understand MCMC, its underlying methods must be investigated further.
-	For a better understanding of this concept, \textit{Introducing Markov chain Monte Carlo} by \citeauthor{Gilks:1996}, Kaipio, and various websites \citep{MLM:2019}, \citep{dummies:2015} were consulted.(RIJK: is sin lomp?)
+	For a better understanding of this concept, \textit{Introducing Markov chain Monte Carlo} by \citeauthor{Gilks:1996}, Kaipio, and various websites \citep{MLM:2019}, \citep{dummies:2015} were consulted.
 	\subsection{Markov Chains}	\label{markovexpl}
 	The core principle of a Markov chain is that the next value ($x_{n+1}$) in a sequence is dependent on the current value($x_n$). 
 	A step size that indicates the range within the next point falls in.

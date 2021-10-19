@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.11)  19 OCT 2021 16:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.11)  19 OCT 2021 17:14
 entering extended mode
 **./Liza_report_rewrite.tex
 (Liza_report_rewrite.tex
@@ -561,9 +561,9 @@ File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count315
 \l__pdf_internal_box=\box70
 )
-(Liza_report_rewrite.aux (verklaring.aux) (opsomming.aux) (abstract.aux)
-(nomenkl.aux) (Introduction.aux) (techfoundation.aux) (implementation.aux)
-(results.aux) (discussion.aux) (Conclusion.aux) (mcmcCode.aux) (result_app.aux
+(Liza_report_rewrite.aux (verklaring.aux) (abstract.aux) (nomenkl.aux)
+(Introduction.aux) (techfoundation.aux) (implementation.aux) (results.aux)
+(discussion.aux) (Conclusion.aux) (mcmcCode.aux) (result_app.aux
 
 LaTeX Warning: Label `data_newk' multiply defined.
 
@@ -632,7 +632,7 @@ LaTeX Info: Redefining \nameref on input line 137.
 \openout3 = `Liza_report_rewrite.out'.
 
 \c@lstlisting=\count323
-<USlogo-top.pdf, id=195, 560.0925pt x 183.68625pt>
+<USlogo-top.pdf, id=191, 560.0925pt x 183.68625pt>
 File: USlogo-top.pdf Graphic file (type pdf)
 <use USlogo-top.pdf>
 Package pdftex.def Info: USlogo-top.pdf  used on input line 141.
@@ -672,49 +672,39 @@ l.143 \include{verklaring}
 
 
 
-] (Liza_report_rewrite.toc
+]
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
+\tf@toc=\write4
+\openout4 = `Liza_report_rewrite.toc'.
+
 [3
 
 
 
-])
-\tf@toc=\write4
-\openout4 = `Liza_report_rewrite.toc'.
+]
 
- [4] (Liza_report_rewrite.lof
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
-.
+Package hyperref Warning: old lof file detected, not used; run LaTeX again.
 
-(C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Overfull \hbox (35.47183pt too wide) in paragraph at lines 8--8
- \T1/cmr/m/n/12 tion, b) Ex-pan-sion, c) Con-trac-tion, d) Shrink con-trac-tion
- (Source:[]$\T1/cmtt/m/n/12 https : 
- []
-
-
-Overfull \hbox (49.94783pt too wide) in paragraph at lines 8--8
- \T1/cmtt/m/n/12 / / codesachin . wordpress . com / 2016 / 01 / 16 / nelder-[]m
-ead-[]optimization/$[]\T1/cmr/m/n/12 )[] [][]  
- []
-
-)
 \tf@lof=\write5
 \openout5 = `Liza_report_rewrite.lof'.
 
- [5
+[4
 
-] (Liza_report_rewrite.lot)
+]
+
+Package hyperref Warning: old lot file detected, not used; run LaTeX again.
+
 \tf@lot=\write6
 \openout6 = `Liza_report_rewrite.lot'.
 
- [6
+[5
 
 ]
 \openout2 = `nomenkl.aux'.
 
- (nomenkl.tex) [7
+ (nomenkl.tex) [6
 
 
 ]
@@ -722,6 +712,17 @@ ead-[]optimization/$[]\T1/cmr/m/n/12 )[] [][]
 
  (Introduction.tex
 Chapter 1.
+Runaway argument?
+{\@firstoffive }\fi , the conductivity cannot be linearly modelled. T\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.22 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
 [1
 
 
@@ -729,216 +730,623 @@ Chapter 1.
 
 
 ]
-<figures/Eurok.png, id=375, 315.42844pt x 385.44pt>
+<figures/Eurok.png, id=262, 315.42844pt x 385.44pt>
 File: figures/Eurok.png Graphic file (type png)
 <use figures/Eurok.png>
 Package pdftex.def Info: figures/Eurok.png  used on input line 33.
 (pdftex.def)             Requested size: 199.0pt x 243.1696pt.
- [2 <./figures/Eurok.png>] [3]) [4]
+ [2 <./figures/Eurok.png>]) [3]
+! Extra \else.
+\@include ...ediate \closeout \@partaux \fi \else 
+                                                  \deadcycles \z@ \@nameuse ...
+l.157  \include{Introduction}
+                             
+I'm ignoring this; it doesn't match any \if.
+
 \openout2 = `techfoundation.aux'.
 
- (techfoundation.tex
+(techfoundation.tex
 Chapter 2.
 [5
 
 
 
 
-] [6] [7] [8] [9]
-<figures/MC_cubes.png, id=493, 530.73282pt x 526.21594pt>
-File: figures/MC_cubes.png Graphic file (type png)
-<use figures/MC_cubes.png>
-Package pdftex.def Info: figures/MC_cubes.png  used on input line 188.
-(pdftex.def)             Requested size: 218.90121pt x 217.04266pt.
- [10 <./figures/MC_cubes.png>] [11]
-Overfull \hbox (22.76944pt too wide) in paragraph at lines 234--237
+]
+Runaway argument?
+{\@firstoffive }\fi ) and char (Equation \ref {charconeq}). 
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.45 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{\@firstoffive }\fi ) are obtained. \begin {equation}\label {shiK} \kappa \ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.82 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{\@firstoffive }\fi : 
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.91 	
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{\@firstoffive }\fi : 
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.98 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[6]
+Runaway argument?
+{\@firstoffive }\fi , knowing the specific heat capacity and density \ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.109 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[7]
+Runaway argument?
+{\@firstoffive }\fi  taken from Kaipio. 
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.164 	
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[8]
+Runaway argument?
+{\@firstoffive }\fi  \section {Markov Chain Monte Carlo} \label {MCMC\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.195 	
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{\@firstoffive }\fi  and comes from Kaipio. 
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.220 	
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[9]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+32.
+ (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Overfull \hbox (22.76944pt too wide) in paragraph at lines 237--240
 []\T1/cmr/m/n/12 According to the \T1/cmtt/m/n/12 fminsearch \T1/cmr/m/n/12 Mat
 -lab doc-u-men-ta-tion ([]$\T1/cmtt/m/n/12 https : / / ch . mathworks .
  []
 
-<figures/MAP_expl.png, id=531, 597.432pt x 421.0932pt>
+[10]
+Runaway argument?
+{\@firstoffive }\fi , the different transformations can be seen. 
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.258 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<figures/MAP_expl.png, id=385, 597.432pt x 421.0932pt>
 File: figures/MAP_expl.png Graphic file (type png)
 <use figures/MAP_expl.png>
-Package pdftex.def Info: figures/MAP_expl.png  used on input line 258.
+Package pdftex.def Info: figures/MAP_expl.png  used on input line 261.
 (pdftex.def)             Requested size: 398.0pt x 280.53105pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--259
-[][]\T1/cmr/bx/n/10.95 Figure 2.2: []\T1/cmr/m/n/10.95 Visual rep-re-sen-ta-tio
+Underfull \hbox (badness 10000) in paragraph at lines 262--262
+[][]\T1/cmr/bx/n/10.95 Figure 2.1: []\T1/cmr/m/n/10.95 Visual rep-re-sen-ta-tio
 n of Nedler-Mead trans-for-ma-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--259
+Underfull \hbox (badness 10000) in paragraph at lines 262--262
 \T1/cmr/m/n/10.95 a) Re-flec-tion, b) Ex-pan-sion, c) Con-trac-tion, d) Shrink 
 con-trac-tion
  []
 
 
-Overfull \hbox (36.3784pt too wide) in paragraph at lines 259--259
+Overfull \hbox (36.3784pt too wide) in paragraph at lines 262--262
 \T1/cmr/m/n/10.95 (Source:[]$\T1/cmtt/m/n/10.95 https : / / codesachin . wordpr
 ess . com / 2016 / 01 / 16 / nelder-[]mead-[]optimization/$[]\T1/cmr/m/n/10.95 
 )[] 
  []
 
-) [12] [13 <./figures/MAP_expl.png>]
+) [11 <./figures/MAP_expl.png>]
+! Extra \else.
+\@include ...ediate \closeout \@partaux \fi \else 
+                                                  \deadcycles \z@ \@nameuse ...
+l.158  \include{techfoundation}
+                               
+I'm ignoring this; it doesn't match any \if.
+
 \openout2 = `implementation.aux'.
 
- (implementation.tex
+(implementation.tex
 Chapter 3.
-<figures/TC_layout.png, id=549, 524.71031pt x 264.99pt>
-File: figures/TC_layout.png Graphic file (type png)
-<use figures/TC_layout.png>
-Package pdftex.def Info: figures/TC_layout.png  used on input line 15.
-(pdftex.def)             Requested size: 298.5pt x 150.75473pt.
-<figures/firecurve.png, id=552, 981.6675pt x 520.19344pt>
-File: figures/firecurve.png Graphic file (type png)
-<use figures/firecurve.png>
-Package pdftex.def Info: figures/firecurve.png  used on input line 22.
-(pdftex.def)             Requested size: 398.0pt x 210.89943pt.
-<figures/measured_plot.png, id=554, 840.13875pt x 511.9125pt>
-File: figures/measured_plot.png Graphic file (type png)
-<use figures/measured_plot.png>
-Package pdftex.def Info: figures/measured_plot.png  used on input line 31.
-(pdftex.def)             Requested size: 398.0pt x 242.50482pt.
+Runaway argument?
+{\@firstoffive }\fi . \section {Existing data} The data used was acqu\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.36 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 37.
+
+Runaway argument?
+{\@firstoffive }\fi . This model is used to determine the likelihood \ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.72 	
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
 [14
 
 
 
 
-] [15 <./figures/TC_layout.png (PNG copy)> <./figures/firecurve.png (PNG copy)>
-] [16 <./figures/measured_plot.png>]
-<figures/originalmugraph.jpg, id=571, 1049.42062pt x 702.37407pt>
+]
+<figures/originalmugraph.jpg, id=402, 1049.42062pt x 702.37407pt>
 File: figures/originalmugraph.jpg Graphic file (type jpg)
 <use figures/originalmugraph.jpg>
-Package pdftex.def Info: figures/originalmugraph.jpg  used on input line 77.
+Package pdftex.def Info: figures/originalmugraph.jpg  used on input line 79.
 (pdftex.def)             Requested size: 398.0pt x 266.37978pt.
- [17 <./figures/originalmugraph.jpg>]
-<figures/fem_sketch.png, id=578, 484.81125pt x 143.03438pt>
+<figures/fem_sketch.png, id=403, 484.81125pt x 143.03438pt>
 File: figures/fem_sketch.png Graphic file (type png)
 <use figures/fem_sketch.png>
-Package pdftex.def Info: figures/fem_sketch.png  used on input line 93.
+Package pdftex.def Info: figures/fem_sketch.png  used on input line 95.
 (pdftex.def)             Requested size: 298.5pt x 88.07146pt.
+ [15 <./figures/originalmugraph.jpg>]
+Runaway argument?
+{\@firstoffive }\fi  (1) over the length of the element(shown in Figu\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.130 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-[18 <./figures/fem_sketch.png (PNG copy)>]
-<figures/fem_fire_sketch.png, id=603, 860.46469pt x 191.21437pt>
+<figures/fem_fire_sketch.png, id=412, 860.46469pt x 191.21437pt>
 File: figures/fem_fire_sketch.png Graphic file (type png)
 <use figures/fem_fire_sketch.png>
-Package pdftex.def Info: figures/fem_fire_sketch.png  used on input line 153.
+Package pdftex.def Info: figures/fem_fire_sketch.png  used on input line 155.
 (pdftex.def)             Requested size: 298.5pt x 66.33372pt.
- [19 <./figures/fem_fire_sketch.png>] [20]
+[16 <./figures/fem_sketch.png (PNG copy)>]
+Runaway argument?
+{\@firstoffive }\fi  In the air elements, both heat convection and he\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.164 	
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-Package natbib Warning: Citation `Hughes:1987' on page 21 undefined on input li
-ne 266.
+Runaway argument?
+{\@firstoffive }\fi . \begin {equation} \label {femboundeq1} q_{\text \ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.196 	
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-[21]
-Overfull \hbox (23.8174pt too wide) in paragraph at lines 293--304
+Runaway argument?
+{\@firstoffive }\fi  below the mathematical application is explained \ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.204 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[17 <./figures/fem_fire_sketch.png>]
+Runaway argument?
+{\@firstoffive }\fi  a special approximation is made to obtain Equati\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.231 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Package natbib Warning: Citation `Hughes:1987' on page 18 undefined on input li
+ne 268.
+
+Runaway argument?
+{\@firstoffive }\fi . 
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.269 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{\@firstoffive }\fi . \begin {equation}\label {solveeq2} \vec {K}\cdot \ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.275 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{\@firstoffive }\fi . 
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.277 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{\@firstoffive }\fi . 
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.294 	
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{\@firstoffive }\fi . The global variable \texttt {kpine} was left un\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.306 	
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Overfull \hbox (23.8174pt too wide) in paragraph at lines 295--306
 \T1/cmr/m/n/12 fined. The defin-ing of vari-ables was moved into a new func-tio
 n \T1/cmtt/m/n/12 instantiate_all.m\T1/cmr/m/n/12 ,
  []
 
-[22] [23]
-<figures/e_expl_curve.png, id=677, 83.45662pt x 57.816pt>
+[18]
+Runaway argument?
+{\@firstoffive }\fi  below. Each aspect of this equation below will b\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.319 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{\@firstoffive }\fi  ) is based on the $\kappa $-values assumed prior\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.335 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{\@firstoffive }\fi ) refers to a vector of randomised $\kappa $-valu\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.360 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[19]
+Runaway argument?
+{\@firstoffive }\fi . This function will output the probability of th\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.379 		
+        
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{\@firstoffive }\fi ) are: how a value is deemed acceptable (Monte Ca\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.385 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{\@firstoffive }\fi , the actual problem is quite more complex. For t\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.408 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{\@firstoffive }\fi ) is that the magnitudes of the values were not c\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.421 	
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<figures/e_expl_curve.png, id=457, 83.45662pt x 57.816pt>
 File: figures/e_expl_curve.png Graphic file (type png)
 <use figures/e_expl_curve.png>
-Package pdftex.def Info: figures/e_expl_curve.png  used on input line 422.
+Package pdftex.def Info: figures/e_expl_curve.png  used on input line 424.
 (pdftex.def)             Requested size: 199.0pt x 137.86575pt.
- [24]) [25 <./figures/e_expl_curve.png>]
+Runaway argument?
+{\@firstoffive }\fi , the first 100 samples of each run was removed f\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.433 	
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[20 <./figures/e_expl_curve.png>]
+Runaway argument?
+{\@firstoffive }\fi  on the histogram for 140\textdegree C 
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.449 	
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+) [21]
+! Extra \else.
+\@include ...ediate \closeout \@partaux \fi \else 
+                                                  \deadcycles \z@ \@nameuse ...
+l.159  \include{implementation}
+                               
+I'm ignoring this; it doesn't match any \if.
+
 \openout2 = `results.aux'.
 
- (results.tex
+(results.tex
 Chapter 4.
-<figures/kvalues_all_shi.png, id=695, 621.07031pt x 508.14844pt>
-File: figures/kvalues_all_shi.png Graphic file (type png)
-<use figures/kvalues_all_shi.png>
-Package pdftex.def Info: figures/kvalues_all_shi.png  used on input line 29.
-(pdftex.def)             Requested size: 398.0pt x 325.63258pt.
+Runaway argument?
+{\@firstoffive }\fi . As can be seen in Figure \ref {kresult_euro_fig\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.51 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
 
 Overfull \hbox (5.75157pt too wide) in paragraph at lines 21--51
 \T1/cmr/m/n/12 The ther-mal con-duc-tiv-ity ($\OML/cmm/m/it/12 $\T1/cmr/m/n/12
  -values) at key tem-per-a-tures in-te-gral to this project,
  []
 
-[26
+Runaway argument?
+{\@firstoffive }\fi  The distribution of all the samples were plotted\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.57 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-
-
-
-]
-<figures/histograph/histo1.png, id=701, 421.575pt x 316.0608pt>
+<figures/histograph/histo1.png, id=473, 421.575pt x 316.0608pt>
 File: figures/histograph/histo1.png Graphic file (type png)
 <use figures/histograph/histo1.png>
 Package pdftex.def Info: figures/histograph/histo1.png  used on input line 63.
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/histo2.png, id=702, 421.575pt x 316.0608pt>
+<figures/histograph/histo2.png, id=474, 421.575pt x 316.0608pt>
 File: figures/histograph/histo2.png Graphic file (type png)
 <use figures/histograph/histo2.png>
 Package pdftex.def Info: figures/histograph/histo2.png  used on input line 67.
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/histo3.png, id=703, 421.575pt x 316.0608pt>
+<figures/histograph/histo3.png, id=475, 421.575pt x 316.0608pt>
 File: figures/histograph/histo3.png Graphic file (type png)
 <use figures/histograph/histo3.png>
 Package pdftex.def Info: figures/histograph/histo3.png  used on input line 71.
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/histo4.png, id=704, 421.575pt x 316.0608pt>
+<figures/histograph/histo4.png, id=476, 421.575pt x 316.0608pt>
 File: figures/histograph/histo4.png Graphic file (type png)
 <use figures/histograph/histo4.png>
 Package pdftex.def Info: figures/histograph/histo4.png  used on input line 75.
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/histo5.png, id=705, 421.575pt x 316.0608pt>
+<figures/histograph/histo5.png, id=477, 421.575pt x 316.0608pt>
 File: figures/histograph/histo5.png Graphic file (type png)
 <use figures/histograph/histo5.png>
 Package pdftex.def Info: figures/histograph/histo5.png  used on input line 79.
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/histo6.png, id=706, 421.575pt x 316.0608pt>
+<figures/histograph/histo6.png, id=478, 421.575pt x 316.0608pt>
 File: figures/histograph/histo6.png Graphic file (type png)
 <use figures/histograph/histo6.png>
 Package pdftex.def Info: figures/histograph/histo6.png  used on input line 83.
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/histo7.png, id=707, 421.575pt x 316.0608pt>
+<figures/histograph/histo7.png, id=479, 421.575pt x 316.0608pt>
 File: figures/histograph/histo7.png Graphic file (type png)
 <use figures/histograph/histo7.png>
 Package pdftex.def Info: figures/histograph/histo7.png  used on input line 87.
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/histo8.png, id=708, 421.575pt x 316.0608pt>
+<figures/histograph/histo8.png, id=480, 421.575pt x 316.0608pt>
 File: figures/histograph/histo8.png Graphic file (type png)
 <use figures/histograph/histo8.png>
 Package pdftex.def Info: figures/histograph/histo8.png  used on input line 91.
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/legend.png, id=709, 148.30406pt x 56.46094pt>
+<figures/histograph/legend.png, id=481, 148.30406pt x 56.46094pt>
 File: figures/histograph/legend.png Graphic file (type png)
 <use figures/histograph/legend.png>
 Package pdftex.def Info: figures/histograph/legend.png  used on input line 95.
 (pdftex.def)             Requested size: 119.40121pt x 45.45912pt.
 
-
 LaTeX Warning: Float too large for page by 29.05281pt on input line 98.
 
-[27 <./figures/kvalues_all_shi.png>]) [28] [29 <./figures/histograph/histo1.png
- (PNG copy)> <./figures/histograph/histo2.png (PNG copy)> <./figures/histograph
-/histo3.png (PNG copy)> <./figures/histograph/histo4.png (PNG copy)> <./figures
-/histograph/histo5.png (PNG copy)> <./figures/histograph/histo6.png (PNG copy)>
- <./figures/histograph/histo7.png (PNG copy)> <./figures/histograph/histo8.png 
-(PNG copy)> <./figures/histograph/legend.png (PNG copy)>]
+Runaway argument?
+{\@firstoffive }\fi . The new modelled output errors are compared to \ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.110 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[27
+
+
+
+
+]
+Runaway argument?
+{\@firstoffive }\fi  the resulting thermal diffusivity is shown. The \ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.137 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+) [28] [29 <./figures/histograph/histo1.png (PNG copy)> <./figures/histograph/h
+isto2.png (PNG copy)> <./figures/histograph/histo3.png (PNG copy)> <./figures/h
+istograph/histo4.png (PNG copy)> <./figures/histograph/histo5.png (PNG copy)> <
+./figures/histograph/histo6.png (PNG copy)> <./figures/histograph/histo7.png (P
+NG copy)> <./figures/histograph/histo8.png (PNG copy)> <./figures/histograph/le
+gend.png (PNG copy)>]
+! Extra \else.
+\@include ...ediate \closeout \@partaux \fi \else 
+                                                  \deadcycles \z@ \@nameuse ...
+l.160  \include{results}
+                        
+I'm ignoring this; it doesn't match any \if.
+
 \openout2 = `discussion.aux'.
 
- (discussion.tex
+(discussion.tex
 Chapter 5.
-<figures/final_graph.png, id=740, 981.6675pt x 520.19344pt>
+Runaway argument?
+{\@firstoffive }\fi  the difference in output from running the model \ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.7 
+    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<figures/final_graph.png, id=507, 981.6675pt x 520.19344pt>
 File: figures/final_graph.png Graphic file (type png)
 <use figures/final_graph.png>
 Package pdftex.def Info: figures/final_graph.png  used on input line 11.
 (pdftex.def)             Requested size: 398.0pt x 210.89943pt.
-[30
+[32
 
 
 
 
- <./figures/final_graph.png (PNG copy)>]) [31]
+ <./figures/final_graph.png (PNG copy)>]) [33]
+! Extra \else.
+\@include ...ediate \closeout \@partaux \fi \else 
+                                                  \deadcycles \z@ \@nameuse ...
+l.161  \include{discussion}
+                           
+I'm ignoring this; it doesn't match any \if.
+
 \openout2 = `Conclusion.aux'.
 
- (Conclusion.tex
+(Conclusion.tex
 Chapter 6.
-) [32
+) [34
 
 
 
@@ -1107,7 +1515,7 @@ Package xcolor Warning: Incompatible color definition on input line 28.
 
 Package xcolor Warning: Incompatible color definition on input line 28.
 
-[33
+[35
 
 
 
@@ -1296,440 +1704,101 @@ Package xcolor Warning: Incompatible color definition on input line 33.
 
 Package xcolor Warning: Incompatible color definition on input line 33.
 
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Package xcolor Warning: Incompatible color definition on input line 55.
-
-
-Package xcolor Warning: Incompatible color definition on input line 55.
-
-
-Package xcolor Warning: Incompatible color definition on input line 55.
-
-
-Package xcolor Warning: Incompatible color definition on input line 55.
-
-
-Package xcolor Warning: Incompatible color definition on input line 55.
-
-
-Package xcolor Warning: Incompatible color definition on input line 55.
-
-
-Package xcolor Warning: Incompatible color definition on input line 55.
-
-
-Package xcolor Warning: Incompatible color definition on input line 55.
-
-
-Package xcolor Warning: Incompatible color definition on input line 55.
-
-
-Package xcolor Warning: Incompatible color definition on input line 57.
-
-
-Package xcolor Warning: Incompatible color definition on input line 57.
-
-
-Package xcolor Warning: Incompatible color definition on input line 57.
-
-
-Package xcolor Warning: Incompatible color definition on input line 57.
-
-
-Package xcolor Warning: Incompatible color definition on input line 57.
-
-
-Package xcolor Warning: Incompatible color definition on input line 57.
-
-
-Package xcolor Warning: Incompatible color definition on input line 57.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-
-Package xcolor Warning: Incompatible color definition on input line 60.
-
-
-Package xcolor Warning: Incompatible color definition on input line 60.
-
-
-Package xcolor Warning: Incompatible color definition on input line 60.
-
-
-Package xcolor Warning: Incompatible color definition on input line 60.
-
-
-Package xcolor Warning: Incompatible color definition on input line 60.
-
-
-Package xcolor Warning: Incompatible color definition on input line 60.
-
-
-Package xcolor Warning: Incompatible color definition on input line 60.
-
-
-Package xcolor Warning: Incompatible color definition on input line 60.
-
-
-Package xcolor Warning: Incompatible color definition on input line 60.
-
-
-Package xcolor Warning: Incompatible color definition on input line 61.
-
-
-Package xcolor Warning: Incompatible color definition on input line 61.
-
-
-Package xcolor Warning: Incompatible color definition on input line 61.
-
-
-Package xcolor Warning: Incompatible color definition on input line 64.
-
-
-Package xcolor Warning: Incompatible color definition on input line 64.
-
-
-Package xcolor Warning: Incompatible color definition on input line 64.
-
-
-Package xcolor Warning: Incompatible color definition on input line 64.
-
-
-Package xcolor Warning: Incompatible color definition on input line 64.
-
-
-Package xcolor Warning: Incompatible color definition on input line 64.
-
-
-Package xcolor Warning: Incompatible color definition on input line 64.
-
-
-Package xcolor Warning: Incompatible color definition on input line 64.
-
-
-Package xcolor Warning: Incompatible color definition on input line 64.
-
-
-Package xcolor Warning: Incompatible color definition on input line 68.
-
-
-Package xcolor Warning: Incompatible color definition on input line 68.
-
-
-Package xcolor Warning: Incompatible color definition on input line 68.
-
-
-Package xcolor Warning: Incompatible color definition on input line 68.
-
-
-Package xcolor Warning: Incompatible color definition on input line 70.
-
-
-Package xcolor Warning: Incompatible color definition on input line 70.
-
-
-Package xcolor Warning: Incompatible color definition on input line 70.
-
-
-Package xcolor Warning: Incompatible color definition on input line 70.
-
-
-Package xcolor Warning: Incompatible color definition on input line 70.
-
-
-Package xcolor Warning: Incompatible color definition on input line 70.
-
-
-Package xcolor Warning: Incompatible color definition on input line 70.
-
-
-Package xcolor Warning: Incompatible color definition on input line 70.
-
-
-Package xcolor Warning: Incompatible color definition on input line 70.
-
-
-Package xcolor Warning: Incompatible color definition on input line 70.
-
-[34]
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-[35]
+Runaway argument?
+{\@firstoffive }\fi . \begin {lstlisting} function udepths = model_ki\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.45 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.46 global_
+            time;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (24.44064pt too wide) in paragraph at lines 86--91
+[]\T1/cmr/m/n/12 Fdir = Kmat0*ddir + Mmat0*vdir; Fvec0 = Fvec0 - Fdir; Kmat = K
+mat0(2:end-
+ []
+
+
+Overfull \hbox (22.81233pt too wide) in paragraph at lines 93--96
+[]\T1/cmr/m/n/12 [unode(2:end-1,i), vnode(2:end-1,i)] = dvnext( unode(2:end-1,i
+-1), vnode(2:end-
+ []
+
+
+Overfull \hbox (14.6765pt too wide) in paragraph at lines 103--110
+[]\T1/cmr/m/n/12 udepth1 = un-ode(count(1),2:end); udepth2 = un-ode(count(2),2:
+end); udepth3
+ []
+
+
+Overfull \hbox (59.70299pt too wide) in paragraph at lines 103--110
+\T1/cmr/m/n/12 ode(count(5),2:end); udepth6 = un-ode(count(6),2:end); udepth7 =
+ un-ode(count(7),2:end); 
+ []
+
+
+! Undefined control sequence.
+\lstlisting ->\def \lstenv@name 
+                                {lstlisting}\begingroup \lst@setcatcodes \ca...
+l.116 \end{lstlisting}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Package Listings Error: Extra \endlstlisting.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 \end{lstlisting}
+                      
+I'm ignoring this, since I wasn't doing a \def {lstlisting}\begingroup \makeatl
+etter \catcode `\==12\relax \catcode \active =\active \lstlisting@.
+
+
+! LaTeX Error: \begin{document} ended by \end{lstlisting}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 \end{lstlisting}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.116 \end{lstlisting}
+                      
+Things are pretty mixed up, but I think the worst is over.
+
+[36]
 
 Package xcolor Warning: Incompatible color definition on input line 149.
 
@@ -1739,76 +1808,166 @@ Package xcolor Warning: Incompatible color definition on input line 149.
 
 Package xcolor Warning: Incompatible color definition on input line 149.
 
-) [36]
+) [37]
+! Extra \else.
+\@include ...ediate \closeout \@partaux \fi \else 
+                                                  \deadcycles \z@ \@nameuse ...
+l.167 \include{mcmcCode}
+                        
+I'm ignoring this; it doesn't match any \if.
+
 \openout2 = `result_app.aux'.
 
- (result_app.tex
+(result_app.tex
 Appendix B.
-<figures/final_graph_ver.png, id=914, 520.19344pt x 981.6675pt>
+<figures/final_graph_ver.png, id=605, 520.19344pt x 981.6675pt>
 File: figures/final_graph_ver.png Graphic file (type png)
 <use figures/final_graph_ver.png>
 Package pdftex.def Info: figures/final_graph_ver.png  used on input line 5.
 (pdftex.def)             Requested size: 318.40121pt x 600.85345pt.
-) [37
+) [39
 
 
 
 
-] [38 <./figures/final_graph_ver.png>]
+] [40 <./figures/final_graph_ver.png>]
 \openout2 = `derive_app.aux'.
 
  (derive_app.tex
 Appendix C.
-[39
+
+LaTeX Warning: Reference `appheateq1' on page 41 undefined on input line 6.
+
+
+LaTeX Warning: Reference `appheateq2' on page 41 undefined on input line 6.
+
+
+LaTeX Warning: Reference `appheateq2' on page 41 undefined on input line 8.
+
+
+LaTeX Warning: Reference `appheateq1' on page 41 undefined on input line 9.
+
+
+LaTeX Warning: Reference `appheateq3' on page 41 undefined on input line 9.
+
+
+LaTeX Warning: Reference `appheateq3' on page 41 undefined on input line 18.
+
+Runaway argument?
+{\@firstoffive }\fi  is obtained. \begin {equation} \label {appbasisf\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.28 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[41
 
 
 
 
-] [40] [41] [42]
+]
+Runaway argument?
+{\@firstoffive }\fi . \begin {equation} \label {appfemboundeq1} q_{\text \ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.82 	
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-LaTeX Warning: Reference `MeExampleeq1' on page 43 undefined on input line 239.
+Runaway argument?
+{\@firstoffive }\fi (2) into \ref {appfemdiffeq1} and taking the deri\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.89 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
+Runaway argument?
+{\@firstoffive }\fi  a special approximation is made to obtain Equati\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.116 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[42]
+Runaway argument?
+{\@firstoffive }\fi . \begin {equation}\label {appeqdn1} \vec {d}_{n+\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.167 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
 [43]
-
-LaTeX Warning: Reference `MeExampleeq1' on page 44 undefined on input line 292.
-
-
-
-LaTeX Warning: Reference `MeExampleeq2' on page 44 undefined on input line 292.
-
-
-
-LaTeX Warning: Reference `MeExampleeq3' on page 44 undefined on input line 292.
-
+Runaway argument?
+{\@firstoffive }\fi . \begin {equation} \label {appMeExampleeq1} \begin \ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.261 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
 [44]
+Runaway argument?
+{\@firstoffive }\fi ,\ref {appMeExampleeq2} and \ref {MeExampleeq3}: \ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.306 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-LaTeX Warning: Reference `diribound' on page 45 undefined on input line 377.
+Runaway argument?
+{\@firstoffive }\fi ) are applied to the matrices shown in Equation \ref \ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.386 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
+[45]) [46]
+! Extra \else.
+\@include ...ediate \closeout \@partaux \fi \else 
+                                                  \deadcycles \z@ \@nameuse ...
+l.169 \include{derive_app}
+                          
+I'm ignoring this; it doesn't match any \if.
 
-LaTeX Warning: Reference `FEM_nodirieq' on page 45 undefined on input line 377.
-
-
-
-LaTeX Warning: Reference `solveeq1' on page 45 undefined on input line 377.
-
-
-Overfull \hbox (58.42317pt too wide) detected at line 397
-[][][][]
- []
-
-) [45]
 \openout2 = `Program.aux'.
 
- (Program.tex
+(Program.tex
 Appendix D.
 )
 Overfull \hbox (40.43484pt too wide) in paragraph at lines 3--170
 [] 
  []
 
-[46
+[48
 
 
 
@@ -1818,12 +1977,31 @@ Overfull \hbox (40.43484pt too wide) in paragraph at lines 3--170
 
  (GA_outcomes.tex
 Appendix E.
-[47
+Runaway argument?
+{\@firstoffive }\fi  the problem as well as the relevant aims and obj\ETC.
+! Paragraph ended before \Hy@setref@link was complete.
+<to be read again> 
+                   \par 
+l.19 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+) [49
 
 
 
 
-]) [48] (Liza_report_rewrite.bbl
+]
+! Extra \else.
+\@include ...ediate \closeout \@partaux \fi \else 
+                                                  \deadcycles \z@ \@nameuse ...
+l.171 \include{GA_outcomes}
+                           
+I'm ignoring this; it doesn't match any \if.
+
+(Liza_report_rewrite.bbl
 (C:\Program Files\MiKTeX\tex/latex/stellenbosch\usbib.eng)
 Underfull \hbox (badness 10000) in paragraph at lines 23--27
 \T1/cmr/m/n/10.95 Available at: []$\T1/cmtt/m/n/10.95 https : / / machinelearni
@@ -1875,7 +2053,7 @@ l.97 \newblock {\selectlanguage{eng}
 
 Your command will be ignored, type <return> to proceed
 
-[49
+[51
 
 
 
@@ -1892,11 +2070,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--206
 direct . com / science / article / pii /
  []
 
-[50])
+[52])
 
 Package natbib Warning: There were undefined citations.
 
-[51] (Liza_report_rewrite.aux (verklaring.aux) (abstract.aux) (nomenkl.aux)
+[53] (Liza_report_rewrite.aux (verklaring.aux) (abstract.aux) (nomenkl.aux)
 (Introduction.aux) (techfoundation.aux) (implementation.aux) (results.aux)
 (discussion.aux) (Conclusion.aux) (mcmcCode.aux) (result_app.aux)
 (derive_app.aux) (Program.aux) (GA_outcomes.aux))
@@ -1912,54 +2090,110 @@ Package rerunfilecheck Warning: File `Liza_report_rewrite.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `Liza_report_rewrite.out':
-(rerunfilecheck)             Before: 1A44DDF5169A78ED4A1E4F68582CB43A;7129
-(rerunfilecheck)             After:  C1F72AAEC520B4067C32F490580B22DF;6865.
- ) 
+(rerunfilecheck)             Before: C1F72AAEC520B4067C32F490580B22DF;6865
+(rerunfilecheck)             After:  5142F755AD77DBC96D4AFB234775C8CE;6067.
+ )
+(\end occurred when \ifnum on line 171 was incomplete)
+(\end occurred when \ifx on line 240 was incomplete)
+(\end occurred when \ifx on line 163 was incomplete)
+(\end occurred when \ifx on line 115 was incomplete)
+(\end occurred when \ifx on line 87 was incomplete)
+(\end occurred when \ifx on line 68 was incomplete)
+(\end occurred when \ifx on line 19 was incomplete)
+(\end occurred when \iftrue on line 169 was incomplete)
+(\end occurred when \ifnum on line 169 was incomplete)
+(\end occurred when \ifnum on line 167 was incomplete)
+(\end occurred when \ifnum on line 161 was incomplete)
+(\end occurred when \ifx on line 53 was incomplete)
+(\end occurred when \ifx on line 21 was incomplete)
+(\end occurred when \iftrue on line 160 was incomplete)
+(\end occurred when \ifnum on line 160 was incomplete)
+(\end occurred when \ifx on line 413 was incomplete)
+(\end occurred when \ifx on line 386 was incomplete)
+(\end occurred when \ifx on line 382 was incomplete)
+(\end occurred when \ifx on line 373 was incomplete)
+(\end occurred when \ifx on line 356 was incomplete)
+(\end occurred when \ifx on line 332 was incomplete)
+(\end occurred when \ifx on line 317 was incomplete)
+(\end occurred when \ifx on line 299 was incomplete)
+(\end occurred when \ifx on line 293 was incomplete)
+(\end occurred when \ifx on line 276 was incomplete)
+(\end occurred when \ifx on line 271 was incomplete)
+(\end occurred when \ifx on line 268 was incomplete)
+(\end occurred when \ifx on line 230 was incomplete)
+(\end occurred when \ifx on line 198 was incomplete)
+(\end occurred when \ifx on line 182 was incomplete)
+(\end occurred when \ifx on line 161 was incomplete)
+(\end occurred when \ifx on line 103 was incomplete)
+(\end occurred when \ifx on line 57 was incomplete)
+(\end occurred when \ifx on line 2 was incomplete)
+(\end occurred when \iftrue on line 159 was incomplete)
+(\end occurred when \ifnum on line 159 was incomplete)
+(\end occurred when \ifx on line 170 was incomplete)
+(\end occurred when \ifx on line 163 was incomplete)
+(\end occurred when \ifx on line 107 was incomplete)
+(\end occurred when \ifx on line 97 was incomplete)
+(\end occurred when \ifx on line 90 was incomplete)
+(\end occurred when \ifx on line 56 was incomplete)
+(\end occurred when \ifx on line 44 was incomplete)
+(\end occurred when \iftrue on line 158 was incomplete)
+(\end occurred when \ifnum on line 158 was incomplete)
+(\end occurred when \ifnum on line 157 was incomplete) 
 Here is how much of TeX's memory you used:
- 16076 strings out of 478864
- 235359 string characters out of 2858494
- 776869 words of memory out of 3000000
- 33160 multiletter control sequences out of 15000+600000
+ 15904 strings out of 478864
+ 232100 string characters out of 2858494
+ 756869 words of memory out of 3000000
+ 33113 multiletter control sequences out of 15000+600000
  437369 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,16n,66p,450b,1872s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section*.25} has been referenced but does not exi
-st, replaced by a fixed one
+pdfTeX warning (dest): na
+me{section*.24} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{chapter*.11} has been referenced but does not exist
+
+pdfTeX warning (dest): name{section.3.4} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{section*.10} has been referenced but does not exist
+pdfTeX warning (dest): name{subsection.3.3.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.5} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{section*.8} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{subsection.2.4.3} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{section*.6} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{subsection.2.4.2} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{section*.4} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{subsection.2.4.1} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{section*.2} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{subsection.2.1.1} has been referenced but does not 
+exist, replaced by a fixed one
 
  <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
 \ecti1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ectt1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk
-/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Liza Stewart\AppData\Local\Mi
-KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Liza Stewart\App
-Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Liz
-a Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> 
+pen/ec/dpi600\ecrm1000.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk
+/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Liza Stewart\AppData\Local\Mi
+KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Liza Stewart\App
+Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Liz
+a Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> 
 <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
-ecrm1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
-en/ec/dpi600\ecbx1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Liza Stewart\AppData\Local\MiK
-TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\Liza Stewart\AppD
+tcrm1200.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
+en/ec/dpi600\ecrm1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiK
+TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1095.pk> <C:\Users\Liza Stewart\AppD
 ata\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Liza
- Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <
+ Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <
 C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
-csl1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappe
+crm0600.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappe
 n/ec/dpi600\ecbx1200.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/l
 jfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Liza Stewart\AppData\Local\MiKT
 eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Liza Stewart\AppDa
@@ -1980,9 +2214,9 @@ eX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/
 msam10.pfb>
-Output written on Liza_report_rewrite.pdf (59 pages, 2693431 bytes).
+Output written on Liza_report_rewrite.pdf (47 pages, 2119861 bytes).
 PDF statistics:
- 1950 PDF objects out of 2073 (max. 8388607)
- 402 named destinations out of 1000 (max. 500000)
- 500 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1528 PDF objects out of 1728 (max. 8388607)
+ 291 named destinations out of 1000 (max. 500000)
+ 467 words of extra memory for PDF output out of 10000 (max. 10000000)
 
