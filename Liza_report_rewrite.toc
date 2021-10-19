@@ -1,52 +1,53 @@
 \babel@toc {english}{}
 \contentsline {chapter}{Declaration}{i}{chapter*.1}%
-\contentsline {chapter}{Project (Civil Engineering) 458: Summary}{ii}{section*.2}%
-\contentsline {chapter}{Abstract}{iii}{section*.4}%
-\contentsline {chapter}{Contents}{iv}{section*.6}%
-\contentsline {chapter}{List of Figures}{vi}{section*.8}%
-\contentsline {chapter}{Nomenclature}{vii}{chapter*.9}%
+\contentsline {chapter}{Abstract}{ii}{section*.3}%
+\contentsline {chapter}{Contents}{iii}{section*.5}%
+\contentsline {chapter}{List of Figures}{v}{section*.7}%
+\contentsline {chapter}{List of Tables}{vi}{section*.9}%
+\contentsline {chapter}{Nomenclature}{vii}{chapter*.10}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background and Motivation}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Aim and objectives}{3}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Literature study}{3}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Technical Foundation}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Thermal properties of timber}{4}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Heat conduction and diffusion}{5}{subsection.2.1.1}%
-\contentsline {section}{\numberline {2.2}Finite Element Method}{6}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Origin}{6}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Boundaries}{7}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Weak form and Strong form}{7}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Bayes' theorem of inverse problems}{7}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Markov Chain Monte Carlo}{8}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Markov Chains}{8}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Monte Carlo Integration}{9}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Metropolis-Hastings Algorithm}{9}{subsection.2.4.3}%
-\contentsline {section}{\numberline {2.5}Maximum a Posteriori}{10}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Implementation}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Existing data}{12}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Summary of test}{12}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Potential inaccuracies}{14}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Finite Element Modelling}{14}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Existing Model}{15}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Derivation}{16}{subsection.3.2.2}%
-\contentsline {subsubsection}{Stationary heat conduction}{16}{section*.10}%
-\contentsline {subsubsection}{Boundaries}{17}{section*.11}%
-\contentsline {subsubsection}{One-dimensional diffusion}{18}{section*.12}%
-\contentsline {subsection}{\numberline {3.2.3}Adapted Model}{20}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Inversion method}{20}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Prior probability}{20}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Likelihood probability function}{21}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Markov Chain Monte-Carlo integration}{22}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Optimisation to determine MAP}{23}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Results}{24}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Resulting k-values}{24}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Discussion}{27}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Summary and Conclusion}{29}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Relevant code segments}{30}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Detailed results graph}{34}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Derivation}{36}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Program}{43}{appendix.D}%
-\contentsline {chapter}{\numberline {E}GA outcomes}{44}{appendix.E}%
-\contentsline {chapter}{List of References}{46}{section*.23}%
+\contentsline {chapter}{\numberline {2}Technical Foundation}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Thermal properties of timber}{5}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Heat conduction and diffusion}{7}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}Finite Element Method}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Origin}{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Boundaries}{9}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Bayes' theorem of inverse problems}{9}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Markov Chain Monte Carlo}{9}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Markov Chains}{10}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Monte Carlo Integration}{11}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Metropolis-Hastings Algorithm}{11}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Maximum a Posteriori}{12}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Implementation}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Existing data}{14}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Summary of test}{14}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Potential inaccuracies}{16}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Finite Element Modelling}{16}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Existing Model}{17}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Derivation}{17}{subsection.3.2.2}%
+\contentsline {subsubsection}{Stationary heat conduction}{18}{section*.11}%
+\contentsline {subsubsection}{Boundaries}{19}{section*.12}%
+\contentsline {subsubsection}{One-dimensional diffusion}{20}{section*.13}%
+\contentsline {subsection}{\numberline {3.2.3}Adapted Model}{22}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Inversion method}{22}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Prior probability}{22}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Likelihood probability function}{23}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Markov Chain Monte-Carlo integration}{24}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Optimisation to determine MAP}{25}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Results}{26}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Resulting k-values}{26}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Evaluation of error}{27}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Thermal diffusivity}{28}{subsection.4.1.2}%
+\contentsline {chapter}{\numberline {5}Discussion}{30}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Summary and Conclusion}{32}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Relevant code segments}{33}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Detailed results graph}{37}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Derivation}{39}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Program}{46}{appendix.D}%
+\contentsline {chapter}{\numberline {E}GA outcomes}{47}{appendix.E}%
+\contentsline {chapter}{List of References}{49}{section*.24}%
 \babel@toc {english}{}
 \babel@toc {english}{}

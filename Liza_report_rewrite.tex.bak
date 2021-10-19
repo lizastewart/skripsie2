@@ -101,11 +101,17 @@
 % Please insert user defined commands here
 % and NOT in the document itself!
 %
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\ten}[1]{\cdot 10^{#1}}
+
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{colortbl}
 
 \makeatother
 %==== Title Page ====================================================
 
-\title{Stochastic inversion of fire test data \\
+\title{Topic 14:Stochastic inversion of fire test data \\
 for the T-dependant thermal diffusivity of SA pine}
 
 \author{L.\ Stewart}
@@ -139,7 +145,7 @@ for the T-dependant thermal diffusivity of SA pine}
 \include{abstract}
 \tableofcontents
 \listoffigures
-%\listoftables
+\listoftables
 \include{nomenkl}
 
 \mainmatter%=========================================================
@@ -157,7 +163,7 @@ for the T-dependant thermal diffusivity of SA pine}
 
 
 \appendix%===========================================================
-
+%
 \include{mcmcCode}
 \include{result_app}
 \include{derive_app}

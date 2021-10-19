@@ -4,7 +4,7 @@ Previous similar projects will be investigated, and the value of this research w
 
 \section{Background and Motivation}
 
-Traditionally the thermal diffusivity, otherwise referred to as the $\alpha$-value, of timber is based simply on the EN 1995:1-2-2004 or similar standards.
+Traditionally the thermal diffusivity, otherwise referred to as the $\alpha$-value, of timber is based simply on the EN 1995:1-2-2004,further referred to as the EURO-code, or similar standards.
 This research project will aim to obtain the thermal diffusivity of cross-laminated SA-Pine timber by further analysing data originally obtained by \citeauthor{Westhuyzen:2020} for their study of the samples' charring rate.
 
 
@@ -52,16 +52,15 @@ During the course of the project, the student will aim to meet the following obj
 
 \section{Literature study}\label{litstudy}
 	
-	In their article \textit{Simple Method to Determine the Diffusivity of Green Wood}, \citeauthor{bioresource:2020}  determine the global diffusivity of a Douglas fir green log using inverse identification methods. 
+	In their article \textit{Simple Method to Determine the Diffusivity of Green Wood}, \citet{bioresource:2020}  determine the global diffusivity of a Douglas fir green log using inverse identification methods. 
 	%In their experiment they also used thermocouples but only 3 at each end.  
-	Their experiment was set up by immersing (RIJK: submerge?) the log with (RIJK: embedded with? die "with" alleen maak nie vir my sin nie.) K-type thermocouples in a boiler filled with water at 60$^{^{\circ}}$C. 
+	Their experiment was set up by submerging the log with K-type thermocouples at each end in a boiler filled with water at 60\textdegree C. 
 	The thermocouples were very specifically placed to improve the accuracy of the diffusivity ratio calculation.
 	The finite element model constructed for their calculations used linear interpolation with four-node quadrangle elements.
-	An analytical model was also constructed using the heat propagation equation(TODO?heat diffusion?).
-	%The intent of this research was
+	An analytical model was also constructed using the heat conduction and diffusion equations.
+	The thermal diffusivity was calculated by minimising the root mean square error between the slope of the measured data and the finite element model.
 	This research intended to assist the peeling industry in making the pretreatment process more cost-effective.
 	The method proved to be effective at determining the thermal diffusivity of green Douglas fir logs, as the $\kappa$-values obtained were comparable to those from literature.
-	The methods used by \citet{bioresource:2020} are similar to the methods described later in the report (RIJK: unclear:  beteken dit hulle het MCMC gebruik? of het hulle die temperatuurdata op dieselfde manier as S vd Westhuyzen gekry?).
 	A crucial difference remains as the temperatures at which these experiments were conducted as well as the final usage of the data differ greatly.
 
 %	A similar method of analysis was used by \cite{DeKoker:2021} in their article \textit{Assessment of ice impact load threshold exceedance in the propulsion shaft of an ice-faring vessel via Bayesian inversion}. 
@@ -69,6 +68,11 @@ During the course of the project, the student will aim to meet the following obj
 
 \citeauthor{Wagner:2021} wrote an article in March 2021 where Bayesian model inversion was used with stochastic spectral embedding.
 Spectral embedding, or spectral likelihood expansion, is used to solve for the likelihood function in such a way that sampling is not necessary.
-Similarly to this report, the research of \citeauthor{Wagner:2021} involved the creation and use of a Bayesian model to solve a heat diffusion problem.
+Similarly to this report, the research of \citet{Wagner:2021} involved the creation and use of a Bayesian model to solve a heat diffusion problem.
+The likelihood function used for this analysis was very similar to the likelihood function explained later in the report.
+The focus of the article was to determine the accuracy of Stochastic spectral likelihood embedding, Stochastic spectral embedding and spectral likelihood functions to calculate the thermal diffusivity of .
+A Markov Chain Monte-Carlo analysis was done to compare the values from the other methods to.
+Although the Markov Chain Monte-Carlo method was not discussed in detail this article the usage of Bayesian modelling to create a likelihood function that the MCMC analysis could be done on is very similar to the process followed throughout this project.
+
 
 %Grammarly checked 

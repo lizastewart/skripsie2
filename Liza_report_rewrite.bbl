@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{25}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -30,6 +30,13 @@
 \newblock \emph{BS EN 1995-1-2:2004. Eurocode 5: Design of timber structures -
   General - Structural fire design.}
 \newblock BSI, London.
+
+\bibitem[{\citenamefont{CETRIS}(2021)}]{rei:2021}
+\bibnamefont{CETRIS} (2021).
+\newblock Application of {CETRIS} boards in fire protection pursuant to
+  {EN}-standards.
+\newblock Information booklet.
+\newblock Obtained from www.cetris.cz.
 
 \bibitem[{\citenamefont{Cheng} \protect\BIBand{}
   \citenamefont{Cheng}(2005)}]{Cheng:2005}
@@ -128,6 +135,12 @@
   \bibfnamefont{R.} (1993 Jan).
 \newblock \emph{Markov Chains and Stochastic Stability}, \bblvol{}~92.
 \newblock Springer Verlag.
+
+\bibitem[{\citenamefont{Murphy}(2012)}]{Murphy:2012}
+\bibnamefont{Murphy}, \bibfnamefont{K.P.} (2012).
+\newblock \emph{Machine learning : A Probabilistic Perspective}.
+\newblock The MIT Press, Cambridge, Massachusetts.
+\newblock ISBN 9780262018029.
 
 \bibitem[{\citenamefont{Robert} \protect\BIBand{}
   \citenamefont{Casella}(2004)}]{Robert:2004}

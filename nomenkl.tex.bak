@@ -1,8 +1,8 @@
 \chapter{Nomenclature}
 
 \begin{Nomencl}
- \NomGroup{Constants}%-----------------------------------------------
-   \item[$\mathrm{g} = $] $\mathrm{9.81\,m/s^2}$
+% \NomGroup{Constants}%-----------------------------------------------
+%   \item[$\mathrm{g} = $] $\mathrm{9.81\,m/s^2}$
 
  \NomGroup{Variables}%-----------------------------------------------
 %   \item[$\mathit{Re}_\mathrm{\,D}$]
@@ -13,10 +13,13 @@
 %   \item[$\tau$]      \UnitLine{Moment                         }{N{\cdot} m}
    \item[$\kappa$]      \UnitLine{Thermal conductivity                         }{W/m{\cdot} K}
    \item[$\alpha$]     \UnitLine{Thermal diffusivity			}{m^2/s}
-   \item[${c}_{\rho}$]  \UnitLine{Heat capacity } {J/kg/K}
+   \item[${c}_p$]  \UnitLine{Heat capacity of pine} {J/kg/K}
+   \item[${c}_A$]  \UnitLine{Heat capacity of air} {J/kg/K}
+   \item[$\rho$]  \UnitLine{Density} {kg/m^3}
+  
 % \NomGroup{Vectors and Tensors}%-------------------------------------
 %   \item[$\overrightarrow{\bm{v}}$] Fisiese vektor, sien vergelyking ...
-%
+% \item[$N$] \UnitLine{Shape function}{}
 % \NomGroup{Subscripts}%----------------------------------------------
 %   \item[$\mathrm{a}$] Adiabaties
 %   \item[$a$]          Koordinaat

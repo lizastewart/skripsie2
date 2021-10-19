@@ -1,4 +1,4 @@
-\chapter{Derivation}
+\chapter{Derivation}\label{appder}
 \begin{equation}
 	%%\label{heateq1}
 	q_{,x}-f = 0  \text{  ...(1)} \quad\quad\quad\quad q = -\kappa u_{,x} \text{  ...(2)} 
