@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{28}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -105,6 +105,12 @@
 \newblock \emph{International Journal for Numerical Methods in Engineering},
   \bblvol{}~39, \bblpp{} 3761--3774.
 
+\bibitem[{\citenamefont{Hughes}(1987)}]{Hughes:1987}
+\bibnamefont{Hughes}, \bibfnamefont{T.} (1987).
+\newblock \emph{The Finite Element Method: Linear Statistic and dynamic finite
+  element analysis}.
+\newblock Englewood Cliffs, New Jersey.
+
 \bibitem[{\citenamefont{ISO}(1999)}]{ISO:1999}
 \bibnamefont{ISO} (1999).
 \newblock \emph{ISO 834 Fire-resistance test - Elements of building
@@ -117,6 +123,14 @@
   \bibnamefont{Somersalo}, \bibfnamefont{E.} (2005).
 \newblock \emph{Statistical and Computational Inverse Problems}.
 \newblock Verlag New York.
+
+\bibitem[{\citenamefont{K\"onig} \protect\BIBand{}
+  \citenamefont{Walleij}(1999)}]{Koning:1999}
+\bibnamefont{K\"onig}, \bibfnamefont{J.} \protect\BIBand{}
+  \bibnamefont{Walleij}, \bibfnamefont{L.} (1999).
+\newblock \emph{One-dimensional Charring of timber exposed to standard and
+  parametric fires in initially unprotected and postprotection situations}.
+\newblock Institutet f\"or tr\"ateknisk forskning, Stockholm.
 
 \bibitem[{\citenamefont{Lagarias}
   \emph{\bbletal{}}(1998)\citenamefont{Lagarias}, \citenamefont{Reeds},
@@ -164,6 +178,15 @@
 \newblock \emph{Indoor and Built Environment}, \bblpp{} 1--16.
 \newblock \eprint{https://doi.org/10.1177/1420326X211035557}.
 \newline\bblurlpre\url{https://doi.org/10.1177/1420326X211035557}
+
+\bibitem[{\citenamefont{Thi} \emph{\bbletal{}}(2016)\citenamefont{Thi},
+  \citenamefont{Khelifa}, \citenamefont{Ganaoui} \protect\BIBand{}
+  \citenamefont{Rogaume}}]{Thi:2016}
+\bibnamefont{Thi}, \bibfnamefont{V.}, \bibnamefont{Khelifa}, \bibfnamefont{M.},
+  \bibnamefont{Ganaoui}, \bibfnamefont{M.E.} \protect\BIBand{}
+  \bibnamefont{Rogaume}, \bibfnamefont{Y.} (2016 Aug).
+\newblock Modelling of heat transfer in timber exposed to fire.
+\newblock \capitalize\bblin{}: \emph{World conference on timber engineering}.
 
 \bibitem[{\citenamefont{van~der Westhuyzen}
   \emph{\bbletal{}}(2020)\citenamefont{van~der Westhuyzen},

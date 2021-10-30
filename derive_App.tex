@@ -1,6 +1,6 @@
-\chapter{Derivation}\label{appder}
+\chapter{Derivation of Implemented FEM Model}\label{appder}
 \begin{equation}
-	%%\label{heateq1}
+	\label{appheateq1}
 	q_{,x}-f = 0  \text{  ...(1)} \quad\quad\quad\quad q = -\kappa u_{,x} \text{  ...(2)} 
 	\end{equation}
 	Integrating Equation \ref{appheateq1} (1) over the length of the element and introducing a weighting function $w(x)$ we obtain \ref{appheateq2}. 
@@ -8,11 +8,11 @@
 	The first term in \ref{appheateq2} is integrated by parts. 
 	After the integration by parts and substituting $q$ with \ref{appheateq1} (2), Equation \ref{appheateq3} is created.
 	\begin{equation}
-	%%\label{heateq2}
+	\label{appheateq2}
 	\int_{x=0}^L wq_{,x}dx - \int_{x=0}^L wfdx = 0
 	\end{equation}
 	\begin{equation}
-	%%\label{heateq3}
+	\label{appheateq3}
 	\int_{x=0}^L wku_{,x}dx + \int_{x=0}^L wfdx - \left.wq\right|_0^L = 0
 	\end{equation}
 	In Equation \ref{appheateq3} the $u$ and $w$ need to be defined.
@@ -146,7 +146,7 @@ u \approx u^h \rightarrow u_e^h = \sum_{A}N^A d^A \quad;\quad w_e^h = \sum_{A}N^
 From all the above equations the below matrix formulation could be assembled:
 %considere renamin to somehing with assembled or matrix in the name
 \begin{equation}\label{appfemdiffeq7}
-\vec{c}^T \vec{\kappa} \vec{d} + \vec{c}^T \vec{M} \vec{\dot{d}} = \vec{c}^T \vec{F}
+\vec{c}^T \vec{K} \vec{d} + \vec{c}^T \vec{M} \vec{\dot{d}} = \vec{c}^T \vec{F}
 \end{equation}
 
 
@@ -290,7 +290,7 @@ M_e^{12} &= \frac{\ell}{16} \int_{-1}^{+1} \left[
 \end{aligned}
 \end{equation}
 
- The matrix can then be assembled from the above Equations \ref{appMeExampleeq1},\ref{appMeExampleeq2} and \ref{MeExampleeq3}:
+ The matrix can then be assembled from the above Equations \ref{appMeExampleeq1},\ref{appMeExampleeq2} and \ref{appMeExampleeq3}
 \begin{equation}\label{appMeassembled}
 \begin{aligned}
 \vec{M}_e &= \frac{\ell}{4} \left(
@@ -389,7 +389,7 @@ Then:
 \begin{equation}\label{appsolveeq1}
 \begin{aligned}
 &\vec{c}^T\cdot\vec{K}\cdot\vec{d} + \vec{c}^T\cdot\vec{M}\cdot\vec{\dot{d}} = \vec{c}^T\cdot\vec{F}' - \vec{c}^T\\
-&\left(\{K'\}d'+ \{K^{np?}\}d^{np}\right)- \vec{c}^T \left(\{M'\}\dot{d}' + \{M^{np?}\}\dot{d}^{np} \right)
+&\left(\{K'\}d'+ \{K^{np}\}d^{np}\right)- \vec{c}^T \left(\{M'\}\dot{d}' + \{M^{np}\}\dot{d}^{np} \right)
 \end{aligned}
 \end{equation}
 

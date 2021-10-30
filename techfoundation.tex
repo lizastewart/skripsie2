@@ -3,25 +3,33 @@
 In this chapter, detailed explanations of the algorithms and concepts applied throughout the project are presented. 
 This chapter aims to enable the reader to better understand the implementation and reasoning for the use of specific methods.
 
-\section{Thermal properties of timber}
+\section{Thermal properties of fire exposed timber}
 
 Specific thermal properties of timber must be thoroughly understood to allow for accurate modelling and interpretation of the results.
 After $100 ^{^\circ}$C, the temperature exposure causes the timber structure to break down in such a way that it will not return to the original state after cooling.
 This breakdown is generally referred to as thermal degradation, which can be broken into four categories \citep{White:2001} \citep{Shi:2021}.
-These categories are based on the different reactions that occur, and are briefly summarised below:
+These categories are based on the different reactions that occur, and are briefly summarised below and visualised in Figure \ref{fig:iso_phases}:
 
-\begin{itemize}
-\item Above 100 \textdegree C and below 200 \textdegree C, the moisture in the timber is evaporated and other non-combustible gasses are released.
-\item Between 200 \textdegree C and 300 \textdegree C, carbon monoxide is released in significant quantities, and some of the timber components undergo a change in chemical composition due to the high temperatures.
-\item Temperatures above  300 \textdegree C and before 450 \textdegree C are significant due to the amount of flammable volatiles released and the break of carbon linkages at 370 \textdegree C.
-\item At temperatures higher than 450 \textdegree C, the remaining timber is charred and any further degradation is due to oxidation from carbon monoxide, carbon dioxide, and water.
-\end{itemize}
 %TODO
-%These phases should be clear in the results and data. (TODO add lines for phases)
+%show in figure
+\begin{itemize}
+\item Above 100\textdegree C and below 200\textdegree C, the moisture in the timber is evaporated and other non-combustible gasses are released.
+\item Between 200\textdegree C and 300\textdegree C, carbon monoxide is released in significant quantities, and some of the timber components undergo a change in chemical composition due to the high temperatures.
+\item Temperatures above  300\textdegree C and before 450\textdegree C are significant due to the amount of flammable volatiles released and the break of carbon linkages at 370\textdegree C.
+\item At temperatures higher than 450\textdegree C, the remaining timber is charred and any further degradation is due to oxidation from carbon monoxide, carbon dioxide, and water.
+\end{itemize}
+
+\begin{figure}\label{fig:iso_phases}
+\centering
+\includegraphics[width = \textwidth]{figures/iso_phases.png}
+\caption{Visualisation of thermal degradation categories}
+\end{figure}
+
 Timber undergoes physical and chemical changes as temperature changes; it therefore makes sense that its thermal properties such as its specific heat capacity ($c_p$) and its density ($\rho$) of timber also varies with temperature.
 As the thermal conductivity and thermal diffusivity will only be assessed at specific temperatures, the specific heat and density  at only those temperatures will be summarised below.
-\begin{table}[H]\label{cptab}
+\begin{table}\label{cptab}
 \centering
+\caption{$c_p$ and $\rho$ at different temperatures}
 	\begin{tabular}{ r r r r }
 	\toprule
 	\multicolumn{1}{c}{Temp}& \multicolumn{1}{c}{$c_p$}& \multicolumn{1}{c}{$\rho$} & \multicolumn{1}{c}{$c_p\rho$}\\
@@ -38,10 +46,10 @@ As the thermal conductivity and thermal diffusivity will only be assessed at spe
 	1200& 1650 &100&165.0\\
 	\bottomrule
 	\end{tabular}
-	\caption{$c_p$ and $\rho$ at different temperatures}
+	
 \end{table}
 All the thermal properties of various timber species at high temperatures were discussed in a research article by \citet{Shi:2021}.
- In their article, they provide a general expression for the thermal conductivity of softwoods (Equation \ref{softconeq}) and char (Equation \ref{charconeq}).  
+ In their article, they provide a general expression for the thermal conductivity of softwoods (Equation \ref{softconeq}) and char (Equation \ref{charconeq}) with all temperatures in Kelvin.
 
 
  \begin{equation}\label{softconeq}
@@ -51,9 +59,13 @@ All the thermal properties of various timber species at high temperatures were d
  \kappa = 0.091 + 8.2 \times 10^{-4} \text{T}
  \end{equation}
  
- For this project, the temperature of char will be used as 300 \textdegree C following the research of \citeauthor{Westhuyzen:2020}. 
+ For this project, the temperature of at which charring occurs will be taken as 300 \textdegree C following the research of \citeauthor{Westhuyzen:2020}. 
 % The specific heat ($C_p$) will be assumed to be constant at 1500 kJ/$\text{m}^3$/K. the density of pine was also assumed constant at 
  Using the equations of \citeauthor{Shi:2021}, the following $\kappa$-values (Equation \ref{shiK}) are obtained. 
+ These values provide addition insight into the attempts made to quantify the values of thermal diffusivity for different timbers species.
+These $\kappa$-values are not very close to the Eurocode values and a more linear relationship between conductivity and temperature  was assumed than in the Eurocode.
+  Therefore Eurocode $\kappa$-values were accepted as more accurate and used from this point forward.
+ %    0.1223    0.1274    0.1308    0.1341    0.1392    0.1518    0.7250    0.9710    1.2990
 \begin{equation}\label{shiK}
   \kappa=
   \begin{blockarray}{*{1}{c} l}
@@ -61,19 +73,19 @@ All the thermal properties of various timber species at high temperatures were d
 %      $\text{W/m}\cdot\text{K}$ &\\
 %    \end{block}
     \begin{block}{[*{1}{c}]>{$\footnotesize}l<{$}}
-     	0.0993\bigstrut[t] & 0 $^{^\circ} \text{C}$\\
-		0.1044& 60  $^{^\circ} \text{C}$\\ 
-		0.1077& 100 $^{^\circ} \text{C}$\\ 
-		0.1111& 140 $^{^\circ} \text{C}$\\ 
-		0.1162& 200 $^{^\circ} \text{C}$\\ 
-		0.3780& 350 $^{^\circ} \text{C}$\\
-		0.5010& 500 $^{^\circ} \text{C}$\\ 
-		0.7470& 800 $^{^\circ} \text{C}$\\ 
-		1.0750& 1200 $^{^\circ} \text{C}$\\
+     	0.1223\bigstrut[t] & 0 $^{^\circ} \text{C}$\\
+		 0.1274& 60  $^{^\circ} \text{C}$\\ 
+		0.1308 & 100 $^{^\circ} \text{C}$\\ 
+		0.1341& 140 $^{^\circ} \text{C}$\\ 
+		0.1392& 200 $^{^\circ} \text{C}$\\ 
+		0.1518& 350 $^{^\circ} \text{C}$\\
+		0.7250& 500 $^{^\circ} \text{C}$\\ 
+		0.9710& 800 $^{^\circ} \text{C}$\\ 
+		1.2990& 1200 $^{^\circ} \text{C}$\\
     \end{block}
   \end{blockarray}
 \end{equation}
-From the big difference between these values and the Euro code values, it is clear that these simple equations are not sufficient for determining the thermal conductivity of pine.
+%From the big difference between these values and the Eurocode values, it is clear that these simple equations are not sufficient for determining the thermal conductivity of pine.
 \subsection{Heat conduction and diffusion}\label{heatconsec}	 
 	Heat is transferred within an element if a temperature gradient present, the rate that heat transfers is directly influenced by the thermal conductivity of the material. 
 	This project focuses on heat transferred via conduction, but heat can also be transferred in the form of thermal radiation or convection \cite{Fish:2007}.
@@ -91,13 +103,13 @@ From the big difference between these values and the Euro code values, it is cle
 	
 	\begin{equation}
 	\label{heat_eq}
-		q = -k \frac{\partial{u}}{\partial{x}}
+		q = -k \frac{\partial{T}}{\partial{x}}
 	\end{equation}
 
 Derivation of the heat conduction equation over time leads to the heat diffusivity equation, Equation \ref{heatdifeq}:
 
 \begin{equation}\label{heatdifeq}
-\frac{\partial u}{\partial t} = -\alpha \frac{\partial^2 u}{\partial x^2}
+\frac{\partial T}{\partial t} = -\alpha \frac{\partial^2 T}{\partial x^2}
 \end{equation}
 where 
 \begin{equation}\label{alphaeq}
@@ -134,7 +146,7 @@ The fine balance between sufficient accuracy and short enough computational time
 	The finite element method as known to day were directly defined and clarified in a textbook by Zienkiewicz in 1957.
 	This textbook is now in its fifth edition of print and has been continuously updated and was used for this project.
 	
-	\subsection{Boundaries}
+	\subsection{Boundary constraints}
 	An important part of finite element models is the method in which the known information is embedded into the model.
 	The main method is by defining boundary conditions at known points. The two types of boundary conditions used in this project are Dirichlet boundaries and Newmann boundaries.
 	
@@ -150,21 +162,21 @@ The fine balance between sufficient accuracy and short enough computational time
 	
 \section{Bayes' theorem of inverse problems}
 
-%	Statistical and Computational Inverse problems by Kaipio and Somersalo Chapter 3
+%	Statistical and Computational Inverse problems by \citet{Kaipo:2005} and Somersalo Chapter 3
 % 	The Bayesian approach to Inverse Problems Dashti and Stuart
 	The method of statistical inversion is dependant on a fundamental understanding of the Bayes' theorem of inverse problems. 
-	This understanding was obtained through studying Chapter 3 of statistical and Computational Inverse problems by \citet{Kaipo:2005}, further referred to as Kaipio.
+	This understanding was obtained through studying Chapter 3 of statistical and Computational Inverse problems by \citet{Kaipo:2005}.
 	There are four principles of statistical inversion that are essential to the thorough understanding of these models.
 
 	Firstly is the principle that any variable in the model needs to be modelled as a random variable.
 	This randomness is based on the extent of information that is available. 
 	To ensure that the extent of knowledge is accurately portrayed in the model, the extent of knowledge will be coded into the probability distributions assigned to the different variables. 
 	Finally, it needs to be understood that the solution of a statistical inversion is a posterior probability distribution.
-	A generalised equation of Bayes' theorem can be seen in \ref{bayes_eq} taken from Kaipio.
+	A generalised equation of Bayes' theorem can be seen in \ref{bayes_eq} taken from \citet{Kaipo:2005}.
 	
 	\begin{equation}
 	\label{bayes_eq}
-	\pi_{\text{post}}(x) = \pi(x|y_{\text{observed}}) = \frac{\pi_{\text{pr}}(x) \pi(y_{\text{observed}}|x)}{\pi (y_{\text{observed}})}	
+	\pi^*(x) = \pi(x|y_{\text{observed}}) = \frac{\pi_{\text{pr}}(x) \pi(y_{\text{observed}}|x)}{\pi (y_{\text{observed}})}	
 	\end{equation}
 	
 Further application of Bayes' theorem of inverse problems to the project at hand is discussed in Section \ref{secInvmet}
@@ -172,25 +184,30 @@ Further application of Bayes' theorem of inverse problems to the project at hand
 Markov Chain Monte Carlo (MCMC) is a method of integration that will be used to determine the mean of the $\kappa$-values at specific temperatures. 
 	Markov Chain Monte Carlo is a method that was created by combining the concept of Monte Carlo sampling  and a Markov Chain. 
 	To fully understand MCMC, its underlying methods must be investigated further.
-	For a better understanding of this concept, \textit{Introducing Markov chain Monte Carlo} by \citeauthor{Gilks:1996}, Kaipio, and various websites \citep{MLM:2019}, \citep{dummies:2015} were consulted.
+	For a better understanding of this concept, \textit{Introducing Markov chain Monte Carlo} by \citet{Gilks:1996}, \citet{Kaipo:2005}, and various websites \citet{MLM:2019}, \citet{dummies:2015} were consulted.
+	%TODO
+	%ref better
 	\subsection{Markov Chains}	\label{markovexpl}
 	The core principle of a Markov chain is that the next value ($x_{n+1}$) in a sequence is dependent on the current value($x_n$). 
 	A step size that indicates the range within the next point falls in.
 	Values are then randomly generated but restricted to be within this range.
-	This concept can be visualised as follows: the accepted point ($x_1$) is in the centre of a cube. The next possible random point is randomly generated but still within the cube(our search range). 	
-	After this next number is selected, the cube moves such that the new point($x_2$) is now the centre, and so it continues.
-	See Figure \ref{cubeexplfig} for clarification.
+	This concept can be visualised as follows: the accepted point ($x_1$) is in the centre of a square. The next possible random point is randomly generated but still within the square(our search range). 	
+	After this next number is selected, the square moves such that the new point($x_2$) is now the centre, and so it continues.
+	See Figure \ref{fig:MCsquare} for clarification.
 	The above example simplifies the concept, but this understanding can now be expanded.
-	If every coordinate direction in the aforementioned simple example is seen as a single entry in the $x$ vector, then the example has three independent values.
+	If every coordinate direction in the aforementioned simple example is seen as a single entry in the $x$ vector, then the example has two independent values.
 	More or fewer values can be used depending on the problem.
-	Another level of complication can be added if it is taken into account that every point in the cube is no longer equally likely.
-	A distribution within the cube can be chosen, for example simply a normal distribution
-	The shape of the cube then warps into a stranger shape with points closer to the center being more likely choices and the edges being less likely.
+	Another level of complication can be added if it is taken into account that every point in the square is no longer equally likely.
+	A distribution within the square can be chosen, for example simply a normal distribution
+	The shape of the square then warps into a stranger shape with points closer to the center being more likely choices and the edges being less likely.
+	
+%TODO
+%explain in 2D
 	\begin{figure}	
 	\centering
-	\includegraphics[width=0.55\linewidth]{figures/MC_cubes.png}
-	\caption{Three-dimensional example of Markov Chain application (Created on \url{https://www.geogebra.org/3d})}
-	\label{cubeexplfig}
+	\includegraphics[width=0.55\linewidth]{figures/MC_squares1.png}
+	\caption{Two-dimensional example of Markov Chain application}
+	\label{fig:MCsquare}
 	\end{figure}
 	
 	%%BURN_IN TODO
@@ -216,13 +233,13 @@ For this project, the Metropolis-Hastings algorithm was chosen above the Gibbs-s
 All of the random samples generated by the Monte Carlo integration can not be immediately accepted.
 	Here, the acceptance criterion comes into play.
 	There are multiple options for how a posterior is deemed acceptable; these are elaborated on in the book  \textit{Monte Carlo Statistical Methods} by \citeauthor{Robert:2004}. 
-	The most general acceptance criterion is set out in Equation \ref{acceptcriteq} and comes from Kaipio.
+	The most general acceptance criterion is set out in Equation \ref{acceptcriteq} and comes from \citet{Kaipo:2005}.
 	
 		\begin{equation} \label{acceptcriteq}
 		\begin{aligned}
 		&\text{if  }\quad \frac{\pi (x_2)}{\pi(x_1)} > 1 \quad \text{Accept automatically}\\
-		&\text{or  }\quad \frac{\pi (x_2)}{\pi(x_1)} > \text{rand}  \quad \text{Accept}\\
-		&\text{else reject and reselect  } x_2
+		&\text{or  }\quad \frac{\pi (x_2)}{\pi(x_1)} > \text{rand}  \quad \text{Accept with probability }< 1.0\\
+		&\text{else reject and sample new } x_2
 		\end{aligned}
 		\end{equation}
 
@@ -255,11 +272,13 @@ This contracted point ($x_c$) should ideally have a smaller value than $x_h$, if
 In a shrink contraction, $x_h$ and $x_s$ are redefined and pulled closer to $x_l$ with hopes of finding the minimum near the best point.
 
 The result is a simplex that moves over a surface in search of the lowest point and as it reaches that point it shrinks until all the points are practically at the same place. When this happens or the points are close enough to each other as defined when initializing the code the algorithm stops. Below in Figure \ref{neldermeadfig}, the different transformations can be seen.
+%TODO
+%REF: (Source:\url{https://codesachin.wordpress.com/2016/01/16/nelder-mead-optimization/})
 
 \begin{figure}\label{neldermeadfig}
 \centering
 \includegraphics[width=\linewidth]{figures/MAP_expl.png}
-\caption{Visual representation of Nedler-Mead transformations a) Reflection, b) Expansion, c) Contraction, d) Shrink contraction (Source:\url{https://codesachin.wordpress.com/2016/01/16/nelder-mead-optimization/})}
+\caption{Visual representation of Nedler-Mead transformations a) Reflection, b) Expansion, c) Contraction, d) Shrink contraction}
 \end{figure}
 
 %gramarly done 17/10

@@ -57,7 +57,7 @@
 \makeatletter
 
 \iftrue
-\usepackage{hyperref}%... Hyperlinks & backreferences
+\usepackage[hidelinks]{hyperref}%... Hyperlinks & backreferences
 %\usepackage{memhfixc} %........... Memoir fix (hyperref>6.75g autoloads it)
 \else
 \usepackage{nohyperref}%............ Disable hyperlinks
@@ -102,11 +102,13 @@
 % and NOT in the document itself!
 %
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
-\newcommand{\ten}[1]{\cdot 10^{#1}}
+\newcommand{\ten}[1]{\times 10^{#1}}
 
 \usepackage{booktabs}
 \usepackage{xcolor}
 \usepackage{colortbl}
+
+\usepackage{rotating}
 
 \makeatother
 %==== Title Page ====================================================
@@ -143,10 +145,12 @@ for the T-dependant thermal diffusivity of SA pine}
 \include{verklaring}
 %\include{opsomming}
 \include{abstract}
+\include{acknowledgements}
 \tableofcontents
 \listoffigures
 \listoftables
 \include{nomenkl}
+%\include{glossary}
 
 \mainmatter%=========================================================
 
@@ -165,10 +169,10 @@ for the T-dependant thermal diffusivity of SA pine}
 \appendix%===========================================================
 %
 \include{mcmcCode}
-\include{result_app}
+%\include{result_app}
 \include{derive_app}
-\include{Program}
-\include{GA_outcomes}
+%\include{Program}
+%\include{GA_outcomes}
 
 \backmatter%=========================================================
 

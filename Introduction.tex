@@ -4,8 +4,8 @@ Previous similar projects will be investigated, and the value of this research w
 
 \section{Background and Motivation}
 
-Traditionally the thermal diffusivity, otherwise referred to as the $\alpha$-value, of timber is based simply on the EN 1995:1-2-2004, further referred to as the EURO-code, or similar standards.
-This research project will aim to obtain the thermal diffusivity of cross-laminated SA-Pine timber by further analysing data originally obtained by \citeauthor{Westhuyzen:2020} for their study of the samples' charring rate.
+Traditionally the thermal diffusivity, otherwise referred to as the $\alpha$-value, of timber is based simply on the EN 1995:1-2-2004, further referred to as the Eurocode, or similar standards.
+This research project will aim to obtain the thermal diffusivity of cross-laminated SA-Pine timber by further analysing data originally obtained by \citet{Westhuyzen:2020} for their study of the samples' charring rate.
 
 The thermal diffusivity of timber is an unobservable quality that cannot be measured directly.
 However, thermal diffusivity is directly related to thermal conductivity ($\kappa$) and can be calculated when thermal conductivity is known.
@@ -21,7 +21,7 @@ The approach taken in this report is unique due to the nature of data used, as t
 The difference in research goals means that more assumptions had to be made, in contrast to a experiment that intended to determine the thermal conductivity and would have controlled those variables.
 
 Currently, the fire rating of specific timber samples is based on fire tests conducted in a furnace. 
-The furnace is kept at increasing temperatures corresponding with the Standard or ISO 834 fire curve as specified in ISO 834 \citet{ISO:1999}.
+The furnace is kept at increasing temperatures corresponding with the Standard or ISO 834 fire curve as specified in ISO 834 \citep{ISO:1999}.
 This process becomes very costly if it must be repeated every time timber is used for construction, as timber has seen increased usage for multiple story construction projects over the past decades. 
 This increase is partially due to the sustainability of timber as a construction material: not only is it renewable but it also has a small carbon footprint \citep{Salvadori:2017}.
 Obtaining and standardising thermal diffusivity values for different species of timber will assist in more accurate modelling.
@@ -39,10 +39,9 @@ If modelling accuracy can be increased, the use of modelling to confirm fire tes
 \section{Aim and objectives}
 During the course of the project, the student will aim to meet the following objectives:
 \begin{enumerate}
- \item Modify a Finite Element Model into an accurate and effective function;
- \item Compare the model data to the true acquired data;
- \item Solve for the thermal diffusivity using Bayes' theorem of inverse problems; and
- \item Evaluate and explore the posterior probability distribution using the following methods:
+ \item Modify a time-dependant heat transfer Finite Element Model implemented in Matlab into an accurate and effective function;
+ \item Compare the model to the measured data;
+ \item Solve for the thermal diffusivity using Bayesian Inversion using the following methods:
  	\begin{enumerate}
  		\item Maximum a Posteriori
  		\item Markov-Chain Monte Carlo 	
@@ -51,6 +50,9 @@ During the course of the project, the student will aim to meet the following obj
 
 
 \section{Literature study}\label{litstudy}
+\iffalse
+can be a bit longer: a) where does EC get its values from? is it relevant to SA? does SA have a timber code that includes our own values?  b) other problems (not necessarily fire) where material properties were determined using MCMC (there are thousands)
+\fi
 	
 	In their article \textit{Simple Method to Determine the Diffusivity of Green Wood}, \citet{bioresource:2020}  determine the global diffusivity of a Douglas fir green log using inverse identification methods. 
 	%In their experiment they also used thermocouples but only 3 at each end.  
@@ -74,5 +76,13 @@ The focus of the article was to determine the accuracy of stochastic spectral li
 A Markov Chain Monte-Carlo analysis was done to compare to values from other methods.
 Although the Markov Chain Monte-Carlo method was not discussed in detail in the article, the usage of Bayesian modelling to create a likelihood function that the MCMC analysis could be done on is similar to the process followed throughout this project.
 
+%\citet{Thi:2016}
+During the World Conference on Timber Engineering, \citet{Thi:2016} presented a paper regarding the mathematical modelling of timber in fire. 
+In their model they considered the accounted for heat transfer through thermal conduction,convection and radiation similarly to what was done in the model created for this project.
+Their model was created in Abaqus and used simplified values for the thermal conductivity and specific heat of the laminated timber that was modelled.
+The main goal of this model was to determine the change of the cross-section of timber due to charring, to achieve this the model had to be constructed in two-dimensions.
 
+
+
+\citet{Koning:1999}
 %Grammarly checked 

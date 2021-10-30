@@ -2,12 +2,12 @@
 
 \begin{abstract}
 %  What the objectives of the study were (the central question);
-  In this report, stochastic inversion methods such as Markov Chain Monte-Carlo and optimisation methods were used to determine the thermal diffusivity of SA-Pine.
-  As thermal diffusivity can be easily calculated from thermal conductivity and conductivity can be more directly solved through modelling the focus was moved to the calculation of thermal conductivity.
+  Stochastic inversion methods such as Markov Chain Monte-Carlo and optimisation methods were used to determine the thermal diffusivity of SA-Pine.
+  Thermal diffusivity can be easily calculated from thermal conductivity, and conductivity can be more directly solved through modelling; the focus was therefore moved to the calculation of thermal conductivity.
 %Brief statement of what was done (Methods);
 A finite element model was constructed to model a $100$mm element exposed to the ISO 846 Fire curve.
-The model was compared to data previously obtained by S. van der Westhuyzen, this data was also used as the observed quantity in the formulation of the Bayes model.
-Using Bayes' theorem of inverse problems a posteriori probability distribution consisting of a likelihood probability and a prior probability was constructed.
+The model was compared to data previously obtained by S. van der Westhuyzen; this data was also used as the observed quantity in the formulation of the Bayes' model.
+Using Bayes inversion, a posteriori probability distribution consisting of a likelihood probability and a prior probability was constructed.
 The finite element model was essential to the calculation of the likelihood probability. 
 The prior probability was based off the thermal conductivity values from EN 1995:1-2-2004.
 %Brief statement of what was found (Results);
@@ -15,10 +15,29 @@ New thermal conductivity values were estimated through Markov Chain Monte-Carlo 
 The Markov Chain Monte-Carlo and Maximum a Posteriori thermal conductivity were not equal, supporting the hypothesis that the distribution is not normal.
 %The FEM model using the new $\kappa$-values was closer to the measured temperatures.
 The model was rerun with the new thermal conductivity estimates and the models were compared to the the measured data.
-The new estimated conductivity values resulted in more accurate modelling of the temperature in SA Pine exposed to fire.
-From the new cond
+The new estimated conductivity values resulted in more accurate modelling of the temperature in SA Pine when exposed to fire.
+From the new conductivity estimates combined with known values of density and specific heat capacity, the thermal diffusivity could be successfully calculated.
 %Brief statement of what was concluded (Discussion);
 
 \end{abstract}
 
+\begin{abstract}[Afrikaans]
+Stogastiese inversie metodes soos Markov Chain Monte-Carlo en optimalisering metodes was gebruik om die termiese diffusiwiteit van SA-Pine te bepaal.
+Termiese diffusiwiteit kan maklik uitgewerk word as die termiese geleidingsvermo{\"e} bekend is.
+Termiese geleidingsvermo{\"e} kan meer direk bepaal word deur modellering daarom het die fokus verskuif na die bepaling van die termiese geleidingsvermo{\"e}.
+%A finite element model was constructed to model a $100$mm element exposed to the ISO 846 Fire curve.
+'n Beperkte element model was saamgestel om a $100$mm element wat blootgestel is aan die ISO 846 vuur kurwe te modelleer.
+%The model was compared to data previously obtained by S. van der Westhuyzen; this data was also used as the observed quantity in the formulation of the Bayes' model.
+Die model was vergelyk met data wat vooraf deur S. van der Westhuyzen gemeet is; hierdie data was gebruik as die waarneembare hoeveelheid in die opstelling van die Bayes model.
+Deur gebruik van Bayes inversie was 'n posterior verspreiding wat bestaan uit 'n waarskynlikheid verspreiding en 'n voorafgaande verspreiding bepaal.
+'n Beperkte element model was benodig om die waarskeynlikheid verspreiding uit te werk.
+Die voorafgaande verspreiding was gebasseer op die termiese geleidingsvermo{\"e} waardes in EN 1995:1-2-2004.
+%New thermal conductivity values were estimated through Markov Chain Monte-Carlo inversion and the Maximum a Posteriori was found though optimisation.
+%The Markov Chain Monte-Carlo and Maximum a Posteriori thermal conductivity were not equal, supporting the hypothesis that the distribution is not normal.
+%
+%The model was rerun with the new thermal conductivity estimates and the models were compared to the the measured data.
+%The new estimated conductivity values resulted in more accurate modelling of the temperature in SA Pine when exposed to fire.
+%From the new conductivity estimates combined with known values of density and specific heat capacity, the thermal diffusivity could be successfully calculated.
+Nuwe waardes vir die termiese geleidingsvermo{\"e} was
+\end{abstract}
 \endinput

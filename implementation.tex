@@ -12,16 +12,16 @@ The data used was acquired by \cite{Westhuyzen:2020} for an article assessing th
 	The panel was exposed to the fire curve for $50$ minutes, at which stage near complete de-lamination was observed and the test ended.
 	\begin{figure}
 	\centering
-	\includegraphics[width=0.75\linewidth]{figures/TC_layout.png}
+	\includegraphics[width=\textwidth]{figures/TC_layout.png}
 	\caption{Thermocouple layout in test conducted by \cite{Westhuyzen:2020} cross-section (left) and overall layout (right)}
 	\label{TC_layout}
 	\end{figure}
 	\begin{equation}\label{firecurve_eq}
-	T = 20 + 345log_{10}(8t_min+1)
+	T = 20 + 345\log_{10}(8t_{min}+1)
 	\end{equation}
 	\begin{figure}
 	\centering 
-	\includegraphics[width=\linewidth]{figures/firecurve.png}
+	\includegraphics[width=\textwidth]{figures/firecurve.png}
 	\caption{Standard ISO fire curve}
 	\label{firecurve_fig}
 	\end{figure}
@@ -31,14 +31,15 @@ The data used was acquired by \cite{Westhuyzen:2020} for an article assessing th
 	\label{measured_fig}
 	\centering
 	\includegraphics[width=\textwidth,]{figures/measured_plot.png}
-	\caption{Measured temperatures at the different depths}
+	\caption{Average of measured temperatures at the different depths}
 \end{figure}
 
 	\subsection{Potential inaccuracies}
 	As with most tests, everything is not always perfect. 
 	The potential inaccuracies are discussed below. 	
-	In the data, it was observed that two of the thermocouples broke during testing; this resulted in temperature with a magnitude of $10^{13}$. 
-	Such a temperature is impossible, as the highest ever recorded temperature reached was $4\times 10^{12}$ and that only occurred in a atomic explosion. %(https://www.insidescience.org/news/hottest-temperature-universe-measured)% 
+	In the data, it was observed that two of the thermocouples malfunctioned during testing and could not be considered
+	%; this resulted in temperature with a magnitude of $10^{13}$. 
+	%Such a temperature is impossible, as the highest ever recorded temperature reached was $4\times 10^{12}$ and that only occurred in a atomic explosion. %(https://www.insidescience.org/news/hottest-temperature-universe-measured)% 
 	This malfunction required that two of the depth measurements were no longer the average between nine samples but instead the average between eight.
 	Another inaccuracy that could potentially influence the accuracy of the final result is the accuracy of the depth of the holes in which the thermocouples were placed. 
 	%As this was done by hand in the laboratory.
@@ -54,7 +55,7 @@ This function should provide the temperature of the modelled element based on a 
 The derivation and adaptation of the model are expanded on below.
 
 \subsection{Existing Model}
-	For this project, an existing finite element model of heat diffusion by Prof. N de Koker was modified for usage in the Bayes' theorem~\ref{bayes_eq}. 
+	For this project, an existing finite element model of time-dependant conductive heat transfer implemented in Matlab by Prof. N de Koker was modified for usage in the Bayes' theorem~\ref{bayes_eq}. 
 	This model is used to determine the likelihood function. 
 	The current model uses the $\kappa$-values as well as the specific heat specified in EN 1995:1-2-2004. 
 	 %shown in Equation \ref{cpusedeq}.
@@ -70,7 +71,9 @@ The derivation and adaptation of the model are expanded on below.
 %  \end{blockarray}
 %\end{equation}
 	
-	The model discretises the wooden element into 32 different elements. For finite element analysis, there are always more elements used to generate the model than needed for evaluation. This is done to improve the accuracy of said model.
+	The model discretises the wooden element into 32 first order one-dimensional elements. 
+	%For finite element analysis, there are always more elements used to generate the model than needed for evaluation. This is done to improve the accuracy of said model.
+	This number of elements was sufficient to obtain converged results.
 	The model is a one-dimensional finite element model that takes time differentiation into account.
 	
 \begin{figure}[H]
@@ -87,15 +90,18 @@ The derivation and adaptation of the model are expanded on below.
 	\begin{enumerate}
 \item{The air on the side of fire follows the temperature of the fire curve.}
 \item{The air on the cold side remains at 20\textdegree C.}
+\item{The timber sample stays intact.}
+\item{Thermal behaviour is isotropic throughout the model}
+
 	\end{enumerate}
 	\subsubsection{Stationary heat conduction}
 	\begin{figure}[H]
 	\label{femfig}
 	\centering
 	\includegraphics[width = 0.75\linewidth]{figures/fem_sketch.png}
-	\caption{Visualisation of element that is modelled in one-dimension}
+	\caption{Visualisation of model in one-dimension}
 	\end{figure}
-	The derivation started as a one-dimensional stationary heat conduction problem with the below equations as a starting point.
+	Based on \citet{Hughes:1987} and class notes from Informatics 314, the derivation started as a one-dimensional stationary heat conduction problem with the energy balance equation and the heat conduction equation.
 	\begin{equation}
 	\label{heateq1}
 	q_{,x}-f = 0  \text{  ...(1)} \quad\quad\quad\quad q = -\kappa u_{,x} \text{  ...(2)} 
@@ -153,7 +159,7 @@ The derivation and adaptation of the model are expanded on below.
 	\begin{figure}[H]\label{airelmfig}
 	\centering
 	\includegraphics[width = 0.75\linewidth]{figures/fem_fire_sketch.png}
-	\caption{Visualisation of one-dimensional element with air elements and external conditions added}
+	\caption{Visualisation of one-dimensional model with air elements and external conditions added}
 	\end{figure}
 	
 	One of the additional difficulties in modelling is that the known boundary temperatures are measured in the air of the furnace and assumed for the air outside the furnace.
@@ -175,7 +181,7 @@ The derivation and adaptation of the model are expanded on below.
 	       \begin{aligned}
 	       q_{\text{rad}} = \varepsilon&\sigma \phi \left(T_f^4 - T_S^4\right)\\
 	       \varepsilon =& \text{emissivity}\\
-	       \sigma =& \text{Stefan-Boltzmann} \\&5.670 e^-8 [W/(m^2K^4)]\\
+	       \sigma =& \text{Stefan-Boltzmann constant} \\&5.670 e^{-8} [W/(m^2K^4)]\\
 	       \phi =& \text{view factor};1 \quad \text{here}\\
 	       \end{aligned}
 	\end{equation}
@@ -200,7 +206,7 @@ The concept of heat diffusion is thoroughly explained in Section \ref{heatconsec
 	q_{,x} - f = \frac{\partial Q}{\partial t} = c_p \rho \frac{\partial u}{\partial t}\quad\text{  ...(1)} \quad\quad\quad q = -\kappa \frac{\partial u}{\partial x}\quad\text{  ...(2)}
 \end{equation}
 Substituting Equation \ref{femdiffeq1}(2) into \ref{femdiffeq1} and taking the derivative as indicated ($q_{,x}$) gives Equation \ref{femdiffeq2}. 
-As previously disccussed heat conduction ($\alpha$) is heat diffusion ($\kappa$)  divided by specific heat ($c_p$).
+As previously discussed heat conduction ($\alpha$) is heat diffusion ($\kappa$)  divided by specific heat ($c_p$).
 
 
 \begin{equation}\label{femdiffeq2}
@@ -270,7 +276,7 @@ By setting $\vec{d}_0$ equal to the initial boundary conditions and setting $\ve
 
 Finally by combining the boundary conditions, stationary heat conduction and the one-dimensional heat diffusion models the below formulation in Equation \ref{solveeq2}.
 \begin{equation}\label{solveeq2}
-\vec{K}\cdot\vec{d} + \vec{M}\cdot\vec{\dot{d}} = \vec{F}' - \vec{F}^{Ke?} - \vec{F}^{Me?} = \vec{F}
+\vec{K}\cdot\vec{d} + \vec{M}\cdot\vec{\dot{d}} = \vec{F}' - \vec{F}^{Ke} - \vec{F}^{Me} = \vec{F}
 \end{equation}
 
 This can be solved as shown below in Equation \ref{solveeq3}.
@@ -319,19 +325,19 @@ Each aspect of this equation below will be further explored in the sections belo
 
 \begin{equation}
 \label{modbayes}
-\pi^* (x|T) = \exp\left(-\frac{(\mu - x)^2}{2\sigma_{\mu}^2}\right) \cdot \exp\left(-\frac{\left(T-M(x)\right)^2}{2\sigma_{\text{temp}}^2}\right)
+\pi^* (\vec{x}|T) \propto \exp\left(-\frac{(\vec{\mu} - \vec{x})^2}{2\sigma_{\mu}^2}\right) \cdot \exp\left(-\frac{\left(\vec{T}-M(x)\right)^2}{2\sigma_{\text{temp}}^2}\right)
 \end{equation}
 
 	\subsection{Prior probability}
 	
 	\begin{equation}
 	\label{prior}
-	\pi(x) = \exp\left(-\frac{(\mu - x)^2}{2\sigma_{\mu}^2}\right)
+	\pi(x) \propto \exp\left(-\frac{(\mu - x)^2}{2\sigma_{\mu}^2}\right)
 	\end{equation}
 
 	The prior probability function (Equation \ref{prior} ) is based on the $\kappa$-values assumed prior to any simulation or analysis. 
 	The $\sigma_{\mu}$ in this equation was assumed to be equal to $0.13$ W/m$\cdot$K,
-	In this case, the prior values are indicated as $\mu$ and refer to the vector of $\kappa$-values(\ref{euroK}) at specific temperatures as indicated. The temperatures are not exactly similar to the temperatures used in Euro code, this is due to an attempt at modelling the effect of evaporation at 100 \textdegree C.
+	In this case, the prior values are indicated as $\mu$ and refer to the vector of $\kappa$-values(\ref{euroK}) at specific temperatures as indicated. The temperatures are not exactly similar to the temperatures used in Eurocode, this is due to an attempt at modelling the effect of evaporation at 100 \textdegree C.
 
 \begin{equation}\label{euroK}
   \mu=
@@ -367,7 +373,7 @@ The prior function in this case was relatively easy to generate and incorporate 
 	\subsection{Likelihood probability function}
 		\begin{equation}
 		\label{likelihoodfunc}
-		\pi(T) = \exp\left(-\frac{\left(T-M(x)\right)^2}{2\sigma_{\text{temp}}^2}\right)
+		\pi(T|x) \propto \exp\left(-\frac{\left(T-M(x)\right)^2}{2\sigma_{\text{temp}}^2}\right)
 		\end{equation}
 		
 		The likelihood probability was more complex to implement, as this required utilisation of the function created from the finite element model as discussed in section \ref{femexpl}.
@@ -383,7 +389,7 @@ The prior function in this case was relatively easy to generate and incorporate 
 As explained in Section \ref{markovexpl} a step size is a crucial part of determining the next random sample.
 	For this project, a step size of $0.05$ W/m$\cdot$K was chosen.
 
-	Compared to the example shown in Figure \ref{cubeexplfig}, the actual problem is quite more complex. 
+	Compared to the example shown in Figure \ref{fig:MCsquare}, the actual problem is quite more complex. 
 	For this project, a log-normal distribution was chosen instead of a uniform distribution.
 	If every coordinate direction in the aforementioned simple example is seen as a single entry in the $x$ vector, then the example has three $\kappa$-values.
 	The problem also technically becomes nine-dimensional, as there are nine separate independent $\kappa$-values that must be chained.
@@ -415,14 +421,16 @@ As explained in Section \ref{markovexpl} a step size is a crucial part of determ
 	The acceptance criterion was based on Equation \ref{acceptcriteq1}.
 	The $i$ value was chosen to be 50 arbitrarily, initially $i=1$ but as can be seen in Figure \ref{expcurvefig} this acceptance was still to lenient.
 	\begin{equation}\label{acceptcriteq1}
-	\exp\left(\frac {\pi^*(x_{n+1})-\pi^*(x_n)}{\frac{\pi^*(x_{\text{ref}})}{i}}\right)\\
-	\text{with} \quad i = 50\\
+	\exp\left(\frac {\pi^*(x_{n+1})-\pi^*(x_n)}{\pi^*(x_{\text{ref}})i}\right)\\
+	\text{with} \quad i = 0.02\\
 	\end{equation}
 	
 	\begin{figure}[H]\label{expcurvefig}
 	\centering
 	\includegraphics[width = 0.5\linewidth]{figures/e_expl_curve.png}
 	\caption{Graph explaining the difference in acceptance rates (Generated at https://www.geogebra.org/graphing/g7kyzwce)}
+	%TODO
+	%Fix sizing
 	\end{figure}
 	
 	To allow for sufficient number of samples the program was run until 20 000 samples were generated.
@@ -433,7 +441,7 @@ As explained in Section \ref{markovexpl} a step size is a crucial part of determ
 	
 	
 	
-	\section{Optimisation to determine MAP}
+	\section{MAP}
 The maximum a posteriori of the posteriori function was also determined to allow for further comparison of results.
 All the values and constants except for the $\kappa$-values were kept the same as in the MCMC integration to allow the results to be compared on the same basis.  
 	The optimisation to determine the maximum value of the posteriori function was initially done utilising the built-in Matlab optimisation algorithm \texttt{femsearchmin.m}. 
@@ -442,9 +450,9 @@ All the values and constants except for the $\kappa$-values were kept the same a
 	Further research on various adaptations of the built-in function lead to finding the \texttt{femsearchminbnd.m} adaptation by \citet{derrico:2021}. 
 	This was used to limit the search area to only positive $\kappa$-values.
 	Further, the algorithm was set to only iterate a thousand times and stop if the points of the simplex are within 0.009 of each other.
-	The start point for the algorithm was chosen to be the $\kappa$-values from the EURO code.
+	The start point for the algorithm was chosen to be the $\kappa$-values from the Eurocode.
 	
-	A problem that arose was that the function could get stuck at a local maximum.
-	This can be seen in Figure \ref{histofig} on the histogram for 140\textdegree C
+%	A problem that arose was that the function could get stuck at a local maximum.
+%	This can be seen in Figure \ref{fig:scatdata} on the histogram for 140\textdegree C
 	
 	
