@@ -1,21 +1,47 @@
 \chapter{Results} \label{results}
-%\begin{figure}[H]
-%\centering
-%    \begin{minipage}{0.45\textwidth}
-%%        \centering
-%        \includegraphics[width=0.9\textwidth]{figures/resultsk_cropped.png} % first figure itself
-%        \caption{The resulting $\kappa$-values }
-%        \label{kresult_fig}
-%    \end{minipage}
-%    \begin{minipage}{0.45\textwidth}
-%%        \centering
-%        \includegraphics[width=0.9\textwidth]{figures/eurok_samescale_cropped.png} % second figure itself
-%        \caption{The original $\kappa$-values}
-%        \label{scalekeuro_fig}
-%    \end{minipage}
-%\end{figure}\
-
 The results of the MCMC analysis as well as the MAP optimization is visualised in the section below.
+\section{Continuous output}
+To assess the progress of the MCMC analysis while iterating, graphs similar to those in Figure \ref{fig:10} were continuously generated. 
+In Figure \ref{fig:10} the output of 2000 iterations were extracted to allow sufficient detail to be visible.
+Figure \ref{fig:10a} was important to keep track of the number of different samples assessed until an acceptable sample was found.
+If a large number of samples were consistently needed, it could indicate that a bad starting point was chosen or that there is an error within the posterior distribution calculation.
+The connection between Figures \ref{fig:10b} and \ref{fig:10c} can be seen in that when there is a dip in the difference between $\pi^*(x)$ and $\pi^*(x_{\text{ref}})$ there is a peak in the acceptance ratio.
+When the graph in Figure \ref{fig:10b} is at 0 that means that the sampled values are the same as the Eurocode reference values.
+When this graph is below 0 that indicates that the values sampled for that iteration produced a less likely result than the reference values.
+This influenced the burn-in period chosen, to ensure that all the samples considered were more accurate than the Eurocode values.
+As the probability function used is not normalised it can produce posterior probabilities larger than 1 therefore the difference between two posterior can also be larger than 1.
+This also means that the higher the difference between $\pi^*(x)$ and $\pi^*(x_{\text{ref}})$ the more accurate the $x$ value is 
+
+\begin{figure}[H]
+	\centering
+	
+	\begin{subfigure}[b]{\textwidth}
+	\centering	
+	\includegraphics[width = \textwidth]{figures/figure10a.jpg}
+	\caption{Number of samples drawn before an acceptable sample was found per iteration}
+	\label{fig:10a}
+	\end{subfigure}{}
+	
+	\begin{subfigure}[b]{\textwidth}
+	\centering	
+	\includegraphics[width = \textwidth]{figures/figure10b.jpg}
+	\caption{Difference between the accepted $x$ posterior and the reference posterior for each iteration}
+	\label{fig:10b}
+	\end{subfigure}{}
+	
+	\begin{subfigure}[b]{\textwidth}
+	\centering	
+	\includegraphics[width = \textwidth]{figures/figure10c.jpg}
+	\caption{Value of acceptance ratio at each iteration}
+	\label{fig:10c}
+	\end{subfigure}{}
+	
+	\caption{Graphs from continuous output}
+	\label{fig:10}
+\end{figure}
+
+
+
 \section{Resulting \texorpdfstring{$\kappa$}{TEXT}-values}
 
 The thermal conductivity ($\kappa$-values) at key temperatures integral to this project, the resulting values are shown in Table \ref{krestab}. 
@@ -24,14 +50,15 @@ The large difference at 1200\textdegree C is due to how the model is created, at
 The model did not model thermal radiation separately but instead incorporated the radiation into a equivalent conduction.
 Between 0\textdegree C and 200\textdegree C the modelling of the evaporation was moderately successful as a spike can be seen at 100 \textdegree C.  
 \begin{figure}
-\centering
-	\label{kresult_euro_fig}
+\centering	
 	\includegraphics[width=\textwidth]{figures/kvalues_all_NOshi.png}
 	\caption{Resulting $\kappa$ values compared to Eurocode standard values}
+	\label{kresult_euro_fig}
 \end{figure}
-\begin{table} \label{krestab}
+\begin{table} 
 \centering
 \caption{Posterior thermal conductivity in W/(m$\cdot$K)}
+\label{krestab}
 	\begin{tabular}{ r r r r }
 	\toprule
 	 \textdegree C & EURO & MAP & MCMC\\
@@ -51,16 +78,36 @@ Between 0\textdegree C and 200\textdegree C the modelling of the evaporation was
 \end{table}
  
  For each temperature there will be a different distribution of samples. 
- In Figure \ref{fig:scatdata} The distribution of all the samples were plotted in a histogram with a kernel density estimation overlay. 
+ In Figure \ref{fig:scatdata} The distribution of all the samples were plotted in a scatter plot.
  The resulting $\kappa$-values from the MCMC algorithm is plotted in red and the Maximum a posteriori is plotted in blue.
- \iffalse
+ The non-symmetrical distribution  is clear in the data as the Maximum a posteriori is not in the centre of each distribution.
+
 %TODO
-From the difference between the histogram maximum and the maximum found by the Nelder-Mead optimization it is clear that many more iterations of the MCMC algorithm is needed.
-An estimated of 100 000 iterations would be needed.
+From the difference between the histogram maximum and the maximum found by the Nelder-Mead optimization at 140\textdegree C (Figure \ref{fig:histo}) it is clear that many more iterations of the MCMC algorithm is needed.
+In contrast at 60\textdegree C the maximum of the histogram and the MAP is the the same indicating that the samples at that specific temperature was sufficiently explored.
+An estimated 100 000 iterations would be needed.
 As the current iterations already took four days an additional sixteen days would have been needed to generate the needed additional samples.
 This would have been impractical to achieve during a single semester as these iterations needed the full computational capacity of the available laptop and prevented any other usage of the laptop.
-\fi
 
+\begin{figure}[H]
+
+\centering
+	\begin{subfigure}[b]{0.45\linewidth}
+	\centering
+	\includegraphics[width = \linewidth]{figures/histograph/histo1.png}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.45\linewidth}
+	\centering
+	\includegraphics[width = \linewidth]{figures/histograph/histo3.png}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}[b]{0.2\linewidth}
+	\centering
+	\includegraphics[width = \linewidth]{figures/histograph/legend.png}
+	\end{subfigure}
+	\caption{Distribution of samples at 60\textdegree C and 140\textdegree C with MCMC and MAP results indicated}
+	\label{fig:histo}
+\end{figure}
 
 %\input{fig_histodata.tex}
 \input{fig_scatterdata.tex}
@@ -80,9 +127,10 @@ It is important to note that this error does not only quantify the error in the 
 \epsilon _i = \frac{\norm{\hat{x}_i-x_i }_2}{\norm{x_i}_2} \quad \quad i= 1, ... ,7
 \end{equation}
 
-\begin{table}[H] \label{errortab}
+\begin{table}[H] 
 \centering
 \caption{Summary of error between models and data}
+\label{errortab}
 	\begin{tabular}{ r r r r }
 	\toprule
 	Depth(mm) & EURO & MAP & MCMC\\
@@ -104,9 +152,10 @@ The main intent of this project was to determine the thermal diffusivity of SA-P
 In Table \ref{diffrestab} the resulting thermal diffusivity is shown.
 The thermal diffusivity was calculated using the information in Table \ref{cptab} and Equation \ref{alphaeq}.
 
-\begin{table}[H] \label{diffrestab}
+\begin{table}[H]
 \centering
 	\caption{Resulting thermal diffusivity($\alpha \ten{-4}$)in m/s$^2$ }
+	 \label{diffrestab}
 	\begin{tabular}{ r r r r }
 	\toprule
 	Temp \textdegree C & EURO & MAP & MCMC\\
@@ -126,10 +175,11 @@ The thermal diffusivity was calculated using the information in Table \ref{cptab
 \end{table}
 
 \begin{sidewaysfigure}
-	\label{final_graph}
+	
 	\centering
 	\includegraphics[width=\linewidth,]{figures/final_graph.png}
 	\caption{Graph of measured data compared to model output}
+	\label{final_graph}
 \end{sidewaysfigure}
 
 

@@ -1419,3 +1419,23 @@ howpublished = {Sachin Joglekar's Blog},
 year = {2016},
 month = {Jan}
 }
+
+%S. Somasundharam & K. S. Reddy (2016): Inverse estimation of thermalproperties using Bayesian inference and three different sampling techniques, Inverse Problems in Science and Engineering, DOI: 10.1080/17415977.2016.1138946
+
+@article{somasund:2016,
+author = {S. Somasundharam and K.S. Reddy},
+year = {2016},
+title = {Inverse estimation of thermal properties using Bayesian inference and three different sampling techniques},
+doi = {10.1080/17415977.2016.1138946},
+journal = {Inverse Problems in Science and Engineering},
+month = {Feb}
+}
+
+@misc{Matlab,
+author = {Matlab},
+title = {fminsearch.html},
+url = {https://ch.mathworks.com/help/matlab/ref/fminsearch.html},
+howpublished = {Online documentation},
+year = {2021},
+notes = {Accessed: 30 September}
+}

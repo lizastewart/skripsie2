@@ -1,6 +1,6 @@
 \chapter{Discussion} \label{discussion}
 %TODO
-%Make sure you discuss: a) the fact that your fitted kappa values give better agreement with measurements, b) large discrepancy between prior and posterior kappa at high T is due to radiation which dominates at high T, and c) difference between posterior FEM model and data at around 100-200 C is due to latent heat of vaporisation not captured in the FEM model as you used it.
+
 In Figure \ref{final_graph} the difference in output from running the model with the new $\kappa$-values, Eurocode $\kappa$ and the measured data can be seen. 
 The improved accuracy is clear from in Table \ref{errortab} as the error for the model using MCMC values is consistently smaller than the error incurred by the same model using the Eurocode thermal conductivity ($\kappa$) values.
 There are instances where the error from the model using the MAP $\kappa$-values is smaller than the model using the MCMC $\kappa$-values. 
@@ -27,11 +27,19 @@ This would make the analysis more heuristic and decrease the dependence of the r
 Additionally the program could've been run for a longer time to ensure more samples. and thereby a more accurate approximation of the population mean. 
 Unfortunately the main limitation in this project was computational time.
 
-The MAP analysis could be fine-tuned yet that would be pointless as it is already known that the probability of the thermal conductivity is not symmetrically distributed and that the mean is a more accurate description of the data than the Maximum a posteriori.
+It is known that the probability of the thermal conductivity is not symmetrically distributed and that the mean is a more accurate description of the data than the Maximum a posteriori.
+Yet the Maximum a posterioiri can be used to evaluate if sufficient samples were generated.
 
 
-In retrospect there should have been more cleaning of the measured data before analysis was done. Inaccuracies arose due to the first 90 sec of the measurements being taken before the furnace was turned on and the thermocouples still measuring after the fire died down.
-These measurement discrepancies between model and measurement should have been better taken into account and excluded form modelling. 
+
+
+\cite{somasund:2016} also used the Metropolis Hastings algorithm with Markov-Chain Monte Carlo (MH-MCMC) sampling to inversely solve heat transfer equations.
+They additionally compared the MH-MCMC sampling technique to both the Parallel Tempering sampling technique and the Evolutionary Monte Carlo techniques.
+They found that the standard MH-MCMC sampling technique is accurate enough when a reactively small standard deviation is used but that accuracy drastically decreases with higher standard deviations.
+This is further proof that also solving for the standard deviation would increase the accuracy of the MH-MCMC analysis.
+They also found that the Parallel Tempering and Evolutionary Monte Carlo techniques were far more accurate even with higher standard deviations.
+%In retrospect there should have been more cleaning of the measured data before analysis was done. Inaccuracies arose due to the first 90 sec of the measurements being taken before the furnace was turned on and the thermocouples still measuring after the fire died down.
+%These measurement discrepancies between model and measurement should have been better taken into account and excluded form modelling. 
 
 This research can be expanded and applied to the measured data available for Eucalyptus. 
 Applying the same algorithm to different data sets and obtaining accurate modelling from both data sets would be confirmation that the algorithm is accurate enough to be further explored for usage in practice.

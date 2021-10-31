@@ -28,10 +28,10 @@ Obtaining and standardising thermal diffusivity values for different species of 
 If modelling accuracy can be increased, the use of modelling to confirm fire tests or to replace small-scale fire tests will become more feasible.
 
 	\begin{figure}
-	\label{kvalue_fig}
 	\centering
 	\includegraphics[width = 0.5\linewidth]{figures/Eurok.png}
 	\caption{Standard temperature-thermal conductivity relationship for timber from \citep{Euro:2004}}
+	\label{kvalue_fig}
 	\end{figure}
 	
 	
@@ -44,7 +44,7 @@ During the course of the project, the student will aim to meet the following obj
  \item Solve for the thermal diffusivity using Bayesian Inversion using the following methods:
  	\begin{enumerate}
  		\item Maximum a Posteriori
- 		\item Markov-Chain Monte Carlo 	
+ 		\item Markov-chain Monte Carlo 	
  	\end{enumerate}
 \end{enumerate}
 
@@ -73,8 +73,8 @@ Spectral embedding, or spectral likelihood expansion, was used to solve for the 
 Similarly to this report, the research of \citet{Wagner:2021} involved the creation and use of a Bayesian model to solve a heat diffusion problem.
 The likelihood function used for this analysis was similar to the likelihood function explained later in the report.
 The focus of the article was to determine the accuracy of stochastic spectral likelihood embedding, stochastic spectral embedding and spectral likelihood functions to calculate the thermal diffusivity.
-A Markov Chain Monte-Carlo analysis was done to compare to values from other methods.
-Although the Markov Chain Monte-Carlo method was not discussed in detail in the article, the usage of Bayesian modelling to create a likelihood function that the MCMC analysis could be done on is similar to the process followed throughout this project.
+A Markov chain Monte Carlo analysis was done to compare to values from other methods.
+Although the Markov chain Monte Carlo method was not discussed in detail in the article, the usage of Bayesian modelling to create a likelihood function that the MCMC analysis could be done on is similar to the process followed throughout this project.
 
 %\citet{Thi:2016}
 During the World Conference on Timber Engineering, \citet{Thi:2016} presented a paper regarding the mathematical modelling of timber in fire. 
@@ -91,6 +91,23 @@ This significant jump in the thermal conductivity is because the values modelled
 This cracking effect was assumed to occur at around 500\textdegree C.
 These values were solved for using the computer program TEMPCALC.
 TEMPCALC is based on a two-dimensional finite element model that solves for the temperature dependant thermal properties using the differential heat transfer equations.
-The values obtained by \citeauthor{Koning:1999} are shown in
+The values obtained by \citeauthor{Koning:1999} are shown in Table \ref{tablekoning}.
 
-%Grammarly checked 
+\begin{table} 
+	\caption{$\kappa$-values at different temperatures obtained by \citeauthor{Koning:1999}}
+	\label{tablekoning}
+	\begin{tabular}{ r r }
+	\toprule
+	Temperature & Conductivity\\
+	{\textdegree}C & W/(m\ K)\\
+	\midrule
+	0&0.12\\
+	200&0.15\\
+	350&0.07\\
+	500&0.09\\
+	800&0.35\\
+	1200&1.50\\
+	\bottomrule
+	\end{tabular}
+\end{table}
+

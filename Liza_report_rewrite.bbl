@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{31}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -65,6 +65,12 @@
 \newblock fminsearchbnd, fminsearchcon.
 \newblock MATLAB Central File Exchange.
 \newline\bblurlpre\url{https://www.mathworks.com/matlabcentral/fileexchange/8277-fminsearchbnd-fminsearchcon}
+
+\bibitem[{\citenamefont{documentation}(2021)}]{Matlab}
+\bibnamefont{documentation}, \bibfnamefont{M.} (2021).
+\newblock fminsearch.html.
+\newblock Online documentation.
+\newline\bblurlpre\url{https://ch.mathworks.com/help/matlab/ref/fminsearch.html}
 
 \bibitem[{\citenamefont{Fish}(2007)}]{Fish:2007}
 \bibnamefont{Fish}, \bibfnamefont{J.J.} (2007).
@@ -184,6 +190,14 @@
 \newblock \emph{Indoor and Built Environment}, \bblpp{} 1--16.
 \newblock \eprint{https://doi.org/10.1177/1420326X211035557}.
 \newline\bblurlpre\url{https://doi.org/10.1177/1420326X211035557}
+
+\bibitem[{\citenamefont{Somasundharam} \protect\BIBand{}
+  \citenamefont{Reddy}(2016)}]{somasund:2016}
+\bibnamefont{Somasundharam}, \bibfnamefont{S.} \protect\BIBand{}
+  \bibnamefont{Reddy}, \bibfnamefont{K.} (2016 Feb).
+\newblock Inverse estimation of thermal properties using bayesian inference and
+  three different sampling techniques.
+\newblock \emph{Inverse Problems in Science and Engineering}.
 
 \bibitem[{\citenamefont{Thi} \emph{\bbletal{}}(2016)\citenamefont{Thi},
   \citenamefont{Khelifa}, \citenamefont{Ganaoui} \protect\BIBand{}

@@ -38,7 +38,7 @@
 %==== Graphics and Color ============================================
 \usepackage{graphicx}%........................... Graphicx loaded in usthesis
 \usepackage{color}%.............................. Color setup
-\usepackage{float}%.............................. To tell an image exactly where you want it placed
+\usepackage{float}%.............................. To tell an image exactly where you want it placed using [H]-to tell it you want it HERE
 %==== Additional USthesis packages ==================================
 
 \usepackage{ussummary}%.......................... Mech Eng summary page (in usthesis pack)
@@ -67,14 +67,14 @@
 
 %For code
 \usepackage{listings}
-\usepackage{color}
+\usepackage{xcolor}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
 \lstset{frame=tb,
-  language=Matlab,
+  language=Matlab,%You can adjust the code language here
   aboveskip=3mm,
   belowskip=3mm,
   showstringspaces=false,
@@ -94,22 +94,27 @@
 \usepackage{textcomp}
 %\inputencoding{utf8}
 
-%To add caption to matrix
+%To annotate a matrix
 \usepackage{mathtools}
 \usepackage{blkarray, bigstrut}
-\usepackage{subfigure}
-% Please insert user defined commands here
-% and NOT in the document itself!
-%
-\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
-\newcommand{\ten}[1]{\times 10^{#1}}
-\newcommand{\inv}{^{-1}}
+
+%To create multiple subfigures with their own subcaptions
+\usepackage{subcaption}
 
 \usepackage{booktabs}
 \usepackage{xcolor}
 \usepackage{colortbl}
-
+%To enable landscape figures
 \usepackage{rotating}
+
+%To fix overfull \hbox errors
+\sloppy
+
+% User defined commands
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\ten}[1]{\times 10^{#1}}
+\newcommand{\inv}{^{-1}}
+
 
 \makeatother
 %==== Title Page ====================================================

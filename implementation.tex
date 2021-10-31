@@ -27,11 +27,11 @@ The data used was acquired by \cite{Westhuyzen:2020} for an article assessing th
 	\end{figure}
 	In Figure \ref{measured_fig} the measured temperatures at different depths in the sample can be seen. 
 	These same depths will be used in the model and throughout the project to analyse the accuracy of the modelling that was done.
-	\begin{figure}[H]
-	\label{measured_fig}
+	\begin{figure}[H]	
 	\centering
 	\includegraphics[width=\textwidth,]{figures/measured_plot.png}
 	\caption{Average of measured temperatures at the different depths}
+	\label{measured_fig}
 \end{figure}
 
 	\subsection{Potential inaccuracies}
@@ -70,17 +70,16 @@ The derivation and adaptation of the model are expanded on below.
 %    \end{block}
 %  \end{blockarray}
 %\end{equation}
-	
-	The model discretises the wooden element into 32 first order one-dimensional elements. 
+The model discretises the wooden element into 32 first-order one-dimensional elements. 
 	%For finite element analysis, there are always more elements used to generate the model than needed for evaluation. This is done to improve the accuracy of said model.
 	This number of elements was sufficient to obtain converged results.
 	The model is a one-dimensional finite element model that takes time differentiation into account.
 	
 \begin{figure}[H]
-	\label{og_modeldata}
 	\centering
 	\includegraphics[width=\textwidth,]{figures/originalmugraph.jpg}
 	\caption{Output of finite element model using $\kappa$-values as indicated in EN 1995:1-2-2004}
+	\label{og_modeldata}
 \end{figure}	
 
 	\subsection{Derivation}%"CREATION?"
@@ -95,11 +94,11 @@ The derivation and adaptation of the model are expanded on below.
 
 	\end{enumerate}
 	\subsubsection{Stationary heat conduction}
-	\begin{figure}[H]
-	\label{femfig}
+	\begin{figure}[H]	
 	\centering
 	\includegraphics[width = 0.75\linewidth]{figures/fem_sketch.png}
 	\caption{Visualisation of model in one-dimension}
+	\label{femfig}
 	\end{figure}
 	Based on \citet{Hughes:1987} and class notes from Informatics 314, the derivation started as a one-dimensional stationary heat conduction problem with the energy balance equation and the heat conduction equation.
 	\begin{equation}
@@ -156,10 +155,11 @@ The derivation and adaptation of the model are expanded on below.
 	\end{equation*}
 	
 	\subsubsection{Boundaries} \label{airsec}
-	\begin{figure}[H]\label{airelmfig}
+	\begin{figure}[H]
 	\centering
 	\includegraphics[width = 0.75\linewidth]{figures/fem_fire_sketch.png}
 	\caption{Visualisation of one-dimensional model with air elements and external conditions added}
+	\label{airelmfig}
 	\end{figure}
 	
 	One of the additional difficulties in modelling is that the known boundary temperatures are measured in the air of the furnace and assumed for the air outside the furnace.
@@ -300,7 +300,8 @@ The code for the adapted model function, \texttt{model\_kinput.m} can be seen in
 	
 	The focus of the adaptation was the \texttt{main.m} script in the original program. 
 	Within the \texttt{main.m} function all of the global variables used were initially defined.
-	The defining of variables was moved into a new function \texttt{instantiate\_all.m}, this function defined all the global variables used within the original \texttt{main.m} as well as the measured temperature data. 
+	%The defining of variables was moved into a new function \texttt{instantiate\_all.m}, this function defined all the global variables used within the original \texttt{main.m} as well as the measured temperature data. 
+	The defining of variables was moved into a new function that defines all the global variables used within the original \texttt{main.m} as well as the measured temperature data. 
 	Here the thickness of the timber element was defined as 99 mm and was divided into 30 elements with 2 nodes per element. 
 	Two additional elements were also added to incorporate the air elements as explained in Section \ref{airsec}.
 	The global variable \texttt{kpine} was left uninstantiated, instead it will be fed to the new adapted model (\texttt{model\_kinput.m}).
@@ -336,7 +337,7 @@ Each aspect of this equation below will be further explored in the sections belo
 	\end{equation}
 
 	The prior probability function (Equation \ref{prior} ) is based on the $\kappa$-values assumed prior to any simulation or analysis. 
-	The $\sigma_{\mu}$ in this equation was assumed to be equal to $0.13$ W/m$\cdot$K,
+	The $\sigma_{\mu}$ in this equation was assumed to be equal to $0.13$ W/(m$\cdot$K),
 	In this case, the prior values are indicated as $\mu$ and refer to the vector of $\kappa$-values(\ref{euroK}) at specific temperatures as indicated. The temperatures are not exactly similar to the temperatures used in Eurocode, this is due to an attempt at modelling the effect of evaporation at 100 \textdegree C.
 
 \begin{equation}\label{euroK}
@@ -361,8 +362,8 @@ Each aspect of this equation below will be further explored in the sections belo
 	
 The $x$ (in Equation \ref{prior}) refers to a vector of randomised $\kappa$-values that correspond with the same temperatures as the values in the $\mu$ vector.
 The first iteration of randomised $\kappa$-values are generated by creating a random perturbation of the $\mu$ vector.
-By multiplying the $\mu$ vector with $((0.5+\vec{\text{rand}})\cdot1.5)$ the first values of $x$ are guaranteed to be within an acceptable range of the prior values.
-The process of obtaining the $x$ vector after the first iteration is discussed later in section \ref{mcmcexp}.
+By multiplying the $\mu$ vector with $((0.5+\vec{\text{rand}})\times 1.5)$ the first values of $x$ are guaranteed to be within an acceptable range of the prior values.
+The process of obtaining the $x$ vector after the first iteration is discussed later in Section \ref{mcmcexp}.
 
 
 Initially, the program was written to generate completely random new values for the first iteration of $x$. 
@@ -376,7 +377,7 @@ The prior function in this case was relatively easy to generate and incorporate 
 		\pi(T|x) \propto \exp\left(-\frac{\left(T-M(x)\right)^2}{2\sigma_{\text{temp}}^2}\right)
 		\end{equation}
 		
-		The likelihood probability was more complex to implement, as this required utilisation of the function created from the finite element model as discussed in section \ref{femexpl}.
+		The likelihood probability was more complex to implement, as this required utilisation of the function created from the finite element model as discussed in Section \ref{femexpl}.
 		This function will output the probability of the modelled values $M(x)$ given the measured temperature values ($T$).
 		As can be seen in Equation \ref{likelihoodfunc}, the $M(x)$ vector is written as a function.
 		The function indicated here takes the new randomised $x$ vector and then runs the model to provide a new temperature distribution over time at various nodes.
@@ -384,8 +385,8 @@ The prior function in this case was relatively easy to generate and incorporate 
 		For the likelihood function, the $\sigma_{\text{temp}}$ value was assumed to be 15\textdegree C.
 		 
 
-	\subsection{Markov Chain Monte-Carlo integration}\label{mcmcexp}
-	The two main parts of the MCMC integration (as mentioned in section \ref{tech}) are: how a value is deemed acceptable (Monte Carlo), and how the next random sample is selected after a previous sample is accepted (Markov Chain).	
+	\subsection{Markov chain Monte-Carlo integration}\label{mcmcexp}
+	The two main parts of the MCMC integration (as mentioned in Section \ref{tech}) are: how a value is deemed acceptable (Monte Carlo), and how the next random sample is selected after a previous sample is accepted (Markov chain).	
 As explained in Section \ref{markovexpl} a step size is a crucial part of determining the next random sample.
 	For this project, a step size of $0.05$ W/m$\cdot$K was chosen.
 
@@ -419,18 +420,17 @@ As explained in Section \ref{markovexpl} a step size is a crucial part of determ
 	A potential problem encountered with the standard acceptance probability method (shown in Section \ref{MCint_sec}) is that the magnitudes of the values were not considered. 
 	This problem lead to many false positives, as incorrect values were accepted even though they were not acceptable. 
 	The acceptance criterion was based on Equation \ref{acceptcriteq1}.
-	The $i$ value was chosen to be 50 arbitrarily, initially $i=1$ but as can be seen in Figure \ref{expcurvefig} this acceptance was still to lenient.
+	The $i$ value was chosen to be 50 arbitrarily, initially $\delta = 0.5$ but as can be seen in Figure \ref{expcurvefig} this acceptance was still too lenient.
 	\begin{equation}\label{acceptcriteq1}
-	\exp\left(\frac {\pi^*(x_{n+1})-\pi^*(x_n)}{\pi^*(x_{\text{ref}})i}\right)\\
-	\text{with} \quad i = 0.02\\
+	\exp\left(\frac {\pi^*(x_{n+1})-\pi^*(x_n)}{\pi^*(x_{\text{ref}})\delta}\right)\\
+	\text{with} \quad \delta = 0.02\\
 	\end{equation}
 	
-	\begin{figure}[H]\label{expcurvefig}
+	\begin{figure}[H]
 	\centering
 	\includegraphics[width = 0.5\linewidth]{figures/e_expl_curve.png}
-	\caption{Graph explaining the difference in acceptance rates (Generated at https://www.geogebra.org/graphing/g7kyzwce)}
-	%TODO
-	%Fix sizing
+	\caption{Graph explaining the difference in acceptance rates}
+	\label{expcurvefig}	
 	\end{figure}
 	
 	To allow for sufficient number of samples the program was run until 20 000 samples were generated.
@@ -441,7 +441,7 @@ As explained in Section \ref{markovexpl} a step size is a crucial part of determ
 	
 	
 	
-	\section{MAP}
+	\section{MAP parameter estimation }
 The maximum a posteriori of the posteriori function was also determined to allow for further comparison of results.
 All the values and constants except for the $\kappa$-values were kept the same as in the MCMC integration to allow the results to be compared on the same basis.  
 	The optimisation to determine the maximum value of the posteriori function was initially done utilising the built-in Matlab optimisation algorithm \texttt{femsearchmin.m}. 

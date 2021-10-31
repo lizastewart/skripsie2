@@ -135,6 +135,88 @@ function xvalue2 = takexsteps(xvalue1)
 end
 \end{lstlisting}
 
+\section*{MCMC main}
+\begin{lstlisting}
+
+rng(1e7,"twister");
+num_of_runs = 5000;
+global temps mu_values stepsize 
+temps = [0,60,100,140, 200,350,500,800,1200];
+mu_values = [0.12, 0.12, 0.12, 0.12, 0.15, 0.07, 0.09, 0.35, 1.5]; %Based on Eurocode values
+stepsize = 0.05;
+allMUvalues = zeros([num_of_runs,9]);
+instantiate_all();
+
+%% Random start values generate
+%rand_x = abs(mu_values * 2);
+%rand_x = abs(mu_values + rand_in_rangesz(-0.05,0.5,9));
+rand_x = abs(mu_values.*(0.5+rand(1,9)*1.5));
+rand_x(1:2) = mu_values(1:2);
+rand_sigmaT = 15;  
+rand_sigmaMU = 0.13; 
+ 
+%% MCMC Instantiate
+sigmaT1 = rand_sigmaT;
+sigmaMU1 = rand_sigmaMU;
+xvalues1 = rand_x;
+alpha = 0.2;
+
+posteriorref = posteriori_func(mu_values,sigmaT1,sigmaMU1);
+
+tic
+posterior1 = posteriori_func(xvalues1,sigmaT1,sigmaMU1);
+toc
+
+i = 1;
+j = 0;
+%% Itteration MCMC 
+while i <= num_of_runs
+    j = j + 1;
+    xvalues2 = takexsteps(xvalues1);
+
+[mu_values; xvalues1; xvalues2]
+
+    %constant sigma
+    sigmaMU2 = sigmaMU1;
+    sigmaT2 = sigmaT1;
+    
+tic
+    posterior2 = posteriori_func(xvalues2,sigmaT2,sigmaMU2);
+toc
+    %%Acceptance probability
+    del = exp((posterior2-posterior1)/(abs(posteriorref)/50));
+    q = rand;
+
+[i,j, posterior1, posterior2, del, q]
+    if (q < del)
+
+        %Add values to stored accepted values
+        allMUvalues(i,:) = xvalues2;       
+        fprintf("\n Accepted %d\n\n",i);
+        
+        %Set accepted value as our new stepping stone
+        xvalues1 = xvalues2;
+        posterior1 = posterior2;
+        post(i) = posterior1-posteriorref;        
+        comp(i) = del;        
+        count(i) = j;        
+        i=i+1;
+        j=0;
+
+       figure(11)
+       scatter(temps,allMUvalues(i-1,:),'black','filled');
+
+   end
+end
+
+%% Averages
+allMUvalues;
+for i=1:9
+    muAverage(i) = mean(allMUvalues(1:length(count),i));
+    muStd(i) = std(allMUvalues(1:length(count),i));
+end
+\end{lstlisting}
+
 \section*{MAP determination}
 \begin{lstlisting}
 global temps stepsize mu_values
@@ -156,3 +238,4 @@ upBound = [0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 20];
 fun = @(x_values) -1*posteriori_func(x_values,sigmaT1,sigmaMU1);
 [mu_map,fval] = fminsearchbnd(fun, x_values,lowBound,upBound,fminopts);
 \end{lstlisting}
+
