@@ -7,6 +7,8 @@ Reallocating 'name_of_file' (item size: 1) to 15 items.
 A level-1 auxiliary file: verklaring.aux
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: acknowledgements.aux
 Reallocating 'name_of_file' (item size: 1) to 12 items.
 A level-1 auxiliary file: nomenkl.aux
 Reallocating 'name_of_file' (item size: 1) to 17 items.
@@ -29,44 +31,44 @@ Reallocating 'name_of_file' (item size: 1) to 12 items.
 Database file #1: USBibsample.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 28 entries,
+You've used 29 entries,
             3324 wiz_defined-function locations,
-            885 strings with 10387 characters,
-and the built_in function-call counts, 21734 in all, are:
-= -- 1728
-> -- 507
-< -- 47
-+ -- 212
-- -- 166
-* -- 1948
-:= -- 2779
-add.period$ -- 97
-call.type$ -- 28
-change.case$ -- 187
-chr.to.int$ -- 43
-cite$ -- 28
-duplicate$ -- 2118
-empty$ -- 2045
-format.name$ -- 363
-if$ -- 4455
+            891 strings with 10548 characters,
+and the built_in function-call counts, 22258 in all, are:
+= -- 1772
+> -- 517
+< -- 48
++ -- 216
+- -- 169
+* -- 1989
+:= -- 2857
+add.period$ -- 100
+call.type$ -- 29
+change.case$ -- 193
+chr.to.int$ -- 44
+cite$ -- 29
+duplicate$ -- 2168
+empty$ -- 2095
+format.name$ -- 369
+if$ -- 4559
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 265
-newline$ -- 180
-num.names$ -- 114
-pop$ -- 609
+missing$ -- 270
+newline$ -- 186
+num.names$ -- 118
+pop$ -- 620
 preamble$ -- 1
-purify$ -- 165
+purify$ -- 170
 quote$ -- 0
-skip$ -- 598
+skip$ -- 612
 stack$ -- 0
-substring$ -- 1244
-swap$ -- 963
+substring$ -- 1275
+swap$ -- 981
 text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 225
+type$ -- 234
 warning$ -- 0
-while$ -- 195
+while$ -- 200
 width$ -- 0
-write$ -- 402
+write$ -- 415

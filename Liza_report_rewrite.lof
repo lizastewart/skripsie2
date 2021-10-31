@@ -9,19 +9,19 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Visualisation of thermal degradation categories}}{6}{figure.2.1}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Two-dimensional example of Markov Chain application}}{11}{figure.2.2}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Visual representation of Nedler-Mead transformations a) Reflection, b) Expansion, c) Contraction, d) Shrink contraction}}{13}{figure.2.3}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Visual representation of Nedler-Mead transformations a) Reflection, b) Expansion, c) Contraction, d) Shrink contraction \citep {sachin:2016}}}{14}{figure.2.3}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Thermocouple layout in test conducted by \cite {Westhuyzen:2020} cross-section (left) and overall layout (right)}}{15}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Standard ISO fire curve}}{15}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Average of measured temperatures at the different depths}}{16}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Output of finite element model using $\kappa $-values as indicated in EN 1995:1-2-2004}}{17}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Visualisation of model in one-dimension}}{18}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Visualisation of one-dimensional model with air elements and external conditions added}}{19}{figure.3.6}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Graph explaining the difference in acceptance rates (Generated at https://www.geogebra.org/graphing/g7kyzwce)}}{25}{figure.3.7}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Thermocouple layout in test conducted by \cite {Westhuyzen:2020} cross-section (left) and overall layout (right)}}{16}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Standard ISO fire curve}}{16}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Average of measured temperatures at the different depths}}{17}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Output of finite element model using $\kappa $-values as indicated in EN 1995:1-2-2004}}{18}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Visualisation of model in one-dimension}}{19}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Visualisation of one-dimensional model with air elements and external conditions added}}{20}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Graph explaining the difference in acceptance rates (Generated at https://www.geogebra.org/graphing/g7kyzwce)}}{26}{figure.3.7}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Resulting $\kappa $ values compared to Eurocode standard values}}{27}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Distribution of samples at different temperatures with MCMC and MAP results indicated}}{29}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Graph of measured data compared to model output}}{30}{figure.4.3}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Resulting $\kappa $ values compared to Eurocode standard values}}{28}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Distribution of samples at different temperatures with MCMC and MAP results indicated}}{30}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Graph of measured data compared to model output}}{31}{figure.4.3}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

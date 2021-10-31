@@ -25,30 +25,30 @@
 \contentsline {subsection}{\numberline {2.4.2}Monte Carlo Integration}{11}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Metropolis-Hastings Algorithm}{12}{subsection.2.4.3}%
 \contentsline {section}{\numberline {2.5}Maximum a Posteriori}{12}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Implementation}{14}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Existing data}{14}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Summary of test}{14}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Potential inaccuracies}{16}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Finite Element Modelling}{16}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Existing Model}{17}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Derivation}{17}{subsection.3.2.2}%
-\contentsline {subsubsection}{Stationary heat conduction}{18}{section*.14}%
-\contentsline {subsubsection}{Boundaries}{19}{section*.15}%
-\contentsline {subsubsection}{One-dimensional diffusion}{20}{section*.16}%
-\contentsline {subsection}{\numberline {3.2.3}Adapted Model}{21}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Inversion method}{22}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Prior probability}{22}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Likelihood probability function}{23}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Markov Chain Monte-Carlo integration}{24}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}MAP}{25}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Results}{26}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Resulting $\kappa $-values}{26}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Evaluation of error}{27}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Thermal diffusivity}{28}{subsection.4.1.2}%
-\contentsline {chapter}{\numberline {5}Discussion}{31}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Summary and Conclusion}{33}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Relevant code segments}{34}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Derivation of Implemented FEM Model}{38}{appendix.B}%
-\contentsline {chapter}{List of References}{45}{section*.23}%
+\contentsline {chapter}{\numberline {3}Implementation}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Existing data}{15}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Summary of test}{15}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Potential inaccuracies}{17}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Finite Element Modelling}{17}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Existing Model}{18}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Derivation}{18}{subsection.3.2.2}%
+\contentsline {subsubsection}{Stationary heat conduction}{19}{section*.14}%
+\contentsline {subsubsection}{Boundaries}{20}{section*.15}%
+\contentsline {subsubsection}{One-dimensional diffusion}{21}{section*.16}%
+\contentsline {subsection}{\numberline {3.2.3}Adapted Model}{22}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Inversion method}{23}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Prior probability}{23}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Likelihood probability function}{24}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Markov Chain Monte-Carlo integration}{25}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}MAP}{26}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Results}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Resulting $\kappa $-values}{27}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Evaluation of error}{28}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Thermal diffusivity}{29}{subsection.4.1.2}%
+\contentsline {chapter}{\numberline {5}Discussion}{32}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Summary and Conclusion}{34}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Relevant code segments}{35}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Derivation of Implemented FEM Model}{39}{appendix.B}%
+\contentsline {chapter}{List of References}{46}{section*.23}%
 \babel@toc {english}{}
 \babel@toc {english}{}

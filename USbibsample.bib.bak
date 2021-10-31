@@ -1410,3 +1410,12 @@ author = {V.D. Thi and M. Khelifa and M. El Ganaoui and Y. Rogaume},
 venue = {Vienna, Austria},
 month = {Aug}
 }
+
+@misc{sachin:2016,
+title = {Nelder-Mead Optimization},
+url = {https://codesachin.wordpress.com/2016/01/16/nelder-mead-optimization/},
+author = {Sachin Joglekar},
+howpublished = {Sachin Joglekar's Blog},
+year = {2016},
+month = {Jan}
+}

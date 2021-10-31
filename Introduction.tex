@@ -4,7 +4,7 @@ Previous similar projects will be investigated, and the value of this research w
 
 \section{Background and Motivation}
 
-Traditionally the thermal diffusivity, otherwise referred to as the $\alpha$-value, of timber is based simply on the EN 1995:1-2-2004, further referred to as the Eurocode, or similar standards.
+Traditionally the thermal diffusivity, otherwise referred to as the $\alpha$-value, of timber is based simply on the EN 1995:1-2-2004\citep{Euro:2004}, further referred to as the Eurocode, or similar standards.
 This research project will aim to obtain the thermal diffusivity of cross-laminated SA-Pine timber by further analysing data originally obtained by \citet{Westhuyzen:2020} for their study of the samples' charring rate.
 
 The thermal diffusivity of timber is an unobservable quality that cannot be measured directly.
@@ -78,11 +78,19 @@ Although the Markov Chain Monte-Carlo method was not discussed in detail in the 
 
 %\citet{Thi:2016}
 During the World Conference on Timber Engineering, \citet{Thi:2016} presented a paper regarding the mathematical modelling of timber in fire. 
-In their model they considered the accounted for heat transfer through thermal conduction,convection and radiation similarly to what was done in the model created for this project.
-Their model was created in Abaqus and used simplified values for the thermal conductivity and specific heat of the laminated timber that was modelled.
-The main goal of this model was to determine the change of the cross-section of timber due to charring, to achieve this the model had to be constructed in two-dimensions.
+In their model they considered the accounted for heat transfer through thermal conduction, convection and radiation similar to what was done in the model created for this project.
+Their model was created in Abaqus and compared the model using different thermal conductivities and specific heat values.
+The main goal of this model was to determine the change of the cross-section of timber due to charring, to achieve this the model had to be constructed in three-dimensions.
+Their research proves that numerical modelling can be used to accurately predict the charring of timber and the change in cross section.
+The effect of different thermal conductivity values on the resulting temperature curves produced by their model is also clear in their results.
 
 
+The current Eurocode thermal $\kappa$-values were based on a study by \citet{Koning:1999}.
+The most significant change in the $\kappa$-values obtained by \citeauthor{Koning:1999} compared to those of previous studies occurred after 350\textdegree C. 
+This significant jump in the thermal conductivity is because the values modelled by the authors also encompassed the additional heat transfer due to cracks in the charred layer.
+This cracking effect was assumed to occur at around 500\textdegree C.
+These values were solved for using the computer program TEMPCALC.
+TEMPCALC is based on a two-dimensional finite element model that solves for the temperature dependant thermal properties using the differential heat transfer equations.
+The values obtained by \citeauthor{Koning:1999} are shown in
 
-\citet{Koning:1999}
 %Grammarly checked 

@@ -68,7 +68,7 @@ This would have been impractical to achieve during a single semester as these it
 \subsection{Evaluation of error}
 Despite the uncertainties connected to the problem, a quantifiable measure of error is still required to allow unbiased assessment of the success of the algorithm and results.
 The obtained $\kappa$-values will be used to rerun the model and obtain the new modelled temperature for each depth. 
-For each depth the error will be quantified using the norm of the relative error at the seven different depths, noted as $i$.
+For each depth the error will be quantified using the norm of the relative error at the seven different depths, denoted as $i$.
 The relative error will be calculated according to  Equation \ref{relerror}. 
 The new modelled output errors are compared to the Eurocode $\kappa$-value output errors to assess if the methods used produced a more accurate representation of the data.
 The error at different depths are summarised in Table \ref{errortab} and the lowest error at that depth is highlighted in green. 
@@ -77,7 +77,7 @@ This error measurement can be used to asses the error in the model or assumption
 It is important to note that this error does not only quantify the error in the thermal conductivity but any errors due to model assumptions are also encompassed.
 
 \begin{equation}\label{relerror}
-\epsilon(i) = \frac{\norm{\hat{x}(i)-x(i) }_2}{\norm{x(i)}_2} \quad \quad i= 1, ... ,7
+\epsilon _i = \frac{\norm{\hat{x}_i-x_i }_2}{\norm{x_i}_2} \quad \quad i= 1, ... ,7
 \end{equation}
 
 \begin{table}[H] \label{errortab}

@@ -33,7 +33,7 @@ As the thermal conductivity and thermal diffusivity will only be assessed at spe
 	\begin{tabular}{ r r r r }
 	\toprule
 	\multicolumn{1}{c}{Temp}& \multicolumn{1}{c}{$c_p$}& \multicolumn{1}{c}{$\rho$} & \multicolumn{1}{c}{$c_p\rho$}\\
-	\multicolumn{1}{c}{(\textdegree C)} & \multicolumn{1}{c}{$(J/kg/K)$} &  \multicolumn{1}{c}{$(kg/m^3)$} & \multicolumn{1}{c}{$(kJ/kg/K)$}\\
+	\multicolumn{1}{c}{(\textdegree C)} & \multicolumn{1}{c}{$(J/(kg\ K))$} &  \multicolumn{1}{c}{$(kg/m^3)$} & \multicolumn{1}{c}{$(kJ/(kg\ K))$}\\
 	\midrule
 	0   & 1530 & 479&732.8\\
 	60  &1652	& 479&791.3\\
@@ -254,6 +254,7 @@ Luckily the minimum is simply a negative maximum.
 According to the \texttt{fminsearch} Matlab documentation (\url{https://ch.mathworks.com/help/matlab/ref/fminsearch.html}) , the algorithm is based on the Nelder-Mead algorithm \citep{Lagarias:1998}.
 The Nelder-Mead algorithm is an unconstrained heuristic direct search method.
 The heuristic aspect of the algorithm means that it searches the function space in a guided random manner.
+For further understanding of the Nelder-Mead optimisation algorithm, \citet{sachin:2016} was consulted.
 
 Nelder-Mead uses a simplex, a triangle in the dimension needed, to find the minimum.
 In two-dimension, the simplex is simply a triangle, where each point has a $x$ and $y$ coordinate and is notated as. 
@@ -278,7 +279,7 @@ The result is a simplex that moves over a surface in search of the lowest point 
 \begin{figure}\label{neldermeadfig}
 \centering
 \includegraphics[width=\linewidth]{figures/MAP_expl.png}
-\caption{Visual representation of Nedler-Mead transformations a) Reflection, b) Expansion, c) Contraction, d) Shrink contraction}
+\caption{Visual representation of Nedler-Mead transformations a) Reflection, b) Expansion, c) Contraction, d) Shrink contraction \citep{sachin:2016}}
 \end{figure}
 
 %gramarly done 17/10

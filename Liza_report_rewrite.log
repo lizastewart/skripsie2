@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.11)  30 OCT 2021 17:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.11)  31 OCT 2021 10:41
 entering extended mode
 **./Liza_report_rewrite.tex
 (Liza_report_rewrite.tex
@@ -579,24 +579,24 @@ File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 )
 \openout1 = `Liza_report_rewrite.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count317
@@ -618,7 +618,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 139.
+Package hyperref Info: Link coloring OFF on input line 140.
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -631,9 +631,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count323
 )
-LaTeX Info: Redefining \ref on input line 139.
-LaTeX Info: Redefining \pageref on input line 139.
-LaTeX Info: Redefining \nameref on input line 139.
+LaTeX Info: Redefining \ref on input line 140.
+LaTeX Info: Redefining \pageref on input line 140.
+LaTeX Info: Redefining \nameref on input line 140.
 
 (Liza_report_rewrite.out) (Liza_report_rewrite.out)
 \@outlinefile=\write3
@@ -643,15 +643,15 @@ LaTeX Info: Redefining \nameref on input line 139.
 <USlogo-top.pdf, id=187, 560.0925pt x 183.68625pt>
 File: USlogo-top.pdf Graphic file (type pdf)
 <use USlogo-top.pdf>
-Package pdftex.def Info: USlogo-top.pdf  used on input line 143.
+Package pdftex.def Info: USlogo-top.pdf  used on input line 144.
 (pdftex.def)             Requested size: 284.52756pt x 93.31717pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 143
+LaTeX Font Info:    Trying to load font information for U+msa on input line 144
 .
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 143
+LaTeX Font Info:    Trying to load font information for U+msb on input line 144
 .
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -668,7 +668,7 @@ am Files/MiKTeX/tex/latex/stellenbosch/logos/USlogo-top.pdf>]
 ame{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.145 \include{verklaring}
+l.146 \include{verklaring}
                            [1
 
 
@@ -699,14 +699,19 @@ l.145 \include{verklaring}
 \tf@toc=\write4
 \openout4 = `Liza_report_rewrite.toc'.
 
- [6] (Liza_report_rewrite.lof)
+ [6] (Liza_report_rewrite.lof
+Overfull \hbox (6.74965pt too wide) in paragraph at lines 12--12
+ \T1/cmr/m/n/12 tion, b) Ex-pan-sion, c) Con-trac-tion, d) Shrink con-trac-tion
+ ([]Joglekar[], 
+ []
+
+)
 \tf@lof=\write5
 \openout5 = `Liza_report_rewrite.lof'.
 
  [7
 
-]
-(Liza_report_rewrite.lot)
+] (Liza_report_rewrite.lot)
 \tf@lot=\write6
 \openout6 = `Liza_report_rewrite.lot'.
 
@@ -730,7 +735,7 @@ Chapter 1.
 
 
 ]
-<figures/Eurok.png, id=370, 315.42844pt x 385.44pt>
+<figures/Eurok.png, id=376, 315.42844pt x 385.44pt>
 File: figures/Eurok.png Graphic file (type png)
 <use figures/Eurok.png>
 Package pdftex.def Info: figures/Eurok.png  used on input line 33.
@@ -740,7 +745,7 @@ Package pdftex.def Info: figures/Eurok.png  used on input line 33.
 
  (techfoundation.tex
 Chapter 2.
-<figures/iso_phases.png, id=414, 845.559pt x 491.436pt>
+<figures/iso_phases.png, id=424, 845.559pt x 491.436pt>
 File: figures/iso_phases.png Graphic file (type png)
 <use figures/iso_phases.png>
 Package pdftex.def Info: figures/iso_phases.png  used on input line 24.
@@ -751,7 +756,7 @@ Package pdftex.def Info: figures/iso_phases.png  used on input line 24.
 
 
 ] [6 <./figures/iso_phases.png>] [7] [8] [9] [10]
-<figures/MC_squares1.png, id=507, 295.85532pt x 277.035pt>
+<figures/MC_squares1.png, id=517, 295.85532pt x 277.035pt>
 File: figures/MC_squares1.png Graphic file (type png)
 <use figures/MC_squares1.png>
 Package pdftex.def Info: figures/MC_squares1.png  used on input line 208.
@@ -762,83 +767,83 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
  (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (22.76944pt too wide) in paragraph at lines 254--257
+Overfull \hbox (22.76944pt too wide) in paragraph at lines 254--258
 []\T1/cmr/m/n/12 According to the \T1/cmtt/m/n/12 fminsearch \T1/cmr/m/n/12 Mat
 -lab doc-u-men-ta-tion ([]$\T1/cmtt/m/n/12 https : / / ch . mathworks .
  []
 
 [12]
-<figures/MAP_expl.png, id=543, 597.432pt x 421.0932pt>
+<figures/MAP_expl.png, id=555, 597.432pt x 421.0932pt>
 File: figures/MAP_expl.png Graphic file (type png)
 <use figures/MAP_expl.png>
-Package pdftex.def Info: figures/MAP_expl.png  used on input line 280.
+Package pdftex.def Info: figures/MAP_expl.png  used on input line 281.
 (pdftex.def)             Requested size: 398.0pt x 280.53105pt.
-) [13 <./figures/MAP_expl.png>]
+) [13] [14 <./figures/MAP_expl.png>]
 \openout2 = `implementation.aux'.
 
  (implementation.tex
 Chapter 3.
-<figures/TC_layout.png, id=556, 524.71031pt x 264.99pt>
+<figures/TC_layout.png, id=574, 524.71031pt x 264.99pt>
 File: figures/TC_layout.png Graphic file (type png)
 <use figures/TC_layout.png>
 Package pdftex.def Info: figures/TC_layout.png  used on input line 15.
 (pdftex.def)             Requested size: 398.0pt x 201.00632pt.
-<figures/firecurve.png, id=559, 839.38594pt x 514.92375pt>
+<figures/firecurve.png, id=577, 839.38594pt x 514.92375pt>
 File: figures/firecurve.png Graphic file (type png)
 <use figures/firecurve.png>
 Package pdftex.def Info: figures/firecurve.png  used on input line 24.
 (pdftex.def)             Requested size: 398.0pt x 244.15132pt.
-<figures/measured_plot.png, id=561, 840.13875pt x 511.9125pt>
+<figures/measured_plot.png, id=579, 840.13875pt x 511.9125pt>
 File: figures/measured_plot.png Graphic file (type png)
 <use figures/measured_plot.png>
 Package pdftex.def Info: figures/measured_plot.png  used on input line 33.
 (pdftex.def)             Requested size: 398.0pt x 242.50482pt.
-[14
+[15
 
 
 
 
-] [15 <./figures/TC_layout.png (PNG copy)> <./figures/firecurve.png>]
-[16 <./figures/measured_plot.png>]
+] [16 <./figures/TC_layout.png (PNG copy)> <./figures/firecurve.png>]
+[17 <./figures/measured_plot.png>]
 Overfull \hbox (4.34344pt too wide) in paragraph at lines 74--78
 []\T1/cmr/m/n/12 The model dis-cre-tises the wooden el-e-ment into 32 first or-
 der one-dimensional
  []
 
-<figures/originalmugraph.jpg, id=580, 1049.42062pt x 702.37407pt>
+<figures/originalmugraph.jpg, id=598, 1049.42062pt x 702.37407pt>
 File: figures/originalmugraph.jpg Graphic file (type jpg)
 <use figures/originalmugraph.jpg>
 Package pdftex.def Info: figures/originalmugraph.jpg  used on input line 82.
 (pdftex.def)             Requested size: 398.0pt x 266.37978pt.
-<figures/fem_sketch.png, id=581, 484.81125pt x 143.03438pt>
+<figures/fem_sketch.png, id=599, 484.81125pt x 143.03438pt>
 File: figures/fem_sketch.png Graphic file (type png)
 <use figures/fem_sketch.png>
-Package pdftex.def Info: figures/fem_sketch.png  used on input line 99.
+Package pdftex.def Info: figures/fem_sketch.png  used on input line 101.
 (pdftex.def)             Requested size: 298.5pt x 88.07146pt.
-[17 <./figures/originalmugraph.jpg>] [18 <./figures/fem_sketch.png (PNG copy)>]
-<figures/fem_fire_sketch.png, id=614, 860.46469pt x 191.21437pt>
+[18 <./figures/originalmugraph.jpg>] [19 <./figures/fem_sketch.png (PNG copy)>]
+<figures/fem_fire_sketch.png, id=633, 860.46469pt x 191.21437pt>
 File: figures/fem_fire_sketch.png Graphic file (type png)
 <use figures/fem_fire_sketch.png>
-Package pdftex.def Info: figures/fem_fire_sketch.png  used on input line 159.
+Package pdftex.def Info: figures/fem_fire_sketch.png  used on input line 161.
 (pdftex.def)             Requested size: 298.5pt x 66.33372pt.
-[19 <./figures/fem_fire_sketch.png>] [20]
-Overfull \hbox (23.8174pt too wide) in paragraph at lines 299--310
+[20 <./figures/fem_fire_sketch.png>] [21]
+Overfull \hbox (23.8174pt too wide) in paragraph at lines 301--312
 \T1/cmr/m/n/12 fined. The defin-ing of vari-ables was moved into a new func-tio
 n \T1/cmtt/m/n/12 instantiate_all.m\T1/cmr/m/n/12 ,
  []
 
-[21] [22] [23]
-<figures/e_expl_curve.png, id=690, 75.98978pt x 56.78357pt>
+[22] [23] [24]
+<figures/e_expl_curve.png, id=709, 75.98978pt x 56.78357pt>
 File: figures/e_expl_curve.png Graphic file (type png)
 <use figures/e_expl_curve.png>
-Package pdftex.def Info: figures/e_expl_curve.png  used on input line 428.
+Package pdftex.def Info: figures/e_expl_curve.png  used on input line 430.
 (pdftex.def)             Requested size: 199.0pt x 148.71335pt.
- [24]) [25 <./figures/e_expl_curve.png>]
+ [25]) [26 <./figures/e_expl_curve.png>]
 \openout2 = `results.aux'.
 
  (results.tex
 Chapter 4.
-<figures/kvalues_all_NOshi.png, id=707, 623.32875pt x 504.38437pt>
+<figures/kvalues_all_NOshi.png, id=726, 623.32875pt x 504.38437pt>
 File: figures/kvalues_all_NOshi.png Graphic file (type png)
 <use figures/kvalues_all_NOshi.png>
 Package pdftex.def Info: figures/kvalues_all_NOshi.png  used on input line 29.
@@ -849,61 +854,61 @@ Overfull \hbox (5.75157pt too wide) in paragraph at lines 21--52
  -values) at key tem-per-a-tures in-te-gral to this project,
  []
 
-[26
+[27
 
 
 
 
 ] (fig_scatterdata.tex
-<figures/histograph/scatter1.png, id=713, 421.575pt x 316.0608pt>
+<figures/histograph/scatter1.png, id=733, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter1.png Graphic file (type png)
 <use figures/histograph/scatter1.png>
 Package pdftex.def Info: figures/histograph/scatter1.png  used on input line 6.
 
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter2.png, id=714, 421.575pt x 316.0608pt>
+<figures/histograph/scatter2.png, id=734, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter2.png Graphic file (type png)
 <use figures/histograph/scatter2.png>
 Package pdftex.def Info: figures/histograph/scatter2.png  used on input line 10
 .
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter3.png, id=715, 421.575pt x 316.0608pt>
+<figures/histograph/scatter3.png, id=735, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter3.png Graphic file (type png)
 <use figures/histograph/scatter3.png>
 Package pdftex.def Info: figures/histograph/scatter3.png  used on input line 14
 .
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter4.png, id=716, 421.575pt x 316.0608pt>
+<figures/histograph/scatter4.png, id=736, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter4.png Graphic file (type png)
 <use figures/histograph/scatter4.png>
 Package pdftex.def Info: figures/histograph/scatter4.png  used on input line 18
 .
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter5.png, id=717, 421.575pt x 316.0608pt>
+<figures/histograph/scatter5.png, id=737, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter5.png Graphic file (type png)
 <use figures/histograph/scatter5.png>
 Package pdftex.def Info: figures/histograph/scatter5.png  used on input line 22
 .
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter6.png, id=718, 421.575pt x 316.0608pt>
+<figures/histograph/scatter6.png, id=738, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter6.png Graphic file (type png)
 <use figures/histograph/scatter6.png>
 Package pdftex.def Info: figures/histograph/scatter6.png  used on input line 26
 .
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter7.png, id=719, 421.575pt x 316.0608pt>
+<figures/histograph/scatter7.png, id=739, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter7.png Graphic file (type png)
 <use figures/histograph/scatter7.png>
 Package pdftex.def Info: figures/histograph/scatter7.png  used on input line 30
 .
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter8.png, id=720, 421.575pt x 316.0608pt>
+<figures/histograph/scatter8.png, id=740, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter8.png Graphic file (type png)
 <use figures/histograph/scatter8.png>
 Package pdftex.def Info: figures/histograph/scatter8.png  used on input line 34
 .
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter_legend.png, id=721, 81.30376pt x 46.67438pt>
+<figures/histograph/scatter_legend.png, id=741, 81.30376pt x 46.67438pt>
 File: figures/histograph/scatter_legend.png Graphic file (type png)
 <use figures/histograph/scatter_legend.png>
 Package pdftex.def Info: figures/histograph/scatter_legend.png  used on input l
@@ -913,34 +918,34 @@ ine 38.
 
 LaTeX Warning: Float too large for page by 29.29292pt on input line 41.
 
-) [27 <./figures/kvalues_all_NOshi.png>]
-<figures/final_graph.png, id=734, 981.6675pt x 520.19344pt>
+) [28 <./figures/kvalues_all_NOshi.png>]
+<figures/final_graph.png, id=753, 981.6675pt x 520.19344pt>
 File: figures/final_graph.png Graphic file (type png)
 <use figures/final_graph.png>
 Package pdftex.def Info: figures/final_graph.png  used on input line 131.
 (pdftex.def)             Requested size: 621.0pt x 329.0809pt.
-) [28] [29 <./figures/histograph/scatter1.png (PNG copy)> <./figures/histograph
+) [29] [30 <./figures/histograph/scatter1.png (PNG copy)> <./figures/histograph
 /scatter2.png (PNG copy)> <./figures/histograph/scatter3.png (PNG copy)> <./fig
 ures/histograph/scatter4.png (PNG copy)> <./figures/histograph/scatter5.png (PN
 G copy)> <./figures/histograph/scatter6.png (PNG copy)> <./figures/histograph/s
 catter7.png (PNG copy)> <./figures/histograph/scatter8.png (PNG copy)> <./figur
-es/histograph/scatter_legend.png (PNG copy)>] [30 <./figures/final_graph.png (P
+es/histograph/scatter_legend.png (PNG copy)>] [31 <./figures/final_graph.png (P
 NG copy)>]
 \openout2 = `discussion.aux'.
 
  (discussion.tex
 Chapter 5.
-[31
+[32
 
 
 
 
-]) [32]
+]) [33]
 \openout2 = `Conclusion.aux'.
 
  (Conclusion.tex
 Chapter 6.
-) [33
+) [34
 
 
 
@@ -1109,7 +1114,7 @@ Package xcolor Warning: Incompatible color definition on input line 28.
 
 Package xcolor Warning: Incompatible color definition on input line 28.
 
-[34
+[35
 
 
 
@@ -1565,174 +1570,174 @@ Package xcolor Warning: Incompatible color definition on input line 70.
 
 Package xcolor Warning: Incompatible color definition on input line 70.
 
-[35]
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 72.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 80.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 85.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 92.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
-
-Package xcolor Warning: Incompatible color definition on input line 100.
-
 [36]
 
+Package xcolor Warning: Incompatible color definition on input line 72.
+
+
+Package xcolor Warning: Incompatible color definition on input line 72.
+
+
+Package xcolor Warning: Incompatible color definition on input line 72.
+
+
+Package xcolor Warning: Incompatible color definition on input line 72.
+
+
+Package xcolor Warning: Incompatible color definition on input line 72.
+
+
+Package xcolor Warning: Incompatible color definition on input line 72.
+
+
+Package xcolor Warning: Incompatible color definition on input line 72.
+
+
+Package xcolor Warning: Incompatible color definition on input line 72.
+
+
+Package xcolor Warning: Incompatible color definition on input line 80.
+
+
+Package xcolor Warning: Incompatible color definition on input line 80.
+
+
+Package xcolor Warning: Incompatible color definition on input line 80.
+
+
+Package xcolor Warning: Incompatible color definition on input line 80.
+
+
+Package xcolor Warning: Incompatible color definition on input line 80.
+
+
+Package xcolor Warning: Incompatible color definition on input line 80.
+
+
+Package xcolor Warning: Incompatible color definition on input line 80.
+
+
+Package xcolor Warning: Incompatible color definition on input line 80.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 92.
+
+
+Package xcolor Warning: Incompatible color definition on input line 100.
+
+
+Package xcolor Warning: Incompatible color definition on input line 100.
+
+
+Package xcolor Warning: Incompatible color definition on input line 100.
+
+
+Package xcolor Warning: Incompatible color definition on input line 100.
+
+
+Package xcolor Warning: Incompatible color definition on input line 100.
+
+
+Package xcolor Warning: Incompatible color definition on input line 100.
+
+
+Package xcolor Warning: Incompatible color definition on input line 100.
+
+
+Package xcolor Warning: Incompatible color definition on input line 100.
+
+
+Package xcolor Warning: Incompatible color definition on input line 100.
+
+
+Package xcolor Warning: Incompatible color definition on input line 100.
+
+
+Package xcolor Warning: Incompatible color definition on input line 100.
+
+
+Package xcolor Warning: Incompatible color definition on input line 100.
+
+
+Package xcolor Warning: Incompatible color definition on input line 100.
+
+[37]
+
 Package xcolor Warning: Incompatible color definition on input line 149.
 
 
@@ -1741,17 +1746,17 @@ Package xcolor Warning: Incompatible color definition on input line 149.
 
 Package xcolor Warning: Incompatible color definition on input line 149.
 
-) [37]
+) [38]
 \openout2 = `derive_app.aux'.
 
  (derive_app.tex
 Appendix B.
-[38
+[39
 
 
 
 
-] [39] [40] [41] [42] [43]) [44] (Liza_report_rewrite.bbl
+] [40] [41] [42] [43] [44]) [45] (Liza_report_rewrite.bbl
 (C:\Program Files\MiKTeX\tex/latex/stellenbosch\usbib.eng)
 Underfull \hbox (badness 10000) in paragraph at lines 23--27
 \T1/cmr/m/n/10.95 Available at: []$\T1/cmtt/m/n/10.95 https : / / machinelearni
@@ -1803,24 +1808,30 @@ l.97 \newblock {\selectlanguage{eng}
 
 Your command will be ignored, type <return> to proceed
 
-[45
+[46
 
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 206--214
+Underfull \hbox (badness 10000) in paragraph at lines 121--125
+\T1/cmr/m/n/10.95 Available at: []$\T1/cmtt/m/n/10.95 https : / / codesachin . 
+wordpress . com / 2016 / 01 / 16 /
+ []
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 212--220
 \T1/cmr/m/n/10.95 Available at: []$\T1/cmtt/m/n/10.95 https : / / www . science
 direct . com / science / article / pii /
  []
 
-[46]
-Underfull \hbox (badness 10000) in paragraph at lines 217--229
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--235
 \T1/cmr/m/n/10.95 Available at: []$\T1/cmtt/m/n/10.95 https : / / www . science
 direct . com / science / article / pii /
  []
 
-) [47] (Liza_report_rewrite.aux (verklaring.aux) (abstract.aux)
+) [48] (Liza_report_rewrite.aux (verklaring.aux) (abstract.aux)
 (acknowledgements.aux) (nomenkl.aux) (Introduction.aux) (techfoundation.aux)
 (implementation.aux) (results.aux) (discussion.aux) (Conclusion.aux)
 (mcmcCode.aux) (derive_app.aux))
@@ -1828,10 +1839,10 @@ Package rerunfilecheck Info: File `Liza_report_rewrite.out' has not changed.
 (rerunfilecheck)             Checksum: 3333FFEAEBA98033FA868C40B3BECDC6;6880.
  ) 
 Here is how much of TeX's memory you used:
- 16197 strings out of 478864
- 236500 string characters out of 2858494
+ 16204 strings out of 478864
+ 236589 string characters out of 2858494
  778892 words of memory out of 3000000
- 33297 multiletter control sequences out of 15000+600000
+ 33301 multiletter control sequences out of 15000+600000
  437369 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,16n,66p,450b,1872s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1872,9 +1883,9 @@ pe1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 y8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
 
-Output written on Liza_report_rewrite.pdf (57 pages, 3539059 bytes).
+Output written on Liza_report_rewrite.pdf (58 pages, 3544819 bytes).
 PDF statistics:
- 1937 PDF objects out of 2073 (max. 8388607)
- 394 named destinations out of 1000 (max. 500000)
+ 1960 PDF objects out of 2073 (max. 8388607)
+ 397 named destinations out of 1000 (max. 500000)
  484 words of extra memory for PDF output out of 10000 (max. 10000000)
 
