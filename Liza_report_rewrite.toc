@@ -1,5 +1,5 @@
 \babel@toc {english}{}
-\contentsline {chapter}{Declaration}{i}{chapter*.1}%
+\contentsline {chapter}{Declaration}{i}{Doc-Start}%
 \contentsline {chapter}{Abstract}{ii}{section*.3}%
 \babel@toc {afrikaans}{}
 \contentsline {chapter}{Uittreksel}{iii}{section*.5}%
@@ -44,12 +44,12 @@
 \contentsline {chapter}{\numberline {4}Results}{27}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Continuous output}{27}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Resulting $\kappa $-values}{28}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Evaluation of error}{30}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Thermal diffusivity}{31}{subsection.4.2.2}%
-\contentsline {chapter}{\numberline {5}Discussion}{34}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Summary and Conclusion}{36}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Relevant code segments}{37}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Derivation of Implemented FEM Model}{43}{appendix.B}%
-\contentsline {chapter}{List of References}{50}{section*.46}%
+\contentsline {subsection}{\numberline {4.2.1}Evaluation of error}{31}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Thermal diffusivity}{32}{subsection.4.2.2}%
+\contentsline {chapter}{\numberline {5}Discussion}{35}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Summary and Conclusion}{37}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Relevant code segments}{38}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Derivation of Implemented FEM Model}{44}{appendix.B}%
+\contentsline {chapter}{List of References}{51}{section*.47}%
 \babel@toc {english}{}
 \babel@toc {english}{}

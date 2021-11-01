@@ -43,8 +43,8 @@ During the course of the project, the student will aim to meet the following obj
  \item Compare the model to the measured data;
  \item Solve for the thermal diffusivity using Bayesian inversion using the following methods:
  	\begin{enumerate}
- 		\item Maximum a posteriori
  		\item Markov chain Monte Carlo 	
+ 		\item Maximum a posteriori 		
  	\end{enumerate}
 \end{enumerate}
 
@@ -63,15 +63,14 @@ can be a bit longer: a) where does EC get its values from? is it relevant to SA?
 	The thermal diffusivity was calculated by minimising the root mean square error between the slope of the measured data and the finite element model.
 	This research intended to assist the peeling industry in making the pretreatment process more cost-effective.
 	The method proved to be effective at determining the thermal diffusivity of green Douglas fir logs, as the $\kappa$-values obtained were comparable to those from literature.
-	A crucial difference remains, as the temperatures at which these experiments were conducted and the final application of the data differ greatly.
-
+	%A crucial difference remains, as the temperatures at which these experiments were conducted and the final application of the data differ greatly.
+However, the temperatures at which their experiments were conducted and the final application of their data differ greatly from that of van der Westhuyzen.
 %	A similar method of analysis was used by \cite{DeKoker:2021} in their article \textit{Assessment of ice impact load threshold exceedance in the propulsion shaft of an ice-faring vessel via Bayesian inversion}. 
 %	Bayesian inversion is used to determine the impact of ice on the propellers from the measurements taken at a specified distance from the propeller. (TODO)
 
 \citeauthor{Wagner:2021} wrote an article in March 2021 where Bayesian model inversion was used with stochastic spectral embedding.
 Spectral embedding, or spectral likelihood expansion, was used to solve for the likelihood function in such a way that sampling is not necessary.
 Similarly to this report, the research of \citet{Wagner:2021} involved the creation and use of a Bayesian model to solve a heat diffusion problem.
-RIJK:  Check hierdie deel teen feedback:
 The likelihood function used in their analysis was similar to the likelihood function explained later in this report.
 The focus of the article was to determine the accuracy of stochastic spectral likelihood embedding, stochastic spectral embedding and spectral likelihood functions to calculate the thermal diffusivity.
 A Markov chain Monte Carlo analysis was done to compare to values from other methods.

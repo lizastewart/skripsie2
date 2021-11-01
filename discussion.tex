@@ -2,9 +2,14 @@
 %TODO
 
 In Figure \ref{final_graph}, the difference in output from running the model with the new $\kappa$-values, Eurocode $\kappa$ and the measured data can be seen. 
-The improved accuracy is clear in Table \ref{errortab}, as the error for the model using MCMC values is consistently smaller than the error incurred by the same model using the Eurocode thermal conductivity values.
+The attempt at modelling the water evaporation at 100\textdegree C was not as successful as initially hoped as the model did not have the same flattening at 100\textdegree C as the measured data.
+The improved accuracy is clear in Table \ref{errortab}, as the RMSE for the model using MCMC values is smaller than the error incurred by the same model using the Eurocode thermal conductivity values.
 There are instances where the error from the model using the MAP $\kappa$-values is smaller than the model using the MCMC $\kappa$-values; this should not discredit the usage and value of the Markov chain Monte Carlo algorithm as the increased accuracy from the MAP values is only marginal.
-TODO It is also important to remember that the MAP optimisation did not truly find the maximum at every point, and that due to insufficient iterations, the results from the MAP optimisation was closer to the results from the MCMC algorithm than to the true maximum at some temperatures.
+It is also important to remember that the MCMC algorithm did not necessarily find the population mean due to insufficient iterations.
+This problem can be simply solved by running more iterations.
+The error at 49.5mm is visible in Figure~\ref{final_graph} after 3~000 seconds, where the measured temperature is significantly higher than the Eurocode model output.
+The increase of error in the centre of the sample is due to the assumption that the timber stays intact.
+This assumption oversimplifies the problem; as the timber starts charring, pieces of the timber fall off, exposing an internal thermocouple directly to the fire.
 
 
 %    Summarize the important findings of your observations.

@@ -193,7 +193,7 @@ The fine balance between sufficient accuracy and short enough computational time
 	There are four principles of statistical inversion that are essential to the thorough understanding of these models.
 
 	Firstly is the principle that any variable in the model needs to be modelled as a random variable.
-	This randomness is based on the extent of information that is available. 
+	This randomness must be based on the extent of information that is available. 
 	To ensure that the extent of knowledge is accurately portrayed in the model, the extent of knowledge will be coded into the probability distributions assigned to the different variables. 
 	Finally, it needs to be understood that the solution of a statistical inversion is a posterior probability distribution.
 	A generalised equation of Bayes' theorem can be seen in \ref{bayes_eq} taken from \citet{Kaipo:2005}.
@@ -272,7 +272,7 @@ Since the distribution is unknown there is a chance of only exploring a local ma
 This approach allows some downhill movement but still gives preference to uphill movement.
 This allows full exploration of the distribution with more accepted samples at the peaks.
 
-\section{Maximum a Posteriori}
+\section{Maximum a Posteriori} \label{neldersec}
 To ensure a thorough investigation of the thermal diffusivity of timber, the posteriori function will also be optimised to obtain the value with the highest probability (i.e. maximum a posteriori) in addition to the mean.
 As the implementation will be done using built-in optimisation functions in MATLAB, the technical aspects will briefly explain how that function works.
 The function used is \texttt{fminsearch.m}.
@@ -302,7 +302,7 @@ If $x_r$ is not better than $x_h$, the reflected point is rejected and the origi
 This contracted point ($x_c$) should ideally have a smaller value than $x_h$, otherwise a shrink contraction must be performed.
 In a shrink contraction, $x_h$ and $x_s$ are redefined and pulled closer to $x_l$ with hopes of finding the minimum near the best point.
 
-The result is a simplex that moves over a surface in search of the lowest point, and as it reaches that point, it shrinks until all the points are practically at the same place. When this happens, or the points are close enough to each other as defined when initializing the code, the algorithm stops. Below in Figure \ref{neldermeadfig}, the different transformations can be seen.
+The result is a simplex that moves over a surface in search of the lowest point, and as it reaches that point, it shrinks until all the points are practically at the same place. When this happens, or the points are close enough to each other as defined when initialising the code, the algorithm stops. Below in Figure \ref{neldermeadfig}, the different transformations can be seen.
 
 \begin{figure}
 \centering

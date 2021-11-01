@@ -1,5 +1,5 @@
 \chapter{Results} \label{results}
-The results of the MCMC analysis as well as the MAP optimization is visualised in the section below.
+The results of the MCMC analysis as well as the MAP optimisation is visualised in the section below.
 \section{Continuous output}
 To assess the progress of the MCMC analysis while iterating, graphs similar to those in Figure~\ref{fig:10} were continuously generated. 
 In Figure \ref{fig:10}, the output of 2~000 iterations were extracted to allow sufficient detail to be visible.
@@ -49,13 +49,8 @@ As can be seen in Figure \ref{kresult_euro_fig}, there was a drastic difference 
 The large difference at 1 200\textdegree C can be explained by how the model was created; at that temperature, the majority of the heat is transferred through thermal radiation.
 The model did not separately model thermal radiation, but instead incorporated the radiation into an equivalent conduction.
 Between 0\textdegree C and 200\textdegree C, the modelling of the evaporation was moderately successful as a spike can be seen at 100 \textdegree C.  
-\begin{figure}
-\centering	
-	\includegraphics[width=\textwidth]{figures/kvalues_all_NOshi.png}
-	\caption{Resulting $\kappa$ values compared to Eurocode standard values}
-	\label{kresult_euro_fig}
-\end{figure}
-\begin{table} 
+
+\begin{table} [H]
 \centering
 \caption{Posterior thermal conductivity in W/(m$\ $K)}
 \label{krestab}
@@ -76,6 +71,22 @@ Between 0\textdegree C and 200\textdegree C, the modelling of the evaporation wa
 	\end{tabular}
 	
 \end{table}
+\begin{figure}[H]
+\centering	
+	\includegraphics[width=\textwidth]{figures/kvalues_all.png}
+	\caption{Resulting $\kappa$-values compared to Eurocode standard values}
+	\label{kresult_euro_fig}
+\end{figure}
+ 
+ The uncertainty associated with the $\kappa$-values is indicated in Figure \ref{errorbars}.
+ Error bars indicating one standard deviation have been added.
+ 
+ \begin{figure}[H]
+\centering	
+	\includegraphics[width=\textwidth]{figures/KerrorSTD2.png}
+	\caption{Markov chain Monte Carlo $\kappa$-values with standard deviation error bars }
+	\label{errorbars}
+\end{figure}
  
  For each temperature, there will be a different distribution of samples. 
  In Figure \ref{fig:scatdata}, the distribution of all the samples were plotted in a scatter plot.
@@ -83,13 +94,13 @@ Between 0\textdegree C and 200\textdegree C, the modelling of the evaporation wa
  The asymmetrical distribution  is clear in the data as the maximum a posteriori is not in the centre of each distribution.
 
 %TODO
-From the difference between the histogram maximum and the maximum found by the Nelder-Mead optimization at 140\textdegree C (Figure \ref{fig:histo}), it is clear that many more iterations of the MCMC algorithm is needed.
+From the difference between the histogram maximum and the maximum found by the Nelder-Mead optimisation at 140\textdegree C (Figure \ref{fig:histo}), it is clear that many more iterations of the MCMC algorithm is needed.
 In contrast, at 60\textdegree C the maximum of the histogram and the MAP is the same, indicating that the distribution at that specific temperature was sufficiently explored.
-An estimated 100 000 iterations would be needed.
-As the current iterations already took four days, an additional sixteen days would have been needed to generate the necessary additional samples.
+An estimated 500 000 iterations would be needed.
+As the current iterations already took four days, an additional 14 weeks would have been needed to generate the necessary additional samples.
 This would have been impractical to achieve during a single semester, as these iterations needed the full computational capacity of the available machine and prevented any other usage thereof.
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering
 	\begin{subfigure}[b]{0.45\linewidth}
@@ -116,7 +127,7 @@ This would have been impractical to achieve during a single semester, as these i
 Despite the uncertainties connected to the problem, a quantifiable measure of error is still required to allow unbiased assessment of the success of the algorithm and results.
 The obtained $\kappa$-values will be used to rerun the model and obtain the new modelled temperature for each depth. 
 For each depth, the error will be quantified using the norm of the relative error at the seven different depths, denoted as $i$.
-The relative error will be calculated according to  Equation \ref{relerror}. 
+The relative error percentages will be calculated according to  Equation \ref{relerror}. 
 The new modelled output errors are compared to the Eurocode $\kappa$-value output errors to assess if the methods used produced a more accurate representation of the data.
 The error at different depths are summarised in Table \ref{errortab} and the lowest error at that depth is highlighted in green. 
 At a depth of 0 mm, none of the errors are highlighted, as this temperature is independent of the $\kappa$-values.
@@ -124,28 +135,60 @@ This error measurement can be used to asses the error in the model or assumption
 It is important to note that this error does not only quantify the error in the thermal conductivity, but that any errors due to model assumptions are also encompassed.
 
 \begin{equation}\label{relerror}
-\epsilon _i = \frac{\norm{\hat{x}_i-x_i }_2}{\norm{x_i}_2} \quad \quad i= 1, ... ,7
+\epsilon _i = \frac{\norm{\hat{x}_i-x_i }_2}{\norm{x_i}_2}\times 100 \quad \quad i= 1, ... ,7
 \end{equation}
+
+
+%\begin{table}[H] 
+%\centering
+%\caption{Summary of error between models and data}
+%\label{errortab}
+%	\begin{tabular}{ r r r r }
+%	\toprule
+%	Depth(mm) & EURO & MAP & MCMC\\
+% \midrule
+%0& 0.231	& 0.231	& 0.231\\
+%16.5& 0.179	& \cellcolor{green!20}0.143	& 0.154\\
+%33& 0.334	& \cellcolor{green!20}0.179	& 0.189\\
+%49.5& 0.608	& 0.377	& \cellcolor{green!20}0.369\\
+%66& 0.552	& 0.384	&\cellcolor{green!20} 0.309\\
+%82.5& 0.490	&\cellcolor{green!20} 0.348	& 0.366\\
+%99& 0.182	& 0.182	&\cellcolor{green!20} 0.181\\
+%\midrule
+%RMS & 0.404	& 0.280	& \cellcolor{green!20}0.270\\
+%\bottomrule	
+%	\end{tabular}	
+%\end{table}
+
 
 \begin{table}[H] 
 \centering
-\caption{Summary of error between models and data}
+\caption{Summary of error percentage between models and data}
 \label{errortab}
 	\begin{tabular}{ r r r r }
 	\toprule
 	Depth(mm) & EURO & MAP & MCMC\\
-	\midrule
-	0 & 0.289 & 0.289 & 0.289\\
-	16.5 & 0.217 & \cellcolor{green!20}0.194 & 0.205\\
-	33 & 0.301   & \cellcolor{green!20} 0.191 & 0.200\\
-	49.5 & 0.569 & 0.348 &\cellcolor{green!20} 0.323\\
-	66 & 0.547   & 0.316 & \cellcolor{green!20}0.267\\
-	82.5 & 0.501 &\cellcolor{green!20} 0.339 & 0.358\\
-	99 & 0.219   & 0.219 &\cellcolor{green!20} 0.219\\
-	\bottomrule	
-	\end{tabular}
-	
+\midrule
+0	&	23.11&	23.11&	23.11\\
+16.5	&	17.94&	\cellcolor{green!20}14.27&	15.35\\
+33	&	33.40&	\cellcolor{green!20}17.89&	18.94\\
+49.5	&	60.78&	37.69&	\cellcolor{green!20}36.93\\
+66	&	55.18&	38.39&	\cellcolor{green!20}30.92\\
+82.5	&	48.99&	\cellcolor{green!20}34.76&	36.60\\
+99	&	18.18&	18.16&	\cellcolor{green!20}18.12\\
+\midrule
+RMSE	&	40.43&	28.01&	\cellcolor{green!20}27.04\\
+\bottomrule	
+	\end{tabular}	
 \end{table}
+%\begin{equation}\label{rmseq}
+%RMS_j = \sqrt{\frac{1}{n}\sum_{i}  }\quad \quad j= 1, ... ,7
+%\end{equation}
+
+The root mean square error (RMSE) for each method was also calculated. 
+There is a definite improvement in the accuracy of the model using the values obtained from the MCMC analysis compared to using the Eurocode values.
+
+
 
 \subsection{Thermal diffusivity}
 The main intent of this project was to determine the thermal diffusivity of SA-Pine. 
@@ -173,6 +216,7 @@ The thermal diffusivity was calculated using the information in Table~\ref{cptab
 	\end{tabular}
 	
 \end{table}
+
 
 \begin{sidewaysfigure}
 	
