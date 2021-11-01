@@ -21,7 +21,7 @@
 
 \bibitem[{\citenamefont{Brownlee}(2019)}]{MLM:2019}
 \bibnamefont{Brownlee}, \bibfnamefont{J.} (2019 Nov [Online]).
-\newblock A gentle introduction to markov chain monte carlo for probability.
+\newblock {A Gentle Introduction to Markov chain Monte Carlo for Probability}.
 \newblock Machine Learning Mastery, Blog.
 \newline\bblurlpre\url{https://machinelearningmastery.com/markov-chain-monte-carlo-for-probability/}
 
@@ -65,12 +65,6 @@
 \newblock fminsearchbnd, fminsearchcon.
 \newblock MATLAB Central File Exchange.
 \newline\bblurlpre\url{https://www.mathworks.com/matlabcentral/fileexchange/8277-fminsearchbnd-fminsearchcon}
-
-\bibitem[{\citenamefont{documentation}(2021)}]{Matlab}
-\bibnamefont{documentation}, \bibfnamefont{M.} (2021).
-\newblock fminsearch.html.
-\newblock Online documentation.
-\newline\bblurlpre\url{https://ch.mathworks.com/help/matlab/ref/fminsearch.html}
 
 \bibitem[{\citenamefont{Fish}(2007)}]{Fish:2007}
 \bibnamefont{Fish}, \bibfnamefont{J.J.} (2007).
@@ -125,7 +119,7 @@
 
 \bibitem[{\citenamefont{Joglekar}(2016)}]{sachin:2016}
 \bibnamefont{Joglekar}, \bibfnamefont{S.} (2016 Jan).
-\newblock Nelder-mead optimization.
+\newblock {Nelder-Mead} optimization.
 \newblock Sachin Joglekar's Blog.
 \newline\bblurlpre\url{https://codesachin.wordpress.com/2016/01/16/nelder-mead-optimization/}
 
@@ -151,9 +145,15 @@
 \bibnamefont{Lagarias}, \bibfnamefont{J.}, \bibnamefont{Reeds},
   \bibfnamefont{J.}, \bibnamefont{Wright}, \bibfnamefont{M.} \protect\BIBand{}
   \bibnamefont{Wright}, \bibfnamefont{P.} (1998 Dec).
-\newblock Convergence properties of the nelder--mead simplex method in low
+\newblock Convergence properties of the {Nelder--Mead} simplex method in low
   dimensions.
 \newblock \emph{SIAM Journal on Optimization}, \bblvol{}~9, \bblpp{} 112--147.
+
+\bibitem[{\citenamefont{{MATLAB}}(2021)}]{Matlab}
+\bibnamefont{{MATLAB}} (2021).
+\newblock fminsearch.html.
+\newblock Online documentation.
+\newline\bblurlpre\url{https://ch.mathworks.com/help/matlab/ref/fminsearch.html}
 
 \bibitem[{\citenamefont{Meyn} \protect\BIBand{}
   \citenamefont{Tweedie}(1993)}]{Meyn:1993}
@@ -195,8 +195,8 @@
   \citenamefont{Reddy}(2016)}]{somasund:2016}
 \bibnamefont{Somasundharam}, \bibfnamefont{S.} \protect\BIBand{}
   \bibnamefont{Reddy}, \bibfnamefont{K.} (2016 Feb).
-\newblock Inverse estimation of thermal properties using bayesian inference and
-  three different sampling techniques.
+\newblock Inverse estimation of thermal properties using {Bayesian} inference
+  and three different sampling techniques.
 \newblock \emph{Inverse Problems in Science and Engineering}.
 
 \bibitem[{\citenamefont{Thi} \emph{\bbletal{}}(2016)\citenamefont{Thi},
@@ -215,7 +215,7 @@
 \bibnamefont{van~der Westhuyzen}, \bibfnamefont{S.}, \bibnamefont{Walls},
   \bibfnamefont{R.} \protect\BIBand{} \bibnamefont{de~Koker}, \bibfnamefont{N.}
   (2020).
-\newblock {Fire tests of south african cross-laminated timber wall panels: Fire
+\newblock {Fire tests of South African cross-laminated timber wall panels: Fire
   ratings, charring rates, and delamination}.
 \newblock \emph{Journal of the South African Institution of Civil Engineering},
   \bblvol{}~62, \bblno{}~1, \bblpp{} 33--41.
@@ -237,11 +237,11 @@
 \bibnamefont{White}, \bibfnamefont{R.} \protect\BIBand{}
   \bibnamefont{Dietenberger}, \bibfnamefont{M.} (2001).
 \newblock Wood products: Thermal degradation and fire.
-\newblock \capitalize\bblin{}: \bibnamefont{Buschow}, \bibfnamefont{K.J.},
+\newblock \capitalize\bblin{}: \bibnamefont{Buschow}, \bibfnamefont{K.H.J.},
   \bibnamefont{Cahn}, \bibfnamefont{R.W.}, \bibnamefont{Flemings},
   \bibfnamefont{M.C.}, \bibnamefont{Ilschner}, \bibfnamefont{B.},
   \bibnamefont{Kramer}, \bibfnamefont{E.J.}, \bibnamefont{Mahajan},
-  \bibfnamefont{S.} \protect\BIBand{} \bibnamefont{Veyssière},
+  \bibfnamefont{S.} \protect\BIBand{} \bibnamefont{Veyssi\`ere},
   \bibfnamefont{P.} (\bbleds{}), \emph{Encyclopedia of Materials: Science and
   Technology}, \bblpp{} 9712--9716. Elsevier, Oxford.
 \newblock ISBN 978-0-08-043152-9.

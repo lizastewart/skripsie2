@@ -10,8 +10,6 @@ After $100 ^{^\circ}$C, the temperature exposure causes the timber structure to 
 This breakdown is generally referred to as thermal degradation, which can be broken into four categories \citep{White:2001} \citep{Shi:2021}.
 These categories are based on the different reactions that occur, and are briefly summarised below and visualised in Figure \ref{fig:iso_phases}:
 
-%TODO
-%show in figure
 \begin{itemize}
 \item Above 100\textdegree C and below 200\textdegree C, the moisture in the timber is evaporated and other non-combustible gasses are released.
 \item Between 200\textdegree C and 300\textdegree C, carbon monoxide is released in significant quantities, and some of the timber components undergo a change in chemical composition due to the high temperatures.
@@ -26,7 +24,7 @@ These categories are based on the different reactions that occur, and are briefl
 \label{fig:iso_phases}
 \end{figure}
 
-Timber undergoes physical and chemical changes as temperature changes; it therefore makes sense that its thermal properties such as its specific heat capacity  ($c_p$) and its density  ($\rho$) of timber also varies with temperature.
+Timber undergoes physical and chemical changes as temperature changes; it therefore makes sense that its thermal properties (such as its specific heat capacity $c_p$ and its density $\rho$) also varies with temperature.
 As the thermal conductivity and thermal diffusivity will only be assessed at specific temperatures, the specific heat and density  at only those temperatures will be summarised below.
 \begin{table}
 \centering
@@ -63,33 +61,57 @@ All the thermal properties of various timber species at high temperatures were d
  
  For this project, the temperature of at which charring occurs will be taken as 300 \textdegree C following the research of \citeauthor{Westhuyzen:2020}. 
 % The specific heat  ($C_p$) will be assumed to be constant at 1500 kJ/$\text{m}^3$/K. the density of pine was also assumed constant at 
- Using the equations of \citeauthor{Shi:2021}, the following $\kappa$-values  (Equation \ref{shiK}) are obtained. 
- These values provide addition insight into the attempts made to quantify the values of thermal diffusivity for different timbers species.
+ Using the equations of \citeauthor{Shi:2021}, the following $\kappa$-values in Table \ref{tableshi} are obtained. 
+ These values provide additional insight into the attempts made to quantify the values of thermal diffusivity for different timbers species.
 These $\kappa$-values are not very close to the Eurocode values and a more linear relationship between conductivity and temperature  was assumed than in the Eurocode.
-  Therefore Eurocode $\kappa$-values were accepted as more accurate and used from this point forward.
+  The Eurocode $\kappa$-values were therefore accepted as more accurate and will be used henceforth.
  %    0.1223    0.1274    0.1308    0.1341    0.1392    0.1518    0.7250    0.9710    1.2990
-\begin{equation}\label{shiK}
-  \kappa=
-  \begin{blockarray}{*{1}{c} l}
-%    \begin{block}{*{1}{>{$\footnotesize}c<{$}} 1}
-%      $\text{W/m}\cdot\text{K}$ &\\
+%\begin{equation}\label{shiK}
+%  \kappa=
+%  \begin{blockarray}{*{1}{c} l}
+%%    \begin{block}{*{1}{>{$\footnotesize}c<{$}} 1}
+%%      $\text{W/m}\cdot\text{K}$ &\\
+%%    \end{block}
+%    \begin{block}{[*{1}{c}]>{$\footnotesize}l<{$}}
+%     	0.1223\bigstrut[t] & 0 $^{^\circ} \text{C}$\\
+%		 0.1274& 60  $^{^\circ} \text{C}$\\ 
+%		0.1308 & 100 $^{^\circ} \text{C}$\\ 
+%		0.1341& 140 $^{^\circ} \text{C}$\\ 
+%		0.1392& 200 $^{^\circ} \text{C}$\\ 
+%		0.1518& 350 $^{^\circ} \text{C}$\\
+%		0.7250& 500 $^{^\circ} \text{C}$\\ 
+%		0.9710& 800 $^{^\circ} \text{C}$\\ 
+%		1.2990& 1200 $^{^\circ} \text{C}$\\
 %    \end{block}
-    \begin{block}{[*{1}{c}]>{$\footnotesize}l<{$}}
-     	0.1223\bigstrut[t] & 0 $^{^\circ} \text{C}$\\
-		 0.1274& 60  $^{^\circ} \text{C}$\\ 
-		0.1308 & 100 $^{^\circ} \text{C}$\\ 
-		0.1341& 140 $^{^\circ} \text{C}$\\ 
-		0.1392& 200 $^{^\circ} \text{C}$\\ 
-		0.1518& 350 $^{^\circ} \text{C}$\\
-		0.7250& 500 $^{^\circ} \text{C}$\\ 
-		0.9710& 800 $^{^\circ} \text{C}$\\ 
-		1.2990& 1200 $^{^\circ} \text{C}$\\
-    \end{block}
-  \end{blockarray}
-\end{equation}
+%  \end{blockarray}
+%\end{equation}
+
+\begin{table} [H]
+	\caption{$\kappa$-values at different temperatures using equations from \cite{Shi:2021}}
+	\label{tableshi}
+	\centering
+	\begin{tabular}{ r r }
+	\toprule
+	Temperature & Conductivity\\
+	{\textdegree}C & W/(m\ K)\\
+	\midrule
+	0&0.1223  \\
+		60& 0.127 \\ 
+		100&0.131 \\ 
+		140&0.134\\ 
+		200&0.139\\ 
+		350&0.152\\
+		 500& 0.725 \\ 
+		 800& 0.971\\ 
+		 1200& 1.299 \\
+	\bottomrule
+	\end{tabular}
+\end{table}
+
 %From the big difference between these values and the Eurocode values, it is clear that these simple equations are not sufficient for determining the thermal conductivity of pine.
 \subsection{Heat conduction and diffusion}\label{heatconsec}	 
-	Heat is transferred within an element if a temperature gradient present, the rate that heat transfers is directly influenced by the thermal conductivity of the material. 
+	Heat is transferred within an element if a temperature gradient is present
+	The rate at which heat is transferred is directly influenced by the thermal conductivity of the material. 
 	This project focuses on heat transferred via conduction, but heat can also be transferred in the form of thermal radiation or convection \cite{Fish:2007}.
 	The heat conduction equation or Fourier's Law of heat conduction \citep{Fourier:1878} can be simply expressed in  Equation \ref{fourier_eq}.
 	Where heat flux is expressed as a partial differential equation dependant on the temperature and thickness of the element. 
@@ -124,11 +146,11 @@ The values in Table \ref{cptab} will be used in conjunction with the $\kappa$-va
 \section{Finite Element Method}\label{femsec}
 The finite element method  (or finite element analysis) is  used when the behaviour of a large element cannot be accurately depicted by a simple mathematical equation. 
 Modelling the behaviour of large and complex systems is a near impossible task without breaking the problem into smaller understandable parts.
-The finite element method enables engineers and scientists to break a large problem or element into comprehend-able and definable parts \citep{Zienkiewicz:2000}. 
+The finite element method enables engineers and scientists to break a large problem or element into comprehensible and definable parts \citep{Zienkiewicz:2000}. 
 This allows approximations and assumptions to be made at a small scale without affecting the large scale significantly, such as assuming linear behaviour between nodes. 
 %To understand simply why it works, you could simply look at your computer screen.
-%The screen consists of pixels that are simplified to one colour, but the collection of pixels that is seen from the user perspective can show complex forms and pattens.
-%Each pixel was simplified and approximated, but the end result is sufficiently accurate due to the sheer number of pixels.
+%The screen consists of pixels that are simplified to one colour, but the collection of pixels that is seen from the user's perspective can show complex forms and patterns.
+%Each pixel is simplified and approximated, but the end result is sufficiently accurate due to the sheer number of pixels.
 %Assumptions made on a smaller scale have a lesser effect on the final answer than the same assumptions made on a large scale would have had.
 %If the whole screen was one pixel and only the majority colour was assumed true, the whole screen would be white and that is clearly incorrect.
 It follows that the accuracy of a finite element model is highly dependant on the number of elements used and only improves with more elements.
@@ -145,11 +167,11 @@ The fine balance between sufficient accuracy and short enough computational time
 	He concludes that using few elements does not provide accurate local estimations, but instead the interpolation will provide approximations of the actual quantities that are sufficient for engineering problems.
 	As his paper did not go into depth into the calculations, Courant cannot be accredited with the full development but rather with the starting point.
 	\citet{Gupta:1996} further points out that in 1954, J. Argyris published an article  where the details of his calculations are clear and matrix formulation can be seen.
-	The finite element method as known to day were directly defined and clarified in a textbook by Zienkiewicz in 1957.
+	The finite element method as known today were directly defined and clarified in a textbook by Zienkiewicz in 1957.
 	This textbook is now in its fifth edition of print and has been continuously updated and was used for this project.
 	
 	\subsection{Boundary constraints}
-	An important part of finite element models is the method in which the known information is embedded into the model.
+	An important part of finite element models is the method by which the known information is embedded into the model.
 	The main method is by defining boundary conditions at known points. The two types of boundary conditions used in this project are Dirichlet boundaries and Newmann boundaries.
 	
 	Named after Johann P.G.L Dirichlet \citep{Cheng:2005}, Dirichlet boundaries force the solution function to be equal to the prescribed value at the boundary. 
@@ -167,7 +189,7 @@ The fine balance between sufficient accuracy and short enough computational time
 %	Statistical and Computational Inverse problems by \citet{Kaipo:2005} and Somersalo Chapter 3
 % 	The Bayesian approach to Inverse Problems Dashti and Stuart
 	The method of statistical inversion is dependant on a fundamental understanding of the Bayes' theorem of inverse problems. 
-	This understanding was obtained through studying Chapter 3 of statistical and Computational Inverse problems by \citet{Kaipo:2005}.
+	This understanding was obtained through studying Chapter 3 of \textit{Statistical and Computational Inverse Problems} by \citet{Kaipo:2005}.
 	There are four principles of statistical inversion that are essential to the thorough understanding of these models.
 
 	Firstly is the principle that any variable in the model needs to be modelled as a random variable.
@@ -182,11 +204,11 @@ The fine balance between sufficient accuracy and short enough computational time
 	\end{equation}
 	
 Further application of Bayes' theorem of inverse problems to the project at hand is discussed in Section \ref{secInvmet}
-\section{Markov Chain Monte Carlo} \label{MCMCdet}
+\section{Markov chain Monte Carlo} \label{MCMCdet}
 Markov chain Monte Carlo  (MCMC) is a method of integration that will be used to determine the mean of the $\kappa$-values at specific temperatures. 
 	Markov chain Monte Carlo is a method that was created by combining the concept of Monte Carlo sampling  and a Markov chain. 
 	To fully understand MCMC, its underlying methods must be investigated further.
-	For a better understanding of this concept, \textit{Introducing Markov Chain Monte Carlo} by \citet{Gilks:1996}, \citet{Kaipo:2005}, and various websites \citet{MLM:2019}, \citet{dummies:2015} were consulted.
+	For a better understanding of this concept, \textit{Introducing Markov chain Monte Carlo} by \citet{Gilks:1996}, \citet{Kaipo:2005}, and various websites \citet{MLM:2019}, \citet{dummies:2015} were consulted.
 
 	\subsection{Markov chains}	\label{markovexpl}
 	The core principle of a Markov chain is that the next value  ($x_{n+1}$) in a sequence is dependent on the current value  ($x_n$). 
@@ -196,10 +218,10 @@ Markov chain Monte Carlo  (MCMC) is a method of integration that will be used to
 	After this next number is selected, the square moves such that the new point  ($x_2$) is now the centre, and so it continues.
 	See Figure \ref{fig:MCsquare} for clarification.
 	The above example simplifies the concept, but this understanding can now be expanded.
-	If every coordinate direction in the aforementioned simple example is seen as a single entry in the $x$ vector, then the example has two independent values.
+	If every coordinate direction in the aforementioned simple example is seen as a single entry in the $\vec{x}$ vector, then the example has two independent values.
 	More or fewer values can be used depending on the problem.
 	Another level of complication can be added if it is taken into account that every point in the square is no longer equally likely.
-	A distribution within the square can be chosen, for example simply a normal distribution
+	A distribution within the square can be chosen, for example simply a normal distribution.
 	The shape of the square then warps into a stranger shape with points closer to the center being more likely choices and the edges being less likely.
 	
 
@@ -213,10 +235,10 @@ Markov chain Monte Carlo  (MCMC) is a method of integration that will be used to
 	%%BURN_IN TODO
 	The purpose of a Markov chain is for the chain to converge to a distribution and be independent on the very initial estimation. 
 	In principle, it should then reach a near stationary distribution.
-	Since Markov chains are not used if we know the answer, a way to determine when values are no longer affected by the initial estimate is needed \cite{Gilks:1996}. 
+	Since Markov chains are not used if we know the answer, a way to determine when values are no longer affected by the initial estimate is needed \citep{Gilks:1996}. 
 	The simple proposed solution is the concept of burn-in. 
-	The concept of conventional burn-in for usage in Markov chains are disputed as the Markov chain itself is created in such a way that values are only directly dependent on the value immediately before them \cite{Meyn:1993}.
-	Burn-in in the Markov chain sense can simply be referred to as the removal of the initial samples of low probability to increase the accuracy of the average taken after all the iterations \cite{John:2016}.
+	The concept of conventional burn-in for usage in Markov chains are disputed as the Markov chain itself is created in such a way that values are only directly dependant on the value immediately before them \citep{Meyn:1993}.
+	Burn-in in the Markov chain sense can simply be referred to as the removal of the initial samples of low probability to increase the accuracy of the average taken after all the iterations \citep{John:2016}.
 		
 	\subsection{Monte Carlo Integration}\label{MCint_sec}
 	Monte Carlo integration is used to evaluate a probability distribution that cannot be solved simply. 
@@ -228,7 +250,7 @@ Markov chain Monte Carlo  (MCMC) is a method of integration that will be used to
 \subsection{Metropolis-Hastings Algorithm}
 
 The Metropolis-Hastings algorithm is one of the available simulation methods based on the MCMC principles. 
-For this project, the Metropolis-Hastings algorithm was chosen above the Gibbs-sampler as the Gibbs sampler can be relatively slow \cite{Murphy:2012}.
+For this project, the Metropolis-Hastings algorithm was chosen above the Gibbs-sampler as the Gibbs sampler can be relatively slow \citep{Murphy:2012}.
 
 All of the random samples generated by the Monte Carlo integration can not be immediately accepted.
 	Here, the acceptance criterion comes into play.
@@ -251,42 +273,76 @@ This approach allows some downhill movement but still gives preference to uphill
 This allows full exploration of the distribution with more accepted samples at the peaks.
 
 \section{Maximum a Posteriori}
-To ensure a thorough investigation of the thermal diffusivity of timber the posteriori function will also be optimised to obtain the value with the highest probability, maximum a posteriori, in addition to the mean.
-As the implementation will be done using built-in optimisation functions in Matlab the technical aspects will briefly explain how that function works.
+To ensure a thorough investigation of the thermal diffusivity of timber, the posteriori function will also be optimised to obtain the value with the highest probability (i.e. maximum a posteriori) in addition to the mean.
+As the implementation will be done using built-in optimisation functions in MATLAB, the technical aspects will briefly explain how that function works.
 The function used is \texttt{fminsearch.m}.
 In the name of the function, it can be seen that the function will be minimised.
 This seems counter-intuitive since the intention is to find the maximum of the function. 
 Luckily the minimum is simply a negative maximum. 
 
-According to the \texttt{fminsearch} \citet{Matlab} , the algorithm is based on the Nelder-Mead algorithm \citep{Lagarias:1998}.
+According to the \texttt{fminsearch} \citet{Matlab}, the algorithm is based on the Nelder-Mead algorithm \citep{Lagarias:1998}.
 The Nelder-Mead algorithm is an unconstrained heuristic direct search method.
 The heuristic aspect of the algorithm means that it searches the function space in a guided random manner.
 For further understanding of the Nelder-Mead optimisation algorithm, \citet{sachin:2016} was consulted.
 
 Nelder-Mead uses a simplex, a triangle in the dimension needed, to find the minimum.
-In two-dimension, the simplex is simply a triangle, where each point has a $x$ and $y$ coordinate and is notated as. 
-A starting value needs to be provided to the algorithm, this will then be one of the points in the first simplex.
-All the points on the simplex are ordered from best to worst, where the smallest value  ($f (x)$) is best if minimising.
-In the two-dimensional example, the centroid of the two best points  ($x_l,x_s$) are calculated, from there using the value of the function at the simplexes and the centroid transformations can be performed to find even smaller values.
+In two dimensions, the simplex is simply a triangle, where each point has a $x$ and $y$ coordinate and is notated as. 
+A starting value needs to be provided to the algorithm; this will then be one of the points in the first simplex.
+All the points on the simplex are ordered from best to worst, where the smallest value $f (x)$ is best if minimising.
+In the two-dimensional example, the centroid of the two best points  ($x_l,x_s$) is calculate.
+From there, using the value of the function at the simplexes and the centroid, transformations can be performed to find even smaller values.
 The transformations are applied to change the worst point  ($x_h$) until it is no longer the worst.
 
 The transformations are performed in a specific order.
 The first transformation is reflection.
 Point $x_h$ is mirrored around the line that passes through the centroid and $x_l$ and $x_s$ to create $x_r$.
 The idea behind this is that the values are lower in that direction so the algorithm attempts to take the biggest stride possible to a lower value.
-If $x_r$ is better than $x_r$  the triangle is expanded and $x_e$ is even further in the assumed minimising direction.
+If $x_r$ is better than $x_r$,  the triangle is expanded and $x_e$ is even further in the assumed minimising direction.
 If $x_r$ is not better than $x_h$, the reflected point is rejected and the original $x_3$ is contracted closer to $x_1$ and $x_2$.
-This contracted point ($x_c$) should ideally have a smaller value than $x_h$, if not a shrink contraction needs to be performed.
+This contracted point ($x_c$) should ideally have a smaller value than $x_h$, otherwise a shrink contraction must be performed.
 In a shrink contraction, $x_h$ and $x_s$ are redefined and pulled closer to $x_l$ with hopes of finding the minimum near the best point.
 
-The result is a simplex that moves over a surface in search of the lowest point and as it reaches that point it shrinks until all the points are practically at the same place. When this happens or the points are close enough to each other as defined when initializing the code the algorithm stops. Below in Figure \ref{neldermeadfig}, the different transformations can be seen.
+The result is a simplex that moves over a surface in search of the lowest point, and as it reaches that point, it shrinks until all the points are practically at the same place. When this happens, or the points are close enough to each other as defined when initializing the code, the algorithm stops. Below in Figure \ref{neldermeadfig}, the different transformations can be seen.
 
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{figures/MAP_expl.png}
-\caption{Visual representation of Nedler-Mead transformations a) Reflection, b) Expansion, c) Contraction, d) Shrink contraction \citep{sachin:2016}}
+\caption[Visual representation of Nedler-Mead transformations \citep{sachin:2016}]{Visual representation of Nedler-Mead transformations a) Reflection, b) Expansion, c) Contraction, d) Shrink contraction \citep{sachin:2016}}
 \label{neldermeadfig}
 \end{figure}
 
 
-
+%\begin{figure}
+%\centering
+%	\begin{subfigure}[b]{0.4\linewidth}
+%	\centering
+%	\includegraphics[width=\linewidth]{figures/neldermead1.jpg}
+%	\caption{Reflection}
+%	\label{neldermeada}
+%	\end{subfigure}
+%	
+%	\begin{subfigure}[b]{0.4\linewidth}
+%	\centering
+%	\includegraphics[width=\linewidth]{figures/neldermead2.jpg}
+%	\caption{Expansion}
+%	\label{neldermeadb}
+%	\end{subfigure}
+%	
+%	\begin{subfigure}[b]{0.4\linewidth}
+%	\centering
+%	\includegraphics[width=\linewidth]{figures/neldermead3.jpg}
+%	\caption{Contraction}
+%	\label{neldermeadc}
+%	\end{subfigure}
+%	
+%	\begin{subfigure}[b]{0.4\linewidth}
+%	\centering
+%	\includegraphics[width=\linewidth]{figures/neldermead4.jpg}
+%	\caption{Shrink contraction}
+%	\label{neldermeadd}
+%	\end{subfigure}
+%	
+%\caption{Visual representation of Nedler-Mead transformations \citep{sachin:2016}}
+%\label{neldermeadfig}
+%\end{figure}
+%

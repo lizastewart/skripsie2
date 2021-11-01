@@ -6,10 +6,10 @@
 
  \NomGroup{Variables}%-----------------------------------------------
 
-   \item[$\kappa$]      \UnitLine{Thermal conductivity                         }{W/(m{\cdot}K)}
+   \item[$\kappa$]      \UnitLine{Thermal conductivity                         }{W/(m{\ }K)}
    \item[$\alpha$]     \UnitLine{Thermal diffusivity			}{m^2/s}
-   \item[${c}_p$]  \UnitLine{Heat capacity of pine} {J/kg{\cdot}K}
-   \item[${c}_A$]  \UnitLine{Heat capacity of air} {J/kg{\cdot}K}
+   \item[${c}_p$]  \UnitLine{Heat capacity of pine} {J/(kg{\ }K)}
+   \item[${c}_A$]  \UnitLine{Heat capacity of air} {J/(kg{\ }K)}
    \item[$\rho$]  \UnitLine{Density} {kg/m^3}
   
 % \NomGroup{Vectors and Tensors}%-------------------------------------

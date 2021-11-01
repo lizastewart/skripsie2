@@ -1,12 +1,15 @@
 \chapter{Derivation of Implemented FEM Model}\label{appder}
+
+In this appendix, the derivation of the implemented finite element model is explained in detail.
+
+The balance and heat equations are shown in Equation~\ref{appheateq1}.
 \begin{equation}
 	\label{appheateq1}
 	q_{,x}-f = 0  \text{  ...(1)} \quad\quad\quad\quad q = -\kappa u_{,x} \text{  ...(2)} 
 	\end{equation}
-	Integrating Equation \ref{appheateq1} (1) over the length of the element and introducing a weighting function $w(x)$ we obtain \ref{appheateq2}. 
-	Since the derivative of $w(0)$ is known and $q_{,x}$ is unknown. 
-	The first term in \ref{appheateq2} is integrated by parts. 
-	After the integration by parts and substituting $q$ with \ref{appheateq1} (2), Equation \ref{appheateq3} is created.
+	Integrating Equation \ref{appheateq1} (1) over the length of the element and introducing a weighting function $w(x)$, we obtain \ref{appheateq2}, since the derivative of $w(0)$ is known and $q_{,x}$ is unknown. 
+	The first term in Equation~\ref{appheateq2} is integrated by parts. 
+	After the integration by parts and substituting $q$ with Equation~\ref{appheateq1} (2), Equation \ref{appheateq3} is created.
 	\begin{equation}
 	\label{appheateq2}
 	\int_{x=0}^L wq_{,x}dx - \int_{x=0}^L wfdx = 0
@@ -24,7 +27,7 @@
 	u_{e,x}^h = \sum_{B} N_{,x}^B d^B \quad &;\quad w_{e,x}^h=\sum_A N_{,x}^A c^A\\
 	\end{aligned}
 	\end{equation}		
-	Substituting the $u$ and $w$ functions back, we obtain the Galerkin weak form shown in Equation \ref{appheateq4}.
+	Substituting the $u$ and $w$ functions back, we obtain the Galerkin weak form shown in Equation~\ref{appheateq4}.
 
 	\begin{equation}
 	\label{appheateq4}
@@ -50,26 +53,26 @@
 	
 	\begin{equation} \label{appheatconeq}       
 	       \begin{aligned}
-	       q_{\text{adv}}= \nu &\rho c_p \Delta T \quad = \quad h \Delta T\\	      
-	       \nu =& \text{velocity m/s}\\
-	       \rho =& \text{density of air}\\
-	       c_{\rho} =& \text{heat capacity of air}\\
+	       q_{\text{adv}}=&\ \nu \rho_A c_A \Delta T = h \Delta T\\	      
+	       \text{with}\qquad\nu =&\ \text{velocity [m/s],}\\
+	       \rho_A =&\ \text{density of air, and}\\
+	       c_{\rho} =&\ \text{heat capacity of air}\\
           \end{aligned}
 	\end{equation}
 	       
 	\begin{equation} \label{appradeq}
 	       \begin{aligned}
-	       q_{\text{rad}} = \varepsilon&\sigma \phi \left(T_f^4 - T_S^4\right)\\
-	       \varepsilon =& \text{emissivity}\\
-	       \sigma =& \text{Stefan-Boltzmann} \\&5.670 e^-8 [W/(m^2K^4)]\\
-	       \phi =& \text{view factor};1 \quad \text{here}\\
+	       q_{\text{rad}} =&\ \varepsilon\sigma \phi \left(T_f^4 - T_S^4\right)\\
+	       \text{with}\qquad\varepsilon =&\ \text{emissivity,}\\
+	       \sigma =&\ \text{Stefan-Boltzmann constant} \\=&\ 5.670 \ten{-8}\ W/(m^2K^4) \text{, and}\\
+	       \phi =&\ \text{view factor} = 1\\
 	       \end{aligned}
 	\end{equation}
-	Given that $T_S$ and $T_F$ are known a new equivalent heat flux value can be calculated as in Equation \ref{femboundeq1}.
+	Given that $T_S$ and $T_F$ are known a new equivalent heat flux value can be calculated as in Equation~\ref{femboundeq1}.
 	\begin{equation} \label{appfemboundeq1}
 	q_{\text{con}}^{\text{equiv}} = \kappa^{\text{equiv}} \frac{\Delta T}{\Delta L} = q_{\text{rad}} + q_{\text{adv}}\\
 	\end{equation}
-	Due to the clear relationship between heat flux and thermal diffusivity the equivalent diffusivity($\kappa^{\text{equiv}}$) can be calculated as shown below in Equation \ref{femboundeq2}. 
+	Due to the clear relationship between heat flux and thermal diffusivity the equivalent diffusivity ($\kappa^{\text{equiv}}$) can be calculated as shown below in Equation~\ref{femboundeq2}. 
 	\begin{equation}\label{appfemboundeq2}
 	\begin{aligned}
 	\kappa^{\text{equiv}} &= \frac{\left[q_{\text{rad}} + q_{\text{adv}} \right]}{\Delta T}\\
@@ -80,12 +83,12 @@
 	\end{aligned}
 	\end{equation}
 	
-Diffusion Equation: 
+The diffusion equation: 
 	\begin{equation}\label{appfemdiffeq1}
 	q_{,x} - f = \frac{\partial Q}{\partial t} = c_{\rho}\frac{\partial u}{\partial t}\quad\text{  ...(1)} \quad\quad\quad q = -\kappa \frac{\partial u}{\partial x}\quad\text{  ...(2)}
 \end{equation}
-Substituting Equation \ref{appfemdiffeq1}(2) into \ref{appfemdiffeq1} and taking the derivative as indicated ($q_{,x}$) gives Equation \ref{appfemdiffeq2}. 
-As previously disccussed heat conduction ($\alpha$) is heat diffusion ($\kappa$)  divided by specific heat ($c_p$).
+Substituting Equation~\ref{appfemdiffeq1}(2) into Equation~\ref{appfemdiffeq1} and taking the derivative as indicated ($q_{,x}$) produces Equation~\ref{appfemdiffeq2}. 
+As previously discussed, heat conduction ($\alpha$) is heat diffusion ($\kappa$)  divided by specific heat ($c_p$).
 
 
 \begin{equation}\label{appfemdiffeq2}
@@ -112,7 +115,7 @@ Then:
 \end{equation}
 
 
-Similar to what was done in \ref{appbasisfunc_eq} a special approximation is made to obtain Equation \ref{appfemdiffeq5}.
+Similar to what was done in Equation~\ref{appbasisfunc_eq}, a special approximation is made to obtain Equation~\ref{appfemdiffeq5}.
 
 \begin{equation}\label{appfemdiffeq5}
 u \approx u^h \rightarrow u_e^h = \sum_{A}N^A d^A \quad;\quad w_e^h = \sum_{A}N^A L^A
@@ -143,7 +146,7 @@ u \approx u^h \rightarrow u_e^h = \sum_{A}N^A d^A \quad;\quad w_e^h = \sum_{A}N^
 \end{equation*}
 
 
-From all the above equations the below matrix formulation could be assembled:
+From all the above equations, the below matrix formulation could be assembled:
 %considere renamin to somehing with assembled or matrix in the name
 \begin{equation}\label{appfemdiffeq7}
 \vec{c}^T \vec{K} \vec{d} + \vec{c}^T \vec{M} \vec{\dot{d}} = \vec{c}^T \vec{F}
@@ -160,7 +163,7 @@ And $\vec{v}_0 = \vec{0}$
 Also set $\alpha$ as a parameter between 0 and 1. $\Delta t$ is the time step.
 
 
-Following the v-form Time integration in Hughes Chapter 8 , page 460, define $\vec{d}_{n+1}$ as in Equation \ref{appeqdn1}.
+Following the v-form time integration in Hughes Chapter 8, page 460, define $\vec{d}_{n+1}$ as in Equation~\ref{appeqdn1}.
 \begin{equation}\label{appeqdn1}
 \vec{d}_{n+1} = \vec{d}_n + (1-\alpha) \Delta \vec{v}_n + \alpha \Delta t \vec{v}_{n+1}
 \end{equation}
@@ -171,7 +174,7 @@ Following the v-form Time integration in Hughes Chapter 8 , page 460, define $\v
 \end{equation}
 
 
-If $\vec{M}$ and $\vec{\kappa}$ independent of time and temperature,it is sufficient to say:
+If $\vec{M}$ and $\vec{\kappa}$ independent of time and temperature, it is sufficient to say:
 
 \begin{equation}
 \vec{v}_{n+1} = (\vec{M}+\alpha\Delta t \vec{\kappa})^{-1} (\vec{F}_{n+1} - \vec{\kappa} \vec{\tilde{d}}_{n+1})
@@ -224,7 +227,7 @@ Then
 	\vec{F}_e^{fA} = \int_0^\ell N f \text{d}x = f \frac{\ell}{2} \int_{-1}^{+1} N \text{d}x = f\frac{\ell}{2} \\
 \therefore \vec{F}_e^f = \frac{f\ell}{2} \begin{Bmatrix} 1\\1 \end{Bmatrix}
 \end{equation}
- More generally matrix $K_e$ and $M_e$ are: 
+ More generally, matrix $K_e$ and $M_e$ are: 
 \begin{equation}
 \begin{aligned}
 K_e^{AB} &= \int_0^\ell N_{,x}^A N_{,x}^B \kappa \text{d}x \text{ with } \kappa = N^1 \kappa^1 + N^2 \kappa^2 \\
@@ -237,7 +240,7 @@ and
 M_e^{AB} = \int_0^\ell N^A N^B \lambda \text{d}x \quad\text{ with }\quad \lambda = N^1 \kappa^{(1)} + N^2 \kappa^{(2)}
 \end{equation}
 
-If $A=1$ and $B=1$ then $M_e$ is calculated as shown below in Equation \ref{appMeExampleeq1}.
+If $A=1$ and $B=1$, then $M_e$ is calculated as shown below in Equation~\ref{appMeExampleeq1}.
 \begin{equation} \label{appMeExampleeq1}
 \begin{aligned}
 M_e^{11} &= \left(\frac{\ell}{2}\right) \int_{-1}^{+1} \frac{1}{4} (1-\xi)^2\left[ \frac{1-\xi}{2} \cdot \lambda^{(1)} + \frac{1+\xi}{2} \cdot \lambda^{(2)} \right] \text{d} \xi \\
@@ -290,7 +293,7 @@ M_e^{12} &= \frac{\ell}{16} \int_{-1}^{+1} \left[
 \end{aligned}
 \end{equation}
 
- The matrix can then be assembled from the above Equations \ref{appMeExampleeq1},\ref{appMeExampleeq2} and \ref{appMeExampleeq3}
+ The matrix can then be assembled from the above Equations~\ref{appMeExampleeq1}, \ref{appMeExampleeq2}, and \ref{appMeExampleeq3}:
 \begin{equation}\label{appMeassembled}
 \begin{aligned}
 \vec{M}_e &= \frac{\ell}{4} \left(
@@ -323,7 +326,7 @@ K_e^{AB} &= \left(\frac{\pm 1}{2\ell}\right) \int_{-1}^{+1} \left[
 \right)
 \end{equation}
 
-There after the $\vec{F}_e$ matrix
+Thereafter the $\vec{F}_e$ matrix
 \begin{equation}%%\label{Keass3}
 \begin{aligned}
 F_e^A &= \int_0^\ell N^A f \text{d}x \\
@@ -372,11 +375,12 @@ F_e^2 &= \frac{\ell}{8} \int_{-1}^{+1} \left[
 \end{equation}
 
 
-After assembly but before Dirichlet boundaries are applied 
+After assembly but before Dirichlet boundaries are applied:
 \begin{equation}\label{appFEM_nodirieq}
 \vec{\bar{c}}^T \vec{\bar{K}} \vec{\bar{d}} + \vec{\bar{c}}^T \vec{\bar{M}} \vec{\dot{\bar{d}}} = \vec{\bar{c}}^T \vec{\bar{F}}
 \end{equation}
-When the Dirichlet boundaries below (Equation \ref{appdiribound}) are applied to the matrices shown in Equation \ref{appFEM_nodirieq} , they can be simplified to Equation \ref{appsolveeq1}.
+
+When the Dirichlet boundaries below (Equation~\ref{appdiribound}) are applied to the matrices shown in Equation~\ref{appFEM_nodirieq}, they can be simplified to Equation~\ref{appsolveeq1}.
 \begin{equation}\label{appdiribound}
 \begin{aligned}
 c_1 = 0 \quad &\text{and} \quad c^{np}=0\\

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.11)  31 OCT 2021 22:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.11)  1 NOV 2021 11:04
 entering extended mode
 **./Liza_report_rewrite.tex
 (Liza_report_rewrite.tex
@@ -752,7 +752,7 @@ Chapter 1.
 
 
 ]
-<figures/Eurok.png, id=390, 315.42844pt x 385.44pt>
+<figures/Eurok.png, id=396, 315.42844pt x 385.44pt>
 File: figures/Eurok.png Graphic file (type png)
 <use figures/Eurok.png>
 Package pdftex.def Info: figures/Eurok.png  used on input line 32.
@@ -762,10 +762,10 @@ Package pdftex.def Info: figures/Eurok.png  used on input line 32.
 
  (techfoundation.tex
 Chapter 2.
-<figures/iso_phases.png, id=439, 845.559pt x 491.436pt>
+<figures/iso_phases.png, id=445, 845.559pt x 491.436pt>
 File: figures/iso_phases.png Graphic file (type png)
 <use figures/iso_phases.png>
-Package pdftex.def Info: figures/iso_phases.png  used on input line 24.
+Package pdftex.def Info: figures/iso_phases.png  used on input line 22.
 (pdftex.def)             Requested size: 398.0pt x 231.31989pt.
 [5
 
@@ -773,21 +773,21 @@ Package pdftex.def Info: figures/iso_phases.png  used on input line 24.
 
 
 ] [6 <./figures/iso_phases.png>] [7] [8] [9]
-<figures/MC_squares1.png, id=523, 295.85532pt x 277.035pt>
+<figures/MC_squares1.png, id=529, 295.85532pt x 277.035pt>
 File: figures/MC_squares1.png Graphic file (type png)
 <use figures/MC_squares1.png>
-Package pdftex.def Info: figures/MC_squares1.png  used on input line 208.
+Package pdftex.def Info: figures/MC_squares1.png  used on input line 230.
 (pdftex.def)             Requested size: 218.90121pt x 204.98155pt.
  [10] [11 <./figures/MC_squares1.png (PNG copy)>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-56.
+78.
  (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [12]
-<figures/MAP_expl.png, id=571, 597.432pt x 421.0932pt>
+<figures/MAP_expl.png, id=579, 597.432pt x 421.0932pt>
 File: figures/MAP_expl.png Graphic file (type png)
 <use figures/MAP_expl.png>
-Package pdftex.def Info: figures/MAP_expl.png  used on input line 286.
+Package pdftex.def Info: figures/MAP_expl.png  used on input line 309.
 (pdftex.def)             Requested size: 398.0pt x 280.53105pt.
 )
 [13] [14 <./figures/MAP_expl.png>]
@@ -795,17 +795,17 @@ Package pdftex.def Info: figures/MAP_expl.png  used on input line 286.
 
  (implementation.tex
 Chapter 3.
-<figures/TC_layout.png, id=592, 524.71031pt x 264.99pt>
+<figures/TC_layout.png, id=600, 524.71031pt x 264.99pt>
 File: figures/TC_layout.png Graphic file (type png)
 <use figures/TC_layout.png>
 Package pdftex.def Info: figures/TC_layout.png  used on input line 15.
 (pdftex.def)             Requested size: 398.0pt x 201.00632pt.
-<figures/firecurve.png, id=597, 839.38594pt x 514.92375pt>
+<figures/firecurve.png, id=605, 839.38594pt x 514.92375pt>
 File: figures/firecurve.png Graphic file (type png)
 <use figures/firecurve.png>
 Package pdftex.def Info: figures/firecurve.png  used on input line 24.
 (pdftex.def)             Requested size: 398.0pt x 244.15132pt.
-<figures/measured_plot.png, id=599, 840.13875pt x 511.9125pt>
+<figures/measured_plot.png, id=607, 840.13875pt x 511.9125pt>
 File: figures/measured_plot.png Graphic file (type png)
 <use figures/measured_plot.png>
 Package pdftex.def Info: figures/measured_plot.png  used on input line 32.
@@ -817,161 +817,163 @@ Package pdftex.def Info: figures/measured_plot.png  used on input line 32.
 
 ] [16 <./figures/TC_layout.png (PNG copy)> <./figures/firecurve.png>]
 [17 <./figures/measured_plot.png>]
-<figures/originalmugraph.jpg, id=618, 1049.42062pt x 702.37407pt>
+<figures/originalmugraph.jpg, id=626, 1049.42062pt x 702.37407pt>
 File: figures/originalmugraph.jpg Graphic file (type jpg)
 <use figures/originalmugraph.jpg>
 Package pdftex.def Info: figures/originalmugraph.jpg  used on input line 80.
 (pdftex.def)             Requested size: 398.0pt x 266.37978pt.
-<figures/fem_sketch.png, id=619, 484.81125pt x 143.03438pt>
+<figures/fem_sketch.png, id=627, 484.81125pt x 143.03438pt>
 File: figures/fem_sketch.png Graphic file (type png)
 <use figures/fem_sketch.png>
 Package pdftex.def Info: figures/fem_sketch.png  used on input line 99.
 (pdftex.def)             Requested size: 298.5pt x 88.07146pt.
  [18 <./figures/originalmugraph.jpg>]
 [19 <./figures/fem_sketch.png (PNG copy)>]
-<figures/fem_fire_sketch.png, id=654, 860.46469pt x 191.21437pt>
+<figures/fem_fire_sketch.png, id=663, 860.46469pt x 191.21437pt>
 File: figures/fem_fire_sketch.png Graphic file (type png)
 <use figures/fem_fire_sketch.png>
-Package pdftex.def Info: figures/fem_fire_sketch.png  used on input line 160.
+Package pdftex.def Info: figures/fem_fire_sketch.png  used on input line 161.
 (pdftex.def)             Requested size: 298.5pt x 66.33372pt.
  [20 <./figures/fem_fire_sketch.png>] [21] [22] [23] [24]
-<figures/e_expl_curve.png, id=729, 1507.13063pt x 1126.2075pt>
+<figures/e_expl_curve.png, id=739, 1507.13063pt x 1126.2075pt>
 File: figures/e_expl_curve.png Graphic file (type png)
 <use figures/e_expl_curve.png>
-Package pdftex.def Info: figures/e_expl_curve.png  used on input line 431.
+Package pdftex.def Info: figures/e_expl_curve.png  used on input line 435.
 (pdftex.def)             Requested size: 199.0pt x 148.69765pt.
  [25]) [26 <./figures/e_expl_curve.png>]
 \openout2 = `results.aux'.
 
  (results.tex
 Chapter 4.
-<figures/figure10a.jpg, id=750, 472.26437pt x 127.47626pt>
+<figures/figure10a.jpg, id=760, 472.26437pt x 127.47626pt>
 File: figures/figure10a.jpg Graphic file (type jpg)
 <use figures/figure10a.jpg>
 Package pdftex.def Info: figures/figure10a.jpg  used on input line 20.
 (pdftex.def)             Requested size: 398.0pt x 107.43332pt.
-<figures/figure10b.jpg, id=751, 472.26437pt x 124.96687pt>
+<figures/figure10b.jpg, id=761, 472.26437pt x 124.96687pt>
 File: figures/figure10b.jpg Graphic file (type jpg)
 <use figures/figure10b.jpg>
 Package pdftex.def Info: figures/figure10b.jpg  used on input line 27.
 (pdftex.def)             Requested size: 398.0pt x 105.3185pt.
-<figures/figure10c.jpg, id=752, 474.27188pt x 120.95187pt>
+<figures/figure10c.jpg, id=762, 474.27188pt x 120.95187pt>
 File: figures/figure10c.jpg Graphic file (type jpg)
 <use figures/figure10c.jpg>
 Package pdftex.def Info: figures/figure10c.jpg  used on input line 34.
 (pdftex.def)             Requested size: 398.0pt x 101.50475pt.
-<figures/kvalues_all_NOshi.png, id=755, 623.32875pt x 504.38437pt>
-File: figures/kvalues_all_NOshi.png Graphic file (type png)
-<use figures/kvalues_all_NOshi.png>
-Package pdftex.def Info: figures/kvalues_all_NOshi.png  used on input line 54.
-(pdftex.def)             Requested size: 398.0pt x 322.05835pt.
 [27
 
 
 
 
-] [28 <./figures/figure10a.jpg> <./figures/figure10b.jpg> <./figures/figure10c.
-jpg>] [29 <./figures/kvalues_all_NOshi.png>]
-<figures/histograph/histo1.png, id=774, 421.575pt x 316.0608pt>
+]
+<figures/kvalues_all_NOshi.png, id=770, 623.32875pt x 504.38437pt>
+File: figures/kvalues_all_NOshi.png Graphic file (type png)
+<use figures/kvalues_all_NOshi.png>
+Package pdftex.def Info: figures/kvalues_all_NOshi.png  used on input line 54.
+(pdftex.def)             Requested size: 398.0pt x 322.05835pt.
+ [28 <./figures/figure10a.jpg> <./figures/figure10b.jpg> <./figures/figure10c.j
+pg>] [29 <./figures/kvalues_all_NOshi.png>]
+<figures/histograph/histo1.png, id=784, 421.575pt x 316.0608pt>
 File: figures/histograph/histo1.png Graphic file (type png)
 <use figures/histograph/histo1.png>
 Package pdftex.def Info: figures/histograph/histo1.png  used on input line 97.
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/histo3.png, id=775, 421.575pt x 316.0608pt>
+<figures/histograph/histo3.png, id=785, 421.575pt x 316.0608pt>
 File: figures/histograph/histo3.png Graphic file (type png)
 <use figures/histograph/histo3.png>
 Package pdftex.def Info: figures/histograph/histo3.png  used on input line 101.
 
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/legend.png, id=776, 608.2725pt x 292.84406pt>
+<figures/histograph/legend.png, id=786, 608.2725pt x 292.84406pt>
 File: figures/histograph/legend.png Graphic file (type png)
 <use figures/histograph/legend.png>
 Package pdftex.def Info: figures/histograph/legend.png  used on input line 106.
 
 (pdftex.def)             Requested size: 79.59879pt x 38.32129pt.
  (fig_scatterdata.tex
-<figures/histograph/scatter1.png, id=777, 421.575pt x 316.0608pt>
+<figures/histograph/scatter1.png, id=787, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter1.png Graphic file (type png)
 <use figures/histograph/scatter1.png>
 Package pdftex.def Info: figures/histograph/scatter1.png  used on input line 5.
 
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter2.png, id=778, 421.575pt x 316.0608pt>
+<figures/histograph/scatter2.png, id=788, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter2.png Graphic file (type png)
 <use figures/histograph/scatter2.png>
 Package pdftex.def Info: figures/histograph/scatter2.png  used on input line 9.
 
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter3.png, id=779, 421.575pt x 316.0608pt>
+<figures/histograph/scatter3.png, id=789, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter3.png Graphic file (type png)
 <use figures/histograph/scatter3.png>
 Package pdftex.def Info: figures/histograph/scatter3.png  used on input line 13
 .
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter4.png, id=780, 421.575pt x 316.0608pt>
+<figures/histograph/scatter4.png, id=790, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter4.png Graphic file (type png)
 <use figures/histograph/scatter4.png>
 Package pdftex.def Info: figures/histograph/scatter4.png  used on input line 17
 .
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter5.png, id=781, 421.575pt x 316.0608pt>
+<figures/histograph/scatter5.png, id=791, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter5.png Graphic file (type png)
 <use figures/histograph/scatter5.png>
 Package pdftex.def Info: figures/histograph/scatter5.png  used on input line 21
 .
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter6.png, id=782, 421.575pt x 316.0608pt>
+<figures/histograph/scatter6.png, id=792, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter6.png Graphic file (type png)
 <use figures/histograph/scatter6.png>
 Package pdftex.def Info: figures/histograph/scatter6.png  used on input line 25
 .
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter7.png, id=783, 421.575pt x 316.0608pt>
+<figures/histograph/scatter7.png, id=793, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter7.png Graphic file (type png)
 <use figures/histograph/scatter7.png>
 Package pdftex.def Info: figures/histograph/scatter7.png  used on input line 29
 .
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter8.png, id=784, 421.575pt x 316.0608pt>
+<figures/histograph/scatter8.png, id=794, 421.575pt x 316.0608pt>
 File: figures/histograph/scatter8.png Graphic file (type png)
 <use figures/histograph/scatter8.png>
 Package pdftex.def Info: figures/histograph/scatter8.png  used on input line 33
 .
 (pdftex.def)             Requested size: 179.09879pt x 134.27342pt.
-<figures/histograph/scatter_legend.png, id=785, 471.26062pt x 274.77657pt>
+<figures/histograph/scatter_legend.png, id=795, 471.26062pt x 274.77657pt>
 File: figures/histograph/scatter_legend.png Graphic file (type png)
 <use figures/histograph/scatter_legend.png>
 Package pdftex.def Info: figures/histograph/scatter_legend.png  used on input l
 ine 37.
 (pdftex.def)             Requested size: 59.69757pt x 34.80399pt.
 ) [30 <./figures/histograph/histo1.png (PNG copy)> <./figures/histograph/histo3
-.png (PNG copy)> <./figures/histograph/legend.png>] [31]
-<figures/final_graph.png, id=801, 981.6675pt x 520.19344pt>
-File: figures/final_graph.png Graphic file (type png)
-<use figures/final_graph.png>
-Package pdftex.def Info: figures/final_graph.png  used on input line 180.
-(pdftex.def)             Requested size: 621.0pt x 329.0809pt.
-) [32] [33 <./figures/histograph/scatter1.png (PNG copy)> <./figures/histograph
+.png (PNG copy)> <./figures/histograph/legend.png>]
+<figures/finalgraph.png, id=807, 1398.72563pt x 755.07094pt>
+File: figures/finalgraph.png Graphic file (type png)
+<use figures/finalgraph.png>
+Package pdftex.def Info: figures/finalgraph.png  used on input line 180.
+(pdftex.def)             Requested size: 621.0pt x 335.23933pt.
+ [31]) [32 <./figures/histograph/scatter1.png (PNG copy)> <./figures/histograph
 /scatter2.png (PNG copy)> <./figures/histograph/scatter3.png (PNG copy)> <./fig
 ures/histograph/scatter4.png (PNG copy)> <./figures/histograph/scatter5.png (PN
 G copy)> <./figures/histograph/scatter6.png (PNG copy)> <./figures/histograph/s
 catter7.png (PNG copy)> <./figures/histograph/scatter8.png (PNG copy)> <./figur
-es/histograph/scatter_legend.png>] [34 <./figures/final_graph.png (PNG copy)>]
+es/histograph/scatter_legend.png>]
+[33 <./figures/finalgraph.png (PNG copy)>]
 \openout2 = `discussion.aux'.
 
  (discussion.tex
 Chapter 5.
-[35
+[34
 
 
 
 
-]) [36]
+]) [35]
 \openout2 = `Conclusion.aux'.
 
  (Conclusion.tex
 Chapter 6.
-) [37
+) [36
 
 
 
@@ -981,22 +983,22 @@ Chapter 6.
 
  (mcmcCode.tex
 Appendix A.
-[38
+[37
 
 
 
 
-] [39] [40] [41] [42]) [43]
+] [38] [39] [40] [41]) [42]
 \openout2 = `derive_app.aux'.
 
  (derive_app.tex
 Appendix B.
-[44
+[43
 
 
 
 
-] [45] [46] [47] [48] [49]) [50] (Liza_report_rewrite.bbl
+] [44] [45] [46] [47] [48]) [49] (Liza_report_rewrite.bbl
 (C:\Program Files\MiKTeX\tex/latex/stellenbosch\usbib.eng)
 Underfull \hbox (badness 10000) in paragraph at lines 23--27
 \T1/cmr/m/n/10.95 Available at: []$\T1/cmtt/m/n/10.95 https : / / machinelearni
@@ -1030,7 +1032,7 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.77 \newblock {\selectlanguage{eng}
+l.71 \newblock {\selectlanguage{eng}
                                     \emph{A first course in finite elements}}.
 Your command will be ignored, type <return> to proceed
 
@@ -1043,23 +1045,23 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 \newblock {\selectlanguage{eng}
-                                     \emph{Markov chain Monte Carlo in pract...
+l.97 \newblock {\selectlanguage{eng}
+                                    \emph{Markov chain Monte Carlo in practi...
 
 Your command will be ignored, type <return> to proceed
 
-[51
+[50
 
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 127--131
+Underfull \hbox (badness 10000) in paragraph at lines 121--125
 \T1/cmr/m/n/10.95 Available at: []$\T1/cmtt/m/n/10.95 https : / / codesachin . 
 wordpress . com / 2016 / 01 / 16 /
  []
 
-[52]
+[51]
 Underfull \hbox (badness 10000) in paragraph at lines 226--234
 \T1/cmr/m/n/10.95 Available at: []$\T1/cmtt/m/n/10.95 https : / / www . science
 direct . com / science / article / pii /
@@ -1071,30 +1073,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--249
 direct . com / science / article / pii /
  []
 
-) [53] (Liza_report_rewrite.aux (verklaring.aux) (abstract.aux)
+) [52] (Liza_report_rewrite.aux (verklaring.aux) (abstract.aux)
 (acknowledgements.aux) (nomenkl.aux) (Introduction.aux) (techfoundation.aux)
 (implementation.aux) (results.aux) (discussion.aux) (Conclusion.aux)
 (mcmcCode.aux) (derive_app.aux))
 Package rerunfilecheck Info: File `Liza_report_rewrite.out' has not changed.
-(rerunfilecheck)             Checksum: F82438C7D4ED08F6A7811BBC41E73DF3;7142.
+(rerunfilecheck)             Checksum: 342563EC3612FC452CF715DAD3E1FFEB;7142.
  ) 
 Here is how much of TeX's memory you used:
- 17516 strings out of 478864
- 262732 string characters out of 2858494
+ 17514 strings out of 478864
+ 262713 string characters out of 2858494
  787992 words of memory out of 3000000
- 34520 multiletter control sequences out of 15000+600000
+ 34519 multiletter control sequences out of 15000+600000
  436586 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,16n,77p,450b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,16n,77p,454b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi6
 00\ecti1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
 appen/ec/dpi600\ectt1095.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/
 pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Liza Stewart\AppData\Local\
-MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Liza Stewart\A
-ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\L
-iza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk
+MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Liza Stewart\A
+ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\L
+iza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk
 > <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecrm1000.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
+0\ecbx1440.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
 ppen/ec/dpi600\ecbx1728.pk> <C:\Users\Liza Stewart\AppData\Local\MiKTeX\fonts/p
 k/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\Liza Stewart\AppData\Local\M
 iKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Liza Stewart\Ap
@@ -1121,9 +1123,9 @@ pe1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 y8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
 
-Output written on Liza_report_rewrite.pdf (63 pages, 3842007 bytes).
+Output written on Liza_report_rewrite.pdf (62 pages, 3897709 bytes).
 PDF statistics:
- 2080 PDF objects out of 2487 (max. 8388607)
- 479 named destinations out of 1000 (max. 500000)
+ 2091 PDF objects out of 2487 (max. 8388607)
+ 478 named destinations out of 1000 (max. 500000)
  522 words of extra memory for PDF output out of 10000 (max. 10000000)
 
